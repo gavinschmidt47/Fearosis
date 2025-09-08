@@ -14,10 +14,7 @@ public class Point : MonoBehaviour
     private int numPointsFromPsychological = 0;
 
     //Event modifiers
-    private float bloodModifier = 1.0f;
-    private float physicalModifier = 1.0f;
-    private float behaviorModifier = 1.0f;
-    private float psychologicalModifier = 1.0f;
+    private float eventModifier = 1.0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -53,10 +50,16 @@ public class Point : MonoBehaviour
         }
     }
 
+    public void AddModifier(float modifier)
+    {
+        //Add event modifier
+        eventModifier += modifier;
+    }
+
     //Math to calculate total points with modifiers
     public int GetTotalPoints()
     {
-        numPointsTotal = numPointsStart + GetModifiedPoints(numPointsFromBlood, bloodModifier) + GetModifiedPoints(numPointsFromPhysical, physicalModifier) + GetModifiedPoints(numPointsFromBehavior, behaviorModifier) + GetModifiedPoints(numPointsFromPsychological, psychologicalModifier);
+        numPointsTotal = Mathf.RoundToInt((numPointsFromBlood + numPointsFromPhysical + numPointsFromBehavior + numPointsFromPsychological) * eventModifier) + numPointsStart;
         return numPointsTotal;
     }
 

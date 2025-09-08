@@ -26,10 +26,10 @@ public class Upgrade : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        fearScript = FindAnyObjectOfType<Fear>();
-        notorietyScript = FindAnyObjectOfType<Notoriety>();
-        prejudiceScript = FindAnyObjectOfType<Prejudice>();
-        painScript = FindAnyObjectOfType<Pain>();
+        fearScript = FindFirstObjectByType<Fear>();
+        notorietyScript = FindFirstObjectByType<Notoriety>();
+        prejudiceScript = FindFirstObjectByType<Prejudice>();
+        painScript = FindFirstObjectByType<Pain>();
     }
 
     public void ApplyUpgrade()
