@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Point : MonoBehaviour
 {
@@ -20,7 +21,9 @@ public class Point : MonoBehaviour
     private float eventPhysicalModifier = 1.0f;
     private float eventBehaviorModifier = 1.0f;
     private float eventPsychologicalModifier = 1.0f;
-
+    
+    // Event triggered when points are gained
+    public UnityEvent gainedPointsEvent = new UnityEvent();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,6 +34,8 @@ public class Point : MonoBehaviour
 
         numPointsTotal = numPointsStart;
     }
+
+    
 
     public virtual void GainPoints(int pointsToGain, string source)
     {
@@ -53,6 +58,8 @@ public class Point : MonoBehaviour
                 Debug.Log("Error: Invalid source for points.");
                 break;
         }
+        // Trigger an event when points are gained
+        gainedPointsEvent.Invoke();
     }
 
     public void AddStatModifier(float modifier)

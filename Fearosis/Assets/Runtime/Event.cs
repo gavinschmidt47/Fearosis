@@ -8,7 +8,7 @@ public class Event : MonoBehaviour
     [SerializeField]
     private string eventDescription;
     [SerializeField]
-    private int modBuff;
+    private float modBuff;
 
     //Does the event target a specific source or stat. Both will target a specific stat from a specific source
     [SerializeField]
