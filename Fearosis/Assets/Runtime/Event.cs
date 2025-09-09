@@ -25,16 +25,17 @@ public class Event : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        fearScript = FindAnyObjectOfType<Fear>();
-        notorietyScript = FindAnyObjectOfType<Notoriety>();
-        prejudiceScript = FindAnyObjectOfType<Prejudice>();
-        painScript = FindAnyObjectOfType<Pain>();
+        fearScript = FindAnyObjectByType<Fear>();
+        notorietyScript = FindAnyObjectByType<Notoriety>();
+        prejudiceScript = FindAnyObjectByType<Prejudice>();
+        painScript = FindAnyObjectByType<Pain>();
     }
 
     // Update is called once per frame
     public void ApplyEvent()
     {
-        switch (targetSource)
+        targetSource source = targetSource.Fear;
+        switch (source)
         {
             case targetSource.Fear:
                 break;
