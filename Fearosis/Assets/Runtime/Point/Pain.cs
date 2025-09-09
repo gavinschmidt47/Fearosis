@@ -5,6 +5,7 @@ public class Pain : Point
     [SerializeField]
     private Fear fear;
 
+    [Range(-1f, 0f)]
     public float fearModifier = -0.33f;
 
     //Gain Pain points from various sources

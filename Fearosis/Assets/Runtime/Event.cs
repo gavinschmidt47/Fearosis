@@ -11,31 +11,33 @@ public class Event : MonoBehaviour
     private float modBuff;
 
     //Does the event target a specific source or stat. Both will target a specific stat from a specific source
-    [SerializeField]
-    private bool targetsStats;
-    [SerializeField]
-    private bool targetsSource;
+    [HideInInspector]
+    public bool targetsStats;
+    [HideInInspector]
+    public bool targetsSource;
     
     //If targeting, which source/stat to target
-    private enum TargetStats
+    [HideInInspector]
+    public enum TargetStats
     {
         Fear,
         Notoriety,
         Prejudice,
         Pain
     };
-    [SerializeField]
-    private TargetStats targetStats;
+    [HideInInspector]
+    public TargetStats targetStats;
 
-    private enum TargetSource
+    [HideInInspector]
+    public enum TargetSource
     {
         Blood,
         Physical,
         Behavior,
         Psychological
     };
-    [SerializeField]
-    private TargetSource targetSource;
+    [HideInInspector]
+    public TargetSource targetSource;
 
     //References to stat scripts
     private Fear fearScript;
