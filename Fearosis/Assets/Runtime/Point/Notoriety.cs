@@ -6,6 +6,7 @@ public class Notoriety : Point
     private Pain pain;
 
     //Portion of Notoriety points to send to Pain
+    [Range(-1f, 0f)]
     public float painModifier = -0.33f;
 
     //Gain Notoriety points from various sources

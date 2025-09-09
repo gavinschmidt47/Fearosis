@@ -1135,8 +1135,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notoriety: {fileID: 1251817879}
   prejudice: {fileID: 1381553656}
-  notorietyModifier: 0.33
-  prejudiceModifier: 0.66
+  baseNVal: 0
+  basePVal: 0
+  notorietyModifier: -0.374
+  prejudiceModifier: 0.408
 --- !u!4 &801844437
 Transform:
   m_ObjectHideFlags: 0
