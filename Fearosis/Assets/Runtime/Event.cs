@@ -6,8 +6,11 @@ public class Event : MonoBehaviour
     private string eventName;
     [SerializeField]
     private string eventDescription;
+
     [SerializeField]
     private int modBuff;
+    public bool targetStats;
+
     [SerializeField]
     private enum targetSource
     {
@@ -16,6 +19,9 @@ public class Event : MonoBehaviour
         Prejudice,
         Pain
     };
+    [SerializeField]
+    private targetSource source;
+    
 
     private Fear fearScript;
     private Notoriety notorietyScript;
@@ -34,7 +40,7 @@ public class Event : MonoBehaviour
     // Update is called once per frame
     public void ApplyEvent()
     {
-        targetSource source = targetSource.Fear;
+        
         switch (source)
         {
             case targetSource.Fear:

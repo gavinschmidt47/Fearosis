@@ -1163,6 +1163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 826121490}
+  - component: {fileID: 826121491}
   m_Layer: 0
   m_Name: Example Event
   m_TagString: Untagged
@@ -1185,6 +1186,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 308556628}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &826121491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826121489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf5e795ea1471446a13b22026ca2e38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: 
+  eventDescription: 
+  modBuff: 0
+  targetStats: 0
+  source: 0
 --- !u!1 &839575353
 GameObject:
   m_ObjectHideFlags: 0
