@@ -4532,6 +4532,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  minimumCameraPan: {x: -10, y: -10}
+  maximumCameraPan: {x: 10, y: 10}
 --- !u!114 &1755400250
 MonoBehaviour:
   m_ObjectHideFlags: 0

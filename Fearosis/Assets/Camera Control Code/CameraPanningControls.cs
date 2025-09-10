@@ -8,6 +8,10 @@ public class CameraPanningControls : MonoBehaviour
     private InputAction panAction;
     //These find the actions for panning in the input actions (because Input... is a crime)
 
+    //Modifiable limits for the camera's panning
+    [SerializeField] private Vector2 minimumCameraPan;
+    [SerializeField] private Vector2 maximumCameraPan;
+
     //Activates the camera for panning, finding the pan actions
     void Awake()
     {
@@ -30,18 +34,21 @@ public class CameraPanningControls : MonoBehaviour
 
     private void OnPanPerformed(InputAction.CallbackContext context)
     {
-        // Mouse drag (Editor)
-        if (Mouse.current != null && Mouse.current.leftButton.isPressed)
+        Vector3 currentPosition = Camera.main.transform.position;
+        Vector2 delta = context.ReadValue<Vector2>();
+
+        // Only apply delta if mouse or touch is pressed
+        if ((Mouse.current != null && Mouse.current.leftButton.isPressed) ||
+            (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed))
         {
-            Vector2 delta = context.ReadValue<Vector2>();
-            Camera.main.transform.position -= new Vector3(delta.x, delta.y, 0) * 0.01f;
-        }
-        // Touch drag (Mobile)
-        else if (Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed)
-        {
-            Vector2 delta = context.ReadValue<Vector2>();
-            Camera.main.transform.position -= new Vector3(delta.x, delta.y, 0) * 0.01f;
-            //Delta is the input, works for both mouse and touch
+            // Apply delta
+            currentPosition -= new Vector3(delta.x, delta.y, 0) * 0.01f;
+
+            // Clamp the new position
+            currentPosition.x = Mathf.Clamp(currentPosition.x, minimumCameraPan.x, maximumCameraPan.x);
+            currentPosition.y = Mathf.Clamp(currentPosition.y, minimumCameraPan.y, maximumCameraPan.y);
+
+            Camera.main.transform.position = currentPosition;
         }
     }
 }
