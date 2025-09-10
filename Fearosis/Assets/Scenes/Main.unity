@@ -4759,7 +4759,7 @@ MonoBehaviour:
   notorietyBuff: 0
   prejudiceBuff: 0
   painBuff: 0
-  source: 0
+  source: 3
 --- !u!1 &1864129267
 GameObject:
   m_ObjectHideFlags: 0
