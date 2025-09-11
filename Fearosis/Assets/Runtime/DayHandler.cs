@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DayHandler : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class DayHandler : MonoBehaviour
     //Day-specific variables
     private int numInfectedToGain;
     private int numInfluenceToGain;
+
+    //Unity event on day start
+    public UnityEvent dayStartEvent = new UnityEvent();
 
     public void Start()
     {
@@ -55,5 +59,8 @@ public class DayHandler : MonoBehaviour
         }
         numInfluenceToGain = Mathf.RoundToInt(numPain * (numInfectedToGain / populationInfluenceModifier) * numNotoriety);
         influenceScript.AddInfluence(numInfluenceToGain);
+
+        //Call day start event
+        dayStartEvent.Invoke();
     }
 }

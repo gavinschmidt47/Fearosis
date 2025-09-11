@@ -655,7 +655,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 698376685}
+  m_Father: {fileID: 940908881}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -859,7 +859,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1302342317}
+  m_Father: {fileID: 940908881}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1108,7 +1108,7 @@ RectTransform:
   - {fileID: 1868832917}
   - {fileID: 533119429}
   - {fileID: 132021078}
-  m_Father: {fileID: 1302342317}
+  m_Father: {fileID: 940908881}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -1166,6 +1166,61 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &475908777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 475908778}
+  - component: {fileID: 475908779}
+  m_Layer: 5
+  m_Name: Master Button Handler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &475908778
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475908777}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1088786273}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &475908779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475908777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef9e7493dae0f945a236ea3cce4dce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  expandedMonsterButton: {fileID: 0}
+  bloodScreen: {fileID: 0}
+  physicalScreen: {fileID: 0}
+  behaviorScreen: {fileID: 0}
+  psychologicalScreen: {fileID: 0}
+  statsScreen: {fileID: 0}
+  optionsScreen: {fileID: 0}
 --- !u!1 &494300537
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,7 +1609,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 694846169}
+  m_Father: {fileID: 940908881}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1902,108 +1957,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 692055607}
   m_CullTransparentMesh: 1
---- !u!1 &694846168
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 694846169}
-  - component: {fileID: 694846170}
-  m_Layer: 5
-  m_Name: Pain UI Handler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &694846169
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694846168}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1672621376}
-  - {fileID: 664183555}
-  m_Father: {fileID: 1088786273}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &694846170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694846168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b68eb4cd693d33f42b7d98b4a1d06b73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  painSlider: {fileID: 1672621377}
---- !u!1 &698376684
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 698376685}
-  - component: {fileID: 698376686}
-  m_Layer: 5
-  m_Name: Prejudice UI Handler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &698376685
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698376684}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1364761930}
-  - {fileID: 277077262}
-  m_Father: {fileID: 1088786273}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &698376686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698376684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cb446ea4572ef04a8206465157fa025, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prejudiceSlider: {fileID: 1364761931}
 --- !u!1 &699990317
 GameObject:
   m_ObjectHideFlags: 0
@@ -2035,6 +1988,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infectionRate: 1
   populationInfluenceModifier: 1
+  dayStartEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &699990319
 Transform:
   m_ObjectHideFlags: 0
@@ -2079,21 +2035,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 284805c3cea42dd40a8819c93e4d9ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gainedPointsEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1760321519}
-        m_TargetAssemblyTypeName: FearUIHandler, Assembly-CSharp
-        m_MethodName: UpdateFearUI
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   notoriety: {fileID: 1251817879}
   prejudice: {fileID: 1381553656}
   baseNVal: 0
@@ -2559,6 +2500,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935288498}
   m_CullTransparentMesh: 1
+--- !u!1 &940908880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 940908881}
+  - component: {fileID: 940908882}
+  m_Layer: 5
+  m_Name: Stat UI Handler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &940908881
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940908880}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1604118381}
+  - {fileID: 1659872531}
+  - {fileID: 454355711}
+  - {fileID: 387050669}
+  - {fileID: 1364761930}
+  - {fileID: 277077262}
+  - {fileID: 1672621376}
+  - {fileID: 664183555}
+  m_Father: {fileID: 1088786273}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &940908882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940908880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33c96e2e07faa2041990275a3358e770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fearSlider: {fileID: 0}
+  notorietySlider: {fileID: 0}
+  prejudiceSlider: {fileID: 0}
+  painSlider: {fileID: 0}
+  infectionText: {fileID: 0}
 --- !u!1 &1036846724
 GameObject:
   m_ObjectHideFlags: 0
@@ -2791,13 +2793,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1760321518}
-  - {fileID: 1302342317}
-  - {fileID: 698376685}
-  - {fileID: 694846169}
   - {fileID: 877322013}
   - {fileID: 590755930}
   - {fileID: 113412890}
+  - {fileID: 940908881}
+  - {fileID: 475908778}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3166,21 +3166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa886207aee3e0c439635a7555353c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gainedPointsEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1302342318}
-        m_TargetAssemblyTypeName: NotorietyUIHandler, Assembly-CSharp
-        m_MethodName: UpdateNotorietyUI
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   pain: {fileID: 1689262718}
   painModifier: -0.33
 --- !u!4 &1251817880
@@ -3198,57 +3183,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 839575354}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1302342316
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1302342317}
-  - component: {fileID: 1302342318}
-  m_Layer: 5
-  m_Name: Notoriety UI Handler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1302342317
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1302342316}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 454355711}
-  - {fileID: 387050669}
-  m_Father: {fileID: 1088786273}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1302342318
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1302342316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19c440b64da605f45a1063287f55ba2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  notorietySlider: {fileID: 454355712}
 --- !u!1 &1329972229
 GameObject:
   m_ObjectHideFlags: 0
@@ -3306,7 +3240,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Monster
+  m_text: Mustard
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3463,7 +3397,7 @@ RectTransform:
   - {fileID: 1564033058}
   - {fileID: 1800828023}
   - {fileID: 405969909}
-  m_Father: {fileID: 698376685}
+  m_Father: {fileID: 940908881}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -3550,21 +3484,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a244e79aaaf68d45aca238aedee511e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gainedPointsEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 698376686}
-        m_TargetAssemblyTypeName: PrejudiceUIHandler, Assembly-CSharp
-        m_MethodName: UpdatePrejudiceUI
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   pain: {fileID: 1689262718}
   painModifier: 0.33
 --- !u!4 &1381553657
@@ -3764,7 +3683,7 @@ RectTransform:
   - {fileID: 428527460}
   - {fileID: 2044278708}
   - {fileID: 885933014}
-  m_Father: {fileID: 1760321518}
+  m_Father: {fileID: 940908881}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -3852,7 +3771,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1760321518}
+  m_Father: {fileID: 940908881}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3990,7 +3909,7 @@ RectTransform:
   - {fileID: 914988406}
   - {fileID: 553851507}
   - {fileID: 325636308}
-  m_Father: {fileID: 694846169}
+  m_Father: {fileID: 940908881}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -4092,21 +4011,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf585627d66d5e048bd6157f6f846c74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gainedPointsEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 694846170}
-        m_TargetAssemblyTypeName: PainUIHandler, Assembly-CSharp
-        m_MethodName: UpdatePainUI
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   fear: {fileID: 801844436}
   fearModifier: -0.33
 --- !u!1 &1697883752
@@ -4549,57 +4453,6 @@ MonoBehaviour:
   zoomSpeed: 0.1
   minZoom: 2
   maxZoom: 20
---- !u!1 &1760321517
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1760321518}
-  - component: {fileID: 1760321519}
-  m_Layer: 5
-  m_Name: Fear UI Handler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1760321518
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1760321517}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1604118381}
-  - {fileID: 1659872531}
-  m_Father: {fileID: 1088786273}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1760321519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1760321517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cb10239255d8894e92958d850246167, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fearSlider: {fileID: 1604118382}
 --- !u!1 &1780189277
 GameObject:
   m_ObjectHideFlags: 0
