@@ -9,8 +9,8 @@ public class Fear : Point
     private Prejudice prejudice;
 
     //Portion of Fear points to send to Notoriety and Prejudice
-    public float baseNVal; //base notoriety value
-    public float basePVal; //base prejudice value
+    private float curNVal; //base notoriety value
+    private float curPVal; //base prejudice value
 
     [Range(0f, 1f)]
     public float notorietyModifier;
@@ -20,26 +20,24 @@ public class Fear : Point
 
     public void Start() //sets starting values for notoriety/prejudice
     {
-        baseNVal = 0.33f; //set starting value here
-        notorietyModifier = baseNVal;
-        basePVal = 0.67f; //set starting value here
-        prejudiceModifier = basePVal;
+        curNVal = notorietyModifier;
+        curPVal = prejudiceModifier;
     }
 
-    public void Update() //keeps the values linked
+    public void OnValidate() //keeps the values linked
     {
-        if (notorietyModifier != baseNVal) //notoriety, change prejudice
+        if (notorietyModifier != curNVal) //notoriety, change prejudice
         {
             prejudiceModifier = (1 - notorietyModifier); //adjust the prejudice modifier 
-            baseNVal = notorietyModifier;
-            basePVal = prejudiceModifier; //reset the base value to stop checking and adjusting
+            curNVal = notorietyModifier;
+            curPVal = prejudiceModifier; //reset the base value to stop checking and adjusting
         }
         
-        else if (prejudiceModifier != basePVal) //prejudice, change notoriety
+        else if (prejudiceModifier != curPVal) //prejudice, change notoriety
         {
             notorietyModifier = (1 - prejudiceModifier); //adjust the prejudice modifier 
-            basePVal = prejudiceModifier;
-            baseNVal = notorietyModifier; //reset the base value to stop checking and adjusting
+            curPVal = prejudiceModifier;
+            curNVal = notorietyModifier; //reset the base value to stop checking and adjusting
         } 
 
     }
