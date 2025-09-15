@@ -86,4 +86,14 @@ public class MasterButtonHandler : MonoBehaviour
         statsScreen.SetActive(false);
         optionsScreen.SetActive(true);
     }
+
+    public void CloseAllScreens()
+    {
+        bloodScreen.SetActive(false);
+        physicalScreen.SetActive(false);
+        behaviorScreen.SetActive(false);
+        psychologicalScreen.SetActive(false);
+        statsScreen.SetActive(false);
+        optionsScreen.SetActive(false);
+    }
 }

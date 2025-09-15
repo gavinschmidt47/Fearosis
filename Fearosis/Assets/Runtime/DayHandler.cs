@@ -31,6 +31,7 @@ public class DayHandler : MonoBehaviour
         fearScript = FindAnyObjectByType<Fear>();
         notorietyScript = FindAnyObjectByType<Notoriety>();
         prejudiceScript = FindAnyObjectByType<Prejudice>();
+        painScript = FindAnyObjectByType<Pain>();
         influenceScript = FindAnyObjectByType<Influence>();
         numInfectedToGain = 0;
     }

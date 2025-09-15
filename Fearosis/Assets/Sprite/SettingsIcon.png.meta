@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 87eee02c67a946e4c84deda826e9043f
+guid: 9f118a39912c56d43801df68e7fc6df7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5498938096895747478
-    second: SelectedMonsterButtonIcon_0
+      213: 5904627132653970092
+    second: SettingsIcon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SelectedMonsterButtonIcon_0
+      name: SettingsIcon_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1920
+        x: 39
+        y: 59
+        width: 1842
+        height: 1842
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 69565538017205c40800000000000000
-      internalID: 5498938096895747478
+      spriteID: ca229f4d71371f150800000000000000
+      internalID: 5904627132653970092
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SelectedMonsterButtonIcon_0: 5498938096895747478
+      SettingsIcon_0: 5904627132653970092
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
