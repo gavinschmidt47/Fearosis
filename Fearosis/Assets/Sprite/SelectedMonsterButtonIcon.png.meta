@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ef5ade973b89109449bbef1c07bbe79e
+guid: 3bca7912f5838ac469d4e9b487fb54a1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6497764349600443731
-    second: MonsterButtonIcon_0
+      213: 5498938096895747478
+    second: SelectedMonsterButtonIcon_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MonsterButtonIcon_0
+      name: SelectedMonsterButtonIcon_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 59
-        width: 1842
-        height: 1842
+        x: 16
+        y: 24
+        width: 768
+        height: 769
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35da124df32bc2a50800000000000000
-      internalID: 6497764349600443731
+      spriteID: 69565538017205c40800000000000000
+      internalID: 5498938096895747478
       vertices: []
       indices: 
       edges: []
@@ -161,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MonsterButtonIcon_0: 6497764349600443731
+      SelectedMonsterButtonIcon_0: 5498938096895747478
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

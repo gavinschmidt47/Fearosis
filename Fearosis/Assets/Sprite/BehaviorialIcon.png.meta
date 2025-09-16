@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: ef5ade973b89109449bbef1c07bbe79e
+guid: 77d30f3c21508e140b9df2f30495bd46
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6497764349600443731
-    second: MonsterButtonIcon_0
+      213: -3728502020173055493
+    second: BehaviorialIcon_0
+  - first:
+      213: -7095861048214987580
+    second: BehaviorialIcon_1
+  - first:
+      213: 2264809628651245365
+    second: BehaviorialIcon_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,30 +115,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MonsterButtonIcon_0
+      name: BehaviorialIcon_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 59
-        width: 1842
-        height: 1842
+        x: 179
+        y: 599
+        width: 1622
+        height: 1262
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35da124df32bc2a50800000000000000
-      internalID: 6497764349600443731
+      spriteID: bf93247ca23b14cc0800000000000000
+      internalID: -3728502020173055493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BehaviorialIcon_1
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 219
+        width: 442
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc5d9dd8ff668d90800000000000000
+      internalID: -7095861048214987580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BehaviorialIcon_2
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 79
+        width: 222
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f44a79b583e6f10800000000000000
+      internalID: 2264809628651245365
       vertices: []
       indices: 
       edges: []
@@ -161,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MonsterButtonIcon_0: 6497764349600443731
+      BehaviorialIcon_0: -3728502020173055493
+      BehaviorialIcon_1: -7095861048214987580
+      BehaviorialIcon_2: 2264809628651245365
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
