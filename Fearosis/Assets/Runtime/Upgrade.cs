@@ -15,8 +15,16 @@ public class Upgrade : MonoBehaviour
     private int prejudiceBuff;
     [SerializeField]
     private int painBuff;
+
+    private enum SourceType
+    {
+        Blood,
+        Physical,
+        Behavior,
+        Psychological
+    };
     [SerializeField]
-    private string source;
+    private SourceType source;
 
     private Fear fearScript;
     private Notoriety notorietyScript;
@@ -36,19 +44,19 @@ public class Upgrade : MonoBehaviour
     {
         if (fearBuff > 0)
         {
-            fearScript.GainPoints(fearBuff, source);
+            fearScript.GainPoints(fearBuff, ((byte)source).ToString());
         }
         if (notorietyBuff > 0)
         {
-            notorietyScript.GainPoints(notorietyBuff, source);
+            notorietyScript.GainPoints(notorietyBuff, ((byte)source).ToString());
         }
         if (prejudiceBuff > 0)
         {
-            prejudiceScript.GainPoints(prejudiceBuff, source);
+            prejudiceScript.GainPoints(prejudiceBuff, ((byte)source).ToString());
         }
         if (painBuff > 0)
         {
-            painScript.GainPoints(painBuff, source);
+            painScript.GainPoints(painBuff, ((byte)source).ToString());
         }
     }
 }

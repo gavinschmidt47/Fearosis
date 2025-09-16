@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Point : MonoBehaviour
 {
@@ -14,11 +15,13 @@ public class Point : MonoBehaviour
     private int numPointsFromPsychological = 0;
 
     //Event modifiers
-    private float bloodModifier = 1.0f;
-    private float physicalModifier = 1.0f;
-    private float behaviorModifier = 1.0f;
-    private float psychologicalModifier = 1.0f;
+    private float eventStatModifier = 1.0f;
 
+    private float eventBloodModifier = 1.0f;
+    private float eventPhysicalModifier = 1.0f;
+    private float eventBehaviorModifier = 1.0f;
+    private float eventPsychologicalModifier = 1.0f;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,6 +32,8 @@ public class Point : MonoBehaviour
 
         numPointsTotal = numPointsStart;
     }
+
+    
 
     public virtual void GainPoints(int pointsToGain, string source)
     {
@@ -53,10 +58,39 @@ public class Point : MonoBehaviour
         }
     }
 
+    public void AddStatModifier(float modifier)
+    {
+        //Add event modifier
+        eventStatModifier += modifier;
+    }
+
+    public void AddSourceModifier(float modifier, string source)
+    {
+        //Add event modifier to specific source
+        switch (source)
+        {
+            case "Blood":
+                eventBloodModifier += modifier;
+                break;
+            case "Physical":
+                eventPhysicalModifier += modifier;
+                break;
+            case "Behavior":
+                eventBehaviorModifier += modifier;
+                break;
+            case "Psychological":
+                eventPsychologicalModifier += modifier;
+                break;
+            default:
+                Debug.Log("Error: Invalid source for points.");
+                break;
+        }
+    }
+
     //Math to calculate total points with modifiers
     public int GetTotalPoints()
     {
-        numPointsTotal = numPointsStart + GetModifiedPoints(numPointsFromBlood, bloodModifier) + GetModifiedPoints(numPointsFromPhysical, physicalModifier) + GetModifiedPoints(numPointsFromBehavior, behaviorModifier) + GetModifiedPoints(numPointsFromPsychological, psychologicalModifier);
+        numPointsTotal = Mathf.RoundToInt((numPointsFromBlood * eventBloodModifier + numPointsFromPhysical * eventPhysicalModifier + numPointsFromBehavior * eventBehaviorModifier + numPointsFromPsychological * eventPsychologicalModifier) * eventStatModifier) + numPointsStart;
         return numPointsTotal;
     }
 

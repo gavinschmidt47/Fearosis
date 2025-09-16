@@ -5,8 +5,8 @@ public class Pain : Point
     [SerializeField]
     private Fear fear;
 
-    [Range(0f, 1f)]
-    public float fearModifier = 0.33f;
+    [Range(-1f, 0f)]
+    public float fearModifier = -0.33f;
 
     //Gain Pain points from various sources
     public override void GainPoints(int pointsToGain, string source)

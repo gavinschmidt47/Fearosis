@@ -990,6 +990,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "CameraMap",
+            "id": "8b3bd350-debe-4a12-8639-32267d231b38",
+            "actions": [
+                {
+                    "name": "Pan",
+                    "type": "Value",
+                    "id": "abf1203e-14b5-4d70-95f8-70f33e2baeb0",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "9eb5151d-6501-4703-aa88-b8afe6d14ca3",
+                    "path": "<Pointer>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse;Touch",
+                    "action": "Pan",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

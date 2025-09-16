@@ -6,8 +6,8 @@ public class Prejudice : Point
     private Pain pain;
 
     //Portion of Prejudice points to send to Pain
-    [Range(-1f, 0f)]
-    public float painModifier = -0.33f;
+    [Range(0f, 1f)]
+    public float painModifier = 0.33f;
 
     //Gain Prejudice points from various sources
     public override void GainPoints(int pointsToGain, string source)

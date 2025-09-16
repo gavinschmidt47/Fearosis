@@ -8,41 +8,11 @@ public class Fear : Point
     [SerializeField]
     private Prejudice prejudice;
 
-    //Portion of Fear points to send to Notoriety and Prejudice
-    public float baseNVal; //base notoriety value
-    public float basePVal; //base prejudice value
-
+    //Percent of Fear points gained to send to Notoriety and Prejudice
     [Range(0f, 1f)]
     public float notorietyModifier;
-
     [Range(0f, 1f)]
     public float prejudiceModifier;
-
-    public void Start() //sets starting values for notoriety/prejudice
-    {
-        baseNVal = 0.33f; //set starting value here
-        notorietyModifier = baseNVal;
-        basePVal = 0.67f; //set starting value here
-        prejudiceModifier = basePVal;
-    }
-
-    public void Update() //keeps the values linked
-    {
-        if (notorietyModifier != baseNVal) //notoriety, change prejudice
-        {
-            prejudiceModifier = (1 - notorietyModifier); //adjust the prejudice modifier 
-            baseNVal = notorietyModifier;
-            basePVal = prejudiceModifier; //reset the base value to stop checking and adjusting
-        }
-        
-        else if (prejudiceModifier != basePVal) //prejudice, change notoriety
-        {
-            notorietyModifier = (1 - prejudiceModifier); //adjust the prejudice modifier 
-            basePVal = prejudiceModifier;
-            baseNVal = notorietyModifier; //reset the base value to stop checking and adjusting
-        } 
-
-    }
 
     //Gain Fear points from various sources
     public override void GainPoints(int pointsToGain, string source)
