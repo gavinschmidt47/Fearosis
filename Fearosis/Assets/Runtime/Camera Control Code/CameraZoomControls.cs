@@ -56,10 +56,10 @@ public class CameraZoomControls : MonoBehaviour
             cam.orthographicSize += zoomAmount;
             cam.orthographicSize = Mathf.Clamp(cam.orthographicSize, minZoom, maxZoom);
         }
-        else
-        {
-            cam.fieldOfView += zoomAmount;
-            cam.fieldOfView = Mathf.Clamp(cam.fieldOfView, minZoom, maxZoom);
-        }
+        //else
+        //{
+        //    cam.fieldOfView += zoomAmount;
+        //    cam.fieldOfView = Mathf.Clamp(cam.fieldOfView, minZoom, maxZoom);
+        //}
     }
 }
