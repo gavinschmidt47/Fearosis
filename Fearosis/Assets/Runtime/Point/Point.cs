@@ -32,29 +32,32 @@ public class Point : MonoBehaviour
 
         numPointsTotal = numPointsStart;
     }
-
     
-
     public virtual void GainPoints(int pointsToGain, string source)
     {
-        //Add to source-specific points
-        switch (source)
+        Debug.Log("Gaining " + pointsToGain + " points from " + source);
+
+        if (pointsToGain >= 0)
         {
-            case "Blood":
-                numPointsFromBlood += pointsToGain;
-                break;
-            case "Physical":
-                numPointsFromPhysical += pointsToGain;
-                break;
-            case "Behavior":
-                numPointsFromBehavior += pointsToGain;
-                break;
-            case "Psychological":
-                numPointsFromPsychological += pointsToGain;
-                break;
-            default:
-                Debug.Log("Error: Invalid source for points.");
-                break;
+            //Add to source-specific points
+            switch (source)
+            {
+                case "Blood":
+                    numPointsFromBlood += pointsToGain;
+                    break;
+                case "Physical":
+                    numPointsFromPhysical += pointsToGain;
+                    break;
+                case "Behavior":
+                    numPointsFromBehavior += pointsToGain;
+                    break;
+                case "Psychological":
+                    numPointsFromPsychological += pointsToGain;
+                    break;
+                default:
+                    Debug.Log("Error: Invalid source for points.");
+                    break;
+            }
         }
     }
 

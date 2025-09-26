@@ -4,19 +4,20 @@ using TMPro;
 
 public class StatUIHandler : MonoBehaviour
 {
-    //Sliders to show stats (Will likely be replaced)
+    //UI Text elements for stats
     [SerializeField]
-    private Slider fearSlider;
+    private TextMeshProUGUI populationText;
     [SerializeField]
-    private Slider notorietySlider;
+    private TextMeshProUGUI infectedText;
     [SerializeField]
-    private Slider prejudiceSlider;
+    private TextMeshProUGUI fearText;
     [SerializeField]
-    private Slider painSlider;
+    private TextMeshProUGUI notorietyText;
     [SerializeField]
-    private TextMeshProUGUI infectionText;
-
-
+    private TextMeshProUGUI prejudiceText;
+    [SerializeField]
+    private TextMeshProUGUI painText;
+    
     //Stat objects
     private Fear fear;
     private Notoriety notoriety;
@@ -37,13 +38,15 @@ public class StatUIHandler : MonoBehaviour
 
     private void OnEnable()
     {
+        //Set population text
+        populationText.text = infection.population.ToString();
+        //Set infected text
+        infectedText.text = $"{infection.infected} / {infection.population}";
         //Set the sliders to current points
-        fearSlider.value = fear.GetTotalPoints();
-        notorietySlider.value = notoriety.GetTotalPoints();
-        prejudiceSlider.value = prejudice.GetTotalPoints();
-        painSlider.value = pain.GetTotalPoints();
+        fearText.text = fear.GetTotalPoints().ToString();
+        notorietyText.text = notoriety.GetTotalPoints().ToString();
+        prejudiceText.text = prejudice.GetTotalPoints().ToString();
+        painText.text = pain.GetTotalPoints().ToString();
 
-        //Set infection text
-        infectionText.text = $"{infection.infected} / {infection.population}";
     }
 }

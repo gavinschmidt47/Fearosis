@@ -9,6 +9,8 @@ public class Upgrade : MonoBehaviour
     private string upgradeName;
     [SerializeField]
     private string upgradeDescription;
+    [SerializeField]
+    private int upgradeCost;
 
     [Header("Add prerequisite upgrades (if applicable)")]
     public GameObject[] prerequisiteUpgrades;
@@ -40,6 +42,7 @@ public class Upgrade : MonoBehaviour
     private Notoriety notorietyScript;
     private Prejudice prejudiceScript;
     private Pain painScript;
+    private Influence influenceScript;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -48,6 +51,7 @@ public class Upgrade : MonoBehaviour
         notorietyScript = FindAnyObjectByType<Notoriety>();
         prejudiceScript = FindAnyObjectByType<Prejudice>();
         painScript = FindAnyObjectByType<Pain>();
+        influenceScript = FindAnyObjectByType<Influence>();
 
         //note: this will work only if the postrequisite remains enabled, with only the button being disabled and such
         //if the object has prerequisites it will be added as a listener
@@ -59,10 +63,14 @@ public class Upgrade : MonoBehaviour
                 prereqStatus.upgradePurchased += this.CheckPrerequisites;
             }
         }//if none it carries on
+        else
+        {
+            //code for button + light up
+        }
         
     }
 
-    void onDisable()
+    void OnDisable()
     {
         if (prerequisiteUpgrades != null)
         {
@@ -76,33 +84,43 @@ public class Upgrade : MonoBehaviour
 
     public void ApplyUpgrade()
     {
+        Debug.Log("Applying upgrade: " + upgradeName);
         if (fearBuff > 0)
         {
-            fearScript.GainPoints(fearBuff, ((byte)source).ToString());
+            Debug.Log("Gaining fear points: " + fearBuff);
+            fearScript.GainPoints(fearBuff, source.ToString());
         }
         if (notorietyBuff > 0)
         {
-            notorietyScript.GainPoints(notorietyBuff, ((byte)source).ToString());
+            Debug.Log("Gaining notoriety points: " + notorietyBuff);
+            notorietyScript.GainPoints(notorietyBuff, source.ToString());
         }
         if (prejudiceBuff > 0)
         {
-            prejudiceScript.GainPoints(prejudiceBuff, ((byte)source).ToString());
+            Debug.Log("Gaining prejudice points: " + prejudiceBuff);
+            prejudiceScript.GainPoints(prejudiceBuff, source.ToString());
         }
         if (painBuff > 0)
         {
-            painScript.GainPoints(painBuff, ((byte)source).ToString());
+            Debug.Log("Gaining pain points: " + painBuff);
+            painScript.GainPoints(painBuff, source.ToString());
         }
     }
 
     //primary function associated with button
-    private void Purchase() 
+    public void Purchase()
     {
-        isPurchased = true;
-        if (isPurchased == true)
+        if (!isPurchased && influenceScript.influencePoints >= upgradeCost)
         {
+            influenceScript.influencePoints -= upgradeCost;
+
+            isPurchased = true;
+            Debug.Log(upgradeName + " purchased!");
             upgradePurchased?.Invoke();
+
+            ApplyUpgrade();
+            //code for button + light up
         }
-        //to test just add the if to the start function and manually alter the bool
     }
 
     //this is the function postrequisite Upgrades will use
@@ -133,7 +151,5 @@ public class Upgrade : MonoBehaviour
         }
 
     }
-
-
 }
 

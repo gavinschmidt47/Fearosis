@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Event : MonoBehaviour
 {
@@ -9,6 +11,18 @@ public class Event : MonoBehaviour
     private string eventDescription;
     [SerializeField]
     private float modBuff;
+    [SerializeField]
+    private Sprite eventSprite;
+
+    //UI elements
+    [SerializeField]
+    private GameObject eventUI;
+    [SerializeField]
+    private TextMeshProUGUI eventNameText;
+    [SerializeField]
+    private TextMeshProUGUI eventDescriptionText;
+    [SerializeField]
+    private Image eventImage;
 
     //Does the event target a specific source or stat. Both will target a specific stat from a specific source
     [HideInInspector]
@@ -44,7 +58,7 @@ public class Event : MonoBehaviour
     private Notoriety notorietyScript;
     private Prejudice prejudiceScript;
     private Pain painScript;
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -136,5 +150,18 @@ public class Event : MonoBehaviour
                     break;
             }
         }
+
+        //Update UI elements using cached references
+        if (eventUI != null && eventNameText != null && eventDescriptionText != null && eventImage != null)
+        {
+            eventNameText.text = eventName;
+            eventDescriptionText.text = eventDescription;
+            eventImage.sprite = eventSprite;
+        }
+        else
+        {
+            Debug.LogWarning("UI references are null. Make sure Event Panel exists in the scene.");
+        }
+        
     }
 }

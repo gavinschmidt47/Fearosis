@@ -8,6 +8,12 @@ public class DayHandler : MonoBehaviour
     private float infectionRate = 1.0f;
     [SerializeField]
     private float populationInfluenceModifier = 1.0f;
+    [SerializeField]
+    private int hunterThreshold = 15;
+    [SerializeField]
+    private int huntersPerThreshold = 1;
+    [SerializeField]
+    private int painThreshold = 20;
 
     //References to other scripts
     private Infection infectionScript;
@@ -42,6 +48,7 @@ public class DayHandler : MonoBehaviour
         int numFear = fearScript.GetTotalPoints();
         int numNotoriety = notorietyScript.GetTotalPoints();
         int numPrejudice = prejudiceScript.GetTotalPoints();
+        int numPain = painScript.GetTotalPoints();
         int instability = Mathf.Abs(numNotoriety - numPrejudice);
 
         //Calculate new infections
@@ -50,8 +57,16 @@ public class DayHandler : MonoBehaviour
         //Update infection script
         infectionScript.AddInfected(numInfectedToGain);
 
+        //Calculate hunter kills
+        infectionScript.infected -= infectionScript.hunters;
+
+        //Calculate pain kills
+        if (numPain >= painThreshold)
+        {
+            infectionScript.infected -= numPain - painThreshold;
+        }
+
         //Influence logic
-        int numPain = painScript.GetTotalPoints();
         int populationModifiedInfectionInfluence = Mathf.RoundToInt(numInfectedToGain / populationInfluenceModifier);
         // Ensure at least 1 influence is gained
         if (populationModifiedInfectionInfluence < 1)
@@ -59,7 +74,14 @@ public class DayHandler : MonoBehaviour
             populationModifiedInfectionInfluence = 1;
         }
         numInfluenceToGain = Mathf.RoundToInt(numPain * (numInfectedToGain / populationInfluenceModifier) * numNotoriety);
-        influenceScript.AddInfluence(numInfluenceToGain);
+        influenceScript.influencePoints += numInfluenceToGain;
+
+        //Hunter logic
+        if (instability > hunterThreshold)
+        {
+            int numHuntersToAdd = instability * huntersPerThreshold;
+            infectionScript.hunters += numHuntersToAdd;
+        }
 
         //Call day start event
         dayStartEvent.Invoke();
