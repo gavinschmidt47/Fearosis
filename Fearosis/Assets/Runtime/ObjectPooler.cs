@@ -11,7 +11,7 @@ public class ObjectPooler : MonoBehaviour
     public Infection infectedTracker;
 
    
-    void MakePool()
+    public void MakePool()
     {
         GameObject tempObj;
 
