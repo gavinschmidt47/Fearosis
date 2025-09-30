@@ -14,6 +14,14 @@ public class ObjectPooler : MonoBehaviour
     public void MakePool()
     {
         GameObject tempObj;
+        if(dayPool.Count > 0)
+        {
+            dayPool.Clear();
+        }
+        if(nightPool.Count > 0)
+        {
+            nightPool.Clear();
+        }
 
         for (int i = 0; i < (infectedTracker.population - infectedTracker.infected); i++)
         {
