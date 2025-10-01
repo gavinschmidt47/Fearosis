@@ -23,7 +23,7 @@ public class StatUIHandler : MonoBehaviour
     private Notoriety notoriety;
     private Prejudice prejudice;
     private Pain pain;
-    private Infection infection;
+    private FullGameStats fullGameStatsScript;
 
     private void Awake()
     {
@@ -32,16 +32,16 @@ public class StatUIHandler : MonoBehaviour
         notoriety = FindAnyObjectByType<Notoriety>();
         prejudice = FindAnyObjectByType<Prejudice>();
         pain = FindAnyObjectByType<Pain>();
-        infection = FindAnyObjectByType<Infection>();
+        fullGameStatsScript = FindAnyObjectByType<FullGameStats>();
     }
 
 
     private void OnEnable()
     {
         //Set population text
-        populationText.text = infection.population.ToString();
+        populationText.text = fullGameStatsScript.population.ToString();
         //Set infected text
-        infectedText.text = $"{infection.infected} / {infection.population}";
+        infectedText.text = $"{fullGameStatsScript.infected} / {fullGameStatsScript.population}";
         //Set the sliders to current points
         fearText.text = fear.GetTotalPoints().ToString();
         notorietyText.text = notoriety.GetTotalPoints().ToString();

@@ -1,10 +1,11 @@
 using UnityEngine;
 
-public class Infection : MonoBehaviour
+public class FullGameStats : MonoBehaviour
 {
     public int infected;
     public int population;
     public int hunters;
+    public int round = 0;
 
     public void AddInfected(int amount)
     {

@@ -3,17 +3,31 @@ using System.Collections.Generic;
 
 public class EventHandler : MonoBehaviour
 {
+    private FullGameStats fullGameStatsScript;
     private List<Event> unusedEvents;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         unusedEvents = new List<Event>(GetComponentsInChildren<Event>());
+        fullGameStatsScript = FindAnyObjectByType<FullGameStats>();
     }
 
     public void PickEvent()
     {
-        //Pick random event from unusedEvents array
+        int eventsChecked = 0;
         int eventIndex = Random.Range(0, unusedEvents.Count);
+
+        //Pick random event from unusedEvents array and reshuffle if it can't trigger
+        while (!unusedEvents[eventIndex].CanEventTrigger(fullGameStatsScript.round))
+        {
+            if (eventsChecked >= unusedEvents.Count)
+            {
+                unusedEvents = new List<Event>(GetComponentsInChildren<Event>());
+                break;
+            }
+            eventIndex = Random.Range(0, unusedEvents.Count);
+            eventsChecked++;
+        }
         unusedEvents[eventIndex].ApplyEvent();
 
         //Remove event from unusedEvents array

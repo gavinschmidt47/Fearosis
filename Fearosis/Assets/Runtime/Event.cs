@@ -13,6 +13,8 @@ public class Event : MonoBehaviour
     private float modBuff;
     [SerializeField]
     private Sprite eventSprite;
+    [SerializeField]
+    private int minRound;
 
     //UI elements
     [SerializeField]
@@ -67,6 +69,12 @@ public class Event : MonoBehaviour
         notorietyScript = Object.FindAnyObjectByType<Notoriety>();
         prejudiceScript = Object.FindAnyObjectByType<Prejudice>();
         painScript = Object.FindAnyObjectByType<Pain>();
+    }
+    
+    public bool CanEventTrigger(int currentRound)
+    {
+        //Check if the event can trigger based on the current round
+        return currentRound >= minRound;
     }
 
     // Update is called once per frame
@@ -162,6 +170,6 @@ public class Event : MonoBehaviour
         {
             Debug.LogWarning("UI references are null. Make sure Event Panel exists in the scene.");
         }
-        
+
     }
 }

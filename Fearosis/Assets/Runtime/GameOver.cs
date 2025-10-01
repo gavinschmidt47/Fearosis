@@ -2,17 +2,17 @@ using UnityEngine;
 
 public class GameOver : MonoBehaviour
 {
-    private Infection infectionScript;
+    private FullGameStats fullGameStatsScript;
 
     public void CheckGameOver()
     {
-        infectionScript = FindAnyObjectByType<Infection>();
-        
-        if (infectionScript.infected >= infectionScript.population)
+        fullGameStatsScript = FindAnyObjectByType<FullGameStats>();
+
+        if (fullGameStatsScript.infected >= fullGameStatsScript.population)
         {
             //WIN
         }
-        if (infectionScript.infected <= 0)
+        if (fullGameStatsScript.infected <= 0)
         {
             //LOSE
         }

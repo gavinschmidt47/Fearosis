@@ -16,12 +16,12 @@ public class DayHandler : MonoBehaviour
     private int painThreshold = 20;
 
     //References to other scripts
-    private Infection infectionScript;
     private Fear fearScript;
     private Notoriety notorietyScript;
     private Prejudice prejudiceScript;
     private Pain painScript;
     private Influence influenceScript;
+    private FullGameStats fullGameStatsScript;
 
     //Day-specific variables
     private int numInfectedToGain;
@@ -33,12 +33,12 @@ public class DayHandler : MonoBehaviour
     public void Start()
     {
         //Initialize references and variables
-        infectionScript = FindAnyObjectByType<Infection>();
         fearScript = FindAnyObjectByType<Fear>();
         notorietyScript = FindAnyObjectByType<Notoriety>();
         prejudiceScript = FindAnyObjectByType<Prejudice>();
         painScript = FindAnyObjectByType<Pain>();
         influenceScript = FindAnyObjectByType<Influence>();
+        fullGameStatsScript = FindAnyObjectByType<FullGameStats>();
         numInfectedToGain = 0;
     }
 
@@ -54,16 +54,16 @@ public class DayHandler : MonoBehaviour
         //Calculate new infections
         numInfectedToGain += Mathf.RoundToInt(numFear + Random.Range(numFear - instability, numFear + instability) * infectionRate);
 
-        //Update infection script
-        infectionScript.AddInfected(numInfectedToGain);
+        //Update full game stats script
+        fullGameStatsScript.AddInfected(numInfectedToGain);
 
         //Calculate hunter kills
-        infectionScript.infected -= infectionScript.hunters;
+        fullGameStatsScript.hunters -= fullGameStatsScript.hunters;
 
         //Calculate pain kills
         if (numPain >= painThreshold)
         {
-            infectionScript.infected -= numPain - painThreshold;
+            fullGameStatsScript.infected -= numPain - painThreshold;
         }
 
         //Influence logic
@@ -80,7 +80,7 @@ public class DayHandler : MonoBehaviour
         if (instability > hunterThreshold)
         {
             int numHuntersToAdd = instability * huntersPerThreshold;
-            infectionScript.hunters += numHuntersToAdd;
+            fullGameStatsScript.hunters += numHuntersToAdd;
         }
 
         //Call day start event

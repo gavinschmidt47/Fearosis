@@ -8,7 +8,7 @@ public class ObjectPooler : MonoBehaviour
 
     public GameObject dayCharacter;
     public GameObject nightCharacter;
-    public Infection infectedTracker;
+    public FullGameStats fullGameStatsScript;
 
    
     public void MakePool()
@@ -23,14 +23,14 @@ public class ObjectPooler : MonoBehaviour
             nightPool.Clear();
         }
 
-        for (int i = 0; i < (infectedTracker.population - infectedTracker.infected); i++)
+        for (int i = 0; i < (fullGameStatsScript.population - fullGameStatsScript.infected); i++)
         {
             tempObj = Instantiate(dayCharacter);
             tempObj.SetActive(false);
             dayPool.Enqueue(tempObj);
         }
 
-        for (int i = 0; i < (infectedTracker.infected); i++)
+        for (int i = 0; i < (fullGameStatsScript.infected); i++)
         {
             tempObj = Instantiate(nightCharacter);
             tempObj.SetActive(false);
