@@ -22,6 +22,7 @@ public class EventHandler : MonoBehaviour
         {
             if (eventsChecked >= unusedEvents.Count)
             {
+                unusedEvents.Clear();
                 unusedEvents = new List<Event>(GetComponentsInChildren<Event>());
                 break;
             }

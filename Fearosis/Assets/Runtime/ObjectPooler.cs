@@ -30,7 +30,7 @@ public class ObjectPooler : MonoBehaviour
             dayPool.Enqueue(tempObj);
         }
 
-        for (int i = 0; i < (fullGameStatsScript.infected); i++)
+        for (int i = 0; i < fullGameStatsScript.infected; i++)
         {
             tempObj = Instantiate(nightCharacter);
             tempObj.SetActive(false);
