@@ -6,19 +6,26 @@ public class ObjectPooler : MonoBehaviour
     private Queue<GameObject> dayPool = new Queue<GameObject>();
     private Queue<GameObject> nightPool = new Queue<GameObject>();
 
-    public GameObject dayCharacter;
-    public GameObject nightCharacter;
-    public FullGameStats fullGameStatsScript;
+    [SerializeField]
+    private GameObject dayCharacter;
+    [SerializeField]
+    private GameObject nightCharacter;
+    
+    private FullGameStats fullGameStatsScript;
 
-   
+    void Start()
+    {
+        fullGameStatsScript = FindAnyObjectByType<FullGameStats>();
+    }
+
     public void MakePool()
     {
         GameObject tempObj;
-        if(dayPool.Count > 0)
+        if (dayPool.Count > 0)
         {
             dayPool.Clear();
         }
-        if(nightPool.Count > 0)
+        if (nightPool.Count > 0)
         {
             nightPool.Clear();
         }
