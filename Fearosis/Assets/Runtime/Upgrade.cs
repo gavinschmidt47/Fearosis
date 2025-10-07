@@ -5,18 +5,24 @@ using System;
 
 public class Upgrade : MonoBehaviour
 {
-    [SerializeField]
-    private string upgradeName;
-    [SerializeField]
-    private string upgradeDescription;
-    [SerializeField]
-    private int upgradeCost;
+    public string upgradeName;
+    public string upgradeDescription;
+    public int upgradeCost;
 
     [Header("Add prerequisite upgrades (if applicable)")]
     public GameObject[] prerequisiteUpgrades;
     [SerializeField]
     private bool isPurchased = false;
+    [HideInInspector]
+    public int unavailableAlpha = 0;
+    [HideInInspector]
+    public int availableAlpha = 255;
+    [HideInInspector]
+    public int purchasedAlpha = 90;
+    [HideInInspector]
+    public int currentAlpha;
     public event Action upgradePurchased;
+    public event Action upgradeUnlocked;
 
     [Header("Add value you wish to buff")]
     [SerializeField]
@@ -43,31 +49,36 @@ public class Upgrade : MonoBehaviour
     private Prejudice prejudiceScript;
     private Pain painScript;
     private Influence influenceScript;
+    private InfectedUIHandler infectedUIHandler;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         fearScript = FindAnyObjectByType<Fear>();
         notorietyScript = FindAnyObjectByType<Notoriety>();
         prejudiceScript = FindAnyObjectByType<Prejudice>();
         painScript = FindAnyObjectByType<Pain>();
         influenceScript = FindAnyObjectByType<Influence>();
+        infectedUIHandler = FindAnyObjectByType<InfectedUIHandler>();
 
         //note: this will work only if the postrequisite remains enabled, with only the button being disabled and such
         //if the object has prerequisites it will be added as a listener
-        if (prerequisiteUpgrades != null)
+        if (prerequisiteUpgrades.Length > 0)
         {
             foreach (GameObject prereq in prerequisiteUpgrades)
             {
                 Upgrade prereqStatus = prereq.GetComponent<Upgrade>();
                 prereqStatus.upgradePurchased += this.CheckPrerequisites;
+
+                currentAlpha = unavailableAlpha;
             }
         }//if none it carries on
         else
         {
-            //code for button + light up
+            currentAlpha = availableAlpha;
         }
-        
+
+        upgradePurchased += infectedUIHandler.UpdateInfluenceText;
     }
 
     void OnDisable()
@@ -116,10 +127,10 @@ public class Upgrade : MonoBehaviour
 
             isPurchased = true;
             Debug.Log(upgradeName + " purchased!");
+            currentAlpha = purchasedAlpha;
             upgradePurchased?.Invoke();
 
             ApplyUpgrade();
-            //code for button + light up
         }
     }
 
@@ -142,12 +153,13 @@ public class Upgrade : MonoBehaviour
                     }
             }
         }
-        
+
         //only fully works if all prereqs are enabled
-        if(unlockable) 
+        if (unlockable)
         {
             Debug.Log("Unlocking");
-            //code for button + light up
+            currentAlpha = availableAlpha;
+            upgradeUnlocked?.Invoke();
         }
 
     }

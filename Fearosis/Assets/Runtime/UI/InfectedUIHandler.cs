@@ -13,16 +13,6 @@ public class InfectedUIHandler : MonoBehaviour
         // Initialize influence text
         influenceText = GetComponent<TextMeshProUGUI>();
 
-        Upgrade[] upgrades = FindObjectsByType<Upgrade>(FindObjectsSortMode.None);
-        if (upgrades != null)
-        {
-            foreach (Upgrade upgrade in upgrades)
-            {
-            if (upgrade != null)
-                upgrade.upgradePurchased += UpdateInfluenceText;
-            }
-        }
-
         influenceText.text = influenceScript.influencePoints.ToString();
     }
 
