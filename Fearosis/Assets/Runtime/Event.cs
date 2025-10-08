@@ -4,26 +4,23 @@ using TMPro;
 
 public class Event : MonoBehaviour
 {
-    //Necessary event info
+    [Header("Event Properties")]
     [SerializeField]
     private string eventName;
     [SerializeField]
     private string eventDescription;
     [SerializeField]
     private float modBuff;
-    [SerializeField]
-    private Sprite eventSprite;
+    //[SerializeField]
+    //private Sprite eventSprite;
     [SerializeField]
     private int minRound;
 
-    //UI elements
+    [Header("UI Elements")]
     [SerializeField]
     private GameObject eventUI;
-    [SerializeField]
     private TextMeshProUGUI eventNameText;
-    [SerializeField]
     private TextMeshProUGUI eventDescriptionText;
-    [SerializeField]
     private Image eventImage;
 
     //Does the event target a specific source or stat. Both will target a specific stat from a specific source
@@ -60,6 +57,16 @@ public class Event : MonoBehaviour
     private Notoriety notorietyScript;
     private Prejudice prejudiceScript;
     private Pain painScript;
+
+    void Awake()
+    {
+        //Get references to UI elements
+        eventUI.SetActive(true); // Temporarily activate to find children
+        eventNameText = GameObject.FindGameObjectWithTag("Event Name").GetComponent<TextMeshProUGUI>();
+        eventDescriptionText = GameObject.FindGameObjectWithTag("Event Description").GetComponent<TextMeshProUGUI>();
+        //eventImage = GameObject.FindGameObjectWithTag("Event Image").GetComponent<Image>();
+        eventUI.SetActive(false);
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

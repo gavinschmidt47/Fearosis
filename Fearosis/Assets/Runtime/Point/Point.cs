@@ -8,6 +8,9 @@ public class Point : MonoBehaviour
     //Starting points from defining trait
     private int numPointsStart = 0;
 
+    //Points gained today
+    private int numPointsGainedToday = 0;
+
     //Points from modifiable sources
     private int numPointsFromBlood = 0;
     private int numPointsFromPhysical = 0;
@@ -21,7 +24,7 @@ public class Point : MonoBehaviour
     private float eventPhysicalModifier = 1.0f;
     private float eventBehaviorModifier = 1.0f;
     private float eventPsychologicalModifier = 1.0f;
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,10 +35,10 @@ public class Point : MonoBehaviour
 
         numPointsTotal = numPointsStart;
     }
-    
+
     public virtual void GainPoints(int pointsToGain, string source)
     {
-        Debug.Log("Gaining " + pointsToGain + " points from " + source);
+        numPointsGainedToday += pointsToGain;
 
         if (pointsToGain >= 0)
         {
@@ -101,5 +104,15 @@ public class Point : MonoBehaviour
     public int GetModifiedPoints(int basePoints, float modifier)
     {
         return Mathf.RoundToInt(basePoints * modifier);
+    }
+
+    public int GetPointsGainedToday()
+    {
+        return numPointsGainedToday;
+    }
+    
+    public void ErasePointsGainedToday()
+    {
+        numPointsGainedToday = 0;
     }
 }

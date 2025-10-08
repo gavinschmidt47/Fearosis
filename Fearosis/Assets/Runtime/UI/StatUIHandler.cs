@@ -10,6 +10,8 @@ public class StatUIHandler : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI infectedText;
     [SerializeField]
+    private TextMeshProUGUI deadText;
+    [SerializeField]
     private TextMeshProUGUI fearText;
     [SerializeField]
     private TextMeshProUGUI notorietyText;
@@ -39,14 +41,16 @@ public class StatUIHandler : MonoBehaviour
     private void OnEnable()
     {
         //Set population text
-        //populationText.text = fullGameStatsScript.population.ToString();
+        populationText.text = fullGameStatsScript.population.ToString();
         //Set infected text
-        //infectedText.text = $"{fullGameStatsScript.infected} / {fullGameStatsScript.population}";
-        //Set the sliders to current points
-        //fearText.text = fear.GetTotalPoints().ToString();
-        //notorietyText.text = notoriety.GetTotalPoints().ToString();
-       //prejudiceText.text = prejudice.GetTotalPoints().ToString();
-        //painText.text = pain.GetTotalPoints().ToString();
+        infectedText.text = $"{fullGameStatsScript.infected} / {fullGameStatsScript.population}";
+        //Set dead text
+        deadText.text = fullGameStatsScript.dead.ToString();
+        //Set the text to current points
+        fearText.text = fear.GetTotalPoints().ToString();
+        notorietyText.text = notoriety.GetTotalPoints().ToString();
+        prejudiceText.text = prejudice.GetTotalPoints().ToString();
+        painText.text = pain.GetTotalPoints().ToString();
 
     }
 }

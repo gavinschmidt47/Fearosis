@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Event Panel
+  - Event Name
+  - Event Description
+  - Event Image
   layers:
   - Default
   - TransparentFX

@@ -52,28 +52,25 @@ public class DayHandler : MonoBehaviour
         int instability = Mathf.Abs(numNotoriety - numPrejudice);
 
         //Calculate new infections
-        numInfectedToGain += Mathf.RoundToInt(numFear + Random.Range(numFear - instability, numFear + instability) * infectionRate);
+        numInfectedToGain += Mathf.RoundToInt(numFear + Random.Range(Mathf.Max(numFear - instability, 0), numFear + instability) * infectionRate);
 
         //Update full game stats script
+        Debug.Log($"Infected to gain: {numInfectedToGain}");
         fullGameStatsScript.AddInfected(numInfectedToGain);
 
         //Calculate hunter kills
-        fullGameStatsScript.hunters -= fullGameStatsScript.hunters;
+        fullGameStatsScript.KillInfected(fullGameStatsScript.hunters);
 
         //Calculate pain kills
         if (numPain >= painThreshold)
         {
-            fullGameStatsScript.infected -= numPain - painThreshold;
+            fullGameStatsScript.KillInfected(numPain - painThreshold);
         }
 
         //Influence logic
-        int populationModifiedInfectionInfluence = Mathf.RoundToInt(numInfectedToGain / populationInfluenceModifier);
-        // Ensure at least 1 influence is gained
-        if (populationModifiedInfectionInfluence < 1)
-        {
-            populationModifiedInfectionInfluence = 1;
-        }
-        numInfluenceToGain = Mathf.RoundToInt(numPain * (numInfectedToGain / populationInfluenceModifier) * numNotoriety);
+        int populationModifiedInfectionInfluence = Mathf.Max(Mathf.RoundToInt(numInfectedToGain / populationInfluenceModifier), 1);
+        Debug.Log($"Population modified infection influence: {populationModifiedInfectionInfluence}");
+        numInfluenceToGain = Mathf.Max(Mathf.RoundToInt(painScript.GetPointsGainedToday() * populationModifiedInfectionInfluence * Mathf.Max(notorietyScript.GetPointsGainedToday(), 1)), 5);
         influenceScript.influencePoints += numInfluenceToGain;
 
         //Hunter logic
