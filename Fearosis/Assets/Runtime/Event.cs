@@ -160,16 +160,20 @@ public class Event : MonoBehaviour
         }
 
         //Update UI elements using cached references
-        if (eventUI != null && eventNameText != null && eventDescriptionText != null && eventImage != null)
+        if (eventNameText != null && eventDescriptionText != null)
         {
             eventNameText.text = eventName;
             eventDescriptionText.text = eventDescription;
-            eventImage.sprite = eventSprite;
+            //eventImage.sprite = eventSprite;
         }
         else
         {
             Debug.LogWarning("UI references are null. Make sure Event Panel exists in the scene.");
         }
 
+        Debug.Log("eventNameText: " + (eventNameText != null ? eventNameText.name : "null"));
+        Debug.Log("eventDescriptionText: " + (eventDescriptionText != null ? eventDescriptionText.name : "null"));
     }
 }
+
+// eventUI != null && eventImage != null

@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-public class ObjectPooler : MonoBehaviour
+/*public class ObjectPooler : MonoBehaviour
 {
     private Queue<GameObject> dayPool = new Queue<GameObject>();
     private Queue<GameObject> nightPool = new Queue<GameObject>();
@@ -82,3 +82,5 @@ public class ObjectPooler : MonoBehaviour
         
     }
 }
+
+*/

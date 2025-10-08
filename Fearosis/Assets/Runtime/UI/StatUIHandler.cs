@@ -39,14 +39,14 @@ public class StatUIHandler : MonoBehaviour
     private void OnEnable()
     {
         //Set population text
-        populationText.text = fullGameStatsScript.population.ToString();
+        //populationText.text = fullGameStatsScript.population.ToString();
         //Set infected text
-        infectedText.text = $"{fullGameStatsScript.infected} / {fullGameStatsScript.population}";
+        //infectedText.text = $"{fullGameStatsScript.infected} / {fullGameStatsScript.population}";
         //Set the sliders to current points
-        fearText.text = fear.GetTotalPoints().ToString();
-        notorietyText.text = notoriety.GetTotalPoints().ToString();
-        prejudiceText.text = prejudice.GetTotalPoints().ToString();
-        painText.text = pain.GetTotalPoints().ToString();
+        //fearText.text = fear.GetTotalPoints().ToString();
+        //notorietyText.text = notoriety.GetTotalPoints().ToString();
+       //prejudiceText.text = prejudice.GetTotalPoints().ToString();
+        //painText.text = pain.GetTotalPoints().ToString();
 
     }
 }
