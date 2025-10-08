@@ -11089,8 +11089,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeName: An Economic Revolution
   upgradeDescription: Money is a feeble thing that yields no inherent value, yet
-    they continue to fight for it. It is the antithesis to man, and must be eradicated.
-    (++Fear ++Notoriety -Prejudice +Pain
+    they continue to fight for it. It is a disease that has spread across humanity
+    and must be eradicated. (++Fear ++Notoriety -Prejudice +Pain
   upgradeCost: 35
   prerequisiteUpgrades:
   - {fileID: 868727138}
