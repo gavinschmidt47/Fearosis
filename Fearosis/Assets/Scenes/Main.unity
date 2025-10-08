@@ -23744,6 +23744,7 @@ GameObject:
   - component: {fileID: 1993246791}
   - component: {fileID: 1993246790}
   - component: {fileID: 1993246789}
+  - component: {fileID: 1993246792}
   m_Layer: 5
   m_Name: AI Sprite
   m_TagString: Untagged
@@ -23765,9 +23766,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1006883766}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -370.9568, y: -108.96}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 226.04321, y: 172.04001}
   m_SizeDelta: {x: 214, y: 214}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1993246789
@@ -23778,7 +23779,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993246787}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 8315eb6d6091bc94bb48373d7d743455, type: 2}
   m_CullingMode: 0
@@ -23820,7 +23821,7 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_UseSpriteMesh: 1
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1993246791
 CanvasRenderer:
@@ -23830,6 +23831,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1993246787}
   m_CullTransparentMesh: 1
+--- !u!111 &1993246792
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1993246787}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: 8e8fa0d990989304592ceb6d10c579ff, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &2001062084
 GameObject:
   m_ObjectHideFlags: 0
