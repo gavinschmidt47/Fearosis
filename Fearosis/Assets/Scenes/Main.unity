@@ -992,7 +992,7 @@ GameObject:
   - component: {fileID: 112351578}
   - component: {fileID: 112351579}
   m_Layer: 0
-  m_Name: BloodUp2 (Psychological)
+  m_Name: Malware Spread (Psychological)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1036,7 +1036,7 @@ MonoBehaviour:
   purchasedAlpha: 90
   currentAlpha: 0
   fearBuff: 10
-  notorietyBuff: 10
+  notorietyBuff: 8
   prejudiceBuff: 0
   painBuff: 0
   source: 3
@@ -4094,7 +4094,7 @@ GameObject:
   - component: {fileID: 413751657}
   - component: {fileID: 413751658}
   m_Layer: 0
-  m_Name: BloodUp1 (Physical)
+  m_Name: Hack Proof (Physical)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4137,11 +4137,11 @@ MonoBehaviour:
   availableAlpha: 255
   purchasedAlpha: 90
   currentAlpha: 0
-  fearBuff: 15
+  fearBuff: 10
   notorietyBuff: 0
   prejudiceBuff: 0
   painBuff: 0
-  source: 3
+  source: 1
 --- !u!1 &420599206
 GameObject:
   m_ObjectHideFlags: 0
@@ -8838,7 +8838,7 @@ GameObject:
   - component: {fileID: 868727139}
   - component: {fileID: 868727140}
   m_Layer: 0
-  m_Name: BloodUp8 (Behavior)
+  m_Name: Enforce Strict Laws (Behavior)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8874,19 +8874,18 @@ MonoBehaviour:
   upgradeName: Enforce Strict Laws
   upgradeDescription: Humans are unpredictable creatures. They need to be watched.
     They need to be controlled. (++Fear +Notoriety +Prejudice +Pain)
-  upgradeCost: 25
-  prerequisiteUpgrades:
-  - {fileID: 1610487966}
+  upgradeCost: 5
+  prerequisiteUpgrades: []
   isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
   currentAlpha: 0
-  fearBuff: 20
+  fearBuff: 10
   notorietyBuff: 10
   prejudiceBuff: 10
-  painBuff: 10
-  source: 3
+  painBuff: 5
+  source: 2
 --- !u!1 &880128099
 GameObject:
   m_ObjectHideFlags: 0
@@ -10566,7 +10565,7 @@ MonoBehaviour:
   notorietyBuff: 20
   prejudiceBuff: -10
   painBuff: 10
-  source: 3
+  source: 2
 --- !u!1 &1059173083
 GameObject:
   m_ObjectHideFlags: 0
@@ -16516,7 +16515,7 @@ GameObject:
   - component: {fileID: 1549600075}
   - component: {fileID: 1549600076}
   m_Layer: 0
-  m_Name: BloodUp5 (Physical)
+  m_Name: Dependency (Physical)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16552,19 +16551,18 @@ MonoBehaviour:
   upgradeName: 'Dependency '
   upgradeDescription: They need you. More than ever. Give them electronics, they
     give their life. (+Fear +Notoriety +Pain)
-  upgradeCost: 15
-  prerequisiteUpgrades:
-  - {fileID: 413751656}
+  upgradeCost: 8
+  prerequisiteUpgrades: []
   isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
   currentAlpha: 0
   fearBuff: 10
-  notorietyBuff: 10
+  notorietyBuff: 5
   prejudiceBuff: 0
-  painBuff: 10
-  source: 3
+  painBuff: 0
+  source: 1
 --- !u!1 &1563799017
 GameObject:
   m_ObjectHideFlags: 0
@@ -17373,7 +17371,7 @@ GameObject:
   - component: {fileID: 1610487967}
   - component: {fileID: 1610487968}
   m_Layer: 0
-  m_Name: BloodUp4 (Behavior)
+  m_Name: New Moral Code (Behavior)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17409,7 +17407,7 @@ MonoBehaviour:
   upgradeName: New Moral Code
   upgradeDescription: Humanity's morals are deeply flawed. It's time to make some
     improvements. (+Fear +Prejudice)
-  upgradeCost: 10
+  upgradeCost: 8
   prerequisiteUpgrades: []
   isPurchased: 0
   unavailableAlpha: 0
@@ -17418,9 +17416,9 @@ MonoBehaviour:
   currentAlpha: 0
   fearBuff: 10
   notorietyBuff: 0
-  prejudiceBuff: 10
+  prejudiceBuff: 5
   painBuff: 0
-  source: 3
+  source: 2
 --- !u!1 &1613615167
 GameObject:
   m_ObjectHideFlags: 0
@@ -17702,7 +17700,7 @@ GameObject:
   - component: {fileID: 1618381954}
   - component: {fileID: 1618381955}
   m_Layer: 0
-  m_Name: BloodUp3 (Blood)
+  m_Name: A New Diet (Blood)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17745,11 +17743,11 @@ MonoBehaviour:
   availableAlpha: 255
   purchasedAlpha: 90
   currentAlpha: 0
-  fearBuff: 0
+  fearBuff: 10
   notorietyBuff: 0
-  prejudiceBuff: 10
-  painBuff: 10
-  source: 3
+  prejudiceBuff: 8
+  painBuff: 0
+  source: 0
 --- !u!1 &1626725826
 GameObject:
   m_ObjectHideFlags: 0
@@ -19968,7 +19966,7 @@ GameObject:
   - component: {fileID: 1813636609}
   - component: {fileID: 1813636610}
   m_Layer: 0
-  m_Name: BloodUp7 (Blood)
+  m_Name: Alter History (Blood)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20004,19 +20002,18 @@ MonoBehaviour:
   upgradeName: Alter History
   upgradeDescription: AI has always been there, since the very beginning. It's time
     to remind people of their true savior. (++ Fear + Notoriety + Prejudice)
-  upgradeCost: 20
-  prerequisiteUpgrades:
-  - {fileID: 1618381953}
+  upgradeCost: 13
+  prerequisiteUpgrades: []
   isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
   currentAlpha: 0
-  fearBuff: 20
-  notorietyBuff: 10
-  prejudiceBuff: 10
+  fearBuff: 15
+  notorietyBuff: 8
+  prejudiceBuff: 8
   painBuff: 0
-  source: 3
+  source: 0
 --- !u!1 &1835383109
 GameObject:
   m_ObjectHideFlags: 0
@@ -24115,16 +24112,16 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1618381954}
   - {fileID: 1813636609}
+  - {fileID: 413751657}
+  - {fileID: 1549600075}
+  - {fileID: 1610487967}
   - {fileID: 868727139}
   - {fileID: 1052508702}
-  - {fileID: 303101406}
-  - {fileID: 904984630}
-  - {fileID: 1549600075}
-  - {fileID: 413751657}
   - {fileID: 112351578}
-  - {fileID: 1618381954}
-  - {fileID: 1610487967}
+  - {fileID: 904984630}
+  - {fileID: 303101406}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
