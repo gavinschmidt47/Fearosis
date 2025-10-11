@@ -3,7 +3,14 @@ using UnityEngine.UI;
 using TMPro;
 
 public class Event : MonoBehaviour
-{
+{   
+    [Header("UI Elements")]
+    [SerializeField]
+    private GameObject eventUI;
+    private TextMeshProUGUI eventNameText;
+    private TextMeshProUGUI eventDescriptionText;
+    private Image eventImage;
+
     [Header("Event Properties")]
     [SerializeField]
     private string eventName;
@@ -15,13 +22,6 @@ public class Event : MonoBehaviour
     //private Sprite eventSprite;
     [SerializeField]
     private int minRound;
-
-    [Header("UI Elements")]
-    [SerializeField]
-    private GameObject eventUI;
-    private TextMeshProUGUI eventNameText;
-    private TextMeshProUGUI eventDescriptionText;
-    private Image eventImage;
 
     //Does the event target a specific source or stat. Both will target a specific stat from a specific source
     [HideInInspector]
