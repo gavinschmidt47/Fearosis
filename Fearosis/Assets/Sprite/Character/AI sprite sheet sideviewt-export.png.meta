@@ -178,52 +178,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AI sprite sheet sideviewt-export_0
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 65
-        width: 45
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 43421df0781037b40800000000000000
-      internalID: 5436690854763897908
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: AI sprite sheet sideviewt-export_1
       rect:
         serializedVersion: 2
-        x: 10
-        y: 65
-        width: 45
-        height: 62
+        x: 12
+        y: 69
+        width: 39
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,10 +207,10 @@ TextureImporter:
       name: AI sprite sheet sideviewt-export_4
       rect:
         serializedVersion: 2
-        x: 72
-        y: 65
-        width: 45
-        height: 62
+        x: 76
+        y: 64
+        width: 39
+        height: 63
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -264,10 +229,10 @@ TextureImporter:
       name: AI sprite sheet sideviewt-export_7
       rect:
         serializedVersion: 2
-        x: 138
-        y: 65
-        width: 45
-        height: 62
+        x: 141
+        y: 67
+        width: 39
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -286,10 +251,10 @@ TextureImporter:
       name: AI sprite sheet sideviewt-export_10
       rect:
         serializedVersion: 2
-        x: 200
-        y: 65
-        width: 45
-        height: 62
+        x: 204
+        y: 69
+        width: 39
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,10 +273,10 @@ TextureImporter:
       name: AI sprite sheet sideviewt-export_13
       rect:
         serializedVersion: 2
-        x: 9
-        y: 4
-        width: 45
-        height: 62
+        x: 11
+        y: 5
+        width: 39
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,10 +295,10 @@ TextureImporter:
       name: AI sprite sheet sideviewt-export_16
       rect:
         serializedVersion: 2
-        x: 72
-        y: 4
-        width: 45
-        height: 62
+        x: 75
+        y: 3
+        width: 39
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,10 +317,10 @@ TextureImporter:
       name: AI sprite sheet sideviewt-export_19
       rect:
         serializedVersion: 2
-        x: 134
-        y: 1
-        width: 48
-        height: 62
+        x: 140
+        y: 0
+        width: 39
+        height: 63
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,10 +339,10 @@ TextureImporter:
       name: AI sprite sheet sideviewt-export_22
       rect:
         serializedVersion: 2
-        x: 200
-        y: 2
-        width: 45
-        height: 62
+        x: 205
+        y: 5
+        width: 39
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,7 +361,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 08d223cd5f86d7a419e282aa1460dc1c
+    spriteID: fe9c1727bf918054c9782084851fc4e6
     internalID: 0
     vertices: []
     indices: 
