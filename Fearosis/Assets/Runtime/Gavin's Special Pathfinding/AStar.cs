@@ -9,8 +9,10 @@ public class AStar : MonoBehaviour
     public List<Node> FindPath(Vector2 startPos, Vector2 targetPos)
     {
         //Iniitialize start and target nodes
-        Node startNode = grid.GetNodeFromWorldPoint(startPos);
-        Node targetNode = grid.GetNodeFromWorldPoint(targetPos);
+        Node startNode = grid.GetClosestPoint(startPos);
+        Debug.Log("Start node: " + startNode.worldPosition);
+        Node targetNode = grid.GetClosestPoint(targetPos);
+        Debug.Log("Target node: " + targetNode.worldPosition);
 
         startNode.gCost = 0;
         startNode.hCost = (startNode.worldPosition - targetNode.worldPosition).sqrMagnitude;
@@ -23,7 +25,6 @@ public class AStar : MonoBehaviour
         //fCost = gCost(Distance from start) + hCost (Distance from target)
         while (openSet.Count > 0)
         {
-            Debug.Log("Open Set Count: " + openSet.Count);
             Node currentNode = openSet[0];
             if (openSet.Count > 1)
             {
@@ -45,16 +46,15 @@ public class AStar : MonoBehaviour
             //End condition
             if (currentNode == targetNode)
             {
-                Debug.Log("Path found!");
-                return RetracePath(startNode, targetNode);
+                Debug.Log("Path found with gcost: " + currentNode.gCost);
+                return RetracePath(startNode, currentNode);
             }
 
             //Check each neighbor of currentNode
             List<Node> neighbors = grid.GetNeighbors(currentNode);
-            Debug.Log("Current Node: " + currentNode.worldPosition + " has " + neighbors.Count + " neighbors.");
+            if (neighbors.Count == 0) continue;
             foreach (Node neighbor in neighbors)
             {
-                Debug.Log("Checking neighbor at: " + neighbor.worldPosition);
                 //Make sure neighbor was not checked
                 if (checkedSet.Contains(neighbor))
                 {
@@ -63,17 +63,13 @@ public class AStar : MonoBehaviour
 
                 //Calculate new gCost for neighbor
                 float newMovementCostToNeighbor = currentNode.gCost + (currentNode.worldPosition - neighbor.worldPosition).sqrMagnitude;
+                neighbor.gCost = newMovementCostToNeighbor;
+                neighbor.parent = currentNode;
+                neighbor.hCost = (neighbor.worldPosition - targetNode.worldPosition).sqrMagnitude;
 
-                //If new gCost is lower or neighbor is not in openSet, update costs and parent
-                if (newMovementCostToNeighbor < neighbor.gCost || !openSet.Contains(neighbor))
+                if (!openSet.Contains(neighbor) && !checkedSet.Contains(neighbor))
                 {
-                    neighbor.hCost = (neighbor.worldPosition - targetNode.worldPosition).sqrMagnitude;
-
-                    if (!openSet.Contains(neighbor))
-                    {
-                        Debug.Log("Adding neighbor at: " + neighbor.worldPosition + " to open set.");
-                        openSet.Add(neighbor);
-                    }
+                    openSet.Add(neighbor);
                 }
             }
         }
@@ -90,13 +86,11 @@ public class AStar : MonoBehaviour
             path.Add(currentNode);
             if (currentNode.parent == null)
             {
-                Debug.LogError("Current node has no parent, cannot retrace path.");
                 break;
             }
             currentNode = currentNode.parent;
         }
         path.Reverse();
-        Debug.Log("Path retraced: " + string.Join(" -> ", path.Select(n => n.worldPosition)));
         return path;
     }
 }

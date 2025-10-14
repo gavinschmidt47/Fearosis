@@ -22505,8 +22505,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a30834ce591cb534eaf24df6bea322d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnInterval: 1
-  maxSpawnInterval: 3
+  minSpawnInterval: 0.5
+  maxSpawnInterval: 2
 --- !u!1 &2013737054
 GameObject:
   m_ObjectHideFlags: 0

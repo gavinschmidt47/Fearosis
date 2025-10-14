@@ -6,8 +6,8 @@ public class PoissonDiscGrid : MonoBehaviour
     public static PoissonDiscGrid Instance { get; private set; }
 
     //Must be edited in code, not in the Unity Editor, as this is a static class
-    private int pointCount = 200;
-    private float checkRadius = 2.5f;
+    private int pointCount = 500;
+    private float checkRadius = 0.5f;
     private float cellSize = 0.1f;
 
     private Bounds mapBounds;
@@ -39,7 +39,6 @@ public class PoissonDiscGrid : MonoBehaviour
                 Random.Range(mapBounds.min.y, mapBounds.max.y)
             );
 
-            Debug.Log("Generated point: " + randomPoint);
             if (IsPointValid(new Node(randomPoint), points))
             {
                 points.Add(new Node(randomPoint));
@@ -92,12 +91,6 @@ public class PoissonDiscGrid : MonoBehaviour
         return closestNode;
     }
 
-    //Gets the node corresponding to a world position
-    public Node GetNodeFromWorldPoint(Vector2 worldPosition)
-    {
-        return GetClosestPoint(worldPosition);
-    }
-
     //Gets all neighbors within a certain radius
     public List<Node> GetNeighbors(Node node)
     {
@@ -129,7 +122,6 @@ public class PoissonDiscGrid : MonoBehaviour
     {
         if (validPoints.Count == 0)
         {
-            Debug.LogError("No valid points available.");
             return null;
         }
         int randomIndex = Random.Range(0, validPoints.Count);

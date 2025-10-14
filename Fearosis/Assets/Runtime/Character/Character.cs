@@ -10,6 +10,7 @@ public class Character : MonoBehaviour
     public float minWaitTime = 2f;
     public float maxWaitTime = 5f;
     public float arrivalThreshold = 0.1f;
+    public float deathTime = 30f; // Time in seconds before the character dies
 
     private bool firstTimeAwake = true;
     private Rigidbody2D rb;
@@ -37,7 +38,6 @@ public class Character : MonoBehaviour
         }
         else
         {
-            Debug.Log("Character enabled");
             StartCoroutine(ChooseRandomDestination());
         }
     }
@@ -57,11 +57,11 @@ public class Character : MonoBehaviour
         Vector2 randomDestination = destinations[randomIndex];
 
         //Find path using A* algorithm
-        Debug.Log("Finding path to: " + randomDestination);
         List<Node> path = aStar.FindPath(rb.position, randomDestination);
         if (path != null && path.Count > 0)
         {
             StartCoroutine(FollowPath(path));
+            StartCoroutine(DieAfterTime(deathTime)); // Character will die after specified deathTime
         }
         yield return null;
     }
@@ -69,7 +69,6 @@ public class Character : MonoBehaviour
     //Moves the character towards the next point in the path
     public void MoveTo(Vector2 nextPoint)
     {
-        Debug.Log("Moving to: " + nextPoint);
         Vector2 direction = (nextPoint - rb.position).normalized;
         animator.SetFloat("X", direction.x);
         animator.SetFloat("Y", direction.y);
@@ -79,6 +78,7 @@ public class Character : MonoBehaviour
     //Follows the calculated path to the destination
     private IEnumerator FollowPath(List<Node> path)
     {
+        Debug.Log("Following path with " + path.Count + " nodes.");
         //Goes point by point in the path
         foreach (var node in path)
         {
@@ -91,5 +91,12 @@ public class Character : MonoBehaviour
         }
         reachDestinationEvent?.Invoke();
         yield return null;
+    }
+
+    private IEnumerator DieAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Debug.Log("Character has died.");
+        gameObject.SetActive(false); // Deactivate the character
     }
 }
