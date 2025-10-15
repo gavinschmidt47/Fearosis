@@ -1848,6 +1848,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157298617}
   m_CullTransparentMesh: 1
+--- !u!1 &200797606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 200797608}
+  - component: {fileID: 200797607}
+  m_Layer: 0
+  m_Name: "Who\u2019s on the Menu?  (1)"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &200797607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200797606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Who's on the Menu?
+  upgradeDescription: Would you like the brain, the liver, or the left kidney? (+Fear,
+    +Prejudice,
+  upgradeCost: 15
+  prerequisiteUpgrades:
+  - {fileID: 2136004435}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 20
+  notorietyBuff: 0
+  prejudiceBuff: 10
+  painBuff: 10
+  source: 2
+--- !u!4 &200797608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200797606}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1229060260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &224296458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,6 +1975,65 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &227920738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 227920740}
+  - component: {fileID: 227920739}
+  m_Layer: 0
+  m_Name: Tighter Security
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &227920739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227920738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: A New Diet
+  upgradeDescription: Adds a special Ingredient to the meal, beginning the conversion.
+    (+Fear, +Prejudice)
+  upgradeCost: 10
+  prerequisiteUpgrades: []
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 10
+  notorietyBuff: 0
+  prejudiceBuff: 8
+  painBuff: 0
+  source: 0
+--- !u!4 &227920740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227920738}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1229060260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &228893839
 GameObject:
   m_ObjectHideFlags: 0
@@ -4844,12 +4963,73 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   expandedMonsterButton: {fileID: 1742899018}
-  bloodScreen: {fileID: 0}
-  physicalScreen: {fileID: 0}
-  behaviorScreen: {fileID: 0}
-  psychologicalScreen: {fileID: 0}
+  bloodScreen: {fileID: 1148559564}
+  physicalScreen: {fileID: 1761558299}
+  behaviorScreen: {fileID: 27207580}
+  psychologicalScreen: {fileID: 1962941418}
   statsScreen: {fileID: 1006883765}
   optionsScreen: {fileID: 1144604924}
+--- !u!1 &486934596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 486934597}
+  - component: {fileID: 486934598}
+  m_Layer: 0
+  m_Name: New People (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &486934597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486934596}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1229060260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &486934598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486934596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: New People
+  upgradeDescription: "Soulless husks that can\u2019t even think for themselves.
+    They have become the perfect fodder. (++Fear, +Pain) "
+  upgradeCost: 50
+  prerequisiteUpgrades:
+  - {fileID: 1841134373}
+  - {fileID: 1826247088}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 60
+  notorietyBuff: 0
+  prejudiceBuff: 0
+  painBuff: 15
+  source: 3
 --- !u!1 &494300537
 GameObject:
   m_ObjectHideFlags: 0
@@ -10002,6 +10182,66 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &990950448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 990950450}
+  - component: {fileID: 990950449}
+  m_Layer: 0
+  m_Name: Infectious Spread  (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &990950449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990950448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: 'Infectious Spread '
+  upgradeDescription: 'Idiocy spreads among the masses like a plague (+Fear +Notoriety
+    +Prejudice) '
+  upgradeCost: 25
+  prerequisiteUpgrades:
+  - {fileID: 1079254851}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 22
+  notorietyBuff: 15
+  prejudiceBuff: 15
+  painBuff: 0
+  source: 3
+--- !u!4 &990950450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990950448}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1229060260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &998885490
 GameObject:
   m_ObjectHideFlags: 0
@@ -10898,6 +11138,65 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.1738572, y: 1.8849034}
   m_EdgeRadius: 0
+--- !u!1 &1079254851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1079254853}
+  - component: {fileID: 1079254852}
+  m_Layer: 0
+  m_Name: An Air of Confusion  (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1079254852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079254851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: ' An Air of Confusion '
+  upgradeDescription: "Some say that chemicals in the air are making people dumber.
+    Maybe they\u2019re right. (+Fear, +Prejudice +Notoriety) "
+  upgradeCost: 18
+  prerequisiteUpgrades: []
+  isPurchased: 1
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 15
+  notorietyBuff: 8
+  prejudiceBuff: 8
+  painBuff: 0
+  source: 2
+--- !u!4 &1079254853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079254851}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1229060260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1088786269
 GameObject:
   m_ObjectHideFlags: 0
@@ -10995,8 +11294,8 @@ RectTransform:
   - {fileID: 259969703}
   - {fileID: 1006883766}
   - {fileID: 1148559565}
-  - {fileID: 27207581}
   - {fileID: 1761558300}
+  - {fileID: 27207581}
   - {fileID: 1962941419}
   - {fileID: 1144604925}
   - {fileID: 1742899019}
@@ -11738,6 +12037,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1127251822}
   m_CullTransparentMesh: 1
+--- !u!1 &1127384558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1127384559}
+  m_Layer: 0
+  m_Name: Psychological Upgrades
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1127384559
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127384558}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2134573951}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1144604924
 GameObject:
   m_ObjectHideFlags: 0
@@ -12192,6 +12522,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184960067}
   m_CullTransparentMesh: 1
+--- !u!1 &1193775890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1193775891}
+  m_Layer: 0
+  m_Name: Physical Upgrades
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1193775891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193775890}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2134573951}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1198125191
 GameObject:
   m_ObjectHideFlags: 0
@@ -12736,6 +13097,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224986823}
   m_CullTransparentMesh: 1
+--- !u!1 &1229060259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1229060260}
+  m_Layer: 0
+  m_Name: Behavioral Upgrades
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1229060260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229060259}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 227920740}
+  - {fileID: 1843097503}
+  - {fileID: 1398071541}
+  - {fileID: 2136004437}
+  - {fileID: 200797608}
+  - {fileID: 1841134375}
+  - {fileID: 1079254853}
+  - {fileID: 990950450}
+  - {fileID: 1826247090}
+  - {fileID: 486934597}
+  m_Father: {fileID: 2134573951}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1249251846
 GameObject:
   m_ObjectHideFlags: 0
@@ -13945,6 +14347,66 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 839575354}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1398071539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1398071541}
+  - component: {fileID: 1398071540}
+  m_Layer: 0
+  m_Name: Blood Relatives (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1398071540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398071539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Blood Relatives
+  upgradeDescription: 'We are now a part of you, as you are a part of us. (+Fear,
+    +Pain) '
+  upgradeCost: 15
+  prerequisiteUpgrades:
+  - {fileID: 1843097501}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 20
+  notorietyBuff: 0
+  prejudiceBuff: 0
+  painBuff: 10
+  source: 1
+--- !u!4 &1398071541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398071539}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1229060260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1408563421
 GameObject:
@@ -15367,7 +15829,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1559589302}
   m_Layer: 0
-  m_Name: BloodUpgrades
+  m_Name: Blood Upgrades
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17852,6 +18314,65 @@ MonoBehaviour:
   prejudiceBuff: 0
   painBuff: 0
   source: 0
+--- !u!1 &1826247088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1826247090}
+  - component: {fileID: 1826247089}
+  m_Layer: 0
+  m_Name: Mass indoctrination (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1826247089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826247088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Mass indoctrination
+  upgradeDescription: 'Lead them to a better future. (+Fear, -Prejudice, +Notoriety) '
+  upgradeCost: 35
+  prerequisiteUpgrades:
+  - {fileID: 990950448}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 30
+  notorietyBuff: 20
+  prejudiceBuff: -10
+  painBuff: 0
+  source: 3
+--- !u!4 &1826247090
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826247088}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1229060260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1826999131
 GameObject:
   m_ObjectHideFlags: 0
@@ -18256,6 +18777,126 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837560602}
   m_CullTransparentMesh: 1
+--- !u!1 &1841134373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1841134375}
+  - component: {fileID: 1841134374}
+  m_Layer: 0
+  m_Name: Cannibalistic Instinct (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1841134374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841134373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: 'Cannibalistic Instinct '
+  upgradeDescription: 'They crave flesh, and they yearn for blood (++Fear, +Pain) '
+  upgradeCost: 30
+  prerequisiteUpgrades:
+  - {fileID: 200797606}
+  - {fileID: 1398071539}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 30
+  notorietyBuff: 0
+  prejudiceBuff: 0
+  painBuff: 15
+  source: 2
+--- !u!4 &1841134375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841134373}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1229060260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1843097501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1843097503}
+  - component: {fileID: 1843097502}
+  m_Layer: 0
+  m_Name: A Drop Of Blood (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1843097502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843097501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: A Drop Of Blood
+  upgradeDescription: Start with a small dose, and they'll soon be addicted. (+Fear
+    +Notoriety)
+  upgradeCost: 13
+  prerequisiteUpgrades:
+  - {fileID: 227920738}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 12
+  notorietyBuff: 10
+  prejudiceBuff: 0
+  painBuff: 0
+  source: 0
+--- !u!4 &1843097503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843097501}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1229060260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1851876526
 GameObject:
   m_ObjectHideFlags: 0
@@ -20764,7 +21405,70 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1559589302}
+  - {fileID: 1193775891}
+  - {fileID: 1229060260}
+  - {fileID: 1127384559}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2136004435
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2136004437}
+  - component: {fileID: 2136004436}
+  m_Layer: 0
+  m_Name: Human Substitute (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2136004436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136004435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: 'Human Substitute '
+  upgradeDescription: 'A small change to their meat intake can go a long way. (+Fear,
+    +Pain) '
+  upgradeCost: 12
+  prerequisiteUpgrades:
+  - {fileID: 227920738}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 12
+  notorietyBuff: 0
+  prejudiceBuff: 10
+  painBuff: 0
+  source: 1
+--- !u!4 &2136004437
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136004435}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1229060260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

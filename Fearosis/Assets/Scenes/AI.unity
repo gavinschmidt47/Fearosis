@@ -4451,10 +4451,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   expandedMonsterButton: {fileID: 1742899018}
-  bloodScreen: {fileID: 0}
-  physicalScreen: {fileID: 0}
-  behaviorScreen: {fileID: 0}
-  psychologicalScreen: {fileID: 0}
+  bloodScreen: {fileID: 677624122}
+  physicalScreen: {fileID: 1532013835}
+  behaviorScreen: {fileID: 2052677384}
+  psychologicalScreen: {fileID: 1016457930}
   statsScreen: {fileID: 1006883765}
   optionsScreen: {fileID: 1144604924}
 --- !u!1 &486798474
