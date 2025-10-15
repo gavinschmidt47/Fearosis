@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e221150b0a746db47ab261b4a375ab82
+guid: c785039741a323f4ba761d59f6461353
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4473687793938518539
-    second: Icon(4)_0
+      213: 4384747410902064514
+    second: FearosisTitleSplash_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon(4)_0
+      name: FearosisTitleSplash_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 8
-        width: 94
-        height: 94
+        x: 0
+        y: 0
+        width: 320
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5fd2b4e67a44ae1c0800000000000000
-      internalID: -4473687793938518539
+      spriteID: 28d91a0f980c9dc30800000000000000
+      internalID: 4384747410902064514
       vertices: []
       indices: 
       edges: []
@@ -161,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Icon(4)_0: -4473687793938518539
+      FearosisTitleSplash_0: 4384747410902064514
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

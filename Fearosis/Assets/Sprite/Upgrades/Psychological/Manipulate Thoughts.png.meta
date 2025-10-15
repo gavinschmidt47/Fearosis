@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f7306bb7ade7b2d46914438abdf9dbd0
+guid: 8805c94eeb9cc4644b78e112a5d14a01
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1921698480556609565
-    second: Icon(8)_0
+      213: -3123503628135291571
+    second: Manipulate Thoughts_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -109,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon(8)_0
+      name: Manipulate Thoughts_0
       rect:
         serializedVersion: 2
         x: 7
         y: 8
         width: 94
-        height: 98
+        height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d101cf2269e3baa10800000000000000
-      internalID: 1921698480556609565
+      spriteID: d452a5ecff517a4d0800000000000000
+      internalID: -3123503628135291571
       vertices: []
       indices: 
       edges: []
@@ -151,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Icon(8)_0: 1921698480556609565
+      Manipulate Thoughts_0: -3123503628135291571
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

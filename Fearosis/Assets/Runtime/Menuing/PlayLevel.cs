@@ -7,8 +7,6 @@ public class PlayLevel : MonoBehaviour
     public string normalScene;
     public string infiniteScene;
 
-
-
     public void InfiniteModeOff()
     {
         infiniteModeOn = false;
