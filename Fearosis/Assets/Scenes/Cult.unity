@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 116.68206, y: -50}
+  m_AnchoredPosition: {x: 136.54718, y: -50}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &220747
@@ -231,7 +231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 300.04614, y: -50}
+  m_AnchoredPosition: {x: 359.64154, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &26391092
@@ -470,7 +470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 116.68206, y: -50}
+  m_AnchoredPosition: {x: 136.54718, y: -50}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &43595519
@@ -643,6 +643,125 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 47859049}
   m_CullTransparentMesh: 1
+--- !u!1 &48709422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 48709424}
+  - component: {fileID: 48709423}
+  m_Layer: 0
+  m_Name: Tighter Security
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &48709423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48709422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Tighter Security
+  upgradeDescription: 'More security means a smaller chance for the secrets to get
+    loose. (+Fear)  '
+  upgradeCost: 5
+  prerequisiteUpgrades: []
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 10
+  notorietyBuff: 0
+  prejudiceBuff: 0
+  painBuff: 0
+  source: 0
+--- !u!4 &48709424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48709422}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1193775891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &50777198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 50777200}
+  - component: {fileID: 50777199}
+  m_Layer: 0
+  m_Name: Complete Lockdown
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &50777199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50777198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Complete Lockdown
+  upgradeDescription: 'Stay indoors. Protect your family. Close all blinds. Do not
+    let them in. (+Fear +Notoriety +Prejudice +Pain) '
+  upgradeCost: 13
+  prerequisiteUpgrades:
+  - {fileID: 1748718610}
+  isPurchased: 1
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 8
+  notorietyBuff: 10
+  prejudiceBuff: 12
+  painBuff: 15
+  source: 2
+--- !u!4 &50777200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50777198}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1193775891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &50985536
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,7 +1028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1402869877}
   upgradeUIHandler: {fileID: 1761558301}
 --- !u!114 &53330324
 MonoBehaviour:
@@ -1029,7 +1148,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 700.13855, y: -50}
+  m_AnchoredPosition: {x: 878.9246, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &59872348
@@ -1198,7 +1317,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 700.13855, y: -50}
+  m_AnchoredPosition: {x: 878.9246, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &70975931
@@ -1476,6 +1595,66 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &120132780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 120132782}
+  - component: {fileID: 120132781}
+  m_Layer: 0
+  m_Name: Your New Home
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &120132781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120132780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Your New Home
+  upgradeDescription: 'Join us. They cannot hurt you from the darkness. (+Fear) '
+  upgradeCost: 23
+  prerequisiteUpgrades:
+  - {fileID: 1108895920}
+  - {fileID: 838740026}
+  isPurchased: 1
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 30
+  notorietyBuff: 0
+  prejudiceBuff: 0
+  painBuff: 0
+  source: 3
+--- !u!4 &120132782
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120132780}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1193775891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &120219215
 GameObject:
   m_ObjectHideFlags: 0
@@ -2004,6 +2183,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157298617}
   m_CullTransparentMesh: 1
+--- !u!1 &170760964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 170760966}
+  - component: {fileID: 170760965}
+  m_Layer: 0
+  m_Name: One True Religion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &170760965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170760964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: One True Religion
+  upgradeDescription: "hose who do not follow will lose faith in their gods. Then
+    they\u2019ll come running to us for a belief to grasp. (+Fear -Notoriety -Prejudice) "
+  upgradeCost: 26
+  prerequisiteUpgrades:
+  - {fileID: 1355687009}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 30
+  notorietyBuff: -40
+  prejudiceBuff: -40
+  painBuff: 0
+  source: 1
+--- !u!4 &170760966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170760964}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1127384559}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &199895223
 GameObject:
   m_ObjectHideFlags: 0
@@ -2090,7 +2329,7 @@ GameObject:
   - component: {fileID: 200797608}
   - component: {fileID: 200797607}
   m_Layer: 0
-  m_Name: "Who\u2019s on the Menu?  (1)"
+  m_Name: Scripture Development
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2108,21 +2347,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Who's on the Menu?
-  upgradeDescription: Would you like the brain, the liver, or the left kidney? (+Fear,
-    +Prejudice,
-  upgradeCost: 15
-  prerequisiteUpgrades:
-  - {fileID: 2136004435}
-  isPurchased: 0
+  upgradeName: Scripture Development
+  upgradeDescription: The scripture will guide people to their true faith (+Fear
+    +Prejudice)
+  upgradeCost: 5
+  prerequisiteUpgrades: []
+  isPurchased: 1
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
   currentAlpha: 0
-  fearBuff: 20
+  fearBuff: 4
   notorietyBuff: 0
   prejudiceBuff: 10
-  painBuff: 10
+  painBuff: 0
   source: 2
 --- !u!4 &200797608
 Transform:
@@ -2217,7 +2455,7 @@ GameObject:
   - component: {fileID: 227920740}
   - component: {fileID: 227920739}
   m_Layer: 0
-  m_Name: Tighter Security
+  m_Name: Ad Promotion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2235,10 +2473,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: A New Diet
-  upgradeDescription: Adds a special Ingredient to the meal, beginning the conversion.
-    (+Fear, +Prejudice)
-  upgradeCost: 10
+  upgradeName: Ad Promotion
+  upgradeDescription: 'We are hiring. Sacrifices wanted. (+Fear +Prejudice) '
+  upgradeCost: 8
   prerequisiteUpgrades: []
   isPurchased: 0
   unavailableAlpha: 0
@@ -2247,7 +2484,7 @@ MonoBehaviour:
   currentAlpha: 0
   fearBuff: 10
   notorietyBuff: 0
-  prejudiceBuff: 8
+  prejudiceBuff: 5
   painBuff: 0
   source: 0
 --- !u!4 &227920740
@@ -2301,7 +2538,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 566.7744, y: -50}
+  m_AnchoredPosition: {x: 705.83026, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &228893841
@@ -2525,7 +2762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1843097502}
   upgradeUIHandler: {fileID: 27207582}
 --- !u!114 &238398902
 MonoBehaviour:
@@ -2660,7 +2897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 50777199}
   upgradeUIHandler: {fileID: 1761558301}
 --- !u!114 &251437117
 MonoBehaviour:
@@ -3584,7 +3821,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 300.04617, y: -50}
+  m_AnchoredPosition: {x: 359.64154, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &286229265
@@ -4502,7 +4739,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 433.4103, y: -50}
+  m_AnchoredPosition: {x: 532.7359, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &385981092
@@ -5036,7 +5273,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 116.68206, y: -50}
+  m_AnchoredPosition: {x: 136.54718, y: -50}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &429554546
@@ -5286,7 +5523,7 @@ GameObject:
   - component: {fileID: 486934597}
   - component: {fileID: 486934598}
   m_Layer: 0
-  m_Name: New People (1)
+  m_Name: True Enlightenment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5319,22 +5556,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: New People
-  upgradeDescription: "Soulless husks that can\u2019t even think for themselves.
-    They have become the perfect fodder. (++Fear, +Pain) "
+  upgradeName: True Enlightenment
+  upgradeDescription: 'he time has come for our lord to bless us. Its presence will
+    grant us true divinity. (+Fear +Notoriety +Prejudice -Pain) '
   upgradeCost: 50
   prerequisiteUpgrades:
-  - {fileID: 1841134373}
   - {fileID: 1826247088}
   isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
   currentAlpha: 0
-  fearBuff: 60
-  notorietyBuff: 0
-  prejudiceBuff: 0
-  painBuff: 15
+  fearBuff: 30
+  notorietyBuff: 23
+  prejudiceBuff: 18
+  painBuff: -30
   source: 3
 --- !u!1 &494300537
 GameObject:
@@ -5432,7 +5668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1388488545}
   upgradeUIHandler: {fileID: 1962941420}
 --- !u!114 &497091744
 MonoBehaviour:
@@ -5646,7 +5882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 652595519}
   upgradeUIHandler: {fileID: 1761558301}
 --- !u!114 &505177712
 MonoBehaviour:
@@ -6065,7 +6301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 170760965}
   upgradeUIHandler: {fileID: 1962941420}
 --- !u!114 &553555353
 MonoBehaviour:
@@ -6185,7 +6421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 700.1385, y: -50}
+  m_AnchoredPosition: {x: 878.9246, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566170553
@@ -7116,6 +7352,66 @@ RectTransform:
   m_AnchoredPosition: {x: -5.75, y: 79.446}
   m_SizeDelta: {x: 211.5, y: 128.32}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &652595517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 652595518}
+  - component: {fileID: 652595519}
+  m_Layer: 0
+  m_Name: Unbreakable Contract
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &652595518
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652595517}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1193775891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &652595519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652595517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Unbreakable Contract
+  upgradeDescription: "You\u2019ll be protected, All you have to do is offer everything
+    you own. Including your soul. (+Fear, -Pain)"
+  upgradeCost: 50
+  prerequisiteUpgrades:
+  - {fileID: 120132780}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 60
+  notorietyBuff: 0
+  prejudiceBuff: 0
+  painBuff: -10
+  source: 3
 --- !u!1 &653163596
 GameObject:
   m_ObjectHideFlags: 0
@@ -7774,7 +8070,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 700.13855, y: -50}
+  m_AnchoredPosition: {x: 878.9246, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &673131994
@@ -8425,7 +8721,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 433.4103, y: -50}
+  m_AnchoredPosition: {x: 532.7359, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &761374611
@@ -8845,7 +9141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1089898397}
   upgradeUIHandler: {fileID: 1962941420}
 --- !u!114 &777732753
 MonoBehaviour:
@@ -9513,7 +9809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 2136004436}
   upgradeUIHandler: {fileID: 27207582}
 --- !u!114 &812466249
 MonoBehaviour:
@@ -9684,7 +9980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1294261843}
   upgradeUIHandler: {fileID: 1761558301}
 --- !u!114 &824411712
 MonoBehaviour:
@@ -9768,6 +10064,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824411709}
   m_CullTransparentMesh: 1
+--- !u!1 &830107970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 830107972}
+  - component: {fileID: 830107971}
+  m_Layer: 0
+  m_Name: Master Puppeteer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &830107971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830107970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Master Puppeteer
+  upgradeDescription: 'The strings are attached so elegantly that the people do not
+    even know they are there. (+Fear -Pain) '
+  upgradeCost: 60
+  prerequisiteUpgrades:
+  - {fileID: 933236014}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 30
+  notorietyBuff: 0
+  prejudiceBuff: 0
+  painBuff: -100
+  source: 3
+--- !u!4 &830107972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830107970}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1127384559}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &836064346
 GameObject:
   m_ObjectHideFlags: 0
@@ -9901,6 +10257,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 836064346}
   m_CullTransparentMesh: 1
+--- !u!1 &838740026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 838740028}
+  - component: {fileID: 838740027}
+  m_Layer: 0
+  m_Name: A Shepherds Herd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &838740027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838740026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: A Shepherd's Herd
+  upgradeDescription: 'Every sheep has its purpose, no matter how small. (+Fear +Notoriety
+    +Prejudice) '
+  upgradeCost: 40
+  prerequisiteUpgrades:
+  - {fileID: 1161860094}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 25
+  notorietyBuff: 23
+  prejudiceBuff: 20
+  painBuff: 0
+  source: 1
+--- !u!4 &838740028
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838740026}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1193775891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &839575353
 GameObject:
   m_ObjectHideFlags: 0
@@ -9987,7 +10403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1079254852}
   upgradeUIHandler: {fileID: 27207582}
 --- !u!114 &859771516
 MonoBehaviour:
@@ -10165,7 +10581,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 116.68205, y: -50}
+  m_AnchoredPosition: {x: 136.54718, y: -50}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &896256779
@@ -10257,7 +10673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1355687010}
   upgradeUIHandler: {fileID: 1962941420}
 --- !u!114 &896461051
 MonoBehaviour:
@@ -10451,7 +10867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1161860095}
   upgradeUIHandler: {fileID: 1761558301}
 --- !u!114 &915311309
 MonoBehaviour:
@@ -10535,6 +10951,67 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915311306}
   m_CullTransparentMesh: 1
+--- !u!1 &933236014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 933236016}
+  - component: {fileID: 933236015}
+  m_Layer: 0
+  m_Name: Novice Puppeteer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &933236015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933236014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Novice Puppeteer
+  upgradeDescription: 'There are strings attached, and they are stabbing into me.
+    (+Fear +Pain) '
+  upgradeCost: 34
+  prerequisiteUpgrades:
+  - {fileID: 1992673434}
+  - {fileID: 170760964}
+  isPurchased: 1
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 40
+  notorietyBuff: 0
+  prejudiceBuff: 0
+  painBuff: 80
+  source: 3
+--- !u!4 &933236016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933236014}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1127384559}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &951467629
 GameObject:
   m_ObjectHideFlags: 0
@@ -10898,7 +11375,7 @@ GameObject:
   - component: {fileID: 990950450}
   - component: {fileID: 990950449}
   m_Layer: 0
-  m_Name: Infectious Spread  (1)
+  m_Name: Those Who Sin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10916,20 +11393,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: 'Infectious Spread '
-  upgradeDescription: 'Idiocy spreads among the masses like a plague (+Fear +Notoriety
-    +Prejudice) '
-  upgradeCost: 25
+  upgradeName: Those Who Sin
+  upgradeDescription: 'For those who do not walk along our path are sinners, and
+    are rightfully deserving of punishment. (+Fear +Notoriety -Prejudice) '
+  upgradeCost: 32
   prerequisiteUpgrades:
   - {fileID: 1079254851}
+  - {fileID: 2136004435}
   isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
   currentAlpha: 0
-  fearBuff: 22
-  notorietyBuff: 15
-  prejudiceBuff: 15
+  fearBuff: 15
+  notorietyBuff: 20
+  prejudiceBuff: -30
   painBuff: 0
   source: 3
 --- !u!4 &990950450
@@ -10998,7 +11476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1841134374}
   upgradeUIHandler: {fileID: 27207582}
 --- !u!114 &998885493
 MonoBehaviour:
@@ -11330,7 +11808,7 @@ GameObject:
   - component: {fileID: 1045810593}
   - component: {fileID: 1045810592}
   m_Layer: 5
-  m_Name: Communion Button
+  m_Name: Shared Harvest Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11367,7 +11845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1997024559}
   upgradeUIHandler: {fileID: 1962941420}
 --- !u!114 &1045810593
 MonoBehaviour:
@@ -11561,7 +12039,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1108895921}
   upgradeUIHandler: {fileID: 1761558301}
 --- !u!114 &1058815716
 MonoBehaviour:
@@ -11854,7 +12332,7 @@ GameObject:
   - component: {fileID: 1079254853}
   - component: {fileID: 1079254852}
   m_Layer: 0
-  m_Name: An Air of Confusion  (1)
+  m_Name: Organic Charity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11872,20 +12350,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: ' An Air of Confusion '
-  upgradeDescription: "Some say that chemicals in the air are making people dumber.
-    Maybe they\u2019re right. (+Fear, +Prejudice +Notoriety) "
-  upgradeCost: 18
-  prerequisiteUpgrades: []
+  upgradeName: Organic Charity
+  upgradeDescription: 'We gladly await your donations. (+Fear, +Pain) '
+  upgradeCost: 10
+  prerequisiteUpgrades:
+  - {fileID: 1841134373}
   isPurchased: 1
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
   currentAlpha: 0
   fearBuff: 15
-  notorietyBuff: 8
-  prejudiceBuff: 8
-  painBuff: 0
+  notorietyBuff: 0
+  prejudiceBuff: 0
+  painBuff: 5
   source: 2
 --- !u!4 &1079254853
 Transform:
@@ -12014,6 +12492,65 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1089898396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1089898398}
+  - component: {fileID: 1089898397}
+  m_Layer: 0
+  m_Name: Social Events
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1089898397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089898396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Social Events
+  upgradeDescription: If we appease people first, they will gladly convert. (+Fear
+    +Notoriety)
+  upgradeCost: 10
+  prerequisiteUpgrades: []
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 10
+  notorietyBuff: 8
+  prejudiceBuff: 0
+  painBuff: 0
+  source: 0
+--- !u!4 &1089898398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089898396}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1127384559}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1091280491
 GameObject:
   m_ObjectHideFlags: 0
@@ -12286,6 +12823,66 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 177}
   m_SizeDelta: {x: 223, y: 66.1077}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1108895920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1108895922}
+  - component: {fileID: 1108895921}
+  m_Layer: 0
+  m_Name: Physical Deformity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1108895921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108895920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Physical Deformity
+  upgradeDescription: 'It turns out the monsters were inside the whole time.(+Fear
+    +Prejudice +Pain) '
+  upgradeCost: 18
+  prerequisiteUpgrades:
+  - {fileID: 50777198}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 11
+  notorietyBuff: 0
+  prejudiceBuff: 15
+  painBuff: 20
+  source: 3
+--- !u!4 &1108895922
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108895920}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1193775891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1111252337
 GameObject:
   m_ObjectHideFlags: 0
@@ -12390,7 +12987,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 933236015}
   upgradeUIHandler: {fileID: 1962941420}
 --- !u!114 &1115494966
 MonoBehaviour:
@@ -12658,7 +13255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 830107971}
   upgradeUIHandler: {fileID: 1962941420}
 --- !u!114 &1127251825
 MonoBehaviour:
@@ -12770,7 +13367,17 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1089898398}
+  - {fileID: 1997024560}
+  - {fileID: 1355687011}
+  - {fileID: 170760966}
+  - {fileID: 1429940211}
+  - {fileID: 1737651415}
+  - {fileID: 1388488544}
+  - {fileID: 1992673435}
+  - {fileID: 933236016}
+  - {fileID: 830107972}
   m_Father: {fileID: 2134573951}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1144604924
@@ -12977,6 +13584,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148559564}
   m_CullTransparentMesh: 1
+--- !u!1 &1161860094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1161860096}
+  - component: {fileID: 1161860095}
+  m_Layer: 0
+  m_Name: Let Them In
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1161860095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161860094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Let Them In
+  upgradeDescription: 'If they want to find out more, let them. (+Fear +Notoriety
+    +Prejudice) '
+  upgradeCost: 30
+  prerequisiteUpgrades:
+  - {fileID: 1294261842}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 20
+  notorietyBuff: 13
+  prejudiceBuff: 15
+  painBuff: 0
+  source: 1
+--- !u!4 &1161860096
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161860094}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1193775891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1179201588
 GameObject:
   m_ObjectHideFlags: 0
@@ -13014,7 +13681,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 433.4103, y: -50}
+  m_AnchoredPosition: {x: 532.7359, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &1179201590
@@ -13275,7 +13942,17 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 48709424}
+  - {fileID: 1294261844}
+  - {fileID: 1161860096}
+  - {fileID: 838740028}
+  - {fileID: 1402869878}
+  - {fileID: 1748718612}
+  - {fileID: 50777200}
+  - {fileID: 1108895922}
+  - {fileID: 120132782}
+  - {fileID: 652595518}
   m_Father: {fileID: 2134573951}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1198125191
@@ -13738,7 +14415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1992673436}
   upgradeUIHandler: {fileID: 1962941420}
 --- !u!114 &1224986826
 MonoBehaviour:
@@ -13914,7 +14591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 200797607}
   upgradeUIHandler: {fileID: 27207582}
 --- !u!114 &1249251849
 MonoBehaviour:
@@ -14255,6 +14932,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283096759}
   m_CullTransparentMesh: 1
+--- !u!1 &1294261842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1294261844}
+  - component: {fileID: 1294261843}
+  m_Layer: 0
+  m_Name: Fortifications
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1294261843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294261842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Fortifications
+  upgradeDescription: 'Once they are in, they cannot get out. (+Fear +Prejudice) '
+  upgradeCost: 10
+  prerequisiteUpgrades:
+  - {fileID: 48709422}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 12
+  notorietyBuff: 0
+  prejudiceBuff: 5
+  painBuff: 0
+  source: 0
+--- !u!4 &1294261844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294261842}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1193775891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1308215336
 GameObject:
   m_ObjectHideFlags: 0
@@ -14426,7 +15162,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 300.04617, y: -50}
+  m_AnchoredPosition: {x: 359.64154, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1319015121
@@ -14876,7 +15612,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 566.7744, y: -50}
+  m_AnchoredPosition: {x: 705.83026, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1340937351
@@ -15027,6 +15763,66 @@ MonoBehaviour:
   targetsSource: 1
   targetStats: 0
   targetSource: 1
+--- !u!1 &1355687009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1355687011}
+  - component: {fileID: 1355687010}
+  m_Layer: 0
+  m_Name: First Faith
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1355687010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355687009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: First Faith
+  upgradeDescription: 'Our faith began when the soil beneath our feet was created.
+    (-Notoriety -Prejudice -Pain) '
+  upgradeCost: 18
+  prerequisiteUpgrades:
+  - {fileID: 1997024558}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 0
+  notorietyBuff: -12
+  prejudiceBuff: -12
+  painBuff: -8
+  source: 1
+--- !u!4 &1355687011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355687009}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1127384559}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1381553655
 GameObject:
   m_ObjectHideFlags: 0
@@ -15073,6 +15869,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 839575354}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1388488543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1388488544}
+  - component: {fileID: 1388488545}
+  m_Layer: 0
+  m_Name: Hands of Leadership
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1388488544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388488543}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1127384559}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1388488545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388488543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Hands of Leadership
+  upgradeDescription: 'Control the leaders and you control everyone (+Fear) '
+  upgradeCost: 18
+  prerequisiteUpgrades:
+  - {fileID: 1737651413}
+  isPurchased: 1
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 33
+  notorietyBuff: 0
+  prejudiceBuff: 0
+  painBuff: 0
+  source: 2
 --- !u!1 &1398071539
 GameObject:
   m_ObjectHideFlags: 0
@@ -15084,7 +15939,7 @@ GameObject:
   - component: {fileID: 1398071541}
   - component: {fileID: 1398071540}
   m_Layer: 0
-  m_Name: Blood Relatives (1)
+  m_Name: Governmental Influence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15102,10 +15957,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Blood Relatives
-  upgradeDescription: 'We are now a part of you, as you are a part of us. (+Fear,
-    +Pain) '
-  upgradeCost: 15
+  upgradeName: Governmental Influence
+  upgradeDescription: 'They cannot refuse if it''s the law. (+Fear -Notoriety +Prejudice) '
+  upgradeCost: 24
   prerequisiteUpgrades:
   - {fileID: 1843097501}
   isPurchased: 0
@@ -15113,10 +15967,10 @@ MonoBehaviour:
   availableAlpha: 255
   purchasedAlpha: 90
   currentAlpha: 0
-  fearBuff: 20
-  notorietyBuff: 0
-  prejudiceBuff: 0
-  painBuff: 10
+  fearBuff: 18
+  notorietyBuff: -8
+  prejudiceBuff: 10
+  painBuff: 0
   source: 1
 --- !u!4 &1398071541
 Transform:
@@ -15132,6 +15986,65 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1229060260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1402869876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1402869878}
+  - component: {fileID: 1402869877}
+  m_Layer: 0
+  m_Name: New Curfew
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1402869877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402869876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: New Curfew
+  upgradeDescription: "It\u2019s harder to watch them when they are constantly moving
+    all day. (+Fear +Prejudice) "
+  upgradeCost: 8
+  prerequisiteUpgrades: []
+  isPurchased: 1
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 8
+  notorietyBuff: 0
+  prejudiceBuff: 10
+  painBuff: 0
+  source: 2
+--- !u!4 &1402869878
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402869876}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1193775891}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1408563421
 GameObject:
@@ -15306,7 +16219,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 566.7744, y: -50}
+  m_AnchoredPosition: {x: 705.83026, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1426770538
@@ -15403,6 +16316,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426770536}
   m_CullTransparentMesh: 1
+--- !u!1 &1429940209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1429940211}
+  - component: {fileID: 1429940210}
+  m_Layer: 0
+  m_Name: Sublminal Messaging
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1429940210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429940209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Subliminal Messaging
+  upgradeDescription: 'Tell them what they need to hear. They won''t know the difference.
+    (+Fear -Prejudice +Pain) '
+  upgradeCost: 8
+  prerequisiteUpgrades: []
+  isPurchased: 1
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 8
+  notorietyBuff: 3
+  prejudiceBuff: 0
+  painBuff: -1
+  source: 2
+--- !u!4 &1429940211
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429940209}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1127384559}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1431898566
 GameObject:
   m_ObjectHideFlags: 0
@@ -15575,7 +16547,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 433.41028, y: -50}
+  m_AnchoredPosition: {x: 532.7359, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &1445743663
@@ -15723,7 +16695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1826247089}
   upgradeUIHandler: {fileID: 27207582}
 --- !u!114 &1452598105
 MonoBehaviour:
@@ -15858,7 +16830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 486934598}
   upgradeUIHandler: {fileID: 27207582}
 --- !u!114 &1479148193
 MonoBehaviour:
@@ -15993,7 +16965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 120132781}
   upgradeUIHandler: {fileID: 1761558301}
 --- !u!114 &1511349473
 MonoBehaviour:
@@ -16460,7 +17432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 48709423}
   upgradeUIHandler: {fileID: 1761558301}
 --- !u!114 &1559226564
 MonoBehaviour:
@@ -16636,7 +17608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 838740027}
   upgradeUIHandler: {fileID: 1761558301}
 --- !u!114 &1561857062
 MonoBehaviour:
@@ -16771,7 +17743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1737651414}
   upgradeUIHandler: {fileID: 1962941420}
 --- !u!114 &1571472203
 MonoBehaviour:
@@ -18200,6 +19172,65 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &1737651413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1737651415}
+  - component: {fileID: 1737651414}
+  m_Layer: 0
+  m_Name: Early Years
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1737651414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737651413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Early Years
+  upgradeDescription: 'Guide them before they can guide themselves. (+Fear+Notoriety) '
+  upgradeCost: 12
+  prerequisiteUpgrades:
+  - {fileID: 1429940209}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 22
+  notorietyBuff: 10
+  prejudiceBuff: 0
+  painBuff: 0
+  source: 2
+--- !u!4 &1737651415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737651413}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1127384559}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1742899018
 GameObject:
   m_ObjectHideFlags: 0
@@ -18279,6 +19310,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1742899018}
   m_CullTransparentMesh: 1
+--- !u!1 &1748718610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1748718612}
+  - component: {fileID: 1748718611}
+  m_Layer: 0
+  m_Name: Fear of the Unknown
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1748718611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748718610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Fear of the Unknown
+  upgradeDescription: 'Allow the people to put their faith in someone.  (+Fear +Prejudice) '
+  upgradeCost: 10
+  prerequisiteUpgrades:
+  - {fileID: 1402869876}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 10
+  notorietyBuff: 15
+  prejudiceBuff: 0
+  painBuff: 8
+  source: 2
+--- !u!4 &1748718612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748718610}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1193775891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1755400244
 GameObject:
   m_ObjectHideFlags: 0
@@ -19431,7 +20521,7 @@ GameObject:
   - component: {fileID: 1826247090}
   - component: {fileID: 1826247089}
   m_Layer: 0
-  m_Name: Mass indoctrination (1)
+  m_Name: Total Devotion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19449,9 +20539,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Mass indoctrination
-  upgradeDescription: 'Lead them to a better future. (+Fear, -Prejudice, +Notoriety) '
-  upgradeCost: 35
+  upgradeName: Total Devotion
+  upgradeDescription: 'You will eat in the name of faith, and you will breathe in
+    the name of faith. (+Fear +Pain) '
+  upgradeCost: 20
   prerequisiteUpgrades:
   - {fileID: 990950448}
   isPurchased: 0
@@ -19459,10 +20550,10 @@ MonoBehaviour:
   availableAlpha: 255
   purchasedAlpha: 90
   currentAlpha: 0
-  fearBuff: 30
-  notorietyBuff: 20
-  prejudiceBuff: -10
-  painBuff: 0
+  fearBuff: 12
+  notorietyBuff: 0
+  prejudiceBuff: 0
+  painBuff: 18
   source: 3
 --- !u!4 &1826247090
 Transform:
@@ -19894,7 +20985,7 @@ GameObject:
   - component: {fileID: 1841134375}
   - component: {fileID: 1841134374}
   m_Layer: 0
-  m_Name: Cannibalistic Instinct (1)
+  m_Name: False God
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19912,21 +21003,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: 'Cannibalistic Instinct '
-  upgradeDescription: 'They crave flesh, and they yearn for blood (++Fear, +Pain) '
-  upgradeCost: 30
+  upgradeName: False God
+  upgradeDescription: 'Allow the people to put their faith in someone.  (+Fear +Prejudice) '
+  upgradeCost: 8
   prerequisiteUpgrades:
   - {fileID: 200797606}
-  - {fileID: 1398071539}
   isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
   currentAlpha: 0
-  fearBuff: 30
+  fearBuff: 8
   notorietyBuff: 0
-  prejudiceBuff: 0
-  painBuff: 15
+  prejudiceBuff: 12
+  painBuff: 0
   source: 2
 --- !u!4 &1841134375
 Transform:
@@ -19954,7 +21044,7 @@ GameObject:
   - component: {fileID: 1843097503}
   - component: {fileID: 1843097502}
   m_Layer: 0
-  m_Name: A Drop Of Blood (1)
+  m_Name: Televised Network
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19972,10 +21062,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: A Drop Of Blood
-  upgradeDescription: Start with a small dose, and they'll soon be addicted. (+Fear
-    +Notoriety)
-  upgradeCost: 13
+  upgradeName: Televised Network
+  upgradeDescription: "Show them the power we can give and they\u2019ll come running.
+    (+Fear +Prejudice) "
+  upgradeCost: 12
   prerequisiteUpgrades:
   - {fileID: 227920738}
   isPurchased: 0
@@ -19984,8 +21074,8 @@ MonoBehaviour:
   purchasedAlpha: 90
   currentAlpha: 0
   fearBuff: 12
-  notorietyBuff: 10
-  prejudiceBuff: 0
+  notorietyBuff: 0
+  prejudiceBuff: 8
   painBuff: 0
   source: 0
 --- !u!4 &1843097503
@@ -20313,7 +21403,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 300.04617, y: -50}
+  m_AnchoredPosition: {x: 359.64154, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1927307217
@@ -20461,7 +21551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1748718611}
   upgradeUIHandler: {fileID: 1761558301}
 --- !u!114 &1932431497
 MonoBehaviour:
@@ -20596,7 +21686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 227920739}
   upgradeUIHandler: {fileID: 27207582}
 --- !u!114 &1948870740
 MonoBehaviour:
@@ -20967,6 +22057,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980136511}
   m_CullTransparentMesh: 1
+--- !u!1 &1992673434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1992673435}
+  - component: {fileID: 1992673436}
+  m_Layer: 0
+  m_Name: Mandations
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1992673435
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992673434}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1127384559}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1992673436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992673434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Mandations
+  upgradeDescription: 'Control the masses and force them to follow. (+Fear +Pain)  '
+  upgradeCost: 24
+  prerequisiteUpgrades:
+  - {fileID: 1388488543}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 20
+  notorietyBuff: 0
+  prejudiceBuff: 0
+  painBuff: 40
+  source: 3
 --- !u!1 &1993246787
 GameObject:
   m_ObjectHideFlags: 0
@@ -21082,6 +22231,66 @@ Animation:
   m_AnimatePhysics: 0
   m_UpdateMode: 0
   m_CullingType: 0
+--- !u!1 &1997024558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1997024560}
+  - component: {fileID: 1997024559}
+  m_Layer: 0
+  m_Name: Shared Harvest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1997024559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997024558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeName: Fortifications
+  upgradeDescription: 'Let it become a part of you, and enlighten your soul. (+Fear
+    -Notoriety -Prejudice) '
+  upgradeCost: 13
+  prerequisiteUpgrades:
+  - {fileID: 1089898396}
+  isPurchased: 0
+  unavailableAlpha: 0
+  availableAlpha: 255
+  purchasedAlpha: 90
+  currentAlpha: 0
+  fearBuff: 8
+  notorietyBuff: -10
+  prejudiceBuff: -10
+  painBuff: 0
+  source: 0
+--- !u!4 &1997024560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997024558}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1127384559}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2001062084
 GameObject:
   m_ObjectHideFlags: 0
@@ -21208,7 +22417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1429940210}
   upgradeUIHandler: {fileID: 1962941420}
 --- !u!114 &2007823951
 MonoBehaviour:
@@ -21953,7 +23162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 1398071540}
   upgradeUIHandler: {fileID: 27207582}
 --- !u!114 &2072654059
 MonoBehaviour:
@@ -22073,7 +23282,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 566.77435, y: -50}
+  m_AnchoredPosition: {x: 705.83026, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2075900136
@@ -22372,7 +23581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da5aec6de877874cac3f324a8e75bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeScript: {fileID: 0}
+  upgradeScript: {fileID: 990950449}
   upgradeUIHandler: {fileID: 27207582}
 --- !u!114 &2125503031
 MonoBehaviour:
@@ -22638,7 +23847,7 @@ GameObject:
   - component: {fileID: 2136004437}
   - component: {fileID: 2136004436}
   m_Layer: 0
-  m_Name: Human Substitute (1)
+  m_Name: Heart of the town
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22656,18 +23865,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: 'Human Substitute '
-  upgradeDescription: 'A small change to their meat intake can go a long way. (+Fear,
-    +Pain) '
-  upgradeCost: 12
+  upgradeName: Heart of the Town
+  upgradeDescription: 'With total control the population will be enlightened. (+Fear
+    -Prejudice) '
+  upgradeCost: 30
   prerequisiteUpgrades:
-  - {fileID: 227920738}
+  - {fileID: 1398071539}
   isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
   currentAlpha: 0
-  fearBuff: 12
+  fearBuff: 25
   notorietyBuff: 0
   prejudiceBuff: 10
   painBuff: 0
