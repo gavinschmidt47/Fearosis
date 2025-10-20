@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4e53849ed00ecba449e023021cca9848
+guid: 4934ac688aa591444b9f7062397bd40c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2020724534934282931
-    second: Blood Relatives_0
+      213: 2378228404314372418
+    second: Hands of Leadership_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blood Relatives_0
+      name: Hands of Leadership_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 8
-        width: 94
-        height: 94
+        x: 0
+        y: 0
+        width: 92
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3b2acad124e0b0c10800000000000000
-      internalID: 2020724534934282931
+      spriteID: 249f6e1222a210120800000000000000
+      internalID: 2378228404314372418
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Blood Relatives_0: 2020724534934282931
+      Hands of Leadership_0: 2378228404314372418
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

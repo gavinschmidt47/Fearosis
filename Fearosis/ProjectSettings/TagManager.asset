@@ -10,6 +10,11 @@ TagManager:
   - Event Image
   - Map
   - Obstacle
+  - DayCharacter
+  - NightCharacter
+  - Master
+  - Music
+  - SFX
   layers:
   - Default
   - TransparentFX

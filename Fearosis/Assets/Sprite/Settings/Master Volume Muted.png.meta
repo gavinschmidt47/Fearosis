@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 36a8a6c969a24c5459e274b288430437
+guid: 1a6aab106d6641740afa74c65cf00e4b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2834944224505649052
-    second: Malware Spread_0
+      213: 1732592472091274536
+    second: Master Volume Muted_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,17 +109,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Malware Spread_0
+      name: Master Volume Muted_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 8
-        width: 94
-        height: 94
+        x: 12
+        y: 3
+        width: 91
+        height: 101
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 468ab4c7f3148a8d0800000000000000
-      internalID: -2834944224505649052
+      spriteID: 82d24877ca76b0810800000000000000
+      internalID: 1732592472091274536
       vertices: []
       indices: 
       edges: []
@@ -148,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Malware Spread_0: -2834944224505649052
+      Master Volume Muted_0: 1732592472091274536
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

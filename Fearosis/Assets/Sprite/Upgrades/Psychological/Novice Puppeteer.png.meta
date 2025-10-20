@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b251321c35e05a347bb9999bc00ba0f8
+guid: d35589d08f18c5d429921ecf8b392a73
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9146552411324532700
-    second: Alter History_0
+      213: -803638176230055291
+    second: Novice Puppeteer_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,17 +109,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Alter History_0
+      name: Novice Puppeteer_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 8
-        width: 94
-        height: 94
+        x: 0
+        y: 0
+        width: 92
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 428328bda0be01180800000000000000
-      internalID: -9146552411324532700
+      spriteID: 5826dd92657e8d4f0800000000000000
+      internalID: -803638176230055291
       vertices: []
       indices: 
       edges: []
@@ -148,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Alter History_0: -9146552411324532700
+      Novice Puppeteer_0: -803638176230055291
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

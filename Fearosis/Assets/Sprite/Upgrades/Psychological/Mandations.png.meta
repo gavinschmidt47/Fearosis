@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8805c94eeb9cc4644b78e112a5d14a01
+guid: 42a5edcce2dd66641982f0a14fe22273
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3123503628135291571
-    second: Manipulate Thoughts_0
+      213: -8970280730342092162
+    second: Mandations_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,17 +109,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Manipulate Thoughts_0
+      name: Mandations_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 8
-        width: 94
-        height: 94
+        x: 0
+        y: 0
+        width: 92
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d452a5ecff517a4d0800000000000000
-      internalID: -3123503628135291571
+      spriteID: e729d6cc339238380800000000000000
+      internalID: -8970280730342092162
       vertices: []
       indices: 
       edges: []
@@ -148,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Manipulate Thoughts_0: -3123503628135291571
+      Mandations_0: -8970280730342092162
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
