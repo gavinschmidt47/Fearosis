@@ -31,9 +31,11 @@ public class AStar : MonoBehaviour
                 for (int i = 1; i < openSet.Count; i++)
                 {
                     //Looking for node with lowest fCost or hCost if fCosts are equal
+                    Debug.Log("Comparing node with fCost: " + openSet[i].fCost + " to currentNode with fCost: " + currentNode.fCost);
                     if (openSet[i].fCost < currentNode.fCost ||
                         (openSet[i].fCost == currentNode.fCost && openSet[i].hCost < currentNode.hCost))
                     {
+                        Debug.Log("New currentNode found with fCost: " + openSet[i].fCost);
                         currentNode = openSet[i];
                     }
                 }
@@ -44,7 +46,7 @@ public class AStar : MonoBehaviour
             checkedSet.Add(currentNode);
 
             //End condition
-            if (currentNode == targetNode)
+            if (currentNode == targetNode || (currentNode.worldPosition - targetNode.worldPosition).magnitude < 1.0f)
             {
                 Debug.Log("Path found with gcost: " + currentNode.gCost);
                 return RetracePath(startNode, currentNode);
@@ -58,22 +60,37 @@ public class AStar : MonoBehaviour
                 //Make sure neighbor was not checked
                 if (checkedSet.Contains(neighbor))
                 {
+                    Debug.Log("Neighbor at " + neighbor.worldPosition + " already checked, skipping.");
                     continue;
                 }
 
                 //Calculate new gCost for neighbor
-                float newMovementCostToNeighbor = currentNode.gCost + (currentNode.worldPosition - neighbor.worldPosition).sqrMagnitude;
+                float newMovementCostToNeighbor = currentNode.gCost + (currentNode.worldPosition - neighbor.worldPosition).magnitude;
                 neighbor.gCost = newMovementCostToNeighbor;
                 neighbor.parent = currentNode;
-                neighbor.hCost = (neighbor.worldPosition - targetNode.worldPosition).sqrMagnitude;
+                neighbor.hCost = (neighbor.worldPosition - targetNode.worldPosition).magnitude;
 
+                Debug.Log("Neighbor at " + neighbor.worldPosition + " with gCost: " + neighbor.gCost + " and hCost: " + neighbor.hCost);
                 if (!openSet.Contains(neighbor) && !checkedSet.Contains(neighbor))
                 {
+                    Debug.Log("Adding neighbor at " + neighbor.worldPosition + " to openSet.");
                     openSet.Add(neighbor);
                 }
             }
         }
-        return null; // No path found
+        Debug.Log("No path found with " + checkedSet.Count + " nodes checked.");
+        CleanUpNodes();
+        return null; //No path found
+    }
+    
+    private void CleanUpNodes()
+    {
+        foreach (var node in grid.GetAllNodes())
+        {
+            node.gCost = 0;
+            node.hCost = 0;
+            node.parent = null;
+        }
     }
     
     private List<Node> RetracePath(Node startNode, Node endNode)

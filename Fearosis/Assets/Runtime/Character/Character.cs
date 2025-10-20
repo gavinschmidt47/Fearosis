@@ -10,7 +10,7 @@ public class Character : MonoBehaviour
     public float minWaitTime = 2f;
     public float maxWaitTime = 5f;
     public float arrivalThreshold = 0.1f;
-    public float deathTime = 30f; // Time in seconds before the character dies
+    public float deathTime = 10f; // Time in seconds before the character dies
 
     private bool firstTimeAwake = true;
     private Rigidbody2D rb;
@@ -63,6 +63,11 @@ public class Character : MonoBehaviour
             StartCoroutine(FollowPath(path));
             StartCoroutine(DieAfterTime(deathTime)); // Character will die after specified deathTime
         }
+        else
+        {
+            reachDestinationEvent?.Invoke();
+            Debug.LogWarning("No path found to destination: " + randomDestination + ". Despawning character.");
+        }
         yield return null;
     }
 
@@ -82,9 +87,11 @@ public class Character : MonoBehaviour
         //Goes point by point in the path
         foreach (var node in path)
         {
+            Debug.Log("Heading to next node at");
             //Each fixed update, move towards the next node until close enough
-            while ((rb.position - node.worldPosition).sqrMagnitude > arrivalThreshold * arrivalThreshold)
+            while ((rb.position - node.worldPosition).magnitude > arrivalThreshold)
             {
+                Debug.Log("Moving towards node at " + node.worldPosition + " from " + (rb.position-node.worldPosition).magnitude + " units away.");
                 MoveTo(node.worldPosition);
                 yield return new WaitForFixedUpdate();
             }

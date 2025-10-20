@@ -62,6 +62,7 @@ MonoBehaviour:
   minWaitTime: 10
   maxWaitTime: 50
   arrivalThreshold: 0.1
+  deathTime: 30
   spriteRenderer: {fileID: 0}
   animator: {fileID: 0}
 --- !u!212 &3197499682365267695

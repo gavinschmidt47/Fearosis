@@ -14,17 +14,7 @@ public class RandomlyMovingPeople : MonoBehaviour
     {
         objectPooler = ObjectPooler.Instance;
         grid = PoissonDiscGrid.Instance;
-        GameObject person = objectPooler.GetObject();
-        if (person != null)
-        {
-            Debug.Log("Spawning person");
-            person.SetActive(true);
-            person.transform.position = grid.GetRandomNode().worldPosition;
-            person.GetComponent<Character>().reachDestinationEvent += () =>
-            {
-                objectPooler.ReturnObject(person);
-            };
-        }
+        
         StartCoroutine(SpawnPeople());
     }
 
@@ -41,8 +31,15 @@ public class RandomlyMovingPeople : MonoBehaviour
                 {
                     objectPooler.ReturnObject(person);
                 };
+                StartCoroutine(DieAfterTime(person, 10f)); // Despawn after 10 seconds
             }
             yield return new WaitForSeconds(Random.Range(minSpawnInterval, maxSpawnInterval));
         }
+    }
+
+    private IEnumerator DieAfterTime(GameObject person, float time)
+    {
+        yield return new WaitForSeconds(time);
+        objectPooler.ReturnObject(person);
     }
 }
