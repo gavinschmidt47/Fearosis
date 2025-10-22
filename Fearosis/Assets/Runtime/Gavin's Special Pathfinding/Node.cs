@@ -34,7 +34,7 @@ public class Node
 
         if (parent != null)
         {
-            gCost = parent.gCost + Vector2.Distance(worldPosition, parent.worldPosition);
+            gCost = parent.gCost + (worldPosition - parent.worldPosition).magnitude;
         }
         else
         {
@@ -43,7 +43,7 @@ public class Node
 
         if (target != null)
         {
-            hCost = Vector2.Distance(worldPosition, target.worldPosition);
+            hCost = (worldPosition - target.worldPosition).magnitude;
         }
         else
         {

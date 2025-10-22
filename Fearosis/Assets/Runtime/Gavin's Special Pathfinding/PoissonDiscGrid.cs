@@ -6,8 +6,8 @@ public class PoissonDiscGrid : MonoBehaviour
     public static PoissonDiscGrid Instance { get; private set; }
 
     //Must be edited in code, not in the Unity Editor, as this is a static class
-    private int numRows = 50;
-    private int numCols = 70;
+    private int numRows = 20;
+    private int numCols = 45;
     private float cellSize = 0.1f;
 
     private Bounds mapBounds;

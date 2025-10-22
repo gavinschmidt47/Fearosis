@@ -48,7 +48,7 @@ public class ObjectPooler : MonoBehaviour
             nightPool.Clear();
         }
 
-        for (int i = 0; i < (fullGameStatsScript.population - fullGameStatsScript.infected) / 100; i++)
+        for (int i = 0; i < (fullGameStatsScript.population - fullGameStatsScript.infected) / 500; i++)
         {
             tempObj = Instantiate(dayCharacter, grid.GetRandomNode().worldPosition, Quaternion.identity);
             tempObj.transform.SetParent(transform);
@@ -56,7 +56,7 @@ public class ObjectPooler : MonoBehaviour
             tempObj.SetActive(false);
         }
 
-        for (int i = 0; i < fullGameStatsScript.infected / 100; i++)
+        for (int i = 0; i < fullGameStatsScript.infected / 500; i++)
         {
             tempObj = Instantiate(nightCharacter, grid.GetRandomNode().worldPosition, Quaternion.identity);
             tempObj.transform.SetParent(transform);
