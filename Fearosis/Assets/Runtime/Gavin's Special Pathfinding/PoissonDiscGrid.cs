@@ -6,12 +6,12 @@ public class PoissonDiscGrid : MonoBehaviour
     public static PoissonDiscGrid Instance { get; private set; }
 
     //Must be edited in code, not in the Unity Editor, as this is a static class
-    private int pointCount = 700;
-    private float checkRadius = 0.15f;
+    private int numRows = 50;
+    private int numCols = 70;
     private float cellSize = 0.1f;
 
     private Bounds mapBounds;
-    public List<Node> validPoints;
+    public Node[,] validPoints;
     void Awake()
     {
         if (Instance == null)
@@ -27,39 +27,30 @@ public class PoissonDiscGrid : MonoBehaviour
         validPoints = GeneratePoints();
     }
 
-    private List<Node> GeneratePoints()
+    private Node[,] GeneratePoints()
     {
         //Poisson Disc Sampling algorithm
-        List<Node> points = new List<Node>();
-        int attempts = 0;
-        while (points.Count < pointCount && attempts < pointCount * 10)
-        {
-            Vector2 randomPoint = new Vector2(
-                Random.Range(mapBounds.min.x, mapBounds.max.x),
-                Random.Range(mapBounds.min.y, mapBounds.max.y)
-            );
+        Node[,] points = new Node[numCols, numRows];
 
-            if (IsPointValid(new Node(randomPoint), points))
+        //Generate grid of points
+        for (int i = 0; i < numCols; i++)
+        {
+            for (int j = 0; j < numRows; j++)
             {
-                points.Add(new Node(randomPoint));
-                Debug.DrawLine(randomPoint, randomPoint + Vector2.up * 0.1f, Color.green, 100f);
+                Vector2 pointPosition = new Vector2(mapBounds.min.x + i, mapBounds.min.y + j);
+                points[i, j] = new Node(pointPosition, i, j, false);
+
+                //Check if the point is valid
+                if (IsPointValid(points[i, j]))
+                    points[i, j].MakeValid();
             }
-            attempts++;
         }
         return points;
     }
 
-    private bool IsPointValid(Node point, List<Node> points)
+    private bool IsPointValid(Node point)
     {
-        //Checks for other points within the checkRadius
-        foreach (var existingPoint in points)
-        {
-            //Checks for other points
-            if (Vector2.Distance(point.worldPosition, existingPoint.worldPosition) < cellSize)
-            {
-                return false;
-            }
-        }
+        if (point.valid) return true;
         //Checks for buildings and obstacles
         Collider2D[] hitColliders = Physics2D.OverlapCircleAll(point.worldPosition, cellSize);
         if (hitColliders.Length > 0)
@@ -78,8 +69,11 @@ public class PoissonDiscGrid : MonoBehaviour
     //Gets the closest valid point to a given position
     public Node GetClosestPoint(Vector2 position)
     {
-        Node closestNode = validPoints[0];
+        //Get distance to first point
+        Node closestNode = validPoints[0, 0];
         float closestDistance = (position - closestNode.worldPosition).sqrMagnitude;
+
+        //Iterate through all valid points to find the closest
         foreach (var point in validPoints)
         {
             float distance = (position - point.worldPosition).sqrMagnitude;
@@ -95,119 +89,29 @@ public class PoissonDiscGrid : MonoBehaviour
     //Gets all neighbors within a certain radius
     public List<Node> GetNeighbors(Node node)
     {
+        //Get starting grid position
+        int startX = Mathf.Max(0, node.gridX - 1);
+        int endX = Mathf.Min(numCols - 1, node.gridX + 1);
+        int startY = Mathf.Max(0, node.gridY - 1);
+        int endY = Mathf.Min(numRows - 1, node.gridY + 1);
+
         List<Node> neighbors = new List<Node>();
-        Node upLeft = GetClosestPoint(node.worldPosition + new Vector2(-checkRadius, checkRadius));
-        Node left = GetClosestPoint(node.worldPosition + Vector2.left * checkRadius);
-        Node lowLeft = GetClosestPoint(node.worldPosition + new Vector2(-checkRadius, -checkRadius));
-        Node lowRight = GetClosestPoint(node.worldPosition + new Vector2(checkRadius, -checkRadius));
-        Node right = GetClosestPoint(node.worldPosition + Vector2.right * checkRadius);
-        Node upRight = GetClosestPoint(node.worldPosition + new Vector2(checkRadius, checkRadius));
-        Node up = GetClosestPoint(node.worldPosition + Vector2.up * checkRadius);
-        Node down = GetClosestPoint(node.worldPosition + Vector2.down * checkRadius);
-        if (upLeft.worldPosition != node.worldPosition)
+
+        for (int x = startX; x <= endX; x++)
         {
-            neighbors.Add(upLeft);
-        }
-        else
-        {
-            upLeft = GetClosestPoint(node.worldPosition + new Vector2(-checkRadius * 1.5f, checkRadius * 1.5f));
-            if (upLeft.worldPosition != node.worldPosition && !neighbors.Contains(upLeft))
+            for (int y = startY; y <= endY; y++)
             {
-                neighbors.Add(upLeft);
+                //Skip the node itself
+                if (x == node.gridX && y == node.gridY)
+                    continue;
+
+                Node neighborNode = validPoints[x, y];
+                if (neighborNode.valid)
+                {
+                    neighbors.Add(neighborNode);
+                }
             }
         }
-
-        if (lowLeft.worldPosition != node.worldPosition && !neighbors.Contains(lowLeft))
-        {
-            neighbors.Add(lowLeft);
-        }
-        else
-        {
-            lowLeft = GetClosestPoint(node.worldPosition + new Vector2(-checkRadius * 1.5f, -checkRadius * 1.5f));
-            if (lowLeft.worldPosition != node.worldPosition && !neighbors.Contains(lowLeft))
-            {
-                neighbors.Add(lowLeft);
-            }
-        }
-
-        if (left.worldPosition != node.worldPosition)
-        {
-            neighbors.Add(left);
-        }
-        else
-        {
-            left = GetClosestPoint(node.worldPosition + Vector2.left * checkRadius * 1.5f);
-            if (left.worldPosition != node.worldPosition && !neighbors.Contains(left))
-            {
-                neighbors.Add(left);
-            }
-        }
-
-        if (lowRight.worldPosition != node.worldPosition && !neighbors.Contains(lowRight))
-        {
-            neighbors.Add(lowRight);
-        }
-        else
-        {
-            lowRight = GetClosestPoint(node.worldPosition + new Vector2(checkRadius * 1.5f, -checkRadius * 1.5f));
-            if (lowRight.worldPosition != node.worldPosition && !neighbors.Contains(lowRight))
-            {
-                neighbors.Add(lowRight);
-            }
-        }
-
-        if (right.worldPosition != node.worldPosition && !neighbors.Contains(right))
-        {
-            neighbors.Add(right);
-        }
-        else
-        {
-            right = GetClosestPoint(node.worldPosition + Vector2.right * checkRadius * 1.5f);
-            if (right.worldPosition != node.worldPosition && !neighbors.Contains(right))
-            {
-                neighbors.Add(right);
-            }
-        }
-
-        if (upRight.worldPosition != node.worldPosition && !neighbors.Contains(upRight))
-        {
-            neighbors.Add(upRight);
-        }
-        else
-        {
-            upRight = GetClosestPoint(node.worldPosition + new Vector2(checkRadius * 1.5f, checkRadius * 1.5f));
-            if (upRight.worldPosition != node.worldPosition && !neighbors.Contains(upRight))
-            {
-                neighbors.Add(upRight);
-            }
-        }
-
-        if (up.worldPosition != node.worldPosition && !neighbors.Contains(up))
-        {
-            neighbors.Add(up);
-        }
-        else
-        {
-            up = GetClosestPoint(node.worldPosition + Vector2.up * checkRadius * 1.5f);
-            if (up.worldPosition != node.worldPosition && !neighbors.Contains(up))
-            {
-                neighbors.Add(up);
-            }
-        }
-
-        if (down.worldPosition != node.worldPosition && !neighbors.Contains(down))
-        {
-            neighbors.Add(down);
-        }
-        else
-        {
-            down = GetClosestPoint(node.worldPosition + Vector2.down * checkRadius * 1.5f);
-            if (down.worldPosition != node.worldPosition && !neighbors.Contains(down))
-            {
-                neighbors.Add(down);
-            }
-        }
-
         if (neighbors.Count == 0)
         {
             Debug.LogWarning("No neighbors found for node at " + node.worldPosition);
@@ -217,15 +121,12 @@ public class PoissonDiscGrid : MonoBehaviour
 
     public Node GetRandomNode()
     {
-        if (validPoints.Count == 0)
-        {
-            return null;
-        }
-        int randomIndex = Random.Range(0, validPoints.Count);
-        return validPoints[randomIndex];
+        int randomX = UnityEngine.Random.Range(0, numCols);
+        int randomY = UnityEngine.Random.Range(0,  numRows);
+        return validPoints[randomX, randomY];
     }
 
-    public List<Node> GetAllNodes()
+    public Node[,] GetAllNodes()
     {
         return validPoints;
     }

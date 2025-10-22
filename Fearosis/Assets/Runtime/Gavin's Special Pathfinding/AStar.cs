@@ -10,12 +10,10 @@ public class AStar : MonoBehaviour
     {
         //Iniitialize start and target nodes
         Node startNode = grid.GetClosestPoint(startPos);
-        Debug.Log("Start node: " + startNode.worldPosition);
         Node targetNode = grid.GetClosestPoint(targetPos);
-        Debug.Log("Target node: " + targetNode.worldPosition);
 
-        startNode.gCost = 0;
-        startNode.hCost = (startNode.worldPosition - targetNode.worldPosition).sqrMagnitude;
+        targetNode.MakeTargetNode(startNode);
+        startNode.MakeStartNode(targetNode);
 
         //Initialize open and checked sets
         List<Node> openSet = new List<Node>();
@@ -64,11 +62,8 @@ public class AStar : MonoBehaviour
                     continue;
                 }
 
-                //Calculate new gCost for neighbor
-                float newMovementCostToNeighbor = currentNode.gCost + (currentNode.worldPosition - neighbor.worldPosition).magnitude;
-                neighbor.gCost = newMovementCostToNeighbor;
-                neighbor.parent = currentNode;
-                neighbor.hCost = (neighbor.worldPosition - targetNode.worldPosition).magnitude;
+                //Give neighbor references to currentNode and targetNode to calculate costs
+                neighbor.GiveReferences(currentNode, targetNode);
 
                 Debug.Log("Neighbor at " + neighbor.worldPosition + " with gCost: " + neighbor.gCost + " and hCost: " + neighbor.hCost);
                 if (!openSet.Contains(neighbor) && !checkedSet.Contains(neighbor))
