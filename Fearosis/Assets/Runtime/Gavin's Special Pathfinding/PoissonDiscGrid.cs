@@ -12,6 +12,9 @@ public class PoissonDiscGrid : MonoBehaviour
 
     private Bounds mapBounds;
     public Node[,] validPoints;
+
+    private float xMultiplier;
+    private float yMultiplier;
     void Awake()
     {
         if (Instance == null)
@@ -32,17 +35,23 @@ public class PoissonDiscGrid : MonoBehaviour
         //Poisson Disc Sampling algorithm
         Node[,] points = new Node[numCols, numRows];
 
+        xMultiplier = mapBounds.size.x / numCols;
+        yMultiplier = mapBounds.size.y / numRows;
+
         //Generate grid of points
         for (int i = 0; i < numCols; i++)
         {
             for (int j = 0; j < numRows; j++)
             {
-                Vector2 pointPosition = new Vector2(mapBounds.min.x + i, mapBounds.min.y + j);
+                Vector2 pointPosition = new Vector2(mapBounds.min.x + i * xMultiplier, mapBounds.min.y + j * yMultiplier);
                 points[i, j] = new Node(pointPosition, i, j, false);
 
                 //Check if the point is valid
                 if (IsPointValid(points[i, j]))
+                {
+                    Debug.DrawLine(pointPosition - Vector2.one * 0.1f, pointPosition + Vector2.one * 0.1f, Color.green, 100f);
                     points[i, j].MakeValid();
+                }
             }
         }
         return points;
@@ -67,23 +76,13 @@ public class PoissonDiscGrid : MonoBehaviour
     }
 
     //Gets the closest valid point to a given position
-    public Node GetClosestPoint(Vector2 position)
+    public Node ConvertToGrid(Vector2 position)
     {
-        //Get distance to first point
-        Node closestNode = validPoints[0, 0];
-        float closestDistance = (position - closestNode.worldPosition).sqrMagnitude;
-
-        //Iterate through all valid points to find the closest
-        foreach (var point in validPoints)
-        {
-            float distance = (position - point.worldPosition).sqrMagnitude;
-            if (distance < closestDistance)
-            {
-                closestDistance = distance;
-                closestNode = point;
-            }
-        }
-        return closestNode;
+        int gridX = Mathf.FloorToInt((position.x - mapBounds.min.x) / xMultiplier);
+        int gridY = Mathf.FloorToInt((position.y - mapBounds.min.y) / yMultiplier);
+        gridX = Mathf.Clamp(gridX, 0, numCols - 1);
+        gridY = Mathf.Clamp(gridY, 0, numRows - 1);
+        return validPoints[gridX, gridY];
     }
 
     //Gets all neighbors within a certain radius

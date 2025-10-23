@@ -34,7 +34,7 @@ public class Node
 
         if (parent != null)
         {
-            gCost = parent.gCost + (worldPosition - parent.worldPosition).magnitude;
+            gCost = parent.gCost + Mathf.Abs((worldPosition - parent.worldPosition).magnitude);
         }
         else
         {
@@ -43,7 +43,7 @@ public class Node
 
         if (target != null)
         {
-            hCost = (worldPosition - target.worldPosition).magnitude;
+            hCost = Mathf.Abs((worldPosition - target.worldPosition).magnitude);
         }
         else
         {
@@ -59,12 +59,12 @@ public class Node
     public void MakeStartNode(Node target)
     {
         gCost = 0;
-        hCost = (worldPosition - target.worldPosition).magnitude;
+        hCost = Mathf.Abs((worldPosition - target.worldPosition).magnitude);
         parent = null;
     }
     public void MakeTargetNode(Node start)
     {
-        gCost = (worldPosition - start.worldPosition).magnitude;
+        gCost = Mathf.Abs((worldPosition - start.worldPosition).magnitude);
         hCost = 0;
     }
     public void CleanUp()
