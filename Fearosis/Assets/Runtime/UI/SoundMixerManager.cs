@@ -18,9 +18,9 @@ public class SoundMixerManager : MonoBehaviour
 
     private void Awake()
     {
-        masterVolumeIconRenderer = GameObject.FindWithTag("Master").GetComponent<Image>();
-        soundFXVolumeIconRenderer = GameObject.FindWithTag("SFX").GetComponent<Image>();
-        musicVolumeIconRenderer = GameObject.FindWithTag("Music").GetComponent<Image>();
+        masterVolumeIconRenderer = GameObject.FindGameObjectWithTag("Master").GetComponent<Image>();
+        soundFXVolumeIconRenderer = GameObject.FindGameObjectWithTag("SFX").GetComponent<Image>();
+        musicVolumeIconRenderer = GameObject.FindGameObjectWithTag("Music").GetComponent<Image>();
     }
 
     public void SetMasterVolume(float level)

@@ -78,10 +78,15 @@ public class PoissonDiscGrid : MonoBehaviour
     //Gets the closest valid point to a given position
     public Node ConvertToGrid(Vector2 position)
     {
+        Debug.Log("Converting position " + position + " to grid node.");
         int gridX = Mathf.FloorToInt((position.x - mapBounds.min.x) / xMultiplier);
         int gridY = Mathf.FloorToInt((position.y - mapBounds.min.y) / yMultiplier);
         gridX = Mathf.Clamp(gridX, 0, numCols - 1);
         gridY = Mathf.Clamp(gridY, 0, numRows - 1);
+        if (!validPoints[gridX, gridY].valid)
+        {
+            Debug.LogWarning("Converted to invalid node at grid position (" + gridX + ", " + gridY + ").");
+        }
         return validPoints[gridX, gridY];
     }
 

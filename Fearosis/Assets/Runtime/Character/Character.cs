@@ -57,8 +57,8 @@ public class Character : MonoBehaviour
         Vector2 randomDestination = destinations[randomIndex];
 
         //Find path using A* algorithm
-        List<Node> path = aStar.FindPath(rb.position, randomDestination);
-        if (path != null && path.Count > 0)
+        List<Node> path = aStar.FindPath(transform.position, randomDestination);
+        if (path != null && path.Count > 1)
         {
             StartCoroutine(FollowPath(path));
             StartCoroutine(DieAfterTime(deathTime)); // Character will die after specified deathTime
