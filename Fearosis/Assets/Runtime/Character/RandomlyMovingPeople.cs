@@ -18,8 +18,10 @@ public class RandomlyMovingPeople : MonoBehaviour
         GameObject person = objectPooler.GetObject();
             if (person != null)
             {
-                person.SetActive(true);
-                person.transform.position = grid.GetRandomNode().worldPosition;
+            person.SetActive(true);
+                Node startNode = grid.GetRandomValidNode();
+                person.transform.position = startNode.worldPosition;
+                StartCoroutine(person.GetComponent<Character>().ChooseRandomDestination(startNode, grid.GetRandomTargetNode()));
                 Debug.Log("Spawned person at: " + person.transform.position);
                 person.GetComponent<Character>().reachDestinationEvent += () =>
                 {
@@ -39,7 +41,10 @@ public class RandomlyMovingPeople : MonoBehaviour
             if (person != null)
             {
                 person.SetActive(true);
-                person.transform.position = grid.GetRandomNode().worldPosition;
+                Node startNode = grid.GetRandomValidNode();
+                person.transform.position = startNode.worldPosition;
+                StartCoroutine(person.GetComponent<Character>().ChooseRandomDestination(startNode, grid.GetRandomTargetNode()));
+                Debug.Log("Spawned person at: " + person.transform.position);
                 person.GetComponent<Character>().reachDestinationEvent += () =>
                 {
                     objectPooler.ReturnObject(person);

@@ -29,26 +29,13 @@ public class Character : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    public void OnEnable()
-    {
-        if (firstTimeAwake)
-        {
-            firstTimeAwake = false;
-            return;
-        }
-        else
-        {
-            StartCoroutine(ChooseRandomDestination());
-        }
-    }
-
     public void OnDisable()
     {
         StopAllCoroutines();
     }
 
     //Pick a random destination from the list and start moving towards it
-    IEnumerator ChooseRandomDestination()
+    public IEnumerator ChooseRandomDestination(Node startNode, Node targetNode)
     {
         if (destinations.Count == 0) yield break;
 
@@ -57,7 +44,7 @@ public class Character : MonoBehaviour
         Vector2 randomDestination = destinations[randomIndex];
 
         //Find path using A* algorithm
-        List<Node> path = aStar.FindPath(transform.position, randomDestination);
+        List<Node> path = aStar.FindPath(startNode, targetNode);
         if (path != null && path.Count > 1)
         {
             StartCoroutine(FollowPath(path));

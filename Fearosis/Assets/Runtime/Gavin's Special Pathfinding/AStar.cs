@@ -1,16 +1,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class AStar : MonoBehaviour
 {
     private PoissonDiscGrid grid = PoissonDiscGrid.Instance;
+    public int maxSearchIterations = 50;
 
-    public List<Node> FindPath(Vector2 startPos, Vector2 targetPos)
+    public List<Node> FindPath(Node startNode, Node targetNode)
     {
-        //Iniitialize start and target nodes
-        Node startNode = grid.ConvertToGrid(startPos);
-        Node targetNode = grid.ConvertToGrid(targetPos);
 
         if (!startNode.valid || !targetNode.valid || startNode == null || targetNode == null)
         {
@@ -33,15 +32,25 @@ public class AStar : MonoBehaviour
             if (!neighbor.valid) continue;
 
             //Give neighbor references to currentNode and targetNode to calculate costs
-            
+
             neighbor.GiveReferences(currentNode, targetNode);
 
             openSet.Add(neighbor);
         }
+        int iterations = 0;
 
         //fCost = gCost(Distance from start) + hCost (Distance from target)
-        /*while (openSet.Count > 0)
+        while (openSet.Count > 0 && iterations < maxSearchIterations)
         {
+            iterations++;
+            //Find node in openSet with lowest fCost
+            currentNode = openSet.OrderBy(n => n.fCost).ThenBy(n => n.hCost).First();
+            //End condition
+            if (currentNode == targetNode)
+            {
+                Debug.Log("Path found with gcost: " + currentNode.gCost);
+                return RetracePath(startNode, currentNode);
+            }
             for (int i = 0; i < openSet.Count; i++)
             {
                 if (openSet[i] == currentNode) continue;
@@ -98,7 +107,7 @@ public class AStar : MonoBehaviour
                 }
                 else if (currentNode != startNode) currentNode.CleanUp();
             }
-        }*/
+        }
         Debug.Log("Initialized with " + openSet.Count + " nodes ready.");
         return null; //No path found
     }

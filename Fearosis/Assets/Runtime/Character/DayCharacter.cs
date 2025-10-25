@@ -17,6 +17,5 @@ public class DayCharacter : Character
     void OnEnable()
     {
         characterSpriteSelector.PickCharacter(spriteRenderer, animator);
-        base.OnEnable();
     }
 }

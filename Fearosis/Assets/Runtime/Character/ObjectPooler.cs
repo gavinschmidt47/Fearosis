@@ -50,7 +50,7 @@ public class ObjectPooler : MonoBehaviour
 
         for (int i = 0; i < (fullGameStatsScript.population - fullGameStatsScript.infected) / 500; i++)
         {
-            tempObj = Instantiate(dayCharacter, grid.GetRandomNode().worldPosition, Quaternion.identity);
+            tempObj = Instantiate(dayCharacter, Vector3.zero, Quaternion.identity);
             tempObj.transform.SetParent(transform);
             dayPool.Enqueue(tempObj);
             tempObj.SetActive(false);
@@ -58,7 +58,7 @@ public class ObjectPooler : MonoBehaviour
 
         for (int i = 0; i < fullGameStatsScript.infected / 500; i++)
         {
-            tempObj = Instantiate(nightCharacter, grid.GetRandomNode().worldPosition, Quaternion.identity);
+            tempObj = Instantiate(nightCharacter, Vector3.zero, Quaternion.identity);
             tempObj.transform.SetParent(transform);
             nightPool.Enqueue(tempObj);
             tempObj.SetActive(false);

@@ -6,6 +6,7 @@ public class Node
     public int gridX;
     public int gridY;
     public bool valid;
+    public bool inTarget;
 
     public float gCost = 0; // Cost from start node
     public float hCost = 0; // Heuristic cost to target node
@@ -17,12 +18,13 @@ public class Node
         get { return gCost + hCost; }
     }
 
-    public Node(Vector2 worldPosition, int gridX, int gridY, bool valid)
+    public Node(Vector2 worldPosition, int gridX, int gridY, bool valid, bool inTarget)
     {
         this.worldPosition = worldPosition;
         this.gridX = gridX;
         this.gridY = gridY;
         this.valid = valid;
+        this.inTarget = inTarget;
         parent = null;
         target = null;
     }

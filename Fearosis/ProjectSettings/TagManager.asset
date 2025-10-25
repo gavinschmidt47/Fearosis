@@ -15,6 +15,7 @@ TagManager:
   - Master
   - Music
   - SFX
+  - TargetZone
   layers:
   - Default
   - TransparentFX

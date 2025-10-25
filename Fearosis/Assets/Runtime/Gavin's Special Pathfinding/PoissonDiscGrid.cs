@@ -44,13 +44,18 @@ public class PoissonDiscGrid : MonoBehaviour
             for (int j = 0; j < numRows; j++)
             {
                 Vector2 pointPosition = new Vector2(mapBounds.min.x + i * xMultiplier, mapBounds.min.y + j * yMultiplier);
-                points[i, j] = new Node(pointPosition, i, j, false);
+                points[i, j] = new Node(pointPosition, i, j, false, false);
 
                 //Check if the point is valid
                 if (IsPointValid(points[i, j]))
                 {
                     Debug.DrawLine(pointPosition - Vector2.one * 0.1f, pointPosition + Vector2.one * 0.1f, Color.green, 100f);
                     points[i, j].MakeValid();
+                }
+                if (isPointInTarget(points[i, j]))
+                {
+                    Debug.DrawLine(pointPosition - Vector2.one * 0.1f, pointPosition + Vector2.one * 0.1f, Color.blue, 100f);
+                    points[i, j].inTarget = true;
                 }
             }
         }
@@ -75,19 +80,22 @@ public class PoissonDiscGrid : MonoBehaviour
         return true;
     }
 
-    //Gets the closest valid point to a given position
-    public Node ConvertToGrid(Vector2 position)
+    private bool isPointInTarget(Node point)
     {
-        Debug.Log("Converting position " + position + " to grid node.");
-        int gridX = Mathf.FloorToInt((position.x - mapBounds.min.x) / xMultiplier);
-        int gridY = Mathf.FloorToInt((position.y - mapBounds.min.y) / yMultiplier);
-        gridX = Mathf.Clamp(gridX, 0, numCols - 1);
-        gridY = Mathf.Clamp(gridY, 0, numRows - 1);
-        if (!validPoints[gridX, gridY].valid)
+        if (point.inTarget) return true;
+        //Checks for target zone
+        Collider2D[] hitColliders = Physics2D.OverlapCircleAll(point.worldPosition, cellSize);
+        if (hitColliders.Length > 0)
         {
-            Debug.LogWarning("Converted to invalid node at grid position (" + gridX + ", " + gridY + ").");
+            foreach (var collider in hitColliders)
+            {
+                if (collider.CompareTag("TargetZone") && point.valid)
+                {
+                    return true;
+                }
+            }
         }
-        return validPoints[gridX, gridY];
+        return false;
     }
 
     //Gets all neighbors within a certain radius
@@ -123,10 +131,27 @@ public class PoissonDiscGrid : MonoBehaviour
         return neighbors;
     }
 
-    public Node GetRandomNode()
+    public Node GetRandomValidNode()
     {
         int randomX = UnityEngine.Random.Range(0, numCols);
-        int randomY = UnityEngine.Random.Range(0,  numRows);
+        int randomY = UnityEngine.Random.Range(0, numRows);
+        while (!validPoints[randomX, randomY].valid)
+        {
+            randomX = UnityEngine.Random.Range(0, numCols);
+            randomY = UnityEngine.Random.Range(0, numRows);
+        }
+        return validPoints[randomX, randomY];
+    }
+
+    public Node GetRandomTargetNode()
+    {
+        int randomX = UnityEngine.Random.Range(0, numCols);
+        int randomY = UnityEngine.Random.Range(0, numRows);
+        while (!validPoints[randomX, randomY].inTarget)
+        {
+            randomX = UnityEngine.Random.Range(0, numCols);
+            randomY = UnityEngine.Random.Range(0, numRows);
+        }
         return validPoints[randomX, randomY];
     }
 
