@@ -12,8 +12,8 @@ public class LevelSelector : MonoBehaviour
     public Button infiniteMode;
     public GameObject descriptionBox;
 
-    public Sprite impossibleIcon;
-    public Sprite lockedImpossibleIcon;
+    public Sprite InfiniteIcon;
+    public Sprite LockedInfiniteIcon;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

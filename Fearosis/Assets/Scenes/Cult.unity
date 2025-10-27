@@ -23476,7 +23476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dayCharacter: {fileID: 5292200318635337322, guid: b7f20321def43bb478f060234cb9086b, type: 3}
-  nightCharacter: {fileID: 5292200318635337322, guid: 3baa1959a5f9675409dff27b11dd5b7d, type: 3}
+  nightCharacter: {fileID: 5292200318635337322, guid: 1bd1302f157a3fa46bb576518b3b91b0, type: 3}
 --- !u!4 &2013274655
 Transform:
   m_ObjectHideFlags: 0
@@ -23504,8 +23504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a30834ce591cb534eaf24df6bea322d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnInterval: 0.5
-  maxSpawnInterval: 2
+  minSpawnInterval: 0.1
+  maxSpawnInterval: 1
 --- !u!1 &2016539636
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 61a0733d67c912844a950a6cb826c057
+guid: 4a699b5ea4afc5f4799307e81cd39d31
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5393123441278781311
-    second: Locked Impossible Button_0
+      213: 2981826705876229731
+    second: Theme Title_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Locked Impossible Button_0
+      name: Theme Title_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 58
-        height: 13
+        width: 54
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f770143223938da40800000000000000
-      internalID: 5393123441278781311
+      spriteID: 36e96813793916920800000000000000
+      internalID: 2981826705876229731
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Locked Impossible Button_0: 5393123441278781311
+      Theme Title_0: 2981826705876229731
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

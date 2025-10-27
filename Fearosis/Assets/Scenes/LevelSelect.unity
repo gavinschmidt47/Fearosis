@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8792453, g: 0.8792453, b: 0.8792453, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -375,8 +375,83 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 90}
+  m_SizeDelta: {x: 305, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &190427899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 190427900}
+  - component: {fileID: 190427902}
+  - component: {fileID: 190427901}
+  m_Layer: 5
+  m_Name: Level Select Title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &190427900
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190427899}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1395910977}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 185.23999, y: -44}
+  m_SizeDelta: {x: 289.481, y: 58}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &190427901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190427899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 47b2a296302ca184b95c90ce92019ea9, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &190427902
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190427899}
+  m_CullTransparentMesh: 1
 --- !u!1 &207373034
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,7 +509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4072438147512785572, guid: f1365c60051056644a52909675daa0f1, type: 3}
+  m_Sprite: {fileID: 497025055333516474, guid: dc2ddc1047fa2a04199cff363c17fc4c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -851,7 +926,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 90}
+  m_SizeDelta: {x: 305, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &434684747
 GameObject:
@@ -890,8 +965,8 @@ MonoBehaviour:
   normalMode: {fileID: 57084602}
   infiniteMode: {fileID: 226677351}
   descriptionBox: {fileID: 611830850}
-  impossibleIcon: {fileID: -4072438147512785572, guid: f1365c60051056644a52909675daa0f1, type: 3}
-  lockedImpossibleIcon: {fileID: 5393123441278781311, guid: 61a0733d67c912844a950a6cb826c057, type: 3}
+  InfiniteIcon: {fileID: 0}
+  LockedInfiniteIcon: {fileID: 0}
 --- !u!114 &434684749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1172,8 +1247,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: -10.401001}
-  m_SizeDelta: {x: 70.7409, y: 89.77}
+  m_AnchoredPosition: {x: -0.000002861, y: -11}
+  m_SizeDelta: {x: 74.2958, y: 95.1026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &462205799
 MonoBehaviour:
@@ -1195,7 +1270,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 3730224999326734558, guid: 57f8db2851d84fe41b5a3c68764fadae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1264,7 +1339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8792453, g: 0.8792453, b: 0.8792453, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1346,7 +1421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4072438147512785572, guid: f1365c60051056644a52909675daa0f1, type: 3}
+  m_Sprite: {fileID: 497025055333516474, guid: dc2ddc1047fa2a04199cff363c17fc4c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1962,8 +2037,8 @@ MonoBehaviour:
   normalMode: {fileID: 57084602}
   infiniteMode: {fileID: 226677351}
   descriptionBox: {fileID: 1627247310}
-  impossibleIcon: {fileID: -4072438147512785572, guid: f1365c60051056644a52909675daa0f1, type: 3}
-  lockedImpossibleIcon: {fileID: 5393123441278781311, guid: 61a0733d67c912844a950a6cb826c057, type: 3}
+  InfiniteIcon: {fileID: 0}
+  LockedInfiniteIcon: {fileID: 0}
 --- !u!114 &896600513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2047,8 +2122,8 @@ MonoBehaviour:
   normalMode: {fileID: 305203967}
   infiniteMode: {fileID: 458364212}
   descriptionBox: {fileID: 1784440512}
-  impossibleIcon: {fileID: -4072438147512785572, guid: f1365c60051056644a52909675daa0f1, type: 3}
-  lockedImpossibleIcon: {fileID: 5393123441278781311, guid: 61a0733d67c912844a950a6cb826c057, type: 3}
+  InfiniteIcon: {fileID: 0}
+  LockedInfiniteIcon: {fileID: 0}
 --- !u!114 &1122455789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2394,6 +2469,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 190427900}
   - {fileID: 1897751652}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2422,7 +2498,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ce9e1c960020ad3488ff08253efa4a95, type: 3}
+  m_Sprite: {fileID: 7052763729852907310, guid: 741b6b7205a7b624e9ad325d77fb4661, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2476,7 +2552,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 90}
+  m_SizeDelta: {x: 305, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1486608381
 GameObject:
@@ -2610,7 +2686,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4072438147512785572, guid: f1365c60051056644a52909675daa0f1, type: 3}
+  m_Sprite: {fileID: 497025055333516474, guid: dc2ddc1047fa2a04199cff363c17fc4c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2942,8 +3018,8 @@ MonoBehaviour:
   normalMode: {fileID: 305203967}
   infiniteMode: {fileID: 458364212}
   descriptionBox: {fileID: 1872943609}
-  impossibleIcon: {fileID: -4072438147512785572, guid: f1365c60051056644a52909675daa0f1, type: 3}
-  lockedImpossibleIcon: {fileID: 5393123441278781311, guid: 61a0733d67c912844a950a6cb826c057, type: 3}
+  InfiniteIcon: {fileID: 0}
+  LockedInfiniteIcon: {fileID: 0}
 --- !u!114 &1806001234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3097,7 +3173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8792453, g: 0.8792453, b: 0.8792453, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3270,8 +3346,8 @@ MonoBehaviour:
   normalMode: {fileID: 1297200309}
   infiniteMode: {fileID: 820921121}
   descriptionBox: {fileID: 35662594}
-  impossibleIcon: {fileID: -4072438147512785572, guid: f1365c60051056644a52909675daa0f1, type: 3}
-  lockedImpossibleIcon: {fileID: 5393123441278781311, guid: 61a0733d67c912844a950a6cb826c057, type: 3}
+  InfiniteIcon: {fileID: 0}
+  LockedInfiniteIcon: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

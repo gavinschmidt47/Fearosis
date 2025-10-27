@@ -124,10 +124,6 @@ public class PoissonDiscGrid : MonoBehaviour
                 }
             }
         }
-        if (neighbors.Count == 0)
-        {
-            Debug.LogWarning("No neighbors found for node at " + node.worldPosition);
-        }
         return neighbors;
     }
 

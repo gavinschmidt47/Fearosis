@@ -56,7 +56,7 @@ public class ObjectPooler : MonoBehaviour
             tempObj.SetActive(false);
         }
 
-        for (int i = 0; i < fullGameStatsScript.infected / 500; i++)
+        for (int i = 0; i < fullGameStatsScript.infected / 10; i++)
         {
             tempObj = Instantiate(nightCharacter, Vector3.zero, Quaternion.identity);
             tempObj.transform.SetParent(transform);
@@ -69,6 +69,7 @@ public class ObjectPooler : MonoBehaviour
     {
         if (dayPool.Count > 0 && nightPool.Count > 0)
         {
+            Debug.Log("Both pools have objects");
             int random = Random.Range(0, 1);
             if (random == 0) //if day
             {

@@ -10,11 +10,7 @@ public class AStar : MonoBehaviour
     public List<Node> FindPath(Node startNode, Node targetNode)
     {
 
-        if (!startNode.valid || !targetNode.valid || startNode == null || targetNode == null)
-        {
-            Debug.LogWarning("Start or target node is invalid. Start Node Valid: " + startNode.valid + ", Target Node Valid: " + targetNode.valid);
-            return null;
-        }
+        if (!startNode.valid || !targetNode.valid || startNode == null || targetNode == null) return null;
 
         targetNode.MakeTargetNode(startNode);
         startNode.MakeStartNode(targetNode);
@@ -39,11 +35,7 @@ public class AStar : MonoBehaviour
             checkedSet.Add(currentNode);
 
             //End condition - reached target
-            if (currentNode == targetNode)
-            {
-                Debug.Log("Path found with gcost: " + currentNode.gCost + " in " + iterations + " iterations");
-                return RetracePath(startNode, currentNode);
-            }
+            if (currentNode == targetNode) return RetracePath(startNode, currentNode);
 
             //Check each neighbor of currentNode
             List<Node> neighbors = grid.GetNeighbors(currentNode);
@@ -64,17 +56,10 @@ public class AStar : MonoBehaviour
                     neighbor.GiveReferences(currentNode, targetNode);
                     neighbor.gCost = tentativeGCost;
 
-                    if (!openSet.Contains(neighbor))
-                    {
-                        openSet.Add(neighbor);
-                        Debug.Log("Adding neighbor at " + neighbor.worldPosition + " to openSet with fCost: " + neighbor.fCost);
-                    }
+                    if (!openSet.Contains(neighbor)) openSet.Add(neighbor);
                 }
             }
         }
-
-        Debug.LogWarning($"No path found after {iterations} iterations. OpenSet count: {openSet.Count}, CheckedSet count: {checkedSet.Count}");
-        Debug.LogWarning($"Start node at {startNode.worldPosition} ({startNode.gridX}, {startNode.gridY}), Target node at {targetNode.worldPosition} ({targetNode.gridX}, {targetNode.gridY})");
         
         return null; //No path found
     }
@@ -87,11 +72,7 @@ public class AStar : MonoBehaviour
         while (currentNode != startNode)
         {
             path.Add(currentNode);
-            if (currentNode.parent == null)
-            {
-                Debug.LogWarning("Parent is null during path retracing. Path may be incomplete.");
-                break;
-            }
+            if (currentNode.parent == null) break;
             currentNode = currentNode.parent;
         }
         
@@ -99,7 +80,6 @@ public class AStar : MonoBehaviour
         path.Add(startNode);
         path.Reverse();
         
-        Debug.Log($"Path retraced with {path.Count} nodes");
         return path;
     }
 }

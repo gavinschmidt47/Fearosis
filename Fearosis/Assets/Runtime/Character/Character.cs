@@ -40,7 +40,6 @@ public class Character : MonoBehaviour
         List<Node> path = aStar.FindPath(startNode, targetNode);
         if (path != null && path.Count > 1)
         {
-            Debug.Log("Path found. Starting to follow path.");
             StartCoroutine(FollowPath(path));
             StartCoroutine(DieAfterTime(deathTime)); // Character will die after specified deathTime
         }
@@ -63,15 +62,12 @@ public class Character : MonoBehaviour
     //Follows the calculated path to the destination
     private IEnumerator FollowPath(List<Node> path)
     {
-        Debug.Log("Following path with " + path.Count + " nodes.");
         //Goes point by point in the path
         foreach (var node in path)
         {
-            Debug.Log("Heading to next node at");
             //Each fixed update, move towards the next node until close enough
             while ((rb.position - node.worldPosition).magnitude > arrivalThreshold)
             {
-                Debug.Log("Moving towards node at " + node.worldPosition + " from " + (rb.position-node.worldPosition).magnitude + " units away.");
                 MoveTo(node.worldPosition);
                 yield return new WaitForFixedUpdate();
             }
@@ -83,7 +79,6 @@ public class Character : MonoBehaviour
     private IEnumerator DieAfterTime(float time)
     {
         yield return new WaitForSeconds(time);
-        Debug.Log("Character has died.");
         gameObject.SetActive(false); // Deactivate the character
     }
 }

@@ -9,16 +9,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4110066823425174648}
-  - component: {fileID: 3545668188555926164}
-  - component: {fileID: 3197499682365267695}
-  - component: {fileID: 3395199700669330805}
-  - component: {fileID: 2873548869072003825}
-  - component: {fileID: -5817190134218184619}
-  - component: {fileID: 7066350078282640125}
-  - component: {fileID: -6977212433072945107}
+  - component: {fileID: 2283766220235954242}
+  - component: {fileID: 8554495436576621522}
+  - component: {fileID: 1079989431518473413}
+  - component: {fileID: 1506998547948223614}
+  - component: {fileID: 8272172312954278944}
+  - component: {fileID: -8340943970981759775}
   m_Layer: 0
-  m_Name: DayCharacter
-  m_TagString: DayCharacter
+  m_Name: BadAICharacter
+  m_TagString: NightCharacter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,7 +37,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3545668188555926164
+--- !u!114 &2283766220235954242
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47,17 +46,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 5292200318635337322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 153f96d6d3948ad45981244d84e6cd28, type: 3}
+  m_Script: {fileID: 11500000, guid: 401b12491ebb4834eaf2a8bd868e7887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.2
-  minWaitTime: 10
-  maxWaitTime: 50
+  speed: 2
+  minWaitTime: 2
+  maxWaitTime: 5
   arrivalThreshold: 0.1
   deathTime: 30
   spriteRenderer: {fileID: 0}
   animator: {fileID: 0}
---- !u!212 &3197499682365267695
+--- !u!212 &8554495436576621522
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -101,18 +100,18 @@ SpriteRenderer:
   m_SortingLayerID: 1283895107
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -7964894226907403838, guid: 713b415ea9a99c646ac09e4f239ccf34, type: 3}
+  m_Sprite: {fileID: -3098395164239246604, guid: b202c4ff23e3d1a4f8a65f78e0700c27, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.23, y: 0.26}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &3395199700669330805
+--- !u!95 &1079989431518473413
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -122,7 +121,7 @@ Animator:
   m_GameObject: {fileID: 5292200318635337322}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3f5c0e34d235eb94f9cae21c2022412f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5e15a41e1a30f0d4abf21328c4f9abc1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -134,7 +133,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!111 &2873548869072003825
+--- !u!111 &1506998547948223614
 Animation:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,7 +149,20 @@ Animation:
   m_AnimatePhysics: 0
   m_UpdateMode: 0
   m_CullingType: 0
---- !u!50 &-5817190134218184619
+--- !u!114 &8272172312954278944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5292200318635337322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113b0d731d9ac3d418222c200dd3312c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSearchIterations: 1500
+--- !u!50 &-8340943970981759775
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -177,33 +189,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7066350078282640125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5292200318635337322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e63f2180c99ad6140a3d5840f20087e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterVisualsList:
-  - daySprite: {fileID: -7964894226907403838, guid: 713b415ea9a99c646ac09e4f239ccf34, type: 3}
-    dayAnimation: {fileID: 9100000, guid: a832318c3fea0424d9a3bdcca7e0ec23, type: 2}
-  - daySprite: {fileID: -1710752060389482855, guid: 0578ebeb438a7f24fbf1d86c9f318ced, type: 3}
-    dayAnimation: {fileID: 9100000, guid: 3f5c0e34d235eb94f9cae21c2022412f, type: 2}
---- !u!114 &-6977212433072945107
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5292200318635337322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 113b0d731d9ac3d418222c200dd3312c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxSearchIterations: 1500
