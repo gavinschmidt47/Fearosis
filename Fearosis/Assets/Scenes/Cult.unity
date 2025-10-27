@@ -1207,7 +1207,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 95551150}
-  - component: {fileID: 95551149}
   m_Layer: 0
   m_Name: SoundMixerManager
   m_TagString: Untagged
@@ -1215,28 +1214,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &95551149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 95551148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 382fe52ebf8379d4783ee55162e33a12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  masterVolumeIcons:
-  - {fileID: 5213460851733565954, guid: 016c672de00eb854f996af87405de7de, type: 3}
-  - {fileID: 1732592472091274536, guid: 1a6aab106d6641740afa74c65cf00e4b, type: 3}
-  soundFXVolumeIcons:
-  - {fileID: 6726474067987493290, guid: ef23f7dc4a42d714383999cbaa5aabfe, type: 3}
-  - {fileID: 3653478701381339686, guid: ad222d5e61aade841a037d987fe63eb4, type: 3}
-  musicVolumeIcons:
-  - {fileID: 973192552138045733, guid: b52e6d6e69f92364a8ee086fa983b81a, type: 3}
-  - {fileID: -2396268482121774706, guid: 886bff2854a49724c901b933a53d1274, type: 3}
-  audioMixer: {fileID: 24100000, guid: abc2a84e39c5f814f84abb51741f27f4, type: 2}
 --- !u!4 &95551150
 Transform:
   m_ObjectHideFlags: 0
@@ -5652,6 +5629,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 502918534}
   m_CullTransparentMesh: 1
+--- !u!1 &503316576
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 503316578}
+  - component: {fileID: 503316577}
+  m_Layer: 0
+  m_Name: DifficultyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &503316577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503316576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3023e3e1efe738548997234dabf4ed2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  difficultyOptions:
+  - {fileID: 11400000, guid: cf90f4b141ac8e447bf2388d9e9afab0, type: 2}
+  - {fileID: 11400000, guid: 2eb3699076ab0c54c815bc7c4e7bd023, type: 2}
+  - {fileID: 11400000, guid: 8c35d9d62a561b04184be66363e0032c, type: 2}
+  selectedDifficulty: 0
+--- !u!4 &503316578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503316576}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 713.38513, y: 317.0726, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &505177709
 GameObject:
   m_ObjectHideFlags: 0
@@ -6699,7 +6725,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 95551149}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SoundMixerManager, Assembly-CSharp
         m_MethodName: SetSoundFXVolume
         m_Mode: 0
@@ -13888,7 +13914,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 95551149}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SoundMixerManager, Assembly-CSharp
         m_MethodName: SetMasterVolume
         m_Mode: 0
@@ -21240,7 +21266,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 95551149}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SoundMixerManager, Assembly-CSharp
         m_MethodName: SetMusicVolume
         m_Mode: 0
@@ -24698,3 +24724,4 @@ SceneRoots:
   - {fileID: 1063038187}
   - {fileID: 95551150}
   - {fileID: 1777222929}
+  - {fileID: 503316578}
