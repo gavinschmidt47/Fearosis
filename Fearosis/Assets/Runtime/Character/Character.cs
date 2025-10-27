@@ -5,7 +5,6 @@ using UnityEngine.Events;
 
 public class Character : MonoBehaviour
 {
-    public List<Vector2> destinations;
     public float speed = 2f;
     public float minWaitTime = 2f;
     public float maxWaitTime = 5f;
@@ -37,23 +36,17 @@ public class Character : MonoBehaviour
     //Pick a random destination from the list and start moving towards it
     public IEnumerator ChooseRandomDestination(Node startNode, Node targetNode)
     {
-        if (destinations.Count == 0) yield break;
-
-        //Pick a random destination
-        int randomIndex = Random.Range(0, destinations.Count);
-        Vector2 randomDestination = destinations[randomIndex];
-
         //Find path using A* algorithm
         List<Node> path = aStar.FindPath(startNode, targetNode);
         if (path != null && path.Count > 1)
         {
+            Debug.Log("Path found. Starting to follow path.");
             StartCoroutine(FollowPath(path));
             StartCoroutine(DieAfterTime(deathTime)); // Character will die after specified deathTime
         }
         else
         {
             reachDestinationEvent?.Invoke();
-            Debug.LogWarning("No path found to destination: " + randomDestination + ". Despawning character.");
         }
         yield return null;
     }

@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class AStar : MonoBehaviour
 {
@@ -25,90 +24,58 @@ public class AStar : MonoBehaviour
         HashSet<Node> checkedSet = new HashSet<Node>();
         openSet.Add(startNode);
 
-        Node currentNode = openSet[0];
-        List<Node> neighbors = grid.GetNeighbors(currentNode);
-        foreach (Node neighbor in neighbors)
-        {
-            if (!neighbor.valid) continue;
-
-            //Give neighbor references to currentNode and targetNode to calculate costs
-
-            neighbor.GiveReferences(currentNode, targetNode);
-
-            openSet.Add(neighbor);
-        }
         int iterations = 0;
 
         //fCost = gCost(Distance from start) + hCost (Distance from target)
         while (openSet.Count > 0 && iterations < maxSearchIterations)
         {
             iterations++;
+
             //Find node in openSet with lowest fCost
-            currentNode = openSet.OrderBy(n => n.fCost).ThenBy(n => n.hCost).First();
-            //End condition
+            Node currentNode = openSet.OrderBy(n => n.fCost).ThenBy(n => n.hCost).First();
+
+            //Move currentNode from openSet to checkedSet
+            openSet.Remove(currentNode);
+            checkedSet.Add(currentNode);
+
+            //End condition - reached target
             if (currentNode == targetNode)
             {
-                Debug.Log("Path found with gcost: " + currentNode.gCost);
+                Debug.Log("Path found with gcost: " + currentNode.gCost + " in " + iterations + " iterations");
                 return RetracePath(startNode, currentNode);
             }
-            for (int i = 0; i < openSet.Count; i++)
+
+            //Check each neighbor of currentNode
+            List<Node> neighbors = grid.GetNeighbors(currentNode);
+            foreach (Node neighbor in neighbors)
             {
-                if (openSet[i] == currentNode) continue;
-
-                //Looking for node with lowest fCost or hCost if fCosts are equal
-                Debug.Log("Comparing node with fCost: " + openSet[i].fCost + " to currentNode with fCost: " + currentNode.fCost);
-                if (openSet[i].fCost < currentNode.fCost || (openSet[i].fCost == currentNode.fCost && openSet[i].hCost < currentNode.hCost) || openSet[i] == targetNode)
+                if (!neighbor.valid || checkedSet.Contains(neighbor))
                 {
-                    Debug.Log("New currentNode found with fCost: " + openSet[i].fCost);
-                    currentNode = openSet[i];
+                    continue; //Skip invalid or already processed nodes
+                }
 
-                    //End condition
-                    if (currentNode == targetNode)
+                //Calculate tentative gCost for this path to neighbor
+                float tentativeGCost = currentNode.gCost + (currentNode.worldPosition - neighbor.worldPosition).magnitude;
+
+                //If neighbor is not in openSet or we found a better path
+                if (!openSet.Contains(neighbor) || tentativeGCost < neighbor.gCost)
+                {
+                    //Update neighbor with better path
+                    neighbor.GiveReferences(currentNode, targetNode);
+                    neighbor.gCost = tentativeGCost;
+
+                    if (!openSet.Contains(neighbor))
                     {
-                        Debug.Log("Path found with gcost: " + currentNode.gCost);
-                        return RetracePath(startNode, currentNode);
-                    }
-
-                    if (openSet.Contains(currentNode))
-                    {
-                        //Move currentNode from openSet to checkedSet
-                        openSet.Remove(currentNode);
-                        Debug.Log("Removing currentNode from openSet. Remaining nodes in openSet: " + openSet.Count);
-                        if (!checkedSet.Contains(currentNode))
-                        {
-                            checkedSet.Add(currentNode);
-                            Debug.Log("Adding currentNode to checkedSet. Total nodes in checkedSet: " + checkedSet.Count);
-                        }
-                    }
-
-                    //Check each neighbor of currentNode
-                    neighbors = grid.GetNeighbors(currentNode);
-                    if (neighbors.Count == 0) continue;
-                    foreach (Node checkableNeighbor in neighbors)
-                    {
-                        if (!checkableNeighbor.valid) continue;
-                        //Make sure neighbor was not checked
-                        if (checkedSet.Contains(checkableNeighbor))
-                        {
-                            Debug.Log("Neighbor at " + checkableNeighbor.worldPosition + " already checked, skipping.");
-                            continue;
-                        }
-
-                        //Give neighbor references to currentNode and targetNode to calculate costs
-                        checkableNeighbor.GiveReferences(currentNode, targetNode);
-
-                        Debug.Log("Neighbor at " + checkableNeighbor.worldPosition + " with gCost: " + checkableNeighbor.gCost + " and hCost: " + checkableNeighbor.hCost);
-                        if (!openSet.Contains(checkableNeighbor))
-                        {
-                            Debug.Log("Adding neighbor at " + checkableNeighbor.worldPosition + " to openSet.");
-                            openSet.Add(checkableNeighbor);
-                        }
+                        openSet.Add(neighbor);
+                        Debug.Log("Adding neighbor at " + neighbor.worldPosition + " to openSet with fCost: " + neighbor.fCost);
                     }
                 }
-                else if (currentNode != startNode) currentNode.CleanUp();
             }
         }
-        Debug.Log("Initialized with " + openSet.Count + " nodes ready.");
+
+        Debug.LogWarning($"No path found after {iterations} iterations. OpenSet count: {openSet.Count}, CheckedSet count: {checkedSet.Count}");
+        Debug.LogWarning($"Start node at {startNode.worldPosition} ({startNode.gridX}, {startNode.gridY}), Target node at {targetNode.worldPosition} ({targetNode.gridX}, {targetNode.gridY})");
+        
         return null; //No path found
     }
     
@@ -122,11 +89,17 @@ public class AStar : MonoBehaviour
             path.Add(currentNode);
             if (currentNode.parent == null)
             {
+                Debug.LogWarning("Parent is null during path retracing. Path may be incomplete.");
                 break;
             }
             currentNode = currentNode.parent;
         }
+        
+        // Add the start node to complete the path
+        path.Add(startNode);
         path.Reverse();
+        
+        Debug.Log($"Path retraced with {path.Count} nodes");
         return path;
     }
 }

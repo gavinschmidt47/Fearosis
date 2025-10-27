@@ -49,12 +49,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 401b12491ebb4834eaf2a8bd868e7887, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinations:
-  - {x: 0.83, y: -2.3}
-  - {x: -4.8, y: -2.2}
-  - {x: -4.35, y: 0.2}
-  - {x: -0.67, y: -2.25}
-  - {x: 6.3, y: -2.2}
   speed: 2
   minWaitTime: 2
   maxWaitTime: 5
@@ -167,6 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 113b0d731d9ac3d418222c200dd3312c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxSearchIterations: 1500
 --- !u!50 &-8340943970981759775
 Rigidbody2D:
   serializedVersion: 5
