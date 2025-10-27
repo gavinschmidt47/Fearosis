@@ -2253,9 +2253,9 @@ MonoBehaviour:
   upgradeName: Scripture Development
   upgradeDescription: The scripture will guide people to their true faith (+Fear
     +Prejudice)
-  upgradeCost: 5
+  upgradeCost: 8
   prerequisiteUpgrades: []
-  isPurchased: 1
+  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -11877,7 +11877,7 @@ MonoBehaviour:
     Maybe they\u2019re right. (+Fear, +Prejudice +Notoriety) "
   upgradeCost: 18
   prerequisiteUpgrades: []
-  isPurchased: 1
+  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -16278,7 +16278,7 @@ MonoBehaviour:
     all day. (+Fear +Prejudice) "
   upgradeCost: 8
   prerequisiteUpgrades: []
-  isPurchased: 1
+  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -16609,7 +16609,7 @@ MonoBehaviour:
     (+Fear -Prejudice +Pain) '
   upgradeCost: 8
   prerequisiteUpgrades: []
-  isPurchased: 1
+  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
