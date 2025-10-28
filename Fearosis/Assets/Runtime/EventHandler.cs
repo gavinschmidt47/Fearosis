@@ -15,7 +15,7 @@ public class EventHandler : MonoBehaviour
     public void PickEvent()
     {
         int eventsChecked = 0;
-        int eventIndex = Random.Range(0, unusedEvents.Count);
+        int eventIndex = Random.Range(0, unusedEvents.Count-1);
 
         //Pick random event from unusedEvents array and reshuffle if it can't trigger
         while (!unusedEvents[eventIndex].CanEventTrigger(fullGameStatsScript.round))
@@ -26,7 +26,7 @@ public class EventHandler : MonoBehaviour
                 unusedEvents = new List<Event>(GetComponentsInChildren<Event>());
                 break;
             }
-            eventIndex = Random.Range(0, unusedEvents.Count);
+            eventIndex = Random.Range(0, unusedEvents.Count-1);
             eventsChecked++;
         }
         unusedEvents[eventIndex].ApplyEvent();

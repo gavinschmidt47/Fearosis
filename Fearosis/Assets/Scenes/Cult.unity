@@ -1532,7 +1532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeName: Your New Home
   upgradeDescription: 'Join us. They cannot hurt you from the darkness. (+Fear) '
-  upgradeCost: 23
+  upgradeCost: 43
   prerequisiteUpgrades:
   - {fileID: 1108895920}
   - {fileID: 838740026}
@@ -3539,7 +3539,7 @@ MonoBehaviour:
   upgradeName: New People
   upgradeDescription: "Soulless husks that can\u2019t even think for themselves.
     They have become the perfect fodder. (++Fear, +Pain) "
-  upgradeCost: 50
+  upgradeCost: 75
   prerequisiteUpgrades:
   - {fileID: 868727138}
   - {fileID: 904984629}
@@ -5357,7 +5357,7 @@ MonoBehaviour:
   upgradeName: True Enlightenment
   upgradeDescription: 'he time has come for our lord to bless us. Its presence will
     grant us true divinity. (+Fear +Notoriety +Prejudice -Pain) '
-  upgradeCost: 50
+  upgradeCost: 60
   prerequisiteUpgrades:
   - {fileID: 1826247088}
   isPurchased: 0
@@ -7348,7 +7348,7 @@ MonoBehaviour:
   upgradeName: Unbreakable Contract
   upgradeDescription: "You\u2019ll be protected, All you have to do is offer everything
     you own. Including your soul. (+Fear, -Pain)"
-  upgradeCost: 50
+  upgradeCost: 65
   prerequisiteUpgrades:
   - {fileID: 120132780}
   isPurchased: 0
@@ -9774,7 +9774,7 @@ MonoBehaviour:
   upgradeName: A Shepherd's Herd
   upgradeDescription: 'Every sheep has its purpose, no matter how small. (+Fear +Notoriety
     +Prejudice) '
-  upgradeCost: 40
+  upgradeCost: 30
   prerequisiteUpgrades:
   - {fileID: 1161860094}
   isPurchased: 0
@@ -10018,7 +10018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeName: 'Cannibalistic Instinct '
   upgradeDescription: 'They crave flesh, and they yearn for blood (++Fear, +Pain) '
-  upgradeCost: 30
+  upgradeCost: 40
   prerequisiteUpgrades:
   - {fileID: 1610487966}
   - {fileID: 1549600074}
@@ -10288,7 +10288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeName: Mass indoctrination
   upgradeDescription: 'Lead them to a better future. (+Fear, -Prejudice, +Notoriety) '
-  upgradeCost: 35
+  upgradeCost: 50
   prerequisiteUpgrades:
   - {fileID: 112351577}
   isPurchased: 0
@@ -13795,7 +13795,7 @@ MonoBehaviour:
   upgradeName: Let Them In
   upgradeDescription: 'If they want to find out more, let them. (+Fear +Notoriety
     +Prejudice) '
-  upgradeCost: 30
+  upgradeCost: 20
   prerequisiteUpgrades:
   - {fileID: 1294261842}
   isPurchased: 0
@@ -17798,7 +17798,7 @@ MonoBehaviour:
   upgradeName: Blood Relatives
   upgradeDescription: 'We are now a part of you, as you are a part of us. (+Fear,
     +Pain) '
-  upgradeCost: 15
+  upgradeCost: 18
   prerequisiteUpgrades:
   - {fileID: 1813636608}
   isPurchased: 0
@@ -21310,7 +21310,7 @@ MonoBehaviour:
   upgradeName: Total Devotion
   upgradeDescription: 'You will eat in the name of faith, and you will breathe in
     the name of faith. (+Fear +Pain) '
-  upgradeCost: 20
+  upgradeCost: 45
   prerequisiteUpgrades:
   - {fileID: 990950448}
   isPurchased: 0
@@ -21851,7 +21851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeName: False God
   upgradeDescription: 'Allow the people to put their faith in someone.  (+Fear +Prejudice) '
-  upgradeCost: 8
+  upgradeCost: 20
   prerequisiteUpgrades:
   - {fileID: 200797606}
   isPurchased: 0

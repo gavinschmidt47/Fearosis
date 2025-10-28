@@ -70,7 +70,7 @@ public class DayHandler : MonoBehaviour
         //Influence logic
         int populationModifiedInfectionInfluence = Mathf.Max(Mathf.RoundToInt(numInfectedToGain / populationInfluenceModifier), 1);
         Debug.Log($"Population modified infection influence: {populationModifiedInfectionInfluence}");
-        numInfluenceToGain = Mathf.Max(Mathf.RoundToInt(painScript.GetPointsGainedToday() * populationModifiedInfectionInfluence * Mathf.Max(notorietyScript.GetPointsGainedToday(), 1)), 5);
+        numInfluenceToGain = Mathf.Max(Mathf.RoundToInt(numPain*.67f + populationModifiedInfectionInfluence + Mathf.Max(numNotoriety*.50f, 1)), 5);
         influenceScript.influencePoints += numInfluenceToGain;
 
         //Hunter logic
