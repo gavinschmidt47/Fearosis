@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: ImpossibleDifficulty
   m_EditorClassIdentifier: 
   population: 500000
-  infectionRate: 0
+  infectionRate: 1
   startingInfected: 0
-  startingHunters: 0
+  startingHunters: 5
   numberPointStart: 0
   pointBuffStart: 0
-  painThreshold: 0
-  hunterThreshold: 0
-  fearBuff: 0
-  notorietyBuff: 0
-  prejudiceBuff: 0
-  painBuff: 0
+  painThreshold: 25
+  hunterThreshold: 25
+  fearBuff: -20
+  notorietyBuff: -20
+  prejudiceBuff: -20
+  painBuff: -20
