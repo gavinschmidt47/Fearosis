@@ -5,15 +5,15 @@ public class DayHandler : MonoBehaviour
 {
     //Infection rate modifier
     [SerializeField]
-    private float infectionRate = 1.0f;
+    public float infectionRate { get { return infectionRate; } private set { infectionRate = value; } }
     [SerializeField]
-    private float populationInfluenceModifier = 1.0f;
+    public float populationInfluenceModifier { get { return populationInfluenceModifier; } private set { populationInfluenceModifier = value; } }
     [SerializeField]
-    private int hunterThreshold = 15;
+    public int hunterThreshold { get { return hunterThreshold; } private set { hunterThreshold = value; } }
     [SerializeField]
-    private int huntersPerThreshold = 1;
+    public int huntersPerThreshold { get { return huntersPerThreshold; } private set { huntersPerThreshold = value; } }
     [SerializeField]
-    private int painThreshold = 20;
+    public int painThreshold { get { return painThreshold; } private set { painThreshold = value; } }
 
     //References to other scripts
     private Fear fearScript;
@@ -24,8 +24,8 @@ public class DayHandler : MonoBehaviour
     private FullGameStats fullGameStatsScript;
 
     //Day-specific variables
-    private int numInfectedToGain;
-    private int numInfluenceToGain;
+    public int numInfectedToGain { get { return numInfectedToGain; } private set { numInfectedToGain = value; } }
+    public int numInfluenceToGain { get { return numInfluenceToGain; } private set { numInfluenceToGain = value; } }
 
     //Unity event on day start
     public UnityEvent dayStartEvent = new UnityEvent();

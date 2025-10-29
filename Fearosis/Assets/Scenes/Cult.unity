@@ -527,7 +527,6 @@ MonoBehaviour:
     loose. (+Fear)  '
   upgradeCost: 5
   prerequisiteUpgrades: []
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -587,7 +586,6 @@ MonoBehaviour:
   upgradeCost: 13
   prerequisiteUpgrades:
   - {fileID: 1748718610}
-  isPurchased: 1
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -1415,7 +1413,6 @@ MonoBehaviour:
   upgradeCost: 25
   prerequisiteUpgrades:
   - {fileID: 1052508701}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -1536,7 +1533,6 @@ MonoBehaviour:
   prerequisiteUpgrades:
   - {fileID: 1108895920}
   - {fileID: 838740026}
-  isPurchased: 1
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -2121,7 +2117,6 @@ MonoBehaviour:
   upgradeCost: 26
   prerequisiteUpgrades:
   - {fileID: 1355687009}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -2255,7 +2250,6 @@ MonoBehaviour:
     +Prejudice)
   upgradeCost: 8
   prerequisiteUpgrades: []
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -2313,7 +2307,6 @@ MonoBehaviour:
   upgradeDescription: 'We are hiring. Sacrifices wanted. (+Fear +Prejudice) '
   upgradeCost: 8
   prerequisiteUpgrades: []
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -3543,7 +3536,6 @@ MonoBehaviour:
   prerequisiteUpgrades:
   - {fileID: 868727138}
   - {fileID: 904984629}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -4628,7 +4620,6 @@ MonoBehaviour:
   upgradeCost: 12
   prerequisiteUpgrades:
   - {fileID: 1618381953}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -5360,7 +5351,6 @@ MonoBehaviour:
   upgradeCost: 50
   prerequisiteUpgrades:
   - {fileID: 1826247088}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -7351,7 +7341,6 @@ MonoBehaviour:
   upgradeCost: 50
   prerequisiteUpgrades:
   - {fileID: 120132780}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -7800,11 +7789,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4f7dbdbebc17c54b8a848f52a2500ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infectionRate: 3
-  populationInfluenceModifier: 45
-  hunterThreshold: 15
-  huntersPerThreshold: 1
-  painThreshold: 20
   dayStartEvent:
     m_PersistentCalls:
       m_Calls:
@@ -9584,7 +9568,6 @@ MonoBehaviour:
   upgradeCost: 60
   prerequisiteUpgrades:
   - {fileID: 933236014}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -9777,7 +9760,6 @@ MonoBehaviour:
   upgradeCost: 40
   prerequisiteUpgrades:
   - {fileID: 1161860094}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -10022,7 +10004,6 @@ MonoBehaviour:
   prerequisiteUpgrades:
   - {fileID: 1610487966}
   - {fileID: 1549600074}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -10291,7 +10272,6 @@ MonoBehaviour:
   upgradeCost: 35
   prerequisiteUpgrades:
   - {fileID: 112351577}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -10472,7 +10452,6 @@ MonoBehaviour:
   prerequisiteUpgrades:
   - {fileID: 1992673434}
   - {fileID: 170760964}
-  isPurchased: 1
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -11091,7 +11070,6 @@ MonoBehaviour:
   prerequisiteUpgrades:
   - {fileID: 1079254851}
   - {fileID: 2136004435}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -11877,7 +11855,6 @@ MonoBehaviour:
     Maybe they\u2019re right. (+Fear, +Prejudice +Notoriety) "
   upgradeCost: 18
   prerequisiteUpgrades: []
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -12254,7 +12231,6 @@ MonoBehaviour:
   upgradeCost: 10
   prerequisiteUpgrades:
   - {fileID: 1841134373}
-  isPurchased: 1
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -12425,7 +12401,6 @@ MonoBehaviour:
     +Notoriety)
   upgradeCost: 10
   prerequisiteUpgrades: []
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -12830,7 +12805,6 @@ MonoBehaviour:
   upgradeCost: 18
   prerequisiteUpgrades:
   - {fileID: 50777198}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -13798,7 +13772,6 @@ MonoBehaviour:
   upgradeCost: 30
   prerequisiteUpgrades:
   - {fileID: 1294261842}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -15012,7 +14985,6 @@ MonoBehaviour:
   upgradeCost: 10
   prerequisiteUpgrades:
   - {fileID: 48709422}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -15786,7 +15758,6 @@ MonoBehaviour:
   upgradeCost: 18
   prerequisiteUpgrades:
   - {fileID: 1997024558}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -16175,7 +16146,6 @@ MonoBehaviour:
   upgradeCost: 18
   prerequisiteUpgrades:
   - {fileID: 1737651413}
-  isPurchased: 1
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -16219,7 +16189,6 @@ MonoBehaviour:
   upgradeCost: 24
   prerequisiteUpgrades:
   - {fileID: 1843097501}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -16278,7 +16247,6 @@ MonoBehaviour:
     all day. (+Fear +Prejudice) "
   upgradeCost: 8
   prerequisiteUpgrades: []
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -16609,7 +16577,6 @@ MonoBehaviour:
     (+Fear -Prejudice +Pain) '
   upgradeCost: 8
   prerequisiteUpgrades: []
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -17801,7 +17768,6 @@ MonoBehaviour:
   upgradeCost: 15
   prerequisiteUpgrades:
   - {fileID: 1813636608}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -18579,7 +18545,6 @@ MonoBehaviour:
   upgradeCost: 15
   prerequisiteUpgrades:
   - {fileID: 413751656}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -18922,7 +18887,6 @@ MonoBehaviour:
     (+Fear, +Prejudice)
   upgradeCost: 10
   prerequisiteUpgrades: []
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -19703,7 +19667,6 @@ MonoBehaviour:
   upgradeCost: 12
   prerequisiteUpgrades:
   - {fileID: 1429940209}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -19841,7 +19804,6 @@ MonoBehaviour:
   upgradeCost: 10
   prerequisiteUpgrades:
   - {fileID: 1402869876}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -21165,7 +21127,6 @@ MonoBehaviour:
   upgradeCost: 13
   prerequisiteUpgrades:
   - {fileID: 1618381953}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -21313,7 +21274,6 @@ MonoBehaviour:
   upgradeCost: 20
   prerequisiteUpgrades:
   - {fileID: 990950448}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -21854,7 +21814,6 @@ MonoBehaviour:
   upgradeCost: 8
   prerequisiteUpgrades:
   - {fileID: 200797606}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -21914,7 +21873,6 @@ MonoBehaviour:
   upgradeCost: 12
   prerequisiteUpgrades:
   - {fileID: 227920738}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -22975,7 +22933,6 @@ MonoBehaviour:
   upgradeCost: 24
   prerequisiteUpgrades:
   - {fileID: 1388488543}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -23135,7 +23092,6 @@ MonoBehaviour:
   upgradeCost: 13
   prerequisiteUpgrades:
   - {fileID: 1089898396}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -24679,7 +24635,6 @@ MonoBehaviour:
   upgradeCost: 30
   prerequisiteUpgrades:
   - {fileID: 1398071539}
-  isPurchased: 0
   unavailableAlpha: 0
   availableAlpha: 255
   purchasedAlpha: 90
@@ -24704,6 +24659,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1229060260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &5765074329863575339
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1106824470057283583, guid: f4f508b6d950a1b4fa356afc655f76ce, type: 3}
+      propertyPath: m_Name
+      value: Save
+      objectReference: {fileID: 0}
+    - target: {fileID: 1973115838171247278, guid: f4f508b6d950a1b4fa356afc655f76ce, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.9995
+      objectReference: {fileID: 0}
+    - target: {fileID: 1973115838171247278, guid: f4f508b6d950a1b4fa356afc655f76ce, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.21763
+      objectReference: {fileID: 0}
+    - target: {fileID: 1973115838171247278, guid: f4f508b6d950a1b4fa356afc655f76ce, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1973115838171247278, guid: f4f508b6d950a1b4fa356afc655f76ce, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1973115838171247278, guid: f4f508b6d950a1b4fa356afc655f76ce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1973115838171247278, guid: f4f508b6d950a1b4fa356afc655f76ce, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1973115838171247278, guid: f4f508b6d950a1b4fa356afc655f76ce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1973115838171247278, guid: f4f508b6d950a1b4fa356afc655f76ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1973115838171247278, guid: f4f508b6d950a1b4fa356afc655f76ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1973115838171247278, guid: f4f508b6d950a1b4fa356afc655f76ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f4f508b6d950a1b4fa356afc655f76ce, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -24725,3 +24737,4 @@ SceneRoots:
   - {fileID: 95551150}
   - {fileID: 1777222929}
   - {fileID: 503316578}
+  - {fileID: 5765074329863575339}
