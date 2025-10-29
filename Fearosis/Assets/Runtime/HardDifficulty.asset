@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: HardDifficulty
   m_EditorClassIdentifier: 
   population: 50000
-  infectionRate: 1
+  infectionRate: 0
   startingInfected: 0
   startingHunters: 0
-  numberPointStart: 5
+  numberPointStart: 0
   pointBuffStart: 0
-  painThreshold: 40
-  hunterThreshold: 40
+  painThreshold: 0
+  hunterThreshold: 0
   fearBuff: 0
   notorietyBuff: 0
   prejudiceBuff: 0

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class EventHandler : MonoBehaviour
 {
     private FullGameStats fullGameStatsScript;
-    public List<Event> unusedEvents { get { return unusedEvents; } private set { unusedEvents = value; } }
+    private List<Event> unusedEvents;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
