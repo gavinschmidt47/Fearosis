@@ -20,7 +20,7 @@ MonoBehaviour:
   pointBuffStart: 0
   painThreshold: 50
   hunterThreshold: 50
-  fearBuff: 0
-  notorietyBuff: 0
-  prejudiceBuff: 0
-  painBuff: 0
+  fearBuff: 5
+  notorietyBuff: 5
+  prejudiceBuff: 5
+  painBuff: 5

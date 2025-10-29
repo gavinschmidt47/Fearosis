@@ -4,27 +4,27 @@ using UnityEngine.Events;
 public class Point : MonoBehaviour
 {
     //Total of all points
-    private int numPointsTotal = 0;
+    public int numPointsTotal { get { return numPointsTotal; } private set { numPointsTotal = value; } }
     //Starting points from defining trait
-    private int numPointsStart = 0;
+    public int numPointsStart { get { return numPointsStart; } private set { numPointsStart = value; } }
 
     //Points gained today
-    private int numPointsGainedToday = 0;
+    public int numPointsGainedToday { get { return numPointsGainedToday; } private set { numPointsGainedToday = value; } }
 
     //Points from modifiable sources
-    private int numPointsFromBlood = 0;
-    private int numPointsFromPhysical = 0;
-    private int numPointsFromBehavior = 0;
-    private int numPointsFromPsychological = 0;
+    public int numPointsFromBlood { get { return numPointsFromBlood; } private set { numPointsFromBlood = value; } }
+    public int numPointsFromPhysical { get { return numPointsFromPhysical; } private set { numPointsFromPhysical = value; } }
+    public int numPointsFromBehavior { get { return numPointsFromBehavior; } private set { numPointsFromBehavior = value; } }
+    public int numPointsFromPsychological { get { return numPointsFromPsychological; } private set { numPointsFromPsychological = value; } }
 
     //Event modifiers
-    private float eventStatModifier = 1.0f;
+    public float eventStatModifier { get { return eventStatModifier; } private set { eventStatModifier = value; } }
 
-    private float eventBloodModifier = 1.0f;
-    private float eventPhysicalModifier = 1.0f;
-    private float eventBehaviorModifier = 1.0f;
-    private float eventPsychologicalModifier = 1.0f;
-
+    public float eventBloodModifier { get { return eventBloodModifier; } private set { eventBloodModifier = value; } }
+    public float eventPhysicalModifier { get { return eventPhysicalModifier; } private set { eventPhysicalModifier = value; } }
+    public float eventBehaviorModifier { get { return eventBehaviorModifier; } private set { eventBehaviorModifier = value; } }
+    public float eventPsychologicalModifier { get { return eventPsychologicalModifier; } private set { eventPsychologicalModifier = value; } }
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,6 +32,12 @@ public class Point : MonoBehaviour
         numPointsFromPhysical = 0;
         numPointsFromBehavior = 0;
         numPointsFromPsychological = 0;
+
+        eventStatModifier = 1.0f;
+        eventBloodModifier = 1.0f;
+        eventPhysicalModifier = 1.0f;
+        eventBehaviorModifier = 1.0f;
+        eventPsychologicalModifier = 1.0f;
 
         numPointsTotal = numPointsStart;
     }
