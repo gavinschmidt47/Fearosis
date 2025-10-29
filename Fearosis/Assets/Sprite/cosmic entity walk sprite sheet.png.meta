@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: 21fcbaf7e9239f34192a3067512c551f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1363191111791014146
+    second: cosmic entity walk sprite sheet_0
+  - first:
+      213: 7849004794243479912
+    second: cosmic entity walk sprite sheet_1
+  - first:
+      213: 6970580753051830499
+    second: cosmic entity walk sprite sheet_2
+  - first:
+      213: 5836743665175716039
+    second: cosmic entity walk sprite sheet_3
+  - first:
+      213: 466605991074392723
+    second: cosmic entity walk sprite sheet_4
+  - first:
+      213: -2964094478004344004
+    second: cosmic entity walk sprite sheet_5
+  - first:
+      213: 2564746053444562172
+    second: cosmic entity walk sprite sheet_6
+  - first:
+      213: 8975708288668968190
+    second: cosmic entity walk sprite sheet_7
+  - first:
+      213: -3416883452642605890
+    second: cosmic entity walk sprite sheet_8
+  - first:
+      213: -7322281600912643513
+    second: cosmic entity walk sprite sheet_9
+  - first:
+      213: 7656668288845573092
+    second: cosmic entity walk sprite sheet_10
+  - first:
+      213: 1595839204098319579
+    second: cosmic entity walk sprite sheet_11
+  - first:
+      213: -871883895579561358
+    second: cosmic entity walk sprite sheet_12
+  - first:
+      213: -4091834695534575299
+    second: cosmic entity walk sprite sheet_13
+  - first:
+      213: 5171870715161837424
+    second: cosmic entity walk sprite sheet_14
+  - first:
+      213: -3291509167124217088
+    second: cosmic entity walk sprite sheet_15
+  - first:
+      213: -6366781153102558222
+    second: cosmic entity walk sprite sheet_16
+  - first:
+      213: -2564716794326962426
+    second: cosmic entity walk sprite sheet_17
+  - first:
+      213: 1197131496590881312
+    second: cosmic entity walk sprite sheet_18
+  - first:
+      213: -1297321543663250447
+    second: cosmic entity walk sprite sheet_19
+  - first:
+      213: -4404274906459794233
+    second: cosmic entity walk sprite sheet_20
+  - first:
+      213: -3927269522611942235
+    second: cosmic entity walk sprite sheet_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 192
+        width: 43
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 201f54bf7170be210800000000000000
+      internalID: 1363191111791014146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 192
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869783946444dec60800000000000000
+      internalID: 7849004794243479912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 192
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e844df534a7cb060800000000000000
+      internalID: 6970580753051830499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 192
+        width: 44
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c06fc76077400150800000000000000
+      internalID: 5836743665175716039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 192
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39aee0c3da7b97600800000000000000
+      internalID: 466605991074392723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 192
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3baad5d6cb6dd6d0800000000000000
+      internalID: -2964094478004344004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 66
+        width: 48
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfce5ae62fec79320800000000000000
+      internalID: 2564746053444562172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 128
+        width: 41
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef4a4a9122f109c70800000000000000
+      internalID: 8975708288668968190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 128
+        width: 43
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb4c35e6a9ac490d0800000000000000
+      internalID: -3416883452642605890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 128
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74a2938dda7026a90800000000000000
+      internalID: -7322281600912643513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 128
+        width: 46
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb63afed33f14a60800000000000000
+      internalID: 7656668288845573092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 128
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd42cee0d4f852610800000000000000
+      internalID: 1595839204098319579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 128
+        width: 41
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272b896673276e3f0800000000000000
+      internalID: -871883895579561358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 67
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d310b0d1602e637c0800000000000000
+      internalID: -4091834695534575299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 68
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f7771830d26c740800000000000000
+      internalID: 5171870715161837424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 67
+        width: 48
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0038e960ad53252d0800000000000000
+      internalID: -3291509167124217088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 65
+        width: 48
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb8bae1646a4a7a0800000000000000
+      internalID: -6366781153102558222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1
+        width: 48
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60fa9acf9ab486cd0800000000000000
+      internalID: -2564716794326962426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 3
+        width: 48
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0223bb3e0c01d9010800000000000000
+      internalID: 1197131496590881312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_19
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 3
+        width: 48
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f39d76fdecfefde0800000000000000
+      internalID: -1297321543663250447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_20
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 4
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c41c43be4fd0e2c0800000000000000
+      internalID: -4404274906459794233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cosmic entity walk sprite sheet_21
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 2
+        width: 48
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac4f7f3d298f79c0800000000000000
+      internalID: -3927269522611942235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cosmic entity walk sprite sheet_0: 1363191111791014146
+      cosmic entity walk sprite sheet_1: 7849004794243479912
+      cosmic entity walk sprite sheet_10: 7656668288845573092
+      cosmic entity walk sprite sheet_11: 1595839204098319579
+      cosmic entity walk sprite sheet_12: -871883895579561358
+      cosmic entity walk sprite sheet_13: -4091834695534575299
+      cosmic entity walk sprite sheet_14: 5171870715161837424
+      cosmic entity walk sprite sheet_15: -3291509167124217088
+      cosmic entity walk sprite sheet_16: -6366781153102558222
+      cosmic entity walk sprite sheet_17: -2564716794326962426
+      cosmic entity walk sprite sheet_18: 1197131496590881312
+      cosmic entity walk sprite sheet_19: -1297321543663250447
+      cosmic entity walk sprite sheet_2: 6970580753051830499
+      cosmic entity walk sprite sheet_20: -4404274906459794233
+      cosmic entity walk sprite sheet_21: -3927269522611942235
+      cosmic entity walk sprite sheet_3: 5836743665175716039
+      cosmic entity walk sprite sheet_4: 466605991074392723
+      cosmic entity walk sprite sheet_5: -2964094478004344004
+      cosmic entity walk sprite sheet_6: 2564746053444562172
+      cosmic entity walk sprite sheet_7: 8975708288668968190
+      cosmic entity walk sprite sheet_8: -3416883452642605890
+      cosmic entity walk sprite sheet_9: -7322281600912643513
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
