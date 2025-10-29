@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SplashScene.unity
     guid: a4d95c3fafbb94244a6e408855ae9203
+  - enabled: 0
+    path: Assets/Scenes/MainMenu.unity
+    guid: 350f237c93607f744853862735a11621
   - enabled: 1
     path: Assets/Scenes/LevelSelect.unity
     guid: 4524eeecade282842ad7cfde37e580f0
@@ -20,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cult.unity
     guid: 29e7823b38abb354889c9505a839ecb5
+  - enabled: 1
+    path: Assets/Scenes/Monster.unity
+    guid: f53aba5abf83a8547a6983eda68186ea
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
