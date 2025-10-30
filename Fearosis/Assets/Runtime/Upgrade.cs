@@ -12,7 +12,7 @@ public class Upgrade : MonoBehaviour
     [Header("Add prerequisite upgrades (if applicable)")]
     public GameObject[] prerequisiteUpgrades;
     [SerializeField]
-    private bool isPurchased = false;
+    public bool isPurchased {get { return isPurchased; } private set { isPurchased = value; } }
     [HideInInspector]
     public int unavailableAlpha = 0;
     [HideInInspector]
@@ -79,6 +79,11 @@ public class Upgrade : MonoBehaviour
         }
 
         upgradePurchased += infectedUIHandler.UpdateInfluenceText;
+    }
+
+    void Start()
+    {
+        isPurchased = false;
     }
 
     void OnDisable()
