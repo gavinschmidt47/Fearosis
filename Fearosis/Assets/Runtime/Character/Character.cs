@@ -9,7 +9,6 @@ public class Character : MonoBehaviour
     public float minWaitTime = 2f;
     public float maxWaitTime = 5f;
     public float arrivalThreshold = 0.1f;
-    public float deathTime = 10f; // Time in seconds before the character dies
 
     private bool firstTimeAwake = true;
     private Rigidbody2D rb;
@@ -41,10 +40,10 @@ public class Character : MonoBehaviour
         if (path != null && path.Count > 1)
         {
             StartCoroutine(FollowPath(path));
-            StartCoroutine(DieAfterTime(deathTime)); // Character will die after specified deathTime
         }
         else
         {
+            Debug.Log("No valid path found for character at: " + transform.position + " with " + (path != null ? " Nodes: " + path.Count : "null target"));
             reachDestinationEvent?.Invoke();
         }
         yield return null;
@@ -74,11 +73,5 @@ public class Character : MonoBehaviour
         }
         reachDestinationEvent?.Invoke();
         yield return null;
-    }
-
-    private IEnumerator DieAfterTime(float time)
-    {
-        yield return new WaitForSeconds(time);
-        gameObject.SetActive(false); // Deactivate the character
     }
 }

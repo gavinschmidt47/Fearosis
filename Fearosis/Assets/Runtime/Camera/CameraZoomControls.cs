@@ -6,17 +6,29 @@ public class CameraZoomControls : MonoBehaviour
 {
     // Values for zooming, worked with serialized fields
     [SerializeField] private float zoomSpeed = 0.1f;
-    [SerializeField] private float minZoom = 2f;
-    [SerializeField] private float maxZoom = 20f;
-
     private Camera cam;
+
+    private float maxZoom
+    {
+        get
+        {
+            return Mathf.Min(mapBounds.size.x / (2f * cam.aspect), mapBounds.size.y / 2f);
+        }
+    }
+
+    [SerializeField] private float minZoom = 2f;
+
+
+    private Bounds mapBounds;
 
     //Activates touch support
     private void Awake()
     {
         cam = GetComponent<Camera>();
+        mapBounds = GameObject.FindGameObjectWithTag("Map").GetComponent<SpriteRenderer>().bounds;
         EnhancedTouchSupport.Enable(); //Enable Enhanced Touch
     }
+
 
     void Update()
     {

@@ -8,14 +8,41 @@ public class CameraPanningControls : MonoBehaviour
     private InputAction panAction;
     //These find the actions for panning in the input actions (because Input... is a crime)
 
-    //Modifiable limits for the camera's panning
-    [SerializeField] private Vector2 minimumCameraPan;
-    [SerializeField] private Vector2 maximumCameraPan;
+    private Bounds mapBounds;
+
+    private Vector2 minimumCameraPan
+    {
+        get
+        {
+            float cameraHalfHeight = Camera.main.orthographicSize;
+            float cameraHalfWidth = Camera.main.aspect * cameraHalfHeight;
+
+            return new Vector2(
+                mapBounds.min.x + cameraHalfWidth,
+                mapBounds.min.y + cameraHalfHeight
+            );
+        }
+    }
+    private Vector2 maximumCameraPan
+    {
+        get
+        {
+            float cameraHalfHeight = Camera.main.orthographicSize;
+            float cameraHalfWidth = Camera.main.aspect * cameraHalfHeight;
+
+            return new Vector2(
+                mapBounds.max.x - cameraHalfWidth,
+                mapBounds.max.y - cameraHalfHeight
+            );
+        }
+    }
 
     //Activates the camera for panning, finding the pan actions
     void Awake()
     {
         panAction = inputActions.FindAction("CameraMap/Pan"); //CameraMap is the map, Pan is the action (THE NAMES ARE IMPORTANNT!!!)
+        mapBounds = GameObject.FindGameObjectWithTag("Map").GetComponent<SpriteRenderer>().bounds;
+
     }
 
     void OnEnable()
