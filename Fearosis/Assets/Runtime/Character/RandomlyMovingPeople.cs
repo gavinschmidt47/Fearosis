@@ -7,6 +7,8 @@ public class RandomlyMovingPeople : MonoBehaviour
     private float minSpawnInterval = 1f;
     [SerializeField]
     private float maxSpawnInterval = 3f;
+    [SerializeField]
+    private float deathTime = 10f; 
 
     private ObjectPooler objectPooler;
     private PoissonDiscGrid grid;
@@ -34,7 +36,7 @@ public class RandomlyMovingPeople : MonoBehaviour
                 {
                     objectPooler.ReturnObject(person);
                 };
-                StartCoroutine(DieAfterTime(person, 10f)); // Despawn after 10 seconds
+                StartCoroutine(DieAfterTime(person, deathTime)); // Despawn after specified deathTime
             }
             yield return new WaitForSeconds(Random.Range(minSpawnInterval, maxSpawnInterval));
         }
@@ -43,6 +45,7 @@ public class RandomlyMovingPeople : MonoBehaviour
     private IEnumerator DieAfterTime(GameObject person, float time)
     {
         yield return new WaitForSeconds(time);
+        Debug.Log("Despawning person at: " + person.transform.position);
         objectPooler.ReturnObject(person);
     }
 }

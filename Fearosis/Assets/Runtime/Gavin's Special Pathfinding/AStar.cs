@@ -5,7 +5,7 @@ using UnityEngine;
 public class AStar : MonoBehaviour
 {
     private PoissonDiscGrid grid = PoissonDiscGrid.Instance;
-    public int maxSearchIterations = 50;
+    public int maxSearchIterations = 1000;
 
     public List<Node> FindPath(Node startNode, Node targetNode)
     {
