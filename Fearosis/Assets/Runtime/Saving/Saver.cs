@@ -1,8 +1,10 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.Events;
 
 public class Saver : MonoBehaviour
 {
+
     private Influence influenceScript;
     private int influencePoints;
 
@@ -98,6 +100,7 @@ public class Saver : MonoBehaviour
         collectUpgradesScript = FindAnyObjectByType<CollectUpgrades>();
         dayHandlerScript = FindAnyObjectByType<DayHandler>();
         saveSystem = GetComponent<SaveSystem>();
+
     }
 
     public SaveData GetSaveableObject()
@@ -241,7 +244,10 @@ public class Saver : MonoBehaviour
         painEventBehaviorModifier = painScript.eventBehaviorModifier;
         painEventPsychologicalModifier = painScript.eventPsychologicalModifier;
 
-        unusedEvents = eventHandlerScript.unusedEvents;
+        foreach (Event unusedEvent in eventHandlerScript.unusedEvents)
+        {
+            unusedEvents.Add(unusedEvent);
+        }
 
         purchasedUpgrades = collectUpgradesScript.CollectPurchasedUpgrades();
 
@@ -265,6 +271,78 @@ public class Saver : MonoBehaviour
         {
             // Apply loaded data to the game state
             // Implementation depends on the structure of SaveData and game state management
+            influenceScript.influencePoints = influencePoints;
+
+            fullGameStatsScript.infected = infected;
+            fullGameStatsScript.population = population;
+            fullGameStatsScript.dead = dead;
+            fullGameStatsScript.hunters = hunters;
+            fullGameStatsScript.round = round;
+
+            fearScript.numPointsTotal = fearPointsTotal;
+            fearScript.numPointsStart = fearPointsStart;
+            fearScript.numPointsGainedToday = fearPointsGainedToday;
+            fearScript.numPointsFromBlood = fearPointsFromBlood;
+            fearScript.numPointsFromPhysical = fearPointsFromPhysical;
+            fearScript.numPointsFromBehavior = fearPointsFromBehavior;
+            fearScript.numPointsFromPsychological = fearPointsFromPsychological;
+            fearScript.eventStatModifier = fearEventStatModifier;
+            fearScript.eventBloodModifier = fearEventBloodModifier;
+            fearScript.eventPhysicalModifier = fearEventPhysicalModifier;
+            fearScript.eventBehaviorModifier = fearEventBehaviorModifier;
+            fearScript.eventPsychologicalModifier = fearEventPsychologicalModifier;
+
+            notorietyScript.numPointsTotal = notorietyPointsTotal;
+            notorietyScript.numPointsStart = notorietyPointsStart;
+            notorietyScript.numPointsGainedToday = notorietyPointsGainedToday;
+            notorietyScript.numPointsFromBlood = notorietyPointsFromBlood;
+            notorietyScript.numPointsFromPhysical = notorietyPointsFromPhysical;
+            notorietyScript.numPointsFromBehavior = notorietyPointsFromBehavior;
+            notorietyScript.numPointsFromPsychological = notorietyPointsFromPsychological;
+            notorietyScript.eventStatModifier = notorietyEventStatModifier;
+            notorietyScript.eventBloodModifier = notorietyEventBloodModifier;
+            notorietyScript.eventPhysicalModifier = notorietyEventPhysicalModifier;
+            notorietyScript.eventBehaviorModifier = notorietyEventBehaviorModifier;
+            notorietyScript.eventPsychologicalModifier = notorietyEventPsychologicalModifier;
+
+            prejudiceScript.numPointsTotal = prejudicePointsTotal;
+            prejudiceScript.numPointsStart = prejudicePointsStart;
+            prejudiceScript.numPointsGainedToday = prejudicePointsGainedToday;
+            prejudiceScript.numPointsFromBlood = prejudicePointsFromBlood;
+            prejudiceScript.numPointsFromPhysical = prejudicePointsFromPhysical;
+            prejudiceScript.numPointsFromBehavior = prejudicePointsFromBehavior;
+            prejudiceScript.numPointsFromPsychological = prejudicePointsFromPsychological;
+            prejudiceScript.eventStatModifier = prejudiceEventStatModifier;
+            prejudiceScript.eventBloodModifier = prejudiceEventBloodModifier;
+            prejudiceScript.eventPhysicalModifier = prejudiceEventPhysicalModifier;
+            prejudiceScript.eventBehaviorModifier = prejudiceEventBehaviorModifier;
+            prejudiceScript.eventPsychologicalModifier = prejudiceEventPsychologicalModifier;
+
+            painScript.numPointsTotal = painPointsTotal;
+            painScript.numPointsStart = painPointsStart;
+            painScript.numPointsGainedToday = painPointsGainedToday;
+            painScript.numPointsFromBlood = painPointsFromBlood;
+            painScript.numPointsFromPhysical = painPointsFromPhysical;
+            painScript.numPointsFromBehavior = painPointsFromBehavior;
+            painScript.numPointsFromPsychological = painPointsFromPsychological;
+            painScript.eventStatModifier = painEventStatModifier;
+            painScript.eventBloodModifier = painEventBloodModifier;
+            painScript.eventPhysicalModifier = painEventPhysicalModifier;
+            painScript.eventBehaviorModifier = painEventBehaviorModifier;
+            painScript.eventPsychologicalModifier = painEventPsychologicalModifier;
+
+            eventHandlerScript.RepopulateUnusedEvents(unusedEvents);
+
+            collectUpgradesScript.ReUpgrade();
+
+            dayHandlerScript.infectionRate = infectionRate;
+            dayHandlerScript.populationInfluenceModifier = populationInfluenceModifier;
+            dayHandlerScript.hunterThreshold = hunterThreshold;
+            dayHandlerScript.huntersPerThreshold = huntersPerThreshold;
+            dayHandlerScript.painThreshold = painThreshold;
+            dayHandlerScript.numInfectedToGain = numInfectedToGain;
+            dayHandlerScript.numInfluenceToGain = numInfluenceToGain;
+
         }
     }
 }

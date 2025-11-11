@@ -4,6 +4,7 @@ using System.Collections.Generic;
 public class CollectUpgrades : MonoBehaviour
 {
     private List<Upgrade> allUpgrades;
+    private List<Upgrade> purchasedUpgrades;
 
     private void Start()
     {
@@ -13,7 +14,15 @@ public class CollectUpgrades : MonoBehaviour
 
     public List<Upgrade> CollectPurchasedUpgrades()
     {
-        List<Upgrade> purchasedUpgrades = new List<Upgrade>();
+        if (purchasedUpgrades == null)
+        {
+            purchasedUpgrades = new List<Upgrade>();
+        }
+        else
+        {
+            purchasedUpgrades.Clear();
+        }
+        
         foreach (var upgrade in allUpgrades)
         {
             if (upgrade.isPurchased)
@@ -22,5 +31,19 @@ public class CollectUpgrades : MonoBehaviour
             }
         }
         return purchasedUpgrades;
+    }
+
+    public void ReUpgrade()
+    {
+        if (purchasedUpgrades != null)
+        {
+            foreach (var upgrade in allUpgrades)
+            {
+                if (purchasedUpgrades.Contains(upgrade))
+                {
+                    upgrade.isPurchased = true;
+                }
+            }
+        }
     }
 }

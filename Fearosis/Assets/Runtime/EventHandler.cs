@@ -34,4 +34,14 @@ public class EventHandler : MonoBehaviour
         //Remove event from unusedEvents array
         unusedEvents.RemoveAt(eventIndex);
     }
+
+    public void RepopulateUnusedEvents(List<Event> loadedList)
+    {
+        unusedEvents.Clear();
+        foreach (Event curEvent in loadedList)
+        {
+            unusedEvents.Add(curEvent);
+        }
+    }
+
 }
