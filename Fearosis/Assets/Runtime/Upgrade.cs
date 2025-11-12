@@ -8,19 +8,12 @@ public class Upgrade : MonoBehaviour
     public string upgradeName;
     public string upgradeDescription;
     public int upgradeCost;
+    public bool isFirstUpgrade;
 
     [Header("Add prerequisite upgrades (if applicable)")]
     public GameObject[] prerequisiteUpgrades;
     [SerializeField]
-    public bool isPurchased {get { return isPurchased; } set { isPurchased = value; } }
-    [HideInInspector]
-    public int unavailableAlpha = 0;
-    [HideInInspector]
-    public int availableAlpha = 255;
-    [HideInInspector]
-    public int purchasedAlpha = 90;
-    [HideInInspector]
-    public int currentAlpha;
+    public bool isPurchased = false;
     public event Action upgradePurchased;
     public event Action upgradeUnlocked;
 
@@ -69,21 +62,10 @@ public class Upgrade : MonoBehaviour
             {
                 Upgrade prereqStatus = prereq.GetComponent<Upgrade>();
                 prereqStatus.upgradePurchased += this.CheckPrerequisites;
-
-                currentAlpha = unavailableAlpha;
             }
-        }//if none it carries on
-        else
-        {
-            currentAlpha = availableAlpha;
         }
 
         upgradePurchased += infectedUIHandler.UpdateInfluenceText;
-    }
-
-    void Start()
-    {
-        isPurchased = false;
     }
 
     void OnDisable()
@@ -132,7 +114,6 @@ public class Upgrade : MonoBehaviour
 
             isPurchased = true;
             Debug.Log(upgradeName + " purchased!");
-            currentAlpha = purchasedAlpha;
             upgradePurchased?.Invoke();
 
             ApplyUpgrade();
@@ -163,7 +144,6 @@ public class Upgrade : MonoBehaviour
         if (unlockable)
         {
             Debug.Log("Unlocking");
-            currentAlpha = availableAlpha;
             upgradeUnlocked?.Invoke();
         }
 

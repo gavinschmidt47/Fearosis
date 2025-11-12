@@ -154,9 +154,9 @@ RectTransform:
   - {fileID: 378056529}
   m_Father: {fileID: 1724518620}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 281.64, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &26391092
@@ -319,9 +319,7 @@ MonoBehaviour:
   descriptionPanel: {fileID: 757363335}
   costPanel: {fileID: 1408563421}
   activateButton: {fileID: 412158956}
-  UnavailableAlpha: 0
-  AvailableAlpha: 255
-  PurchasedAlpha: 90
+  iconPanel: {fileID: 0}
   upgradeScript: {fileID: 0}
 --- !u!114 &27207583
 MonoBehaviour:
@@ -526,12 +524,9 @@ MonoBehaviour:
   upgradeDescription: 'More security means a smaller chance for the secrets to get
     loose. (+Fear)  '
   upgradeCost: 5
+  isFirstUpgrade: 0
   prerequisiteUpgrades: []
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 10
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -585,13 +580,10 @@ MonoBehaviour:
   upgradeDescription: 'Stay indoors. Protect your family. Close all blinds. Do not
     let them in. (+Fear +Notoriety +Prejudice +Pain) '
   upgradeCost: 13
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1748718610}
-  isPurchased: 1
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 8
   notorietyBuff: 10
   prejudiceBuff: 12
@@ -1413,13 +1405,10 @@ MonoBehaviour:
   upgradeDescription: 'Idiocy spreads among the masses like a plague (+Fear +Notoriety
     +Prejudice) '
   upgradeCost: 25
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1052508701}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 22
   notorietyBuff: 15
   prejudiceBuff: 15
@@ -1533,14 +1522,11 @@ MonoBehaviour:
   upgradeName: Your New Home
   upgradeDescription: 'Join us. They cannot hurt you from the darkness. (+Fear) '
   upgradeCost: 43
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1108895920}
   - {fileID: 838740026}
-  isPurchased: 1
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 30
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -1935,13 +1921,10 @@ MonoBehaviour:
   upgradeDescription: "hose who do not follow will lose faith in their gods. Then
     they\u2019ll come running to us for a belief to grasp. (+Fear -Notoriety -Prejudice) "
   upgradeCost: 26
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1355687009}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 30
   notorietyBuff: -40
   prejudiceBuff: -40
@@ -2070,12 +2053,9 @@ MonoBehaviour:
   upgradeDescription: The scripture will guide people to their true faith (+Fear
     +Prejudice)
   upgradeCost: 8
+  isFirstUpgrade: 0
   prerequisiteUpgrades: []
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 4
   notorietyBuff: 0
   prejudiceBuff: 10
@@ -2128,12 +2108,9 @@ MonoBehaviour:
   upgradeName: Ad Promotion
   upgradeDescription: 'We are hiring. Sacrifices wanted. (+Fear +Prejudice) '
   upgradeCost: 8
+  isFirstUpgrade: 0
   prerequisiteUpgrades: []
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 10
   notorietyBuff: 0
   prejudiceBuff: 5
@@ -3234,14 +3211,11 @@ MonoBehaviour:
   upgradeDescription: "Soulless husks that can\u2019t even think for themselves.
     They have become the perfect fodder. (++Fear, +Pain) "
   upgradeCost: 75
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 868727138}
   - {fileID: 904984629}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 60
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -3293,6 +3267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e07a21d5110704287e612053b141eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unusedEvents: []
 --- !u!1 &355001414
 GameObject:
   m_ObjectHideFlags: 0
@@ -4018,7 +3993,7 @@ GameObject:
   - component: {fileID: 385201707}
   m_Layer: 5
   m_Name: Mass Indoctrination Button
-  m_TagString: Untagged
+  m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4034,7 +4009,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 930686899}
   m_Father: {fileID: 1148559565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -4318,13 +4294,10 @@ MonoBehaviour:
   upgradeDescription: 'A small change to their meat intake can go a long way. (+Fear,
     +Pain) '
   upgradeCost: 12
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1618381953}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 12
   notorietyBuff: 0
   prejudiceBuff: 10
@@ -5193,13 +5166,10 @@ MonoBehaviour:
   upgradeDescription: 'he time has come for our lord to bless us. Its presence will
     grant us true divinity. (+Fear +Notoriety +Prejudice -Pain) '
   upgradeCost: 60
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1826247088}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 30
   notorietyBuff: 23
   prejudiceBuff: 18
@@ -5419,6 +5389,7 @@ RectTransform:
   - {fileID: 660552353}
   - {fileID: 653163599}
   - {fileID: 1826999132}
+  - {fileID: 1324032137}
   m_Father: {fileID: 1148559565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6026,9 +5997,9 @@ RectTransform:
   - {fileID: 2072113970}
   m_Father: {fileID: 1724518620}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 644.9201, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566170553
@@ -6921,7 +6892,7 @@ GameObject:
   - component: {fileID: 637530991}
   m_Layer: 5
   m_Name: Blood Relatives Button
-  m_TagString: Untagged
+  m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6937,7 +6908,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2145436435}
   m_Father: {fileID: 1148559565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -7227,13 +7199,10 @@ MonoBehaviour:
   upgradeDescription: "You\u2019ll be protected, All you have to do is offer everything
     you own. Including your soul. (+Fear, -Pain)"
   upgradeCost: 65
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 120132780}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 60
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -7442,8 +7411,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7510,7 +7479,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.75, y: 79.446}
+  m_AnchoredPosition: {x: -5.75, y: 61}
   m_SizeDelta: {x: 211.5, y: 128.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &661841791
@@ -7756,11 +7725,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4f7dbdbebc17c54b8a848f52a2500ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infectionRate: 3
-  populationInfluenceModifier: 45
-  hunterThreshold: 15
-  huntersPerThreshold: 1
-  painThreshold: 20
   dayStartEvent:
     m_PersistentCalls:
       m_Calls:
@@ -8259,6 +8223,94 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747446640}
   m_CullTransparentMesh: 1
+--- !u!1 &753648202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 753648203}
+  - component: {fileID: 753648207}
+  - component: {fileID: 753648206}
+  - component: {fileID: 753648208}
+  m_Layer: 5
+  m_Name: A Drop Of Blood Button (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &753648203
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753648202}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.45, y: 0.65, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1616741482}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0.0000076293945, y: 40.00003}
+  m_SizeDelta: {x: 80, y: 80}
+  m_Pivot: {x: 0.5000001, y: 0.50000006}
+--- !u!114 &753648206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753648202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3d23e04f7da4ced4da29887b21ebf6e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &753648207
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753648202}
+  m_CullTransparentMesh: 1
+--- !u!114 &753648208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753648202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dd4ef8cc1d634469b2dec19ab9445c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &753673678
 GameObject:
   m_ObjectHideFlags: 0
@@ -8609,6 +8661,182 @@ RectTransform:
   m_AnchoredPosition: {x: -5.75, y: 79.446}
   m_SizeDelta: {x: 211.5, y: 128.32}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &762300146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 762300147}
+  - component: {fileID: 762300151}
+  - component: {fileID: 762300150}
+  - component: {fileID: 762300152}
+  m_Layer: 5
+  m_Name: Cannibalistic Instinct Button (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &762300147
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762300146}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.45, y: 0.65, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1980136512}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 60.00003}
+  m_SizeDelta: {x: 120, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &762300150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762300146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3d23e04f7da4ced4da29887b21ebf6e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &762300151
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762300146}
+  m_CullTransparentMesh: 1
+--- !u!114 &762300152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762300146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dd4ef8cc1d634469b2dec19ab9445c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &765627072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 765627073}
+  - component: {fileID: 765627077}
+  - component: {fileID: 765627076}
+  - component: {fileID: 765627078}
+  m_Layer: 5
+  m_Name: Human Substitute Button (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &765627073
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765627072}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.45, y: 0.65, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1283096760}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 40}
+  m_SizeDelta: {x: 80, y: 80}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &765627076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765627072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3d23e04f7da4ced4da29887b21ebf6e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &765627077
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765627072}
+  m_CullTransparentMesh: 1
+--- !u!114 &765627078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765627072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dd4ef8cc1d634469b2dec19ab9445c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &768455973
 GameObject:
   m_ObjectHideFlags: 0
@@ -9183,6 +9411,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 284805c3cea42dd40a8819c93e4d9ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numPointsTotal: 0
+  numPointsStart: 0
+  numPointsGainedToday: 0
+  numPointsFromBlood: 0
+  numPointsFromPhysical: 0
+  numPointsFromBehavior: 0
+  numPointsFromPsychological: 0
+  eventStatModifier: 0
+  eventBloodModifier: 0
+  eventPhysicalModifier: 0
+  eventBehaviorModifier: 0
+  eventPsychologicalModifier: 0
   notoriety: {fileID: 1251817879}
   prejudice: {fileID: 1381553656}
   notorietyModifier: 0.639
@@ -9616,13 +9856,10 @@ MonoBehaviour:
   upgradeDescription: 'The strings are attached so elegantly that the people do not
     even know they are there. (+Fear -Pain) '
   upgradeCost: 60
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 933236014}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 30
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -9809,13 +10046,10 @@ MonoBehaviour:
   upgradeDescription: 'Every sheep has its purpose, no matter how small. (+Fear +Notoriety
     +Prejudice) '
   upgradeCost: 30
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1161860094}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 25
   notorietyBuff: 23
   prejudiceBuff: 20
@@ -10131,14 +10365,11 @@ MonoBehaviour:
   upgradeName: 'Cannibalistic Instinct '
   upgradeDescription: 'They crave flesh, and they yearn for blood (++Fear, +Pain) '
   upgradeCost: 40
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1610487966}
   - {fileID: 1549600074}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 30
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -10254,9 +10485,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1724518620}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 110.54668, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &896256779
@@ -10479,13 +10710,10 @@ MonoBehaviour:
   upgradeName: Mass indoctrination
   upgradeDescription: 'Lead them to a better future. (+Fear, -Prejudice, +Notoriety) '
   upgradeCost: 50
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 112351577}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 30
   notorietyBuff: 20
   prejudiceBuff: -10
@@ -10626,6 +10854,94 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915311306}
   m_CullTransparentMesh: 1
+--- !u!1 &930686898
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 930686899}
+  - component: {fileID: 930686903}
+  - component: {fileID: 930686902}
+  - component: {fileID: 930686904}
+  m_Layer: 5
+  m_Name: Mass Indoctrination Button (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &930686899
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930686898}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.45, y: 0.65, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 385201706}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0.000061035156, y: 39.99997}
+  m_SizeDelta: {x: 80, y: 80}
+  m_Pivot: {x: 0.5000001, y: 0.5000001}
+--- !u!114 &930686902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930686898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3d23e04f7da4ced4da29887b21ebf6e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &930686903
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930686898}
+  m_CullTransparentMesh: 1
+--- !u!114 &930686904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930686898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dd4ef8cc1d634469b2dec19ab9445c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &933236014
 GameObject:
   m_ObjectHideFlags: 0
@@ -10659,14 +10975,11 @@ MonoBehaviour:
   upgradeDescription: 'There are strings attached, and they are stabbing into me.
     (+Fear +Pain) '
   upgradeCost: 34
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1992673434}
   - {fileID: 170760964}
-  isPurchased: 1
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 40
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -10972,7 +11285,7 @@ GameObject:
   - component: {fileID: 958013141}
   m_Layer: 5
   m_Name: An Air Of Confusion Button
-  m_TagString: Untagged
+  m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10988,7 +11301,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2121637035}
   m_Father: {fileID: 1148559565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -11092,6 +11406,94 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958013139}
   m_CullTransparentMesh: 1
+--- !u!1 &959270026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 959270027}
+  - component: {fileID: 959270031}
+  - component: {fileID: 959270030}
+  - component: {fileID: 959270032}
+  m_Layer: 5
+  m_Name: New People Button (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &959270027
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959270026}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.45, y: 0.65, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1218506346}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -0.0000076293945, y: 89.99999}
+  m_SizeDelta: {x: 180, y: 180}
+  m_Pivot: {x: 0.49999997, y: 0.49999994}
+--- !u!114 &959270030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959270026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3d23e04f7da4ced4da29887b21ebf6e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &959270031
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959270026}
+  m_CullTransparentMesh: 1
+--- !u!114 &959270032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959270026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dd4ef8cc1d634469b2dec19ab9445c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &981823804
 GameObject:
   m_ObjectHideFlags: 0
@@ -11200,14 +11602,11 @@ MonoBehaviour:
   upgradeDescription: 'For those who do not walk along our path are sinners, and
     are rightfully deserving of punishment. (+Fear +Notoriety -Prejudice) '
   upgradeCost: 32
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1079254851}
   - {fileID: 2136004435}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 15
   notorietyBuff: 20
   prejudiceBuff: -30
@@ -11988,12 +12387,9 @@ MonoBehaviour:
   upgradeDescription: "Some say that chemicals in the air are making people dumber.
     Maybe they\u2019re right. (+Fear, +Prejudice +Notoriety) "
   upgradeCost: 18
+  isFirstUpgrade: 1
   prerequisiteUpgrades: []
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 15
   notorietyBuff: 8
   prejudiceBuff: 8
@@ -12442,13 +12838,10 @@ MonoBehaviour:
   upgradeName: Organic Charity
   upgradeDescription: 'We gladly await your donations. (+Fear, +Pain) '
   upgradeCost: 10
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1841134373}
-  isPurchased: 1
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 15
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -12614,12 +13007,9 @@ MonoBehaviour:
   upgradeDescription: If we appease people first, they will gladly convert. (+Fear
     +Notoriety)
   upgradeCost: 10
+  isFirstUpgrade: 0
   prerequisiteUpgrades: []
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 10
   notorietyBuff: 8
   prejudiceBuff: 0
@@ -13018,13 +13408,10 @@ MonoBehaviour:
   upgradeDescription: 'It turns out the monsters were inside the whole time.(+Fear
     +Prejudice +Pain) '
   upgradeCost: 18
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 50777198}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 11
   notorietyBuff: 0
   prejudiceBuff: 15
@@ -13863,7 +14250,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1148559565
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13892,8 +14279,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.010009766}
-  m_SizeDelta: {x: -0.00024414062, y: 0.019897461}
+  m_AnchoredPosition: {x: -0.000061035153, y: -0.009979247}
+  m_SizeDelta: {x: -0.00012207031, y: 0.019958496}
   m_Pivot: {x: 0.49999997, y: 0.50000006}
 --- !u!114 &1148559566
 MonoBehaviour:
@@ -13911,9 +14298,7 @@ MonoBehaviour:
   descriptionPanel: {fileID: 660552350}
   costPanel: {fileID: 653163596}
   activateButton: {fileID: 1826999131}
-  UnavailableAlpha: 0
-  AvailableAlpha: 255
-  PurchasedAlpha: 90
+  iconPanel: {fileID: 1324032136}
   upgradeScript: {fileID: 0}
 --- !u!114 &1148559567
 MonoBehaviour:
@@ -13986,13 +14371,10 @@ MonoBehaviour:
   upgradeDescription: 'If they want to find out more, let them. (+Fear +Notoriety
     +Prejudice) '
   upgradeCost: 20
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1294261842}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 20
   notorietyBuff: 13
   prejudiceBuff: 15
@@ -14446,7 +14828,7 @@ GameObject:
   - component: {fileID: 1218506347}
   m_Layer: 5
   m_Name: New People Button
-  m_TagString: Untagged
+  m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14462,7 +14844,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 959270027}
   m_Father: {fileID: 1148559565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -14942,6 +15325,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa886207aee3e0c439635a7555353c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numPointsTotal: 0
+  numPointsStart: 0
+  numPointsGainedToday: 0
+  numPointsFromBlood: 0
+  numPointsFromPhysical: 0
+  numPointsFromBehavior: 0
+  numPointsFromPsychological: 0
+  eventStatModifier: 0
+  eventBloodModifier: 0
+  eventPhysicalModifier: 0
+  eventBehaviorModifier: 0
+  eventPsychologicalModifier: 0
   pain: {fileID: 1689262718}
   painModifier: -0.33
 --- !u!4 &1251817880
@@ -15161,7 +15556,7 @@ GameObject:
   - component: {fileID: 1283096761}
   m_Layer: 5
   m_Name: Human Substitute Button
-  m_TagString: Untagged
+  m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15177,7 +15572,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 765627073}
   m_Father: {fileID: 1148559565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -15313,13 +15709,10 @@ MonoBehaviour:
   upgradeName: Fortifications
   upgradeDescription: 'Once they are in, they cannot get out. (+Fear +Prejudice) '
   upgradeCost: 10
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 48709422}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 12
   notorietyBuff: 0
   prejudiceBuff: 5
@@ -15355,7 +15748,7 @@ GameObject:
   - component: {fileID: 1308215338}
   m_Layer: 5
   m_Name: Who's On The Menu? Button
-  m_TagString: Untagged
+  m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15371,7 +15764,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1398091867}
   m_Father: {fileID: 1148559565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -15549,6 +15943,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323514943}
+  m_CullTransparentMesh: 1
+--- !u!1 &1324032136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1324032137}
+  - component: {fileID: 1324032139}
+  - component: {fileID: 1324032138}
+  m_Layer: 5
+  m_Name: UpgradeIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1324032137
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324032136}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 502918535}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -116.66}
+  m_SizeDelta: {x: 180, y: 180}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1324032138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324032136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 3086496313150049818, guid: 0c82264947459bc4d94086ed4bc9937a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1324032139
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324032136}
   m_CullTransparentMesh: 1
 --- !u!1 &1327719720
 GameObject:
@@ -16165,13 +16634,10 @@ MonoBehaviour:
   upgradeDescription: 'Our faith began when the soil beneath our feet was created.
     (-Notoriety -Prejudice -Pain) '
   upgradeCost: 18
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1997024558}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 0
   notorietyBuff: -12
   prejudiceBuff: -12
@@ -16524,6 +16990,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a244e79aaaf68d45aca238aedee511e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numPointsTotal: 0
+  numPointsStart: 0
+  numPointsGainedToday: 0
+  numPointsFromBlood: 0
+  numPointsFromPhysical: 0
+  numPointsFromBehavior: 0
+  numPointsFromPsychological: 0
+  eventStatModifier: 0
+  eventBloodModifier: 0
+  eventPhysicalModifier: 0
+  eventBehaviorModifier: 0
+  eventPsychologicalModifier: 0
   pain: {fileID: 1689262718}
   painModifier: 0.33
 --- !u!4 &1381553657
@@ -16588,13 +17066,10 @@ MonoBehaviour:
   upgradeName: Hands of Leadership
   upgradeDescription: 'Control the leaders and you control everyone (+Fear) '
   upgradeCost: 18
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1737651413}
-  isPurchased: 1
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 33
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -16632,13 +17107,10 @@ MonoBehaviour:
   upgradeName: Governmental Influence
   upgradeDescription: 'They cannot refuse if it''s the law. (+Fear -Notoriety +Prejudice) '
   upgradeCost: 24
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1843097501}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 18
   notorietyBuff: -8
   prejudiceBuff: 10
@@ -16659,6 +17131,94 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1229060260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1398091866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1398091867}
+  - component: {fileID: 1398091871}
+  - component: {fileID: 1398091870}
+  - component: {fileID: 1398091872}
+  m_Layer: 5
+  m_Name: Who's On The Menu? Button (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1398091867
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398091866}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.45, y: 0.65, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1308215337}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 40}
+  m_SizeDelta: {x: 80, y: 80}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1398091870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398091866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3d23e04f7da4ced4da29887b21ebf6e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1398091871
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398091866}
+  m_CullTransparentMesh: 1
+--- !u!114 &1398091872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398091866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dd4ef8cc1d634469b2dec19ab9445c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1402869876
 GameObject:
   m_ObjectHideFlags: 0
@@ -16692,12 +17252,9 @@ MonoBehaviour:
   upgradeDescription: "It\u2019s harder to watch them when they are constantly moving
     all day. (+Fear +Prejudice) "
   upgradeCost: 8
+  isFirstUpgrade: 0
   prerequisiteUpgrades: []
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 8
   notorietyBuff: 0
   prejudiceBuff: 10
@@ -17023,12 +17580,9 @@ MonoBehaviour:
   upgradeDescription: 'Tell them what they need to hear. They won''t know the difference.
     (+Fear -Prejudice +Pain) '
   upgradeCost: 8
+  isFirstUpgrade: 0
   prerequisiteUpgrades: []
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 8
   notorietyBuff: 3
   prejudiceBuff: 0
@@ -17219,9 +17773,9 @@ RectTransform:
   - {fileID: 257414364}
   m_Father: {fileID: 1724518620}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 402.7334, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &1445743663
@@ -17453,6 +18007,94 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452598102}
   m_CullTransparentMesh: 1
+--- !u!1 &1455878253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1455878254}
+  - component: {fileID: 1455878258}
+  - component: {fileID: 1455878257}
+  - component: {fileID: 1455878259}
+  m_Layer: 5
+  m_Name: A New Diet Button (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1455878254
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455878253}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.45, y: 0.65, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1676060867}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 40.00003}
+  m_SizeDelta: {x: 80, y: 80}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1455878257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455878253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3d23e04f7da4ced4da29887b21ebf6e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1455878258
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455878253}
+  m_CullTransparentMesh: 1
+--- !u!114 &1455878259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455878253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dd4ef8cc1d634469b2dec19ab9445c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1465899212
 GameObject:
   m_ObjectHideFlags: 0
@@ -18266,13 +18908,10 @@ MonoBehaviour:
   upgradeDescription: 'We are now a part of you, as you are a part of us. (+Fear,
     +Pain) '
   upgradeCost: 18
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1813636608}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 20
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -18931,7 +19570,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -19122,13 +19761,10 @@ MonoBehaviour:
   upgradeDescription: Would you like the brain, the liver, or the left kidney? (+Fear,
     +Prejudice,
   upgradeCost: 15
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 413751656}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 20
   notorietyBuff: 0
   prejudiceBuff: 10
@@ -19298,7 +19934,7 @@ GameObject:
   - component: {fileID: 1616741483}
   m_Layer: 5
   m_Name: A Drop Of Blood Button
-  m_TagString: Untagged
+  m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19314,7 +19950,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 753648203}
   m_Father: {fileID: 1148559565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -19466,12 +20103,9 @@ MonoBehaviour:
   upgradeDescription: Adds a special Ingredient to the meal, beginning the conversion.
     (+Fear, +Prejudice)
   upgradeCost: 10
+  isFirstUpgrade: 1
   prerequisiteUpgrades: []
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 10
   notorietyBuff: 0
   prejudiceBuff: 8
@@ -19650,6 +20284,94 @@ PolygonCollider2D:
       - {x: 0.40792537, y: -0.43980822}
       - {x: 0.5063342, y: -0.008784413}
   m_UseDelaunayMesh: 0
+--- !u!1 &1636036937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1636036938}
+  - component: {fileID: 1636036942}
+  - component: {fileID: 1636036941}
+  - component: {fileID: 1636036943}
+  m_Layer: 5
+  m_Name: Infectious Spread Button (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1636036938
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636036937}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.45, y: 0.65, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1809665012}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0.000061035156, y: 39.99997}
+  m_SizeDelta: {x: 80, y: 80}
+  m_Pivot: {x: 0.5000001, y: 0.5000001}
+--- !u!114 &1636036941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636036937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3d23e04f7da4ced4da29887b21ebf6e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1636036942
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636036937}
+  m_CullTransparentMesh: 1
+--- !u!114 &1636036943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636036937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dd4ef8cc1d634469b2dec19ab9445c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1640061674
 GameObject:
   m_ObjectHideFlags: 0
@@ -20012,7 +20734,7 @@ GameObject:
   - component: {fileID: 1676060868}
   m_Layer: 5
   m_Name: A New Diet Button
-  m_TagString: Untagged
+  m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20028,7 +20750,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1455878254}
   m_Father: {fileID: 1148559565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -20251,6 +20974,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf585627d66d5e048bd6157f6f846c74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numPointsTotal: 0
+  numPointsStart: 0
+  numPointsGainedToday: 0
+  numPointsFromBlood: 0
+  numPointsFromPhysical: 0
+  numPointsFromBehavior: 0
+  numPointsFromPsychological: 0
+  eventStatModifier: 0
+  eventBloodModifier: 0
+  eventPhysicalModifier: 0
+  eventBehaviorModifier: 0
+  eventPsychologicalModifier: 0
   fear: {fileID: 801844436}
   fearModifier: -0.33
 --- !u!1 &1695755652
@@ -20331,6 +21066,93 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.9940737, y: 0.3524559}
   m_EdgeRadius: 0
+--- !u!1 &1701789899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1701789901}
+  - component: {fileID: 1701789900}
+  m_Layer: 0
+  m_Name: Fearosis_Upgrades
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1701789900
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701789899}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 3d23e04f7da4ced4da29887b21ebf6e6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.6, y: 3.65}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1701789901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701789899}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 660.3187, y: 342.74374, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1724518619
 GameObject:
   m_ObjectHideFlags: 0
@@ -20430,13 +21252,10 @@ MonoBehaviour:
   upgradeName: Early Years
   upgradeDescription: 'Guide them before they can guide themselves. (+Fear+Notoriety) '
   upgradeCost: 12
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1429940209}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 22
   notorietyBuff: 10
   prejudiceBuff: 0
@@ -20568,13 +21387,10 @@ MonoBehaviour:
   upgradeName: Fear of the Unknown
   upgradeDescription: 'Allow the people to put their faith in someone.  (+Fear +Prejudice) '
   upgradeCost: 10
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1402869876}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 10
   notorietyBuff: 15
   prejudiceBuff: 0
@@ -20860,9 +21676,7 @@ MonoBehaviour:
   descriptionPanel: {fileID: 787305476}
   costPanel: {fileID: 1431898566}
   activateButton: {fileID: 1337128815}
-  UnavailableAlpha: 0
-  AvailableAlpha: 255
-  PurchasedAlpha: 90
+  iconPanel: {fileID: 0}
   upgradeScript: {fileID: 0}
 --- !u!114 &1761558302
 MonoBehaviour:
@@ -21799,7 +22613,7 @@ GameObject:
   - component: {fileID: 1809665013}
   m_Layer: 5
   m_Name: Infectious Spread Button
-  m_TagString: Untagged
+  m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21815,7 +22629,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1636036938}
   m_Father: {fileID: 1148559565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -22045,13 +22860,10 @@ MonoBehaviour:
   upgradeDescription: Start with a small dose, and they'll soon be addicted. (+Fear
     +Notoriety)
   upgradeCost: 13
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1618381953}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 12
   notorietyBuff: 10
   prejudiceBuff: 0
@@ -22193,13 +23005,10 @@ MonoBehaviour:
   upgradeDescription: 'You will eat in the name of faith, and you will breathe in
     the name of faith. (+Fear +Pain) '
   upgradeCost: 45
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 990950448}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 12
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -22238,7 +23047,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1826999132
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22656,13 +23465,10 @@ MonoBehaviour:
   upgradeName: False God
   upgradeDescription: 'Allow the people to put their faith in someone.  (+Fear +Prejudice) '
   upgradeCost: 20
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 200797606}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 8
   notorietyBuff: 0
   prejudiceBuff: 12
@@ -22716,13 +23522,10 @@ MonoBehaviour:
   upgradeDescription: "Show them the power we can give and they\u2019ll come running.
     (+Fear +Prejudice) "
   upgradeCost: 12
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 227920738}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 12
   notorietyBuff: 0
   prejudiceBuff: 8
@@ -23367,9 +24170,7 @@ MonoBehaviour:
   descriptionPanel: {fileID: 650440986}
   costPanel: {fileID: 355001414}
   activateButton: {fileID: 47859049}
-  UnavailableAlpha: 0
-  AvailableAlpha: 255
-  PurchasedAlpha: 90
+  iconPanel: {fileID: 0}
   upgradeScript: {fileID: 0}
 --- !u!114 &1962941421
 MonoBehaviour:
@@ -23535,7 +24336,7 @@ GameObject:
   - component: {fileID: 1980136513}
   m_Layer: 5
   m_Name: Cannibalistic Instinct Button
-  m_TagString: Untagged
+  m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23551,7 +24352,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 762300147}
   m_Father: {fileID: 1148559565}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -23777,13 +24579,10 @@ MonoBehaviour:
   upgradeName: Mandations
   upgradeDescription: 'Control the masses and force them to follow. (+Fear +Pain)  '
   upgradeCost: 24
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1388488543}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 20
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -23937,13 +24736,10 @@ MonoBehaviour:
   upgradeDescription: 'Let it become a part of you, and enlighten your soul. (+Fear
     -Notoriety -Prejudice) '
   upgradeCost: 13
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1089898396}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 8
   notorietyBuff: -10
   prejudiceBuff: -10
@@ -25124,9 +25920,9 @@ RectTransform:
   - {fileID: 768455974}
   m_Father: {fileID: 1724518620}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 523.8268, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2075900136
@@ -25531,6 +26327,94 @@ RectTransform:
   m_AnchoredPosition: {x: 5.6380615, y: 6.2319946}
   m_SizeDelta: {x: 1279.2, y: 549.03}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2121637034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2121637035}
+  - component: {fileID: 2121637039}
+  - component: {fileID: 2121637038}
+  - component: {fileID: 2121637040}
+  m_Layer: 5
+  m_Name: An Air Of Confusion Button (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2121637035
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121637034}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.45, y: 0.65, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 958013140}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0.000061035156, y: 40}
+  m_SizeDelta: {x: 80, y: 80}
+  m_Pivot: {x: 0.5000001, y: 0.5000001}
+--- !u!114 &2121637038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121637034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3d23e04f7da4ced4da29887b21ebf6e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2121637039
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121637034}
+  m_CullTransparentMesh: 1
+--- !u!114 &2121637040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2121637034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dd4ef8cc1d634469b2dec19ab9445c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2125503028
 GameObject:
   m_ObjectHideFlags: 0
@@ -25870,13 +26754,10 @@ MonoBehaviour:
   upgradeDescription: 'With total control the population will be enlightened. (+Fear
     -Prejudice) '
   upgradeCost: 30
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1398071539}
   isPurchased: 0
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
   fearBuff: 25
   notorietyBuff: 0
   prejudiceBuff: 10
@@ -25932,6 +26813,94 @@ Transform:
   - {fileID: 1350204244}
   m_Father: {fileID: 308556628}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2145436434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2145436435}
+  - component: {fileID: 2145436439}
+  - component: {fileID: 2145436438}
+  - component: {fileID: 2145436440}
+  m_Layer: 5
+  m_Name: Blood Relatives Button (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2145436435
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145436434}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.45, y: 0.65, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 637530990}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0.0000076293945, y: 40.00003}
+  m_SizeDelta: {x: 80, y: 80}
+  m_Pivot: {x: 0.5000001, y: 0.5}
+--- !u!114 &2145436438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145436434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3d23e04f7da4ced4da29887b21ebf6e6, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2145436439
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145436434}
+  m_CullTransparentMesh: 1
+--- !u!114 &2145436440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145436434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5dd4ef8cc1d634469b2dec19ab9445c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -25953,3 +26922,4 @@ SceneRoots:
   - {fileID: 95551150}
   - {fileID: 1777222929}
   - {fileID: 503316578}
+  - {fileID: 1701789901}

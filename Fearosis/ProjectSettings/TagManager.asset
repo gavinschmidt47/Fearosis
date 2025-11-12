@@ -16,6 +16,7 @@ TagManager:
   - Music
   - SFX
   - TargetZone
+  - Web
   layers:
   - Default
   - TransparentFX

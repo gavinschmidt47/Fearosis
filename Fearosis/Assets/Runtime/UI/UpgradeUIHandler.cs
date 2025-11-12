@@ -8,13 +8,12 @@ public class UpgradeUIHandler : MonoBehaviour
     public GameObject descriptionPanel;
     public GameObject costPanel;
     public GameObject activateButton;
-
-    public int UnavailableAlpha = 0;
-    public int AvailableAlpha = 255;
-    public int PurchasedAlpha = 90;
+    public GameObject iconPanel;
 
     [HideInInspector]
     public Upgrade upgradeScript;
+
+    private Sprite icon;
 
     void OnEnable()
     {
@@ -26,19 +25,41 @@ public class UpgradeUIHandler : MonoBehaviour
         upgradeScript = null;
     }
 
-    public void ChosenUpgrade(Upgrade upgrade)
+    public void ChosenUpgrade(Upgrade upgrade, Sprite icon)
     {
         descriptionPanel.SetActive(true);
-        activateButton.SetActive(true);
         upgradeScript = upgrade;
+        this.icon = icon;
 
         namePanel.GetComponent<TextMeshProUGUI>().text = upgradeScript.upgradeName;
         descriptionPanel.GetComponent<TextMeshProUGUI>().text = upgradeScript.upgradeDescription;
-        costPanel.GetComponent<TextMeshProUGUI>().text = "Cost: " + upgradeScript.upgradeCost.ToString() + " Influence Points";
+        
+        if (upgradeScript.isPurchased)
+        {
+            activateButton.SetActive(false);
+            iconPanel.GetComponent<Image>().sprite = icon;
+            iconPanel.SetActive(true);
+            costPanel.GetComponent<TextMeshProUGUI>().text = "Upgrade Purchased";
+        }
+        else
+        {
+            activateButton.SetActive(true);
+            iconPanel.SetActive(false);
+            costPanel.GetComponent<TextMeshProUGUI>().text = "Cost: " + upgradeScript.upgradeCost.ToString() + " Influence Points";
+        }
+        
     }
 
     public void PurchaseUpgrade()
     {
         upgradeScript.Purchase();
+
+        if (upgradeScript.isPurchased)
+        {
+            activateButton.SetActive(false);
+            iconPanel.GetComponent<Image>().sprite = icon;
+            iconPanel.SetActive(true);
+            costPanel.GetComponent<TextMeshProUGUI>().text = "Upgrade Purchased";
+        }
     }
 }

@@ -4,26 +4,25 @@ using UnityEngine.Events;
 public class Point : MonoBehaviour
 {
     //Total of all points
-    public int numPointsTotal { get { return numPointsTotal; } set { numPointsTotal = value; } }
+    public int numPointsTotal;
     //Starting points from defining trait
-    public int numPointsStart { get { return numPointsStart; } set { numPointsStart = value; } }
+    public int numPointsStart;
 
     //Points gained today
-    public int numPointsGainedToday { get { return numPointsGainedToday; } set { numPointsGainedToday = value; } }
+    public int numPointsGainedToday;
 
     //Points from modifiable sources
-    public int numPointsFromBlood { get { return numPointsFromBlood; } set { numPointsFromBlood = value; } }
-    public int numPointsFromPhysical { get { return numPointsFromPhysical; } set { numPointsFromPhysical = value; } }
-    public int numPointsFromBehavior { get { return numPointsFromBehavior; } set { numPointsFromBehavior = value; } }
-    public int numPointsFromPsychological { get { return numPointsFromPsychological; } set { numPointsFromPsychological = value; } }
+    public int numPointsFromBlood;
+    public int numPointsFromPhysical;
+    public int numPointsFromBehavior;
+    public int numPointsFromPsychological;
 
     //Event modifiers
-    public float eventStatModifier { get { return eventStatModifier; } set { eventStatModifier = value; } }
-
-    public float eventBloodModifier { get { return eventBloodModifier; } set { eventBloodModifier = value; } }
-    public float eventPhysicalModifier { get { return eventPhysicalModifier; } set { eventPhysicalModifier = value; } }
-    public float eventBehaviorModifier { get { return eventBehaviorModifier; } set { eventBehaviorModifier = value; } }
-    public float eventPsychologicalModifier { get { return eventPsychologicalModifier; } set { eventPsychologicalModifier = value; } }
+    public float eventStatModifier;
+    public float eventBloodModifier;
+    public float eventPhysicalModifier;
+    public float eventBehaviorModifier;
+    public float eventPsychologicalModifier;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
