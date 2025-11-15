@@ -319,9 +319,7 @@ MonoBehaviour:
   descriptionPanel: {fileID: 757363335}
   costPanel: {fileID: 1408563421}
   activateButton: {fileID: 412158956}
-  UnavailableAlpha: 0
-  AvailableAlpha: 255
-  PurchasedAlpha: 90
+  iconPanel: {fileID: 0}
   upgradeScript: {fileID: 0}
 --- !u!114 &27207583
 MonoBehaviour:
@@ -525,11 +523,9 @@ MonoBehaviour:
   upgradeName: Sharp Fangs
   upgradeDescription: 'My, what sharp teeth you have. (+Fear)  '
   upgradeCost: 5
+  isFirstUpgrade: 0
   prerequisiteUpgrades: []
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 10
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -584,12 +580,10 @@ MonoBehaviour:
     replicate. Some have three legs, others have four. (+Fear +Notoriety +Prejudice
     +Pain) '
   upgradeCost: 13
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1748718610}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 8
   notorietyBuff: 10
   prejudiceBuff: 12
@@ -1411,12 +1405,10 @@ MonoBehaviour:
   upgradeDescription: "People smell it. They smell it everywhere. It\u2019s as if
     the town was bleeding itself. (+Fear +Notoriety +Prejudice) "
   upgradeCost: 35
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1052508701}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 22
   notorietyBuff: 15
   prejudiceBuff: 15
@@ -1531,13 +1523,11 @@ MonoBehaviour:
   upgradeDescription: "I\u2019ve never seen a smile so wide, or eyes so piercingly
     bright. (+Fear) "
   upgradeCost: 43
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1108895920}
   - {fileID: 838740026}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 30
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -2116,12 +2106,10 @@ MonoBehaviour:
   upgradeDescription: "Those who aren\u2019t infected forget the monsters ever existed.
     And those who are infected  forget they were ever human. (+Fear -Notoriety -Prejudice) "
   upgradeCost: 26
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1355687009}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 30
   notorietyBuff: -40
   prejudiceBuff: -40
@@ -2250,11 +2238,9 @@ MonoBehaviour:
   upgradeDescription: 'The light is too bright for their dark monster eyes (+Fear
     +Prejudice) '
   upgradeCost: 8
+  isFirstUpgrade: 0
   prerequisiteUpgrades: []
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 4
   notorietyBuff: 0
   prejudiceBuff: 10
@@ -2308,11 +2294,9 @@ MonoBehaviour:
   upgradeDescription: 'They only crave meat, and they refuse to eat their greens.
     (+Fear +Prejudice) '
   upgradeCost: 8
+  isFirstUpgrade: 0
   prerequisiteUpgrades: []
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 10
   notorietyBuff: 0
   prejudiceBuff: 5
@@ -3589,13 +3573,11 @@ MonoBehaviour:
   upgradeDescription: Their blood burns like a true monster. That burning fuels their
     instinctual desire to hurt others, transmitting it even further. (++Fear, +Pain)
   upgradeCost: 75
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 868727138}
   - {fileID: 904984629}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 60
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -3647,6 +3629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e07a21d5110704287e612053b141eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unusedEvents: []
 --- !u!1 &355001414
 GameObject:
   m_ObjectHideFlags: 0
@@ -4671,12 +4654,10 @@ MonoBehaviour:
   upgradeName: Bloodshot Eyes
   upgradeDescription: 'My, what scary eyes you have (+Fear, +Pain) '
   upgradeCost: 12
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1618381953}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 12
   notorietyBuff: 0
   prejudiceBuff: 10
@@ -5456,12 +5437,10 @@ MonoBehaviour:
   upgradeDescription: "If we succumb to them, they won\u2019t hurt us.. (+Fear +Notoriety
     +Prejudice -Pain)"
   upgradeCost: 60
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1826247088}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 30
   notorietyBuff: 23
   prejudiceBuff: 18
@@ -7024,6 +7003,127 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623792384}
   m_CullTransparentMesh: 1
+--- !u!1 &626129033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 626129034}
+  - component: {fileID: 626129037}
+  - component: {fileID: 626129036}
+  - component: {fileID: 626129035}
+  m_Layer: 5
+  m_Name: SaveButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &626129034
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626129033}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1032831209}
+  m_Father: {fileID: 1144604925}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -333, y: 16}
+  m_SizeDelta: {x: 171.92236, y: 80}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &626129035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626129033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 626129036}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &626129036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626129033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &626129037
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626129033}
+  m_CullTransparentMesh: 1
 --- !u!1 &627827952
 GameObject:
   m_ObjectHideFlags: 0
@@ -7446,12 +7546,10 @@ MonoBehaviour:
   upgradeDescription: 'The transition is complete. They are human no more. (+Fear
     - Pain) '
   upgradeCost: 65
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 120132780}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 60
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -9240,6 +9338,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 284805c3cea42dd40a8819c93e4d9ba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numPointsTotal: 0
+  numPointsStart: 0
+  numPointsGainedToday: 0
+  numPointsFromBlood: 0
+  numPointsFromPhysical: 0
+  numPointsFromBehavior: 0
+  numPointsFromPsychological: 0
+  eventStatModifier: 0
+  eventBloodModifier: 0
+  eventPhysicalModifier: 0
+  eventBehaviorModifier: 0
+  eventPsychologicalModifier: 0
   notoriety: {fileID: 1251817879}
   prejudice: {fileID: 1381553656}
   notorietyModifier: 0.639
@@ -9673,12 +9783,10 @@ MonoBehaviour:
   upgradeDescription: "The monsters don\u2019t feel anything, and the humans think
     they are a myth. (+Fear -Pain, -notoriety, -prejudice) "
   upgradeCost: 60
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 933236014}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 30
   notorietyBuff: -20
   prejudiceBuff: -30
@@ -9865,12 +9973,10 @@ MonoBehaviour:
   upgradeDescription: 'They know you are there. They hear every step. They smelt
     you before you even walked in. (+Fear +Notoriety +Prejudice) '
   upgradeCost: 30
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1161860094}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 25
   notorietyBuff: 23
   prejudiceBuff: 20
@@ -10109,13 +10215,11 @@ MonoBehaviour:
   upgradeDescription: "Those who have it lurk in the shadows, and those who don\u2019t
     should hide. (++Fear, +Pain) "
   upgradeCost: 40
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1610487966}
   - {fileID: 1549600074}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 30
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -10379,12 +10483,10 @@ MonoBehaviour:
   upgradeDescription: "A miracle cure they say. The blood of those \u2018monsters\u2019.
     (+Fear, -Prejudice, +Notoriety) "
   upgradeCost: 50
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 112351577}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 30
   notorietyBuff: 20
   prejudiceBuff: -10
@@ -10558,13 +10660,11 @@ MonoBehaviour:
   upgradeDescription: 'They mindlessly walk in the streets, but the citizens pay
     no mind. (+Fear +Pain) '
   upgradeCost: 34
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1992673434}
   - {fileID: 170760964}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 40
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -11176,13 +11276,11 @@ MonoBehaviour:
   upgradeDescription: 'It speaks to me, offering eternal happiness. All I have to
     do is give him a bite (+Fear +Notoriety -Prejudice) '
   upgradeCost: 32
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1079254851}
   - {fileID: 2136004435}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 15
   notorietyBuff: 20
   prejudiceBuff: -30
@@ -11705,6 +11803,142 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 177}
   m_SizeDelta: {x: 223, y: 66.1077}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1032831208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1032831209}
+  - component: {fileID: 1032831211}
+  - component: {fileID: 1032831210}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1032831209
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032831208}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 626129034}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1032831210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032831208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Save and Quit
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1032831211
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032831208}
+  m_CullTransparentMesh: 1
 --- !u!1 &1045205935
 GameObject:
   m_ObjectHideFlags: 0
@@ -11963,11 +12197,9 @@ MonoBehaviour:
   upgradeDescription: 'They dose off during the day, waiting for the sun to go down.
     Then they will strike. (+Fear, +Prejudice +Notoriety) '
   upgradeCost: 18
+  isFirstUpgrade: 0
   prerequisiteUpgrades: []
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 15
   notorietyBuff: 8
   prejudiceBuff: 8
@@ -12339,12 +12571,10 @@ MonoBehaviour:
   upgradeDescription: "They hide in the darkness. Some say the light burns them.
     Others say they simply don\u2019t want to be seen  (+Fear, +Pain) "
   upgradeCost: 10
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1841134373}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 15
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -12510,11 +12740,9 @@ MonoBehaviour:
   upgradeDescription: 'Right now it only shows as a common cold, but it is something
     far greater. (+Fear +Notoriety) '
   upgradeCost: 10
+  isFirstUpgrade: 0
   prerequisiteUpgrades: []
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 10
   notorietyBuff: 8
   prejudiceBuff: 0
@@ -12913,12 +13141,10 @@ MonoBehaviour:
   upgradeDescription: 'Organs spill out of the infected, their ribcages wide open
     for the world to see. (+Fear +Prejudice +Pain) '
   upgradeCost: 18
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 50777198}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 11
   notorietyBuff: 0
   prejudiceBuff: 15
@@ -13680,6 +13906,7 @@ RectTransform:
   m_Children:
   - {fileID: 1791536240}
   - {fileID: 627827953}
+  - {fileID: 626129034}
   m_Father: {fileID: 1088786273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -13805,9 +14032,7 @@ MonoBehaviour:
   descriptionPanel: {fileID: 660552350}
   costPanel: {fileID: 653163596}
   activateButton: {fileID: 1826999131}
-  UnavailableAlpha: 0
-  AvailableAlpha: 255
-  PurchasedAlpha: 90
+  iconPanel: {fileID: 0}
   upgradeScript: {fileID: 0}
 --- !u!114 &1148559567
 MonoBehaviour:
@@ -13880,12 +14105,10 @@ MonoBehaviour:
   upgradeDescription: 'They have lost their hands to the monsterism. In its place,
     are sharp claws, only good for slicing others. (+Fear +Notoriety +Prejudice) '
   upgradeCost: 20
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1294261842}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 20
   notorietyBuff: 13
   prejudiceBuff: 15
@@ -14833,6 +15056,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa886207aee3e0c439635a7555353c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numPointsTotal: 0
+  numPointsStart: 0
+  numPointsGainedToday: 0
+  numPointsFromBlood: 0
+  numPointsFromPhysical: 0
+  numPointsFromBehavior: 0
+  numPointsFromPsychological: 0
+  eventStatModifier: 0
+  eventBloodModifier: 0
+  eventPhysicalModifier: 0
+  eventBehaviorModifier: 0
+  eventPsychologicalModifier: 0
   pain: {fileID: 1689262718}
   painModifier: -0.33
 --- !u!4 &1251817880
@@ -15127,12 +15362,10 @@ MonoBehaviour:
   upgradeDescription: 'The skin starts to change. Some will have fur that starts
     growing over the body. Others will have skin that hardens like stone(+Fear +Prejudice) '
   upgradeCost: 10
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 48709422}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 12
   notorietyBuff: 0
   prejudiceBuff: 5
@@ -15900,12 +16133,10 @@ MonoBehaviour:
   upgradeDescription: 'There are no monsters in your town. (-Notoriety -Prejudice
     -Pain) '
   upgradeCost: 18
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1997024558}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 0
   notorietyBuff: -12
   prejudiceBuff: -12
@@ -16224,6 +16455,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a244e79aaaf68d45aca238aedee511e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numPointsTotal: 0
+  numPointsStart: 0
+  numPointsGainedToday: 0
+  numPointsFromBlood: 0
+  numPointsFromPhysical: 0
+  numPointsFromBehavior: 0
+  numPointsFromPsychological: 0
+  eventStatModifier: 0
+  eventBloodModifier: 0
+  eventPhysicalModifier: 0
+  eventBehaviorModifier: 0
+  eventPsychologicalModifier: 0
   pain: {fileID: 1689262718}
   painModifier: 0.33
 --- !u!4 &1381553657
@@ -16289,12 +16532,10 @@ MonoBehaviour:
   upgradeDescription: They are sometimes different from their normal selves. Maybe
     they are hungry. (+Fear)
   upgradeCost: 18
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1737651413}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 33
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -16334,12 +16575,10 @@ MonoBehaviour:
     seem to be talking about something, though I can\u2019t understand it.  (+Fear
     -Notoriety +Prejudice) "
   upgradeCost: 24
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1843097501}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 18
   notorietyBuff: -8
   prejudiceBuff: 10
@@ -16393,11 +16632,9 @@ MonoBehaviour:
   upgradeDescription: 'It was an easy way to spot them. All you had to do was look
     directly into their eyes. (+Fear +Prejudice) '
   upgradeCost: 8
+  isFirstUpgrade: 0
   prerequisiteUpgrades: []
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 8
   notorietyBuff: 0
   prejudiceBuff: 10
@@ -16723,11 +16960,9 @@ MonoBehaviour:
   upgradeDescription: 'Those who are infected try to sleep as if they are still human. 
     (+Fear -Prejudice +Pain) '
   upgradeCost: 8
+  isFirstUpgrade: 0
   prerequisiteUpgrades: []
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 8
   notorietyBuff: 3
   prejudiceBuff: 0
@@ -17914,12 +18149,10 @@ MonoBehaviour:
     it say they feel a constant lingering pain, as if something is growing inside
     them. (+Fear, +Pain) '
   upgradeCost: 18
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1813636608}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 20
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -18691,12 +18924,10 @@ MonoBehaviour:
   upgradeDescription: 'Their eyes resemble a human no more. They are restless throughout
     the night, eager to spread the monsterism further.  (+Fear, +Prejudice, +Pain) '
   upgradeCost: 15
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 413751656}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 20
   notorietyBuff: 0
   prejudiceBuff: 10
@@ -19034,11 +19265,9 @@ MonoBehaviour:
   upgradeDescription: 'Monsterism begins to spread. It starts with a single drop
     of blood. (+Fear +Prejudice) '
   upgradeCost: 10
+  isFirstUpgrade: 0
   prerequisiteUpgrades: []
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 10
   notorietyBuff: 0
   prejudiceBuff: 8
@@ -19712,6 +19941,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf585627d66d5e048bd6157f6f846c74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numPointsTotal: 0
+  numPointsStart: 0
+  numPointsGainedToday: 0
+  numPointsFromBlood: 0
+  numPointsFromPhysical: 0
+  numPointsFromBehavior: 0
+  numPointsFromPsychological: 0
+  eventStatModifier: 0
+  eventBloodModifier: 0
+  eventPhysicalModifier: 0
+  eventBehaviorModifier: 0
+  eventPsychologicalModifier: 0
   fear: {fileID: 801844436}
   fearModifier: -0.33
 --- !u!1 &1724518619
@@ -19814,12 +20055,10 @@ MonoBehaviour:
   upgradeDescription: "Once second, you\u2019re in your house, and the next second
     you\u2019re at a farm. (+Fear+Notoriety)"
   upgradeCost: 12
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1429940209}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 22
   notorietyBuff: 10
   prejudiceBuff: 0
@@ -19953,12 +20192,10 @@ MonoBehaviour:
     it''s already dead, latching on the body in the hopes to be seen as alive.  (+Fear
     +Notoriety +Pain) '
   upgradeCost: 10
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1402869876}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 10
   notorietyBuff: 15
   prejudiceBuff: 0
@@ -20244,9 +20481,7 @@ MonoBehaviour:
   descriptionPanel: {fileID: 787305476}
   costPanel: {fileID: 1431898566}
   activateButton: {fileID: 1337128815}
-  UnavailableAlpha: 0
-  AvailableAlpha: 255
-  PurchasedAlpha: 90
+  iconPanel: {fileID: 0}
   upgradeScript: {fileID: 0}
 --- !u!114 &1761558302
 MonoBehaviour:
@@ -21273,12 +21508,10 @@ MonoBehaviour:
   upgradeDescription: "The people have begun to notice. It's unknown what it is just
     yet, but they\u2019ve learned its contagious (+Fear, +Notoriety) "
   upgradeCost: 13
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1618381953}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 12
   notorietyBuff: 10
   prejudiceBuff: 0
@@ -21420,12 +21653,10 @@ MonoBehaviour:
   upgradeDescription: 'They torture us, for fun. Is this what we deserved? Is this
     our punishment?. (+Fear +Pain) '
   upgradeCost: 45
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 990950448}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 12
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -21961,12 +22192,10 @@ MonoBehaviour:
   upgradeDescription: 'The infected scream constantly throughout the night. Are they
     communicating? Are they warning us?.  (+Fear +Prejudice) '
   upgradeCost: 20
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 200797606}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 8
   notorietyBuff: 0
   prejudiceBuff: 12
@@ -22020,12 +22249,10 @@ MonoBehaviour:
   upgradeDescription: "They eat the animals during the dead of night, to nobody\u2019s
     knowledge\u2026 (+Fear +Prejudice) "
   upgradeCost: 12
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 227920738}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 12
   notorietyBuff: 0
   prejudiceBuff: 8
@@ -22670,9 +22897,7 @@ MonoBehaviour:
   descriptionPanel: {fileID: 650440986}
   costPanel: {fileID: 355001414}
   activateButton: {fileID: 47859049}
-  UnavailableAlpha: 0
-  AvailableAlpha: 255
-  PurchasedAlpha: 90
+  iconPanel: {fileID: 0}
   upgradeScript: {fileID: 0}
 --- !u!114 &1962941421
 MonoBehaviour:
@@ -23081,12 +23306,10 @@ MonoBehaviour:
   upgradeDescription: 'Those you knew are completely gone. Only husks remain  (+Fear
     +Pain) '
   upgradeCost: 24
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1388488543}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 20
   notorietyBuff: 0
   prejudiceBuff: 0
@@ -23240,12 +23463,10 @@ MonoBehaviour:
   upgradeDescription: "The pamphlet says you aren\u2019t a monster. Just unique!.
     (+Fear -Notoriety -Prejudice) "
   upgradeCost: 13
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1089898396}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 8
   notorietyBuff: -10
   prejudiceBuff: -10
@@ -24860,12 +25081,10 @@ MonoBehaviour:
   upgradeDescription: 'Breaking News: Another farm, entirely slaughtered. This time,
     by a group of what appears to be five of them. (+Fear -Prejudice)'
   upgradeCost: 30
+  isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1398071539}
-  unavailableAlpha: 0
-  availableAlpha: 255
-  purchasedAlpha: 90
-  currentAlpha: 0
+  isPurchased: 0
   fearBuff: 25
   notorietyBuff: 0
   prejudiceBuff: 10
