@@ -39,10 +39,24 @@ public class UpgradeButtonHandler : MonoBehaviour
             image.color = new Color32(120, 120, 120, 255);
             lockIcon.SetLockcolor(new Color32(255, 255, 255, 0));
         }
+
+        upgradeScript.upgradeUnlocked += () => DrawToChildren();
     }
 
     public void OnButtonPress()
     {
         upgradeUIHandler.ChosenUpgrade(upgradeScript, image.sprite);
+    }
+
+    void DrawToChildren()
+    {
+        GameObject[] prerequisites = upgradeScript.prerequisiteUpgrades;
+        foreach (GameObject prerequisite in prerequisites)
+        {
+            Vector2 startPos = prerequisite.transform.position;
+            Vector2 endPos = transform.position;
+
+            Instantiate(GameObject.CreatePrimitive(PrimitiveType.Cube), transform).GetComponent<LineRenderer>().SetPositions(new Vector3[] { startPos, endPos });
+        }
     }
 }
