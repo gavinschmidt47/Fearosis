@@ -3,6 +3,7 @@ using UnityEngine.UI;
 
 public class ShopUIManager : MonoBehaviour
 {
+    public CloudSave cloudSaver;
     //Buttons for sake of enable/disable
     public Button Upgrade1Button;
     public Button Upgrade2Button;
@@ -61,6 +62,7 @@ public class ShopUIManager : MonoBehaviour
     public void ShowMonster1Panel()
     {
         Monster1Panel.SetActive(true);
+        hasUpgrade1 = false;
     }
 
     public void ShowMonster2Panel()
@@ -104,6 +106,7 @@ public class ShopUIManager : MonoBehaviour
     {
         hasUpgrade1 = true;
         Upgrade1Button.interactable = false;
+        cloudSaver.SaveData();
     }
 
     public void OpenUpgrade2ConfirmPanel()
