@@ -5,13 +5,16 @@ public class LockIconManager : MonoBehaviour
 {
     private Image lockIcon;
 
-    void Awake()
+    public void SetLockColor(Color32 newColor)
     {
-        lockIcon = GetComponent<Image>();
-    }
-
-    public void SetLockcolor(Color32 color)
-    {
-        lockIcon.color = color;
+        try
+        {
+            lockIcon = GetComponent<Image>();
+            lockIcon.color = newColor;
+        }
+        catch
+        {
+            Debug.LogError("Image component not found in LockIconManager in " + gameObject.name);
+        }
     }
 }

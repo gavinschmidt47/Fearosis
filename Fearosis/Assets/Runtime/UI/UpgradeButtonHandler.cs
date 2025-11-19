@@ -20,27 +20,27 @@ public class UpgradeButtonHandler : MonoBehaviour
         // Add listener for button click
         button.onClick.AddListener(OnButtonPress);
 
-        lockIcon.SetLockcolor(new Color32(255, 255, 255, 255));
+        lockIcon.SetLockColor(new Color32(255, 255, 255, 255));
         image.color = new Color32(120, 120, 120, 255);
 
         upgradeScript.upgradeUnlocked += () =>
         {
-            lockIcon.SetLockcolor(new Color32(255, 255, 255, 0));
+            lockIcon.SetLockColor(new Color32(255, 255, 255, 0));
         };
 
         upgradeScript.upgradePurchased += () =>
         {
             image.color = new Color32(255, 255, 255, 255);
-            lockIcon.SetLockcolor(new Color32(255, 255, 255, 0));
+            lockIcon.SetLockColor(new Color32(255, 255, 255, 0));
         };
 
         if (upgradeScript.isFirstUpgrade)
         {
             image.color = new Color32(120, 120, 120, 255);
-            lockIcon.SetLockcolor(new Color32(255, 255, 255, 0));
+            lockIcon.SetLockColor(new Color32(255, 255, 255, 0));
         }
 
-        upgradeScript.upgradeUnlocked += () => DrawToChildren();
+        //upgradeScript.upgradeUnlocked += () => DrawToChildren();
     }
 
     public void OnButtonPress()
