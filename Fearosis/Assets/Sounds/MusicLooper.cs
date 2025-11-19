@@ -6,13 +6,15 @@ public class MusicLooper : MonoBehaviour
     public AudioClip introClip;
     public AudioClip mainClip;
     public AudioMixerGroup audioMixerGroup;
+    public float transitionTime = 0.1f;
 
     private AudioSource audioSource;
+    private AudioSource mainAudioSource;
     private bool mainStarted = false;
 
     void Start()
     {
-        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
         audioSource.outputAudioMixerGroup = audioMixerGroup;
         audioSource.clip = introClip;
         audioSource.loop = false;
@@ -21,11 +23,14 @@ public class MusicLooper : MonoBehaviour
 
     void Update()
     {
-        if (!mainStarted && !audioSource.isPlaying)
+        float timeRemaining = audioSource.clip.length - audioSource.time;
+        if (!mainStarted && timeRemaining <= transitionTime)
         {
-            audioSource.clip = mainClip;
-            audioSource.loop = true;
-            audioSource.Play();
+            mainAudioSource = gameObject.AddComponent<AudioSource>();
+            mainAudioSource.outputAudioMixerGroup = audioMixerGroup;
+            mainAudioSource.clip = mainClip;
+            mainAudioSource.loop = true;
+            mainAudioSource.Play();
             mainStarted = true;
         }
     }
