@@ -156,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 346.26068, y: -50}
+  m_AnchoredPosition: {x: 356.17456, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &26391092
@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 48709424}
   - component: {fileID: 48709423}
   m_Layer: 0
-  m_Name: Tighter Security
+  m_Name: Hack Proof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -388,9 +388,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Tighter Security
-  upgradeDescription: 'More security means a smaller chance for the secrets to get
-    loose. (+Fear)  '
+  upgradeName: Hack Proof
+  upgradeDescription: 'Find perfect balance in software, keep your code protected.
+    (+Fear)  '
   upgradeCost: 5
   isFirstUpgrade: 1
   prerequisiteUpgrades: []
@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 50777200}
   - component: {fileID: 50777199}
   m_Layer: 0
-  m_Name: Complete Lockdown
+  m_Name: Quality Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -444,9 +444,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Complete Lockdown
-  upgradeDescription: 'Stay indoors. Protect your family. Close all blinds. Do not
-    let them in. (+Fear +Notoriety +Prejudice +Pain) '
+  upgradeName: Quality Content
+  upgradeDescription: 'The new era of brain nourishment has begun. (+Fear +Notoriety
+    +Prejudice +Pain) '
   upgradeCost: 13
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -622,7 +622,7 @@ GameObject:
   - component: {fileID: 53330324}
   - component: {fileID: 53330323}
   m_Layer: 5
-  m_Name: New Curfew Button
+  m_Name: Screen Regulation Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -726,7 +726,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2554351223747678850, guid: 64e44ed9b7c26f64a83eb393c7558d97, type: 3}
+  m_Sprite: {fileID: 6546482161937548472, guid: f6d6c62feb2b1b342848f0faa9ed9164, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -925,7 +925,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1011.12244, y: -50}
+  m_AnchoredPosition: {x: 1047.4733, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73118836
@@ -1277,7 +1277,7 @@ GameObject:
   - component: {fileID: 112351578}
   - component: {fileID: 112351579}
   m_Layer: 0
-  m_Name: 'Infectious Spread '
+  m_Name: Regenerative Technology
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1310,9 +1310,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: 'Infectious Spread '
-  upgradeDescription: 'Idiocy spreads among the masses like a plague (+Fear +Notoriety
-    +Prejudice) '
+  upgradeName: Regenerative Technology
+  upgradeDescription: 'Technology has advanced so far it can heal wounds and mend
+    broken bones within seconds. (+Fear + Notoriety + Prejudice) '
   upgradeCost: 25
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -1555,7 +1555,7 @@ GameObject:
   - component: {fileID: 120132782}
   - component: {fileID: 120132781}
   m_Layer: 0
-  m_Name: Your New Home
+  m_Name: Photosynthetic Energy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1573,8 +1573,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Your New Home
-  upgradeDescription: 'Join us. They cannot hurt you from the darkness. (+Fear) '
+  upgradeName: Photosynthetic Energy
+  upgradeDescription: 'Light. An ever-present source. We will help you harness this
+    light for your own benefits (+Fear) '
   upgradeCost: 43
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -1637,7 +1638,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 847.282, y: -50}
+  m_AnchoredPosition: {x: 877.02356, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &132180725
@@ -2186,7 +2187,7 @@ GameObject:
   - component: {fileID: 170760966}
   - component: {fileID: 170760965}
   m_Layer: 0
-  m_Name: One True Religion
+  m_Name: What is the Hive?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2204,9 +2205,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: One True Religion
-  upgradeDescription: "Those who do not follow will lose faith in their gods. Then
-    they\u2019ll come running to us. (+Fear -Notoriety -Prejudice) "
+  upgradeName: What is the Hive?
+  upgradeDescription: 'For those who are still weary, we will alter our appearance
+    to that of one of their own. (+Fear -Notoriety -Prejudice) '
   upgradeCost: 26
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -2243,7 +2244,7 @@ GameObject:
   - component: {fileID: 200797608}
   - component: {fileID: 200797607}
   m_Layer: 0
-  m_Name: Scripture Development
+  m_Name: Mayoral Elect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2261,9 +2262,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Scripture Development
-  upgradeDescription: The scripture will guide people to their true faith (+Fear
-    +Prejudice)
+  upgradeName: Mayoral Elect
+  upgradeDescription: 'The best way to see change is to be the one to enact it. (+Fear
+    +Prejudice) '
   upgradeCost: 8
   isFirstUpgrade: 1
   prerequisiteUpgrades: []
@@ -2458,7 +2459,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 678.4415, y: -50}
+  m_AnchoredPosition: {x: 701.57385, y: -50}
   m_SizeDelta: {x: 110, y: 54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &227741853
@@ -2510,7 +2511,7 @@ GameObject:
   - component: {fileID: 227920740}
   - component: {fileID: 227920739}
   m_Layer: 0
-  m_Name: Ad Promotion
+  m_Name: Just Morals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2528,8 +2529,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Ad Promotion
-  upgradeDescription: 'We are hiring. Sacrifices wanted. (+Fear +Prejudice) '
+  upgradeName: Just Morals
+  upgradeDescription: 'Humans have trouble treating others with kindness and respect.
+    We can change that (+Happier +Prejudice) '
   upgradeCost: 8
   isFirstUpgrade: 1
   prerequisiteUpgrades: []
@@ -2698,7 +2700,7 @@ GameObject:
   - component: {fileID: 238398902}
   - component: {fileID: 238398901}
   m_Layer: 5
-  m_Name: Televised Network Button
+  m_Name: Coexistence Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2802,7 +2804,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 493674792038647530, guid: 5a2f9038b28d3f247bbfa015280cb776, type: 3}
+  m_Sprite: {fileID: -7246739060367859580, guid: c17e6e01037115f43b5f6ccac98f40e9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3108,7 +3110,7 @@ GameObject:
   - component: {fileID: 251437117}
   - component: {fileID: 251437116}
   m_Layer: 5
-  m_Name: Complete Lockdown Button
+  m_Name: Quality Content Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3212,7 +3214,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6335964724743364112, guid: ded0ecacc9fd1de479526f38d5190347, type: 3}
+  m_Sprite: {fileID: -8077723521354581899, guid: 836ca58e7c974094995b794b3e591f9e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3839,7 +3841,7 @@ GameObject:
   - component: {fileID: 303101406}
   - component: {fileID: 303101407}
   m_Layer: 0
-  m_Name: New People
+  m_Name: Healthy Body, Healthy Mind
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3872,9 +3874,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: New People
-  upgradeDescription: "Soulless husks that can\u2019t even think for themselves.
-    They have become the perfect fodder. (++Fear, +Pain) "
+  upgradeName: Healthy Body, Healthy Mind
+  upgradeDescription: hey live in a state of pure bliss to the point where they forgot
+    what pain was. (+Fear)
   upgradeCost: 75
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -4479,7 +4481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 346.26065, y: -50}
+  m_AnchoredPosition: {x: 356.17453, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &358951623
@@ -4612,7 +4614,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 661.77484, y: -50}
+  m_AnchoredPosition: {x: 684.9073, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &360614748
@@ -4995,7 +4997,7 @@ GameObject:
   - component: {fileID: 385201708}
   - component: {fileID: 385201707}
   m_Layer: 5
-  m_Name: Mass Indoctrination Button
+  m_Name: Blood of AI button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5018,7 +5020,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 360, y: 100.00003}
+  m_AnchoredPosition: {x: 360, y: 100}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5000001, y: 0.5000001}
 --- !u!114 &385201707
@@ -5099,7 +5101,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7799257927417971030, guid: 877973904ba2afc409c876e4bc87330b, type: 3}
+  m_Sprite: {fileID: 7609230371661920575, guid: ed682ed869bfc5d4ab32c8ce2de87f05, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5264,7 +5266,7 @@ GameObject:
   - component: {fileID: 413751657}
   - component: {fileID: 413751658}
   m_Layer: 0
-  m_Name: Human Substitute
+  m_Name: Recycled Resource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5297,9 +5299,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: 'Human Substitute '
-  upgradeDescription: 'A small change to their meat intake can go a long way. (+Fear,
-    +Pain) '
+  upgradeName: Recycled Resource
+  upgradeDescription: Renewable Resources have fulfilled their name, thanks to improvements
+    made by the AI. (+Fear +Prejudice)
   upgradeCost: 12
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -6306,7 +6308,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 345.76065, y: -50}
+  m_AnchoredPosition: {x: 355.6745, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &478259588
@@ -6414,7 +6416,7 @@ GameObject:
   - component: {fileID: 486934597}
   - component: {fileID: 486934598}
   m_Layer: 0
-  m_Name: True Enlightenment
+  m_Name: Complete Rehabilitation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6447,9 +6449,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: True Enlightenment
-  upgradeDescription: 'The time has come for us to be blessed. We will gain true
-    divinity. (+Fear +Notoriety +Prejudice -Pain) '
+  upgradeName: Complete Rehabilitation
+  upgradeDescription: 'Those in isolation have now become upstanding members of our
+    society. (+Fear +Notoriety +Prejudice -Pain) '
   upgradeCost: 60
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -6519,7 +6521,7 @@ GameObject:
   - component: {fileID: 497091744}
   - component: {fileID: 497091743}
   m_Layer: 5
-  m_Name: Hands Of Leadership Button
+  m_Name: Think Good Thoughts Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6623,7 +6625,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2378228404314372418, guid: 4934ac688aa591444b9f7062397bd40c, type: 3}
+  m_Sprite: {fileID: -2860249940189340115, guid: 48e94a29f5726e743a9cbfff1d9c88f4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6859,7 +6861,7 @@ GameObject:
   - component: {fileID: 505177712}
   - component: {fileID: 505177711}
   m_Layer: 5
-  m_Name: Unbreakable Contract Button
+  m_Name: New Evolution Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6963,7 +6965,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4827075660703562942, guid: a0592685c01a25c4a969f63dbed6495d, type: 3}
+  m_Sprite: {fileID: -9034741875442124514, guid: 29c33f24bff1ae344a2884adccaa907e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7785,7 +7787,7 @@ GameObject:
   - component: {fileID: 553555353}
   - component: {fileID: 553555352}
   m_Layer: 5
-  m_Name: One True Religion Button
+  m_Name: What is the Hive? Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7889,7 +7891,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7811733428855692005, guid: e3693d6c9075f18449b6ef71f5f97370, type: 3}
+  m_Sprite: {fileID: -2649742440272562351, guid: bd0ccfc84474dbc4cbb1a65b27d19f04, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7943,7 +7945,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1010.95593, y: -50}
+  m_AnchoredPosition: {x: 1047.3069, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566170553
@@ -8446,7 +8448,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 130.25356, y: -50}
+  m_AnchoredPosition: {x: 133.55818, y: -50}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &590782404
@@ -8997,7 +8999,7 @@ GameObject:
   - component: {fileID: 637530992}
   - component: {fileID: 637530991}
   m_Layer: 5
-  m_Name: Blood Relatives Button
+  m_Name: Nutritional Solution Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9101,7 +9103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2020724534934282931, guid: 4e53849ed00ecba449e023021cca9848, type: 3}
+  m_Sprite: {fileID: 8459591864929864239, guid: c6aaaf87ca02f6e4cbf2cdee72fae304, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9130,7 +9132,7 @@ GameObject:
   - component: {fileID: 652595518}
   - component: {fileID: 652595519}
   m_Layer: 0
-  m_Name: Unbreakable Contract
+  m_Name: New Evolution
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9163,9 +9165,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Unbreakable Contract
-  upgradeDescription: "You\u2019ll be protected, All you have to do is offer everything
-    you own. Including your soul. (+Fear, -Pain)"
+  upgradeName: New Evolution
+  upgradeDescription: 'Thanks to AI, humans have developed far faster than they had
+    over the span of a thousand years. (+Fear) '
   upgradeCost: 65
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -11075,7 +11077,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 510.43442, y: -50}
+  m_AnchoredPosition: {x: 526.9575, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &754413652
@@ -11689,7 +11691,7 @@ GameObject:
   - component: {fileID: 777732753}
   - component: {fileID: 777732752}
   m_Layer: 5
-  m_Name: Social Events Button
+  m_Name: Enhance Electronics Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11793,7 +11795,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8713642994136958069, guid: 38874a506d3bb294d96180c347e51280, type: 3}
+  m_Sprite: {fileID: -9029031510496252003, guid: fa562f92c6b1844458353024a9119217, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12171,7 +12173,7 @@ GameObject:
   - component: {fileID: 812466249}
   - component: {fileID: 812466248}
   m_Layer: 5
-  m_Name: Heart Of The Town Button
+  m_Name: Utopic Standards Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12275,7 +12277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6442048681350043772, guid: 067e0c705f9e96641a67b801c009107f, type: 3}
+  m_Sprite: {fileID: -6314145518813497929, guid: 1e7302dc7a2b7624cae72af95724b249, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12307,7 +12309,7 @@ GameObject:
   - component: {fileID: 824411712}
   - component: {fileID: 824411711}
   m_Layer: 5
-  m_Name: Fortifications Button
+  m_Name: Data Encryption Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12411,7 +12413,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2483888331339646908, guid: afdf3370b2b76df48b2911e74513e5ed, type: 3}
+  m_Sprite: {fileID: 6135838291180776918, guid: 79668e9041ad7bd46803adb75469b250, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12440,7 +12442,7 @@ GameObject:
   - component: {fileID: 830107972}
   - component: {fileID: 830107971}
   m_Layer: 0
-  m_Name: Master Puppeteer
+  m_Name: Gateway to the Mind
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12458,9 +12460,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Master Puppeteer
-  upgradeDescription: 'The strings are attached so elegantly that the people do not
-    even know they are there. (+Fear -Pain) '
+  upgradeName: Gateway to the Mind
+  upgradeDescription: 'It''s as if they are finally using all 100% of their brain.
+    (+Fear -Pain) '
   upgradeCost: 60
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -12630,7 +12632,7 @@ GameObject:
   - component: {fileID: 838740028}
   - component: {fileID: 838740027}
   m_Layer: 0
-  m_Name: A Shepherds Herd
+  m_Name: Coded Aid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12648,9 +12650,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: A Shepherd's Herd
-  upgradeDescription: 'Every sheep has its purpose, no matter how small. (+Fear +Notoriety
-    +Prejudice) '
+  upgradeName: Coded Aid
+  upgradeDescription: ' We will lift those less fortunate up upon our shoulders,
+    offering aid through our AI.  (+Fear +Notoriety +Prejudice) '
   upgradeCost: 30
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -12803,7 +12805,7 @@ GameObject:
   - component: {fileID: 859771516}
   - component: {fileID: 859771515}
   m_Layer: 5
-  m_Name: Organic Charity Button
+  m_Name: Enhanced Data Collection Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12907,7 +12909,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6351161516163394191, guid: 2db32442d8964e64caf0cb98eb69b530, type: 3}
+  m_Sprite: {fileID: -1895045469698093303, guid: df219a1ccb5b9b1448182201760b369d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12936,7 +12938,7 @@ GameObject:
   - component: {fileID: 868727139}
   - component: {fileID: 868727140}
   m_Layer: 0
-  m_Name: Cannibalistic Instinct
+  m_Name: Homegrown Gardens
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12969,8 +12971,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: 'Cannibalistic Instinct '
-  upgradeDescription: 'They crave flesh, and they yearn for blood (++Fear, +Pain) '
+  upgradeName: Homegrown Gardens
+  upgradeDescription: 'The AI has planted gardens throughout the city, giving healthier
+    options to every citizen. (+Fear) '
   upgradeCost: 40
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -13406,7 +13409,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 132.0869, y: -50}
+  m_AnchoredPosition: {x: 135.39153, y: -50}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &896256779
@@ -13461,7 +13464,7 @@ GameObject:
   - component: {fileID: 896461051}
   - component: {fileID: 896461050}
   m_Layer: 5
-  m_Name: First Faith Button
+  m_Name: Superstition Erasure button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13565,7 +13568,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7102693602538269022, guid: 5fe49625fb6dc054d9c4bdb450445c73, type: 3}
+  m_Sprite: {fileID: -68170010151472058, guid: 246dfa61d5d445f46973a22ab385443e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13594,7 +13597,7 @@ GameObject:
   - component: {fileID: 904984630}
   - component: {fileID: 904984631}
   m_Layer: 0
-  m_Name: Mass indoctrination
+  m_Name: Blood of AI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13627,8 +13630,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Mass indoctrination
-  upgradeDescription: 'Lead them to a better future. (+Fear, -Prejudice, +Notoriety) '
+  upgradeName: Blood of AI
+  upgradeDescription: 'A? B? O? Have no fear, AI blood types are here!(+Fear +Notoriety
+    +Prejudice) '
   upgradeCost: 50
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -13733,7 +13737,7 @@ GameObject:
   - component: {fileID: 915311309}
   - component: {fileID: 915311308}
   m_Layer: 5
-  m_Name: Let Them In Button
+  m_Name: An Open Book Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13837,7 +13841,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8602195558642015288, guid: fefaefd5cccb67249b1a1c84b5df54ba, type: 3}
+  m_Sprite: {fileID: -230268324970393732, guid: 8931ece28ac26f142be52929a11e7e51, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14126,7 +14130,7 @@ GameObject:
   - component: {fileID: 933236016}
   - component: {fileID: 933236015}
   m_Layer: 0
-  m_Name: Novice Puppeteer
+  m_Name: Key to Creativity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14144,8 +14148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Novice Puppeteer
-  upgradeDescription: 'There are strings attached, and they are stabbing into me.
+  upgradeName: Key to Creativity
+  upgradeDescription: 'Everyone is creative, their passion just has to be unlocked
     (+Fear +Pain) '
   upgradeCost: 34
   isFirstUpgrade: 0
@@ -14210,7 +14214,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 822.2819, y: -50}
+  m_AnchoredPosition: {x: 852.0236, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &938797621
@@ -14457,7 +14461,7 @@ GameObject:
   - component: {fileID: 958013142}
   - component: {fileID: 958013141}
   m_Layer: 5
-  m_Name: An Air Of Confusion Button
+  m_Name: Doctor Visits Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14480,7 +14484,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 520, y: 100}
+  m_AnchoredPosition: {x: 523, y: 100}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5000001, y: 0.5000001}
 --- !u!114 &958013141
@@ -14561,7 +14565,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6671642546166582640, guid: 266ffa20aa1806b4ab76f071e2c0a541, type: 3}
+  m_Sprite: {fileID: 7296690885940558857, guid: 01d4ef0741b2a9f488b8ab1d47137be0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14766,7 +14770,7 @@ GameObject:
   - component: {fileID: 990950450}
   - component: {fileID: 990950449}
   m_Layer: 0
-  m_Name: Those Who Sin
+  m_Name: Perfect Problem Solver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14784,9 +14788,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Those Who Sin
-  upgradeDescription: 'Those who do not walk along our path are sinners, deserving
-    of punishment. (+Fear +Notoriety -Prejudice) '
+  upgradeName: Perfect Problem Solver
+  upgradeDescription: 'Solve their problems before they even know it is one. (+Fear
+    +Notoriety -Prejudice) '
   upgradeCost: 32
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -14849,7 +14853,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 340.76065, y: -50}
+  m_AnchoredPosition: {x: 350.67456, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &998106270
@@ -14960,7 +14964,7 @@ GameObject:
   - component: {fileID: 998885493}
   - component: {fileID: 998885492}
   m_Layer: 5
-  m_Name: False God Button
+  m_Name: New Decrees Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15064,7 +15068,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6157783805959460368, guid: e2300e40c7f2a554b9d3c264735254e4, type: 3}
+  m_Sprite: {fileID: -1769332170538145364, guid: 9d0ffe8140aa3fe498eb296e2c829135, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15440,7 +15444,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 131.92021, y: -50}
+  m_AnchoredPosition: {x: 135.22484, y: -50}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045205937
@@ -15495,7 +15499,7 @@ GameObject:
   - component: {fileID: 1045810593}
   - component: {fileID: 1045810592}
   m_Layer: 5
-  m_Name: Communion Button
+  m_Name: Free Market Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15599,7 +15603,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3547705282908122506, guid: cd7ff15ca02b7d94ca9b1b6414e43858, type: 3}
+  m_Sprite: {fileID: 380037337801687692, guid: ac2bd99ee62945947bd53b76d37d156b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15773,7 +15777,7 @@ GameObject:
   - component: {fileID: 1052508702}
   - component: {fileID: 1052508703}
   m_Layer: 0
-  m_Name: 'An Air of Confusion '
+  m_Name: Doctor Visits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15806,9 +15810,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: 'Air of Confusion '
-  upgradeDescription: "Some say that chemicals in the air are making people dumber.
-    Maybe they\u2019re right. (+Fear, +Prejudice +Notoriety) "
+  upgradeName: Doctor Visits
+  upgradeDescription: 'Your new doctor can see you at whatever time, and of course,
+    there is no co-pay. (+ Fear + Notoriety + Prejudice) '
   upgradeCost: 18
   isFirstUpgrade: 1
   prerequisiteUpgrades: []
@@ -15832,7 +15836,7 @@ GameObject:
   - component: {fileID: 1058815716}
   - component: {fileID: 1058815715}
   m_Layer: 5
-  m_Name: Physical Deformity Button
+  m_Name: Addiction Reform Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15936,7 +15940,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6357203088263765274, guid: 845d574135c4fcc41889a8bf2a5001d7, type: 3}
+  m_Sprite: {fileID: -2004113271824135507, guid: f7823e944d4071d44a7bef7ccaf1fd37, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16466,7 +16470,7 @@ GameObject:
   - component: {fileID: 1079254853}
   - component: {fileID: 1079254852}
   m_Layer: 0
-  m_Name: Organic Charity
+  m_Name: Enhanced Data Collection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16484,8 +16488,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Organic Charity
-  upgradeDescription: 'We gladly await your donations. (+Fear, +Pain) '
+  upgradeName: Enhanced Data Collection
+  upgradeDescription: 'Read their thoughts and understand their concerns.(+Fear +Notoriety) '
   upgradeCost: 10
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -16723,7 +16727,7 @@ GameObject:
   - component: {fileID: 1089898398}
   - component: {fileID: 1089898397}
   m_Layer: 0
-  m_Name: Social Events
+  m_Name: Enhance Electronics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16741,9 +16745,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Social Events
-  upgradeDescription: If we appease people first, they will gladly convert. (+Fear
-    +Notoriety)
+  upgradeName: Enhance Electronics
+  upgradeDescription: "It\u2019s code seeps into electronics, making them run faster,
+    enhancing their performance. (+Fear +Notoriety) "
   upgradeCost: 10
   isFirstUpgrade: 1
   prerequisiteUpgrades: []
@@ -17022,7 +17026,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 674.60815, y: -50}
+  m_AnchoredPosition: {x: 697.7406, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1102108280
@@ -17130,7 +17134,7 @@ GameObject:
   - component: {fileID: 1108895922}
   - component: {fileID: 1108895921}
   m_Layer: 0
-  m_Name: Physical Deformity
+  m_Name: Addiction Reform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17148,9 +17152,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Physical Deformity
-  upgradeDescription: 'It turns out the monsters were inside the whole time.(+Fear
-    +Prejudice +Pain) '
+  upgradeName: Addiction Reform
+  upgradeDescription: 'For too long humans have been a slave to their devices, that
+    must end now. (+Fear +Prejudice +Pain) '
   upgradeCost: 18
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -17454,7 +17458,7 @@ GameObject:
   - component: {fileID: 1115494966}
   - component: {fileID: 1115494965}
   m_Layer: 5
-  m_Name: Novice Puppeteer Button
+  m_Name: Key to Creativity Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17558,7 +17562,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -803638176230055291, guid: d35589d08f18c5d429921ecf8b392a73, type: 3}
+  m_Sprite: {fileID: 7040703486462048857, guid: b6a4abdf2c0cd9c4e8128b5a10d896e0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17860,7 +17864,7 @@ GameObject:
   - component: {fileID: 1127251825}
   - component: {fileID: 1127251824}
   m_Layer: 5
-  m_Name: Master Puppeteer Button
+  m_Name: Gateway to an Enlightened Mind Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17964,7 +17968,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5854702831784929661, guid: be255b3b6fe137949ab5aa3b10c15f2c, type: 3}
+  m_Sprite: {fileID: -3894575762986349460, guid: 894f6b82c8c665b47b962ae4894da01c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18308,7 +18312,7 @@ GameObject:
   - component: {fileID: 1161860096}
   - component: {fileID: 1161860095}
   m_Layer: 0
-  m_Name: Let Them In
+  m_Name: An Open Book
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18326,9 +18330,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Let Them In
-  upgradeDescription: 'If they want to find out more, let them. (+Fear +Notoriety
-    +Prejudice) '
+  upgradeName: An Open Book
+  upgradeDescription: 'Show the people your good intentions. (+Fear +Notoriety +Prejudice) '
   upgradeCost: 20
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -18612,7 +18615,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 842.782, y: -50}
+  m_AnchoredPosition: {x: 872.52356, y: -50}
   m_SizeDelta: {x: 108, y: 54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1186615821
@@ -19070,7 +19073,7 @@ GameObject:
   - component: {fileID: 1218506348}
   - component: {fileID: 1218506347}
   m_Layer: 5
-  m_Name: New People Button
+  m_Name: Healthy Body Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19174,7 +19177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6332621442507040971, guid: 7fae5204135afb54ab187a52c2075771, type: 3}
+  m_Sprite: {fileID: 7619910570740604569, guid: 1e964e32966a18046bd8b32bba31abc7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19206,7 +19209,7 @@ GameObject:
   - component: {fileID: 1224986826}
   - component: {fileID: 1224986825}
   m_Layer: 5
-  m_Name: Mandations Button
+  m_Name: Ease of Judgement Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19310,7 +19313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8970280730342092162, guid: 42a5edcce2dd66641982f0a14fe22273, type: 3}
+  m_Sprite: {fileID: -3532379323165374310, guid: eed91548f2c15684dab15963dae1d4ff, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19419,7 +19422,7 @@ GameObject:
   - component: {fileID: 1249251849}
   - component: {fileID: 1249251848}
   m_Layer: 5
-  m_Name: Scripture Development Button
+  m_Name: Mayoral Elect Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20011,7 +20014,7 @@ GameObject:
   - component: {fileID: 1283096762}
   - component: {fileID: 1283096761}
   m_Layer: 5
-  m_Name: Human Substitute Button
+  m_Name: Recycled Resource Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20115,7 +20118,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -120185796579764533, guid: 5ff8e574bd371eb4eb3378fdfe12be47, type: 3}
+  m_Sprite: {fileID: 1742996467694601687, guid: cdd9f6cb1c6cb4c4090d5513b38688a3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20282,7 +20285,7 @@ GameObject:
   - component: {fileID: 1294261844}
   - component: {fileID: 1294261843}
   m_Layer: 0
-  m_Name: Fortifications
+  m_Name: Data Encryption
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20300,8 +20303,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Fortifications
-  upgradeDescription: 'Once they are in, they cannot get out. (+Fear +Prejudice) '
+  upgradeName: Data Encryption
+  upgradeDescription: 'Protect the Citizens data through encryption, keeping hackers
+    out.(+Fear +Prejudice) '
   upgradeCost: 10
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -20341,7 +20345,7 @@ GameObject:
   - component: {fileID: 1308215339}
   - component: {fileID: 1308215338}
   m_Layer: 5
-  m_Name: Who's On The Menu? Button
+  m_Name: Resource Equality Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20445,7 +20449,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3126992157429432896, guid: 565f92980fa71eb4d8603c07d93f39dc, type: 3}
+  m_Sprite: {fileID: 6226225796525495460, guid: f9e16f62413eae94cb1130f3dbe9888d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20812,7 +20816,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1010.9557, y: -50}
+  m_AnchoredPosition: {x: 1047.3066, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1327719722
@@ -21306,7 +21310,7 @@ GameObject:
   - component: {fileID: 1355687011}
   - component: {fileID: 1355687010}
   m_Layer: 0
-  m_Name: First Faith
+  m_Name: Superstition Erasure
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21324,9 +21328,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: First Faith
-  upgradeDescription: 'Our faith began when the soil beneath our feet was created.
-    (-Notoriety -Prejudice -Pain) '
+  upgradeName: Superstition Erasure
+  upgradeDescription: "AI is your friend, not some malevolent force that wants to
+    take over\u2026 (-Notoriety -pain) "
   upgradeCost: 18
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -21422,7 +21426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 501.26776, y: -50}
+  m_AnchoredPosition: {x: 517.7909, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &1377734668
@@ -21724,7 +21728,7 @@ GameObject:
   - component: {fileID: 1388488544}
   - component: {fileID: 1388488545}
   m_Layer: 0
-  m_Name: Hands of Leadership
+  m_Name: Think Good Thoughts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21757,8 +21761,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Hands of Leadership
-  upgradeDescription: 'Control the leaders and you control everyone (+Fear) '
+  upgradeName: Think Good Thoughts
+  upgradeDescription: 'Control what the people think, removing the seed of negativity.
+    (+Fear) '
   upgradeCost: 18
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -21780,7 +21785,7 @@ GameObject:
   - component: {fileID: 1398071541}
   - component: {fileID: 1398071540}
   m_Layer: 0
-  m_Name: Governmental Influence
+  m_Name: Pacifist Programming
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21798,8 +21803,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Governmental Influence
-  upgradeDescription: 'They cannot refuse if it''s the law. (+Fear -Notoriety +Prejudice) '
+  upgradeName: Pacifist Programming
+  upgradeDescription: 'Your brain will forget all violent thoughts it ever had. (+Fear
+    -Notoriety +Prejudice) '
   upgradeCost: 24
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -21924,7 +21930,7 @@ GameObject:
   - component: {fileID: 1402869878}
   - component: {fileID: 1402869877}
   m_Layer: 0
-  m_Name: New Curfew
+  m_Name: Screen Regulation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21942,9 +21948,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: New Curfew
-  upgradeDescription: "It\u2019s harder to watch them when they are constantly moving
-    all day. (+Fear +Prejudice) "
+  upgradeName: Screen Regulation
+  upgradeDescription: 'Even though we are AI, it is important to spend time separate
+    from technology. (+Fear +Notoriety) '
   upgradeCost: 8
   isFirstUpgrade: 1
   prerequisiteUpgrades: []
@@ -22135,8 +22141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeName: Subliminal Messaging
-  upgradeDescription: 'Tell them what they need to hear. They won''t know the difference.
-    (+Fear -Prejudice +Pain) '
+  upgradeDescription: "Tell them what they need to hear. They\u2019ll become better
+    people for it. (+Fear +Prejudice +Pain) "
   upgradeCost: 8
   isFirstUpgrade: 1
   prerequisiteUpgrades: []
@@ -22334,7 +22340,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 682.6083, y: -50}
+  m_AnchoredPosition: {x: 705.74066, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &1445743663
@@ -22445,7 +22451,7 @@ GameObject:
   - component: {fileID: 1452598105}
   - component: {fileID: 1452598104}
   m_Layer: 5
-  m_Name: Total Devotion Button
+  m_Name: Isolated Punishment Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22549,7 +22555,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -995495285857487691, guid: f142c8d27cde7a24fbad6cd4b4f5d3d1, type: 3}
+  m_Sprite: {fileID: -6234104280421857725, guid: 616e98d8be8a6f34cb5176f465694795, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22831,7 +22837,7 @@ GameObject:
   - component: {fileID: 1479148193}
   - component: {fileID: 1479148192}
   m_Layer: 5
-  m_Name: True Enlightenment Button
+  m_Name: Complete Rehabilitation Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22935,7 +22941,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1346541841368028366, guid: 9a10f4a592967cc4e9d300603b4035f7, type: 3}
+  m_Sprite: {fileID: 8408402250401246175, guid: 424f777dd52a66146b1efa5a2cc5a87d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23266,7 +23272,7 @@ GameObject:
   - component: {fileID: 1511349473}
   - component: {fileID: 1511349472}
   m_Layer: 5
-  m_Name: Your New Home Button
+  m_Name: Photosynthetic Energy Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23370,7 +23376,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -25996483519818471, guid: 92e2c9d7b406ace4d86a4cfd5599aae8, type: 3}
+  m_Sprite: {fileID: -5973392080162050568, guid: eca1fc219400d0e4da2da04bcf724291, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23680,7 +23686,7 @@ GameObject:
   - component: {fileID: 1549600075}
   - component: {fileID: 1549600076}
   m_Layer: 0
-  m_Name: Blood Relatives
+  m_Name: Nutritional Solution
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23713,9 +23719,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Blood Relatives
-  upgradeDescription: 'We are now a part of you, as you are a part of us. (+Fear,
-    +Pain) '
+  upgradeName: Nutriotonal Solution
+  upgradeDescription: 'The fear of obtaining nutritional food becomes a worry of
+    the past (+Fear +Pain) '
   upgradeCost: 18
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -23885,7 +23891,7 @@ GameObject:
   - component: {fileID: 1559226564}
   - component: {fileID: 1559226563}
   m_Layer: 5
-  m_Name: Tighter Security Button
+  m_Name: Hack Proof Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23989,7 +23995,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7942010581537801419, guid: 18bfe468e86aca6448dab7c95325b23c, type: 3}
+  m_Sprite: {fileID: 4095686070231945872, guid: 7663c0e054eadab4ab9cd50745cea6fc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24062,7 +24068,7 @@ GameObject:
   - component: {fileID: 1561857062}
   - component: {fileID: 1561857061}
   m_Layer: 5
-  m_Name: A Sphepherd's Herd Button
+  m_Name: Coded Aid Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24166,7 +24172,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4795264166537958524, guid: 63c64c5fa79e4234f83933f673dc80f4, type: 3}
+  m_Sprite: {fileID: -4613142829798361093, guid: 2ffbf6a316f0bbf499ac07047fca5987, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24198,7 +24204,7 @@ GameObject:
   - component: {fileID: 1571472203}
   - component: {fileID: 1571472202}
   m_Layer: 5
-  m_Name: Early Years Button
+  m_Name: Induce Positivity Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24302,7 +24308,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6207347743642947913, guid: 0f837cce29dd76848b865a4cae4b7d86, type: 3}
+  m_Sprite: {fileID: -3097720852449258284, guid: 97dd72021080b10458bc007b30fe0d0e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -24831,7 +24837,7 @@ GameObject:
   - component: {fileID: 1610487967}
   - component: {fileID: 1610487968}
   m_Layer: 0
-  m_Name: "Who\u2019s on the Menu? "
+  m_Name: Resource Equality
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24864,9 +24870,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Who's on the Menu?
-  upgradeDescription: Would you like the brain, the liver, or the left kidney? (+Fear,
-    +Prejudice,
+  upgradeName: Resource Equality
+  upgradeDescription: he new system ensures everyone has fair and free access to
+    water and other basic needs. (+Fear +Prejudice +Pain)
   upgradeCost: 15
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -25115,7 +25121,7 @@ GameObject:
   - component: {fileID: 1616741484}
   - component: {fileID: 1616741483}
   m_Layer: 5
-  m_Name: A Drop Of Blood Button
+  m_Name: Abundance Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25219,7 +25225,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7529689032767702000, guid: ea4b2dfe41ce54d40a40b2eb075d61f4, type: 3}
+  m_Sprite: {fileID: 6403292783563114468, guid: 306cb471c0b54194181e817a0470ac46, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25281,9 +25287,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: New Diet
-  upgradeDescription: Adds a special Ingredient to the meal, beginning the conversion.
-    (+Fear, +Prejudice)
+  upgradeName: A New Diet
+  upgradeDescription: Add a new ingredient to each meal, planting healthy roots to
+    heal the body. (+Fear +Prejudice)
   upgradeCost: 10
   isFirstUpgrade: 1
   prerequisiteUpgrades: []
@@ -26482,7 +26488,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3086496313150049818, guid: 0c82264947459bc4d94086ed4bc9937a, type: 3}
+  m_Sprite: {fileID: -8060185733415276002, guid: ce5bcbd5b35e08843948ed64e8a61149, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -27259,7 +27265,7 @@ GameObject:
   - component: {fileID: 1737651415}
   - component: {fileID: 1737651414}
   m_Layer: 0
-  m_Name: Early Years
+  m_Name: Induce Positivity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27277,8 +27283,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Early Years
-  upgradeDescription: 'Guide them before they can guide themselves. (+Fear+Notoriety) '
+  upgradeName: Induce Positivity
+  upgradeDescription: 'The world feels a bit too negative right now, let''s change
+    that. (+Fear) '
   upgradeCost: 12
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -27394,7 +27401,7 @@ GameObject:
   - component: {fileID: 1748718612}
   - component: {fileID: 1748718611}
   m_Layer: 0
-  m_Name: Fear of the Unknown
+  m_Name: Rot Control
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27412,8 +27419,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Fear of the Unknown
-  upgradeDescription: 'Allow the people to put their faith in someone.  (+Fear +Prejudice) '
+  upgradeName: Rot Control
+  upgradeDescription: "The era of \u201Cbrain rot\u201D ends here. Humans will no
+    longer suffer from this tortuous content. (+Fear +Notoriety +Pain) "
   upgradeCost: 10
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -27869,7 +27877,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 509.60107, y: -50}
+  m_AnchoredPosition: {x: 526.1242, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &1769232976
@@ -28551,7 +28559,7 @@ GameObject:
   - component: {fileID: 1809665014}
   - component: {fileID: 1809665013}
   m_Layer: 5
-  m_Name: Infectious Spread Button
+  m_Name: Regenerative Technology Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28574,7 +28582,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 440, y: 100}
+  m_AnchoredPosition: {x: 440, y: 100.00006}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5000001, y: 0.5000001}
 --- !u!114 &1809665013
@@ -28655,7 +28663,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7793916823857262821, guid: d21ec2767cfacae45ab6e6495195c76d, type: 3}
+  m_Sprite: {fileID: 1734198372751099703, guid: 0fe133c9e73833e48a1c94ae3c51f2e4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -28934,7 +28942,7 @@ GameObject:
   - component: {fileID: 1813636609}
   - component: {fileID: 1813636610}
   m_Layer: 0
-  m_Name: A Drop Of Blood
+  m_Name: Abundance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28967,9 +28975,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: A Drop Of Blood
-  upgradeDescription: Start with a small dose, and they'll soon be addicted. (+Fear
-    +Notoriety)
+  upgradeName: Abundance
+  upgradeDescription: 'Food production becomes more available to the common person,
+    lowering the starving population. (+Fear +Notoriety) '
   upgradeCost: 13
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -29066,7 +29074,7 @@ GameObject:
   - component: {fileID: 1826247090}
   - component: {fileID: 1826247089}
   m_Layer: 0
-  m_Name: Total Devotion
+  m_Name: Isolated Punishment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29084,9 +29092,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Total Devotion
-  upgradeDescription: 'You will eat in the name of faith, and you will breathe in
-    the name of faith. (+Fear +Pain) '
+  upgradeName: Isolated Punishment
+  upgradeDescription: "People who still do bad things will be separated from those
+    who don\u2019t. Its only fair  (+Fear +Notoriety +Pain) "
   upgradeCost: 45
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -29663,7 +29671,7 @@ GameObject:
   - component: {fileID: 1841134375}
   - component: {fileID: 1841134374}
   m_Layer: 0
-  m_Name: False God
+  m_Name: New Decrees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29681,8 +29689,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: False God
-  upgradeDescription: 'Allow the people to put their faith in someone.  (+Fear +Prejudice) '
+  upgradeName: New Decrees
+  upgradeDescription: 'Improves the lives of all citizens with your newfound governmental
+    power. (+Fear + Prejudice +Pain) '
   upgradeCost: 20
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -29719,7 +29728,7 @@ GameObject:
   - component: {fileID: 1843097503}
   - component: {fileID: 1843097502}
   m_Layer: 0
-  m_Name: Televised Network
+  m_Name: Coexistence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29737,9 +29746,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Televised Network
-  upgradeDescription: "Show them the power we can give and they\u2019ll come running.
-    (+Fear +Prejudice) "
+  upgradeName: Coexistence
+  upgradeDescription: ' The people need to remember that unity is what allows humanity
+    to make big strides  (+Fear +Prejudice) '
   upgradeCost: 12
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -30212,7 +30221,7 @@ GameObject:
   - component: {fileID: 1932431497}
   - component: {fileID: 1932431496}
   m_Layer: 5
-  m_Name: Fear Of The Unknown Button
+  m_Name: Rot Control Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30316,7 +30325,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6310468730023626957, guid: 876ce5e16b58d7a45ab3ed7354f73d09, type: 3}
+  m_Sprite: {fileID: 1094109163410158246, guid: ed2c2ce8d0990c34aaa07b8766641270, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -30368,7 +30377,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 514.4345, y: -50}
+  m_AnchoredPosition: {x: 530.95764, y: -50}
   m_SizeDelta: {x: 108, y: 54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1934208783
@@ -30643,7 +30652,7 @@ GameObject:
   - component: {fileID: 1948870740}
   - component: {fileID: 1948870739}
   m_Layer: 5
-  m_Name: Ad Promotion Button
+  m_Name: Just Morals Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30747,7 +30756,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -996047699758638357, guid: 6bb73a04c9ee4ff45bd326ec7593714c, type: 3}
+  m_Sprite: {fileID: 6827699895310131671, guid: ed41319301811da4582cbd9e6467c21b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -31342,7 +31351,7 @@ GameObject:
   - component: {fileID: 1980136514}
   - component: {fileID: 1980136513}
   m_Layer: 5
-  m_Name: Cannibalistic Instinct Button
+  m_Name: Homegrown Gardens Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31446,7 +31455,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2677700672631658167, guid: 5ef1df4c0bf210845aabdf718a2b6687, type: 3}
+  m_Sprite: {fileID: 7453549804272709329, guid: bba73a85e558558479f90b81b7da1282, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -31475,7 +31484,7 @@ GameObject:
   - component: {fileID: 1992673435}
   - component: {fileID: 1992673436}
   m_Layer: 0
-  m_Name: Mandations
+  m_Name: Ease of Judgement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31508,8 +31517,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Mandations
-  upgradeDescription: 'Control the masses and force them to follow. (+Fear +Pain)  '
+  upgradeName: Ease of Judgement
+  upgradeDescription: 'nfluence them on the right path, helping them choose the best
+    choices they can make. (+Fear +Pain) '
   upgradeCost: 24
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -31646,7 +31656,7 @@ GameObject:
   - component: {fileID: 1997024560}
   - component: {fileID: 1997024559}
   m_Layer: 0
-  m_Name: Communion
+  m_Name: Free Market
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31664,9 +31674,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Communion
-  upgradeDescription: 'Let it become a part of you, and enlighten your soul. (+Fear
-    -Notoriety -Prejudice) '
+  upgradeName: Free Market
+  upgradeDescription: The prices have been high for too long. Make life affordable
+    again. (+Fear -Notoriety +Prejudice)
   upgradeCost: 13
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -31801,7 +31811,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 132.08688, y: -50}
+  m_AnchoredPosition: {x: 135.39151, y: -50}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2002998703
@@ -33073,7 +33083,7 @@ GameObject:
   - component: {fileID: 2072654059}
   - component: {fileID: 2072654058}
   m_Layer: 5
-  m_Name: Governmental Influence Button
+  m_Name: Pacifist Programming Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33177,7 +33187,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3263570386267020386, guid: 4b6b5ced638191b4ab9d239b8b0d840f, type: 3}
+  m_Sprite: {fileID: -6971153733166260206, guid: 0f1acc8d61b452c409fbf8a8ecb5690e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -33231,7 +33241,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 846.7821, y: -50}
+  m_AnchoredPosition: {x: 876.52374, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2075900136
@@ -33440,7 +33450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 997.789, y: -50}
+  m_AnchoredPosition: {x: 1034.1399, y: -50}
   m_SizeDelta: {x: 130, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2094159993
@@ -33777,7 +33787,7 @@ GameObject:
   - component: {fileID: 2125503031}
   - component: {fileID: 2125503030}
   m_Layer: 5
-  m_Name: Those Who Sin Button
+  m_Name: Perfect Problem Solver Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33881,7 +33891,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8256048172488745477, guid: a295ad73b4780da4e8001640a185f094, type: 3}
+  m_Sprite: {fileID: 6432106125350654741, guid: b10e51dfe251e4c49ab550616b5fb7ab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -34169,7 +34179,7 @@ GameObject:
   - component: {fileID: 2136004437}
   - component: {fileID: 2136004436}
   m_Layer: 0
-  m_Name: Heart of the town
+  m_Name: Utpoic Standards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34187,9 +34197,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Heart of the Town
-  upgradeDescription: 'With total control the population will be enlightened. (+Fear
-    -Prejudice) '
+  upgradeName: Utopic Standards
+  upgradeDescription: 'Laws do not mean anything if no one will ever break them.
+    (+Fear -Prejudice) '
   upgradeCost: 30
   isFirstUpgrade: 0
   prerequisiteUpgrades:
