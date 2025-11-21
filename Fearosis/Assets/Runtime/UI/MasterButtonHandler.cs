@@ -75,6 +75,8 @@ public class MasterButtonHandler : MonoBehaviour
         psychologicalScreen.SetActive(false);
         statsScreen.SetActive(true);
         optionsScreen.SetActive(false);
+
+        ExpandMonsterButton();
     }
 
     public void OpenOptionsScreen()
@@ -84,7 +86,9 @@ public class MasterButtonHandler : MonoBehaviour
         behaviorScreen.SetActive(false);
         psychologicalScreen.SetActive(false);
         statsScreen.SetActive(false);
-        optionsScreen.SetActive(true);
+        optionsScreen.SetActive(true);  
+
+        ExpandMonsterButton();
     }
 
     public void CloseAllScreens()
@@ -95,5 +99,7 @@ public class MasterButtonHandler : MonoBehaviour
         psychologicalScreen.SetActive(false);
         statsScreen.SetActive(false);
         optionsScreen.SetActive(false);
+
+        ExpandMonsterButton();
     }
 }

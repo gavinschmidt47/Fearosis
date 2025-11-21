@@ -53,7 +53,6 @@ MonoBehaviour:
   minWaitTime: 2
   maxWaitTime: 5
   arrivalThreshold: 0.1
-  deathTime: 30
   spriteRenderer: {fileID: 0}
   animator: {fileID: 0}
 --- !u!212 &8554495436576621522
@@ -108,7 +107,7 @@ SpriteRenderer:
   m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &1079989431518473413
@@ -121,7 +120,7 @@ Animator:
   m_GameObject: {fileID: 5292200318635337322}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a0e41fdcbc557b949ad5c55effea4f1e, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4a164325b0dd3034087c24fb127dc50a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -161,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 113b0d731d9ac3d418222c200dd3312c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSearchIterations: 1500
+  maxSearchIterations: 6000
 --- !u!50 &-8340943970981759775
 Rigidbody2D:
   serializedVersion: 5

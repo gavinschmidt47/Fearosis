@@ -54,7 +54,6 @@ MonoBehaviour:
   minWaitTime: 10
   maxWaitTime: 50
   arrivalThreshold: 0.1
-  deathTime: 30
   spriteRenderer: {fileID: 0}
   animator: {fileID: 0}
 --- !u!212 &3197499682365267695
@@ -206,4 +205,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 113b0d731d9ac3d418222c200dd3312c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSearchIterations: 1500
+  maxSearchIterations: 6000

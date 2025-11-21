@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 113b0d731d9ac3d418222c200dd3312c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSearchIterations: 1500
+  maxSearchIterations: 6000
 --- !u!50 &-8340943970981759775
 Rigidbody2D:
   serializedVersion: 5
