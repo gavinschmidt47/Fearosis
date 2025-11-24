@@ -17,6 +17,7 @@ TagManager:
   - SFX
   - TargetZone
   - Web
+  - BobCharacter
   layers:
   - Default
   - TransparentFX

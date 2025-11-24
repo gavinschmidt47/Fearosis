@@ -1,16 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class Event : MonoBehaviour
 {   
-    [Header("UI Elements")]
-    [SerializeField]
-    private GameObject eventUI;
-    private TextMeshProUGUI eventNameText;
-    private TextMeshProUGUI eventDescriptionText;
-    private Image eventImage;
-
     [Header("Event Properties")]
     [SerializeField]
     private string eventName;
@@ -58,24 +52,14 @@ public class Event : MonoBehaviour
     private Prejudice prejudiceScript;
     private Pain painScript;
 
-    void Awake()
-    {
-        //Get references to UI elements
-        eventUI.SetActive(true); // Temporarily activate to find children
-        eventNameText = GameObject.FindGameObjectWithTag("Event Name").GetComponent<TextMeshProUGUI>();
-        eventDescriptionText = GameObject.FindGameObjectWithTag("Event Description").GetComponent<TextMeshProUGUI>();
-        //eventImage = GameObject.FindGameObjectWithTag("Event Image").GetComponent<Image>();
-        eventUI.SetActive(false);
-    }
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         //Get references to stat scripts
-        fearScript = Object.FindAnyObjectByType<Fear>();
-        notorietyScript = Object.FindAnyObjectByType<Notoriety>();
-        prejudiceScript = Object.FindAnyObjectByType<Prejudice>();
-        painScript = Object.FindAnyObjectByType<Pain>();
+        fearScript = GameObject.FindAnyObjectByType<Fear>();
+        notorietyScript = GameObject.FindAnyObjectByType<Notoriety>();
+        prejudiceScript = GameObject.FindAnyObjectByType<Prejudice>();
+        painScript = GameObject.FindAnyObjectByType<Pain>();
     }
     
     public bool CanEventTrigger(int currentRound)
@@ -85,7 +69,7 @@ public class Event : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void ApplyEvent()
+    public void ApplyEvent(Action<string, string/*, Sprite*/> callback)
     {
         //Apply stat modifier from specific source to specific stat
         if (targetsStats && targetsSource)
@@ -166,21 +150,6 @@ public class Event : MonoBehaviour
             }
         }
 
-        //Update UI elements using cached references
-        if (eventNameText != null && eventDescriptionText != null)
-        {
-            eventNameText.text = eventName;
-            eventDescriptionText.text = eventDescription;
-            //eventImage.sprite = eventSprite;
-        }
-        else
-        {
-            Debug.LogWarning("UI references are null. Make sure Event Panel exists in the scene.");
-        }
-
-        Debug.Log("eventNameText: " + (eventNameText != null ? eventNameText.name : "null"));
-        Debug.Log("eventDescriptionText: " + (eventDescriptionText != null ? eventDescriptionText.name : "null"));
+        callback(eventName, eventDescription/*, eventSprite*/);
     }
 }
-
-// eventUI != null && eventImage != null

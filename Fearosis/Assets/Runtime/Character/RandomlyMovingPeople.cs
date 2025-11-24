@@ -31,7 +31,6 @@ public class RandomlyMovingPeople : MonoBehaviour
                 Node startNode = grid.GetRandomValidNode();
                 person.transform.position = startNode.worldPosition;
                 StartCoroutine(person.GetComponent<Character>().ChooseRandomDestination(startNode, grid.GetRandomTargetNode()));
-                Debug.Log("Spawned person at: " + person.transform.position);
                 person.GetComponent<Character>().reachDestinationEvent += () =>
                 {
                     objectPooler.ReturnObject(person);
@@ -45,7 +44,6 @@ public class RandomlyMovingPeople : MonoBehaviour
     private IEnumerator DieAfterTime(GameObject person, float time)
     {
         yield return new WaitForSeconds(time);
-        Debug.Log("Despawning person at: " + person.transform.position);
         objectPooler.ReturnObject(person);
     }
 }

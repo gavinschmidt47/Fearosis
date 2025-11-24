@@ -10,7 +10,6 @@ public class Character : MonoBehaviour
     public float maxWaitTime = 5f;
     public float arrivalThreshold = 0.1f;
 
-    private bool firstTimeAwake = true;
     private Rigidbody2D rb;
     [HideInInspector]
     public SpriteRenderer spriteRenderer;
@@ -19,7 +18,7 @@ public class Character : MonoBehaviour
     private AStar aStar;
     public event UnityAction reachDestinationEvent;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public void Awake()
+    protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         aStar = GetComponent<AStar>();

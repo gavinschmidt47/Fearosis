@@ -737,7 +737,7 @@ GameObject:
   - component: {fileID: 48709424}
   - component: {fileID: 48709423}
   m_Layer: 0
-  m_Name: Tighter Security
+  m_Name: Tighter Security Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -793,7 +793,7 @@ GameObject:
   - component: {fileID: 50777200}
   - component: {fileID: 50777199}
   m_Layer: 0
-  m_Name: Complete Lockdown
+  m_Name: Complete Lockdown Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -994,7 +994,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &53330322
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1878,7 +1878,7 @@ GameObject:
   - component: {fileID: 112351578}
   - component: {fileID: 112351579}
   m_Layer: 0
-  m_Name: 'Infectious Spread '
+  m_Name: Infectious Spread  Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2156,7 +2156,7 @@ GameObject:
   - component: {fileID: 120132782}
   - component: {fileID: 120132781}
   m_Layer: 0
-  m_Name: Your New Home
+  m_Name: Your New Home Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3099,7 +3099,7 @@ GameObject:
   - component: {fileID: 170760966}
   - component: {fileID: 170760965}
   m_Layer: 0
-  m_Name: One True Religion
+  m_Name: One True Religion Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3156,7 +3156,7 @@ GameObject:
   - component: {fileID: 200797608}
   - component: {fileID: 200797607}
   m_Layer: 0
-  m_Name: Scripture Development
+  m_Name: Scripture Development Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3634,7 +3634,7 @@ GameObject:
   - component: {fileID: 227920740}
   - component: {fileID: 227920739}
   m_Layer: 0
-  m_Name: Ad Promotion
+  m_Name: Ad Promotion Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3722,7 +3722,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf5e795ea1471446a13b22026ca2e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventUI: {fileID: 0}
   eventName: 'Competitive Business '
   eventDescription: Another cult arrives in town?? People start joining their cult
     instead of yours. -10% to Notoriety
@@ -3827,7 +3826,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &238398900
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4237,7 +4236,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &251437115
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4942,7 +4941,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf5e795ea1471446a13b22026ca2e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventUI: {fileID: 0}
   eventName: Strengthen of the Mind
   eventDescription: The people have learned to block their minds from instrusion.
     -25% from Psychological upgrades.
@@ -4963,7 +4961,7 @@ GameObject:
   - component: {fileID: 303101406}
   - component: {fileID: 303101407}
   m_Layer: 0
-  m_Name: New People
+  m_Name: New People Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5144,6 +5142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e07a21d5110704287e612053b141eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventUI: {fileID: 854313301}
   unusedEvents: []
 --- !u!1 &311823854
 GameObject:
@@ -6197,12 +6196,12 @@ GameObject:
   - component: {fileID: 385201708}
   - component: {fileID: 385201707}
   m_Layer: 5
-  m_Name: Mass Indoctrination Button
+  m_Name: Mass indoctrination Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &385201706
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6602,7 +6601,7 @@ GameObject:
   - component: {fileID: 413751657}
   - component: {fileID: 413751658}
   m_Layer: 0
-  m_Name: Human Substitute
+  m_Name: Human Substitute  Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7127,7 +7126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf5e795ea1471446a13b22026ca2e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventUI: {fileID: 0}
   eventName: Special Promotion
   eventDescription: The Cult is running a special deal to recruit members! +15% Buff
     to Behavioral Upgrades
@@ -7894,7 +7892,7 @@ GameObject:
   - component: {fileID: 486934597}
   - component: {fileID: 486934598}
   m_Layer: 0
-  m_Name: True Enlightenment
+  m_Name: True Enlightenment Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7999,12 +7997,12 @@ GameObject:
   - component: {fileID: 497091744}
   - component: {fileID: 497091743}
   m_Layer: 5
-  m_Name: Hands Of Leadership Button
+  m_Name: Hands of Leadership Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &497091742
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8422,7 +8420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &505177710
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9397,7 +9395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &553555351
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10336,6 +10334,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3fb9a5ec9421b542b16da2af5735448, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poolSize: 100
+  infectedPoolWeight: 0.8
   dayCharacter: {fileID: 5292200318635337322, guid: b7f20321def43bb478f060234cb9086b, type: 3}
   nightCharacter: {fileID: 5292200318635337322, guid: 1bd1302f157a3fa46bb576518b3b91b0, type: 3}
   bobCharacter: {fileID: 5292200318635337322, guid: ddc0353a5f3649d47ab17d771562fbc1, type: 3}
@@ -10750,7 +10750,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &637530990
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10878,7 +10878,7 @@ GameObject:
   - component: {fileID: 652595518}
   - component: {fileID: 652595519}
   m_Layer: 0
-  m_Name: Unbreakable Contract
+  m_Name: Unbreakable Contract Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11965,7 +11965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4f7dbdbebc17c54b8a848f52a2500ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infectionRate: 0
+  infectionRate: 1
   populationInfluenceModifier: 0
   hunterThreshold: 0
   huntersPerThreshold: 0
@@ -12678,7 +12678,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf5e795ea1471446a13b22026ca2e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventUI: {fileID: 0}
   eventName: Stuck In Their Ways
   eventDescription: People are reluctant to adapt to this new technology. -10% from
     Behavioral upgrades.
@@ -13720,7 +13719,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &777732751
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14333,12 +14332,12 @@ GameObject:
   - component: {fileID: 812466249}
   - component: {fileID: 812466248}
   m_Layer: 5
-  m_Name: Heart Of The Town Button
+  m_Name: Heart of the Town Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &812466247
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14474,7 +14473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &824411710
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14602,7 +14601,7 @@ GameObject:
   - component: {fileID: 830107972}
   - component: {fileID: 830107971}
   m_Layer: 0
-  m_Name: Master Puppeteer
+  m_Name: Master Puppeteer Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14792,7 +14791,7 @@ GameObject:
   - component: {fileID: 838740028}
   - component: {fileID: 838740027}
   m_Layer: 0
-  m_Name: A Shepherds Herd
+  m_Name: A Shepherd's Herd Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14932,7 +14931,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &859771514
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15060,7 +15059,7 @@ GameObject:
   - component: {fileID: 868727139}
   - component: {fileID: 868727140}
   m_Layer: 0
-  m_Name: Cannibalistic Instinct
+  m_Name: Cannibalistic Instinct  Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15689,7 +15688,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &896461049
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15817,7 +15816,7 @@ GameObject:
   - component: {fileID: 904984630}
   - component: {fileID: 904984631}
   m_Layer: 0
-  m_Name: Mass indoctrination
+  m_Name: Mass indoctrination Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15961,7 +15960,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &915311307
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16349,7 +16348,7 @@ GameObject:
   - component: {fileID: 933236016}
   - component: {fileID: 933236015}
   m_Layer: 0
-  m_Name: Novice Puppeteer
+  m_Name: Novice Puppeteer Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16755,12 +16754,12 @@ GameObject:
   - component: {fileID: 958013142}
   - component: {fileID: 958013141}
   m_Layer: 5
-  m_Name: An Air Of Confusion Button
+  m_Name: Air of Confusion  Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &958013140
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17064,7 +17063,7 @@ GameObject:
   - component: {fileID: 990950450}
   - component: {fileID: 990950449}
   m_Layer: 0
-  m_Name: Those Who Sin
+  m_Name: Those Who Sin Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17263,7 +17262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &998885491
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17954,7 +17953,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1045810591
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18227,7 +18226,7 @@ GameObject:
   - component: {fileID: 1052508702}
   - component: {fileID: 1052508703}
   m_Layer: 0
-  m_Name: 'An Air of Confusion '
+  m_Name: Air of Confusion  Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18291,7 +18290,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1058815714
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18892,7 +18891,7 @@ GameObject:
   - component: {fileID: 1079254853}
   - component: {fileID: 1079254852}
   m_Layer: 0
-  m_Name: Organic Charity
+  m_Name: Organic Charity Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19151,7 +19150,7 @@ GameObject:
   - component: {fileID: 1089898398}
   - component: {fileID: 1089898397}
   m_Layer: 0
-  m_Name: Social Events
+  m_Name: Social Events Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19652,7 +19651,7 @@ GameObject:
   - component: {fileID: 1108895922}
   - component: {fileID: 1108895921}
   m_Layer: 0
-  m_Name: Physical Deformity
+  m_Name: Physical Deformity Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19953,7 +19952,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf5e795ea1471446a13b22026ca2e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventUI: {fileID: 0}
   eventName: Panic Attacks
   eventDescription: People are panicking. +10% Fear from upgrades.
   modBuff: 0.1
@@ -19981,7 +19979,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1115494964
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20543,7 +20541,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1127251823
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20961,7 +20959,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035153, y: -0.009979247}
+  m_AnchoredPosition: {x: -0.000061035156, y: -0.0099487305}
   m_SizeDelta: {x: -0.00012207031, y: 0.019958496}
   m_Pivot: {x: 0.49999997, y: 0.50000006}
 --- !u!114 &1148559566
@@ -21067,7 +21065,7 @@ GameObject:
   - component: {fileID: 1161860096}
   - component: {fileID: 1161860095}
   m_Layer: 0
-  m_Name: Let Them In
+  m_Name: Let Them In Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21834,7 +21832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1218506346
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21970,7 +21968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1224986824
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22147,7 +22145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1249251847
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22656,12 +22654,12 @@ GameObject:
   - component: {fileID: 1283096762}
   - component: {fileID: 1283096761}
   m_Layer: 5
-  m_Name: Human Substitute Button
+  m_Name: Human Substitute  Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1283096760
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23016,7 +23014,7 @@ GameObject:
   - component: {fileID: 1294261844}
   - component: {fileID: 1294261843}
   m_Layer: 0
-  m_Name: Fortifications
+  m_Name: Fortifications Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23075,12 +23073,12 @@ GameObject:
   - component: {fileID: 1308215339}
   - component: {fileID: 1308215338}
   m_Layer: 5
-  m_Name: Who's On The Menu? Button
+  m_Name: Who's on the Menu? Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1308215337
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24037,7 +24035,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf5e795ea1471446a13b22026ca2e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventUI: {fileID: 0}
   eventName: Laziness epidemic
   eventDescription: The ease and comfort of modern life has taken its toll on the
     physicality of the people. +33% from Physical.
@@ -24058,7 +24055,7 @@ GameObject:
   - component: {fileID: 1355687011}
   - component: {fileID: 1355687010}
   m_Layer: 0
-  m_Name: First Faith
+  m_Name: First Faith Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24442,7 +24439,7 @@ GameObject:
   - component: {fileID: 1388488544}
   - component: {fileID: 1388488545}
   m_Layer: 0
-  m_Name: Hands of Leadership
+  m_Name: Hands of Leadership Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24498,7 +24495,7 @@ GameObject:
   - component: {fileID: 1398071541}
   - component: {fileID: 1398071540}
   m_Layer: 0
-  m_Name: Governmental Influence
+  m_Name: Governmental Influence Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24642,7 +24639,7 @@ GameObject:
   - component: {fileID: 1402869878}
   - component: {fileID: 1402869877}
   m_Layer: 0
-  m_Name: New Curfew
+  m_Name: New Curfew Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24990,7 +24987,7 @@ GameObject:
   - component: {fileID: 1429940211}
   - component: {fileID: 1429940210}
   m_Layer: 0
-  m_Name: Sublminal Messaging
+  m_Name: Subliminal Messaging Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25324,7 +25321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1452598103
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25623,7 +25620,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1479148191
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26058,7 +26055,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1511349471
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26542,7 +26539,7 @@ GameObject:
   - component: {fileID: 1549600075}
   - component: {fileID: 1549600076}
   m_Layer: 0
-  m_Name: Blood Relatives
+  m_Name: Blood Relatives Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26830,7 +26827,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1559226562
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27002,12 +26999,12 @@ GameObject:
   - component: {fileID: 1561857062}
   - component: {fileID: 1561857061}
   m_Layer: 5
-  m_Name: A Sphepherd's Herd Button
+  m_Name: A Shepherd's Herd Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1561857060
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27143,7 +27140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1571472201
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27557,7 +27554,7 @@ GameObject:
   - component: {fileID: 1610487967}
   - component: {fileID: 1610487968}
   m_Layer: 0
-  m_Name: "Who\u2019s on the Menu? "
+  m_Name: Who's on the Menu? Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27924,7 +27921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1616741482
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28052,7 +28049,7 @@ GameObject:
   - component: {fileID: 1618381954}
   - component: {fileID: 1618381955}
   m_Layer: 0
-  m_Name: A New Diet
+  m_Name: New Diet Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29153,12 +29150,12 @@ GameObject:
   - component: {fileID: 1676060869}
   - component: {fileID: 1676060868}
   m_Layer: 5
-  m_Name: A New Diet Button
+  m_Name: New Diet Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1676060867
 RectTransform:
   m_ObjectHideFlags: 0
@@ -29956,7 +29953,7 @@ GameObject:
   - component: {fileID: 1737651415}
   - component: {fileID: 1737651414}
   m_Layer: 0
-  m_Name: Early Years
+  m_Name: Early Years Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30244,7 +30241,7 @@ GameObject:
   - component: {fileID: 1748718612}
   - component: {fileID: 1748718611}
   m_Layer: 0
-  m_Name: Fear of the Unknown
+  m_Name: Fear of the Unknown Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31328,12 +31325,12 @@ GameObject:
   - component: {fileID: 1809665014}
   - component: {fileID: 1809665013}
   m_Layer: 5
-  m_Name: Infectious Spread Button
+  m_Name: Infectious Spread  Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1809665012
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31633,7 +31630,7 @@ GameObject:
   - component: {fileID: 1813636609}
   - component: {fileID: 1813636610}
   m_Layer: 0
-  m_Name: A Drop Of Blood
+  m_Name: A Drop Of Blood Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31871,7 +31868,7 @@ GameObject:
   - component: {fileID: 1826247090}
   - component: {fileID: 1826247089}
   m_Layer: 0
-  m_Name: Total Devotion
+  m_Name: Total Devotion Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32332,7 +32329,7 @@ GameObject:
   - component: {fileID: 1841134375}
   - component: {fileID: 1841134374}
   m_Layer: 0
-  m_Name: False God
+  m_Name: False God Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32388,7 +32385,7 @@ GameObject:
   - component: {fileID: 1843097503}
   - component: {fileID: 1843097502}
   m_Layer: 0
-  m_Name: Televised Network
+  m_Name: Televised Network Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32881,12 +32878,12 @@ GameObject:
   - component: {fileID: 1932431497}
   - component: {fileID: 1932431496}
   m_Layer: 5
-  m_Name: Fear Of The Unknown Button
+  m_Name: Fear of the Unknown Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1932431495
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33395,7 +33392,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1948870738
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34091,12 +34088,12 @@ GameObject:
   - component: {fileID: 1980136514}
   - component: {fileID: 1980136513}
   m_Layer: 5
-  m_Name: Cannibalistic Instinct Button
+  m_Name: Cannibalistic Instinct  Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1980136512
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34299,7 +34296,7 @@ GameObject:
   - component: {fileID: 1992673435}
   - component: {fileID: 1992673436}
   m_Layer: 0
-  m_Name: Mandations
+  m_Name: Mandations Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34470,7 +34467,7 @@ GameObject:
   - component: {fileID: 1997024560}
   - component: {fileID: 1997024559}
   m_Layer: 0
-  m_Name: Communion
+  m_Name: Communion Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34685,7 +34682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2007823949
 RectTransform:
   m_ObjectHideFlags: 0
@@ -35764,7 +35761,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2072654057
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36272,7 +36269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2125503029
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36659,7 +36656,7 @@ GameObject:
   - component: {fileID: 2136004437}
   - component: {fileID: 2136004436}
   m_Layer: 0
-  m_Name: Heart of the town
+  m_Name: Heart of the Town Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
