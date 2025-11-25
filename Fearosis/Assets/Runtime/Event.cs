@@ -6,8 +6,7 @@ using System;
 public class Event : MonoBehaviour
 {   
     [Header("Event Properties")]
-    [SerializeField]
-    private string eventName;
+    public string eventName;
     [SerializeField]
     private string eventDescription;
     [SerializeField]

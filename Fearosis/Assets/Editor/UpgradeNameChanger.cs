@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.UI;
 
 public class UpgradeNameChanger : Editor
 {
@@ -13,7 +14,6 @@ public class UpgradeNameChanger : Editor
         foreach (Upgrade upgrade in upgrades)
         {
             upgrade.gameObject.SetActive(true);
-            Debug.Log($"Processing Upgrade on GameObject: {upgrade.upgradeName}");
             // Only rename if current name differs
             if (upgrade.gameObject.name  != upgrade.upgradeName + " Upgrade")
             {
@@ -38,7 +38,30 @@ public class UpgradeNameChanger : Editor
                 EditorUtility.SetDirty(button.gameObject); // Ensure the scene registers the change
                 count++;
             }
-            button.gameObject.SetActive(false);
+
+            if (button.gameObject.GetComponent<Image>() != null)
+            {
+                Undo.RecordObject(button.gameObject.GetComponent<Image>(), "Rename Upgrade Button SpriteRenderer");
+                string sceneName = button.gameObject.scene.name;
+                string sourceName = button.gameObject.transform.parent.name;
+                string spritePath = $"Assets/Sprites/Upgrades/{sceneName}/{sourceName}/{button.upgradeScript.upgradeName}.png";
+                Texture2D texture = (Texture2D)AssetDatabase.LoadAssetAtPath<Texture2D>(spritePath);
+                if (texture == null)
+                {
+                    // Try without extension as Unity sometimes references sprites this way
+                    spritePath = $"Assets/Sprites/Upgrades/{sceneName}/{sourceName}/{button.upgradeScript.upgradeName}";
+                    texture = (Texture2D)AssetDatabase.LoadAssetAtPath<Texture2D>(spritePath);
+                }
+                if (texture != null)
+                {
+                    button.gameObject.GetComponent<Image>().sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+                    EditorUtility.SetDirty(button.gameObject.GetComponent<Image>());
+                }
+                else
+                {
+                    Debug.LogWarning($"Sprite not found at path: {spritePath} for {button.gameObject.name}");
+                }
+            }
         }
 
         Debug.Log($"Renamed {count} Upgrade GameObjects to their upgradeName property.");
