@@ -44,13 +44,13 @@ public class UpgradeNameChanger : Editor
                 Undo.RecordObject(button.gameObject.GetComponent<Image>(), "Rename Upgrade Button SpriteRenderer");
                 string sceneName = button.gameObject.scene.name;
                 string sourceName = button.gameObject.transform.parent.name;
-                string spritePath = $"Assets/Sprites/Upgrades/{sceneName}/{sourceName}/{button.upgradeScript.upgradeName}.png";
-                Texture2D texture = (Texture2D)AssetDatabase.LoadAssetAtPath<Texture2D>(spritePath);
+                string spritePath = $"Assets/Sprite/Upgrades/{sceneName}/{sourceName}/{button.upgradeScript.upgradeName}.png";
+                Texture2D texture = AssetDatabase.LoadAssetAtPath<Texture2D>(spritePath);
                 if (texture == null)
                 {
                     // Try without extension as Unity sometimes references sprites this way
-                    spritePath = $"Assets/Sprites/Upgrades/{sceneName}/{sourceName}/{button.upgradeScript.upgradeName}";
-                    texture = (Texture2D)AssetDatabase.LoadAssetAtPath<Texture2D>(spritePath);
+                    spritePath = $"Assets/Sprite/Upgrades/{sceneName}/{sourceName}/{button.upgradeScript.upgradeName}";
+                    texture = AssetDatabase.LoadAssetAtPath<Texture2D>(spritePath);
                 }
                 if (texture != null)
                 {
