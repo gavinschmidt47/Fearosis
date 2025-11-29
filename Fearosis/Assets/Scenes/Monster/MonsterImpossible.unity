@@ -387,7 +387,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 432.11847, y: -50}
+  m_AnchoredPosition: {x: 335.5986, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &26391092
@@ -737,7 +737,7 @@ GameObject:
   - component: {fileID: 48709424}
   - component: {fileID: 48709423}
   m_Layer: 0
-  m_Name: Physical Upgrades 1 Upgrade
+  m_Name: Sharp Fangs Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -755,13 +755,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Physical Upgrades 1
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Sharp Fangs
+  upgradeDescription: 'My, what sharp teeth you have. (+Fear)  '
+  upgradeCost: 5
   isFirstUpgrade: 1
   prerequisiteUpgrades: []
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 10
   notorietyBuff: 0
   prejudiceBuff: 0
   painBuff: 0
@@ -792,7 +792,7 @@ GameObject:
   - component: {fileID: 50777200}
   - component: {fileID: 50777199}
   m_Layer: 0
-  m_Name: Physical Upgrades 7 Upgrade
+  m_Name: Unnatural Limbs Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -810,8 +810,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Physical Upgrades 7
-  upgradeDescription: 
+  upgradeName: Unnatural Limbs
+  upgradeDescription: 'Thier limbs move in an uncanny way that no human couldreplicate.
+    (+Fear +Notoriety +Prejudice +Pain) '
   upgradeCost: 0
   isFirstUpgrade: 0
   prerequisiteUpgrades:
@@ -987,7 +988,7 @@ GameObject:
   - component: {fileID: 53330324}
   - component: {fileID: 53330323}
   m_Layer: 5
-  m_Name: Physical Upgrades 5 Button
+  m_Name: Colorful Eyes Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1091,7 +1092,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2554351223747678850, guid: 64e44ed9b7c26f64a83eb393c7558d97, type: 3}
+  m_Sprite: {fileID: -8244813803557804594, guid: 735acad9d37a4d54393cee40f9336e5e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1290,7 +1291,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1325.9342, y: -50}
+  m_AnchoredPosition: {x: 972.0281, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73118836
@@ -1876,7 +1877,7 @@ GameObject:
   - component: {fileID: 112351578}
   - component: {fileID: 112351579}
   m_Layer: 0
-  m_Name: Blood Upgrade 8 Upgrade
+  m_Name: Iron Scent Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -1909,16 +1910,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Blood Upgrade 8
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Iron Scent
+  upgradeDescription: "People smell it. They smell it everywhere. It\u2019s as if
+    the town was bleeding itself. (+Fear +Notoriety +Prejudice) "
+  upgradeCost: 25
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1052508701}
   isPurchased: 0
-  fearBuff: 0
-  notorietyBuff: 0
-  prejudiceBuff: 0
+  fearBuff: 22
+  notorietyBuff: 15
+  prejudiceBuff: 15
   painBuff: 0
   source: 0
 --- !u!1 &112358346
@@ -2153,7 +2155,7 @@ GameObject:
   - component: {fileID: 120132782}
   - component: {fileID: 120132781}
   m_Layer: 0
-  m_Name: Physical Upgrades 9 Upgrade
+  m_Name: Demented Face Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -2171,15 +2173,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Physical Upgrades 9
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Demented Face
+  upgradeDescription: "I\u2019ve never seen a smile so wide, or eyes so piercingly
+    bright. (+Fear) "
+  upgradeCost: 23
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1108895920}
   - {fileID: 838740026}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 30
   notorietyBuff: 0
   prejudiceBuff: 0
   painBuff: 0
@@ -2235,7 +2238,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1104.8552, y: -50}
+  m_AnchoredPosition: {x: 815.2957, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &132180725
@@ -3096,7 +3099,7 @@ GameObject:
   - component: {fileID: 170760966}
   - component: {fileID: 170760965}
   m_Layer: 0
-  m_Name: Psychological Upgrade 4 Upgrade
+  m_Name: Who Are You? Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -3114,16 +3117,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Psychological Upgrade 4
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Who Are You?
+  upgradeDescription: 'People forgot the mosnters existed, and the monsters forgot
+    they were ever human. (+Fear -Notoriety -Prejudice) '
+  upgradeCost: 26
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1355687009}
   isPurchased: 0
-  fearBuff: 0
-  notorietyBuff: 0
-  prejudiceBuff: 0
+  fearBuff: 30
+  notorietyBuff: -40
+  prejudiceBuff: -40
   painBuff: 0
   source: 3
 --- !u!4 &170760966
@@ -3152,7 +3156,7 @@ GameObject:
   - component: {fileID: 200797608}
   - component: {fileID: 200797607}
   m_Layer: 0
-  m_Name: Behavioral Upgrade 5 Upgrade
+  m_Name: Shade-bound  Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -3170,15 +3174,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Behavioral Upgrade 5
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: 'Shade-bound '
+  upgradeDescription: 'The light is too bright for their monster eyes (+Fear +Prejudice) '
+  upgradeCost: 5
   isFirstUpgrade: 1
   prerequisiteUpgrades: []
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 4
   notorietyBuff: 0
-  prejudiceBuff: 0
+  prejudiceBuff: 10
   painBuff: 0
   source: 2
 --- !u!4 &200797608
@@ -3577,7 +3581,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 878.7763, y: -50}
+  m_AnchoredPosition: {x: 653.56335, y: -50}
   m_SizeDelta: {x: 110, y: 54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &227741853
@@ -3629,7 +3633,7 @@ GameObject:
   - component: {fileID: 227920740}
   - component: {fileID: 227920739}
   m_Layer: 0
-  m_Name: Behavioral Upgrade 1 Upgrade
+  m_Name: Meat Addiction Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -3647,15 +3651,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Behavioral Upgrade 1
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Meat Addiction
+  upgradeDescription: 'hey only crave meat, and they refuse to eat their greens.
+    (+Fear +Prejudice) '
+  upgradeCost: 8
   isFirstUpgrade: 1
   prerequisiteUpgrades: []
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 10
   notorietyBuff: 0
-  prejudiceBuff: 0
+  prejudiceBuff: 5
   painBuff: 0
   source: 2
 --- !u!4 &227920740
@@ -3760,7 +3765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -337.14282}
+  m_AnchoredPosition: {x: 251, y: -254.14282}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &238092149
@@ -3815,7 +3820,7 @@ GameObject:
   - component: {fileID: 238398902}
   - component: {fileID: 238398901}
   m_Layer: 5
-  m_Name: Behavioral Upgrade 2 Button
+  m_Name: Missing Cattle Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3919,7 +3924,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 493674792038647530, guid: 5a2f9038b28d3f247bbfa015280cb776, type: 3}
+  m_Sprite: {fileID: 7339067337452565921, guid: f0a981bc9ebe68447845d39d8d75fd70, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4225,7 +4230,7 @@ GameObject:
   - component: {fileID: 251437117}
   - component: {fileID: 251437116}
   m_Layer: 5
-  m_Name: Physical Upgrades 7 Button
+  m_Name: Unnatural Limbs Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4329,7 +4334,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6335964724743364112, guid: ded0ecacc9fd1de479526f38d5190347, type: 3}
+  m_Sprite: {fileID: 8095481571554861053, guid: eaae342cb501a3b418cf0759b10200e9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4850,7 +4855,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -455.71423}
+  m_AnchoredPosition: {x: 251, y: -331.21423}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &277361180
@@ -4955,7 +4960,7 @@ GameObject:
   - component: {fileID: 303101406}
   - component: {fileID: 303101407}
   m_Layer: 0
-  m_Name: Blood Upgrade 10 Upgrade
+  m_Name: Blood-Boiled Instinct Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -4988,18 +4993,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Blood Upgrade 10
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Blood-Boiled Instinct
+  upgradeDescription: 'Their blood burns like a true monster, aching to spread it
+    to others.(+Fear, +Pain) '
+  upgradeCost: 50
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 868727138}
   - {fileID: 904984629}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 60
   notorietyBuff: 0
   prejudiceBuff: 0
-  painBuff: 0
+  painBuff: 15
   source: 0
 --- !u!1 &306452915
 GameObject:
@@ -5673,7 +5679,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 271.71967, y: -50}
+  m_AnchoredPosition: {x: 335.59857, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &358951623
@@ -5806,7 +5812,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 661.77484, y: -50}
+  m_AnchoredPosition: {x: 636.89667, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &360614748
@@ -6189,7 +6195,7 @@ GameObject:
   - component: {fileID: 385201708}
   - component: {fileID: 385201707}
   m_Layer: 5
-  m_Name: Blood Upgrade 9 Button
+  m_Name: Unprecedented Cure Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6293,7 +6299,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7799257927417971030, guid: 877973904ba2afc409c876e4bc87330b, type: 3}
+  m_Sprite: {fileID: 7075945083565991757, guid: 171ce1537d506754dbdba29d06e3eb2b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6594,7 +6600,7 @@ GameObject:
   - component: {fileID: 413751657}
   - component: {fileID: 413751658}
   m_Layer: 0
-  m_Name: Blood Upgrade 4 Upgrade
+  m_Name: BloodShot Eyes Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -6627,16 +6633,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Blood Upgrade 4
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: BloodShot Eyes
+  upgradeDescription: 'My, what scary eyes you have (+Fear, +Pain) '
+  upgradeCost: 12
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1618381953}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 12
   notorietyBuff: 0
-  prejudiceBuff: 0
+  prejudiceBuff: 10
   painBuff: 0
   source: 0
 --- !u!1 &420599206
@@ -6810,7 +6816,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -692.85706}
+  m_AnchoredPosition: {x: 251, y: -485.35706}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &433702328
@@ -7775,7 +7781,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 431.6184, y: -50}
+  m_AnchoredPosition: {x: 335.09857, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &478259588
@@ -7883,7 +7889,7 @@ GameObject:
   - component: {fileID: 486934597}
   - component: {fileID: 486934598}
   m_Layer: 0
-  m_Name: Behavioral Upgrade 10 Upgrade
+  m_Name: Hierarchy Reversal Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -7916,17 +7922,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Behavioral Upgrade 10
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Hierarchy Reversal
+  upgradeDescription: " If we succumb to them, they won\u2019t hurt us.. (+Fear +Notoriety
+    +Prejudice -Pain) "
+  upgradeCost: 50
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1826247088}
   isPurchased: 0
-  fearBuff: 0
-  notorietyBuff: 0
-  prejudiceBuff: 0
-  painBuff: 0
+  fearBuff: 30
+  notorietyBuff: 23
+  prejudiceBuff: 18
+  painBuff: -30
   source: 2
 --- !u!1 &494300537
 GameObject:
@@ -7987,7 +7994,7 @@ GameObject:
   - component: {fileID: 497091744}
   - component: {fileID: 497091743}
   m_Layer: 5
-  m_Name: Psychological Upgrade 7 Button
+  m_Name: Personality Shift Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8091,7 +8098,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2378228404314372418, guid: 4934ac688aa591444b9f7062397bd40c, type: 3}
+  m_Sprite: {fileID: 4061238205519154439, guid: 53ac6322438a4b7418642e68f9910fc6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8375,7 +8382,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cf90f4b141ac8e447bf2388d9e9afab0, type: 2}
   - {fileID: 11400000, guid: 2eb3699076ab0c54c815bc7c4e7bd023, type: 2}
   - {fileID: 11400000, guid: 8c35d9d62a561b04184be66363e0032c, type: 2}
-  selectedDifficulty: 0
+  selectedDifficulty: 2
 --- !u!4 &503316578
 Transform:
   m_ObjectHideFlags: 0
@@ -8405,7 +8412,7 @@ GameObject:
   - component: {fileID: 505177712}
   - component: {fileID: 505177711}
   m_Layer: 5
-  m_Name: Physical Upgrades 10 Button
+  m_Name: Complete Metamorphosis Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8509,7 +8516,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4827075660703562942, guid: a0592685c01a25c4a969f63dbed6495d, type: 3}
+  m_Sprite: {fileID: -6588790056210347881, guid: 1a261d55e2fde294493251160b640a5d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8786,7 +8793,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -218.57141}
+  m_AnchoredPosition: {x: 251, y: -177.07141}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &516594194
@@ -9380,7 +9387,7 @@ GameObject:
   - component: {fileID: 553555353}
   - component: {fileID: 553555352}
   m_Layer: 5
-  m_Name: Psychological Upgrade 4 Button
+  m_Name: Who Are You? Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9484,7 +9491,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7811733428855692005, guid: e3693d6c9075f18449b6ef71f5f97370, type: 3}
+  m_Sprite: {fileID: -2863130513919306298, guid: 8ac80b8d25ae4b544805186074dcd5a4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9578,7 +9585,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1325.7678, y: -50}
+  m_AnchoredPosition: {x: 971.8616, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &566170553
@@ -10159,7 +10166,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 130.25356, y: -50}
+  m_AnchoredPosition: {x: 126.699524, y: -50}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &590782404
@@ -10327,7 +10334,7 @@ MonoBehaviour:
   poolSize: 100
   infectedPoolWeight: 0.8
   dayCharacter: {fileID: 5292200318635337322, guid: b7f20321def43bb478f060234cb9086b, type: 3}
-  nightCharacter: {fileID: 0}
+  nightCharacter: {fileID: 5292200318635337322, guid: 4823364bbcb0f1d4caafe0fe17a8dd10, type: 3}
   bobCharacter: {fileID: 5292200318635337322, guid: ddc0353a5f3649d47ab17d771562fbc1, type: 3}
 --- !u!4 &610462753
 Transform:
@@ -10735,7 +10742,7 @@ GameObject:
   - component: {fileID: 637530992}
   - component: {fileID: 637530991}
   m_Layer: 5
-  m_Name: Blood Upgrade 3 Button
+  m_Name: Monstrous Transmission Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10839,7 +10846,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2020724534934282931, guid: 4e53849ed00ecba449e023021cca9848, type: 3}
+  m_Sprite: {fileID: -8595849877327933759, guid: 74ea36ae248479544855f55c27b5f7fc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10868,7 +10875,7 @@ GameObject:
   - component: {fileID: 652595518}
   - component: {fileID: 652595519}
   m_Layer: 0
-  m_Name: Physical Upgrades 10 Upgrade
+  m_Name: Complete Metamorphosis Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -10901,17 +10908,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Physical Upgrades 10
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Complete Metamorphosis
+  upgradeDescription: 'The transition is complete. They are human no more. (+Fear
+    - Pain) '
+  upgradeCost: 50
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 120132780}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 60
   notorietyBuff: 0
   prejudiceBuff: 0
-  painBuff: 0
+  painBuff: -10
   source: 1
 --- !u!1 &653163596
 GameObject:
@@ -12875,7 +12883,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 386.1994, y: -50}
+  m_AnchoredPosition: {x: 492.66428, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &754413652
@@ -13703,7 +13711,7 @@ GameObject:
   - component: {fileID: 777732753}
   - component: {fileID: 777732752}
   m_Layer: 5
-  m_Name: Psychological Upgrade 1 Button
+  m_Name: Sickening Disguise Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13807,7 +13815,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8713642994136958069, guid: 38874a506d3bb294d96180c347e51280, type: 3}
+  m_Sprite: {fileID: -2929875189179146531, guid: ff20a6f86e5b17c4386a06b15bd653c4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14321,7 +14329,7 @@ GameObject:
   - component: {fileID: 812466249}
   - component: {fileID: 812466248}
   m_Layer: 5
-  m_Name: Behavioral Upgrade 4 Button
+  m_Name: Hunting Pack Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14425,7 +14433,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6442048681350043772, guid: 067e0c705f9e96641a67b801c009107f, type: 3}
+  m_Sprite: {fileID: 4050522847344324141, guid: da0e89aae54af3f4fb7adf62bd05edf3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14457,7 +14465,7 @@ GameObject:
   - component: {fileID: 824411712}
   - component: {fileID: 824411711}
   m_Layer: 5
-  m_Name: Physical Upgrades 2 Button
+  m_Name: Skin Development Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14561,7 +14569,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2483888331339646908, guid: afdf3370b2b76df48b2911e74513e5ed, type: 3}
+  m_Sprite: {fileID: -5324315969562844286, guid: caa794f7ba6d6c64a93b158df2d1dea5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14590,7 +14598,7 @@ GameObject:
   - component: {fileID: 830107972}
   - component: {fileID: 830107971}
   m_Layer: 0
-  m_Name: Psychological Upgrade 10 Upgrade
+  m_Name: Ignorant Bliss Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -14608,17 +14616,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Psychological Upgrade 10
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Ignorant Bliss
+  upgradeDescription: "The monsters don\u2019t feel anything, and the humans think
+    they are a myth. (+Fear -Pain, -notoriety, -prejudice) "
+  upgradeCost: 60
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 933236014}
   isPurchased: 0
-  fearBuff: 0
-  notorietyBuff: 0
-  prejudiceBuff: 0
-  painBuff: 0
+  fearBuff: 30
+  notorietyBuff: -20
+  prejudiceBuff: -30
+  painBuff: -100
   source: 3
 --- !u!4 &830107972
 Transform:
@@ -14779,7 +14788,7 @@ GameObject:
   - component: {fileID: 838740028}
   - component: {fileID: 838740027}
   m_Layer: 0
-  m_Name: Physical Upgrades 4 Upgrade
+  m_Name: Ultra Senses Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -14797,16 +14806,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Physical Upgrades 4
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Ultra Senses
+  upgradeDescription: 'They know you are there. They traced your scent before you
+    even walked in. (+Fear +Notoriety +Prejudice) '
+  upgradeCost: 40
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1161860094}
   isPurchased: 0
-  fearBuff: 0
-  notorietyBuff: 0
-  prejudiceBuff: 0
+  fearBuff: 25
+  notorietyBuff: 23
+  prejudiceBuff: 20
   painBuff: 0
   source: 1
 --- !u!4 &838740028
@@ -14913,7 +14923,7 @@ GameObject:
   - component: {fileID: 859771516}
   - component: {fileID: 859771515}
   m_Layer: 5
-  m_Name: Behavioral Upgrade 7 Button
+  m_Name: Hiding in the Shadows Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15017,7 +15027,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6351161516163394191, guid: 2db32442d8964e64caf0cb98eb69b530, type: 3}
+  m_Sprite: {fileID: -3184838546934697358, guid: 6434124d2eeb37f4788472af8af8782e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15046,7 +15056,7 @@ GameObject:
   - component: {fileID: 868727139}
   - component: {fileID: 868727140}
   m_Layer: 0
-  m_Name: Blood Upgrade 6 Upgrade
+  m_Name: Frenzied Prowl Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -15079,18 +15089,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Blood Upgrade 6
-  upgradeDescription: 
-  upgradeCost: 0
-  isFirstUpgrade: 0
+  upgradeName: Frenzied Prowl
+  upgradeDescription: "Those who have it lurk in the shadows, and those who don\u2019t
+    should hide. (+Fear, +Pain) "
+  upgradeCost: 30
+  isFirstUpgrade: 1
   prerequisiteUpgrades:
   - {fileID: 1610487966}
   - {fileID: 1549600074}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 30
   notorietyBuff: 0
   prejudiceBuff: 0
-  painBuff: 0
+  painBuff: 15
   source: 0
 --- !u!1 &877379412
 GameObject:
@@ -15615,7 +15626,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 160.70616, y: -50}
+  m_AnchoredPosition: {x: 128.53287, y: -50}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &896256779
@@ -15670,7 +15681,7 @@ GameObject:
   - component: {fileID: 896461051}
   - component: {fileID: 896461050}
   m_Layer: 5
-  m_Name: Psychological Upgrade 3 Button
+  m_Name: Loss of Memory Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15774,7 +15785,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7102693602538269022, guid: 5fe49625fb6dc054d9c4bdb450445c73, type: 3}
+  m_Sprite: {fileID: 3990575194247844951, guid: 300b470102d6fd249bb7b4b36abca411, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15803,7 +15814,7 @@ GameObject:
   - component: {fileID: 904984630}
   - component: {fileID: 904984631}
   m_Layer: 0
-  m_Name: Blood Upgrade 9 Upgrade
+  m_Name: Unprecedented Cure Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -15836,17 +15847,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Blood Upgrade 9
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Unprecedented Cure
+  upgradeDescription: "A miracle cure they say. The blood of those \u2018monsters\u2019.
+    (+Fear, -Prejudice, +Notoriety) "
+  upgradeCost: 35
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 112351577}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 30
   notorietyBuff: 0
-  prejudiceBuff: 0
-  painBuff: 0
+  prejudiceBuff: -10
+  painBuff: 20
   source: 0
 --- !u!1 &911342803
 GameObject:
@@ -15942,7 +15954,7 @@ GameObject:
   - component: {fileID: 915311309}
   - component: {fileID: 915311308}
   m_Layer: 5
-  m_Name: Physical Upgrades 3 Button
+  m_Name: Deadly Claws Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16046,7 +16058,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8602195558642015288, guid: fefaefd5cccb67249b1a1c84b5df54ba, type: 3}
+  m_Sprite: {fileID: 7481732605769519640, guid: 1df335fa30453d545968e9280101b776, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16335,7 +16347,7 @@ GameObject:
   - component: {fileID: 933236016}
   - component: {fileID: 933236015}
   m_Layer: 0
-  m_Name: Psychological Upgrade 9 Upgrade
+  m_Name: Lumbering Trees Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -16353,18 +16365,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Psychological Upgrade 9
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Lumbering Trees
+  upgradeDescription: 'They mindlessly walk in the streets, but the citizens pay
+    no mind. (+Fear +Pain) '
+  upgradeCost: 34
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1992673434}
   - {fileID: 170760964}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 40
   notorietyBuff: 0
   prejudiceBuff: 0
-  painBuff: 0
+  painBuff: 80
   source: 3
 --- !u!4 &933236016
 Transform:
@@ -16418,7 +16431,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 822.2819, y: -50}
+  m_AnchoredPosition: {x: 790.2957, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &938797621
@@ -16740,7 +16753,7 @@ GameObject:
   - component: {fileID: 958013142}
   - component: {fileID: 958013141}
   m_Layer: 5
-  m_Name: Blood Upgrade 7 Button
+  m_Name: Nocturnal Blood Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16844,7 +16857,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6671642546166582640, guid: 266ffa20aa1806b4ab76f071e2c0a541, type: 3}
+  m_Sprite: {fileID: 5287076111607365912, guid: efa5ae1af091d0b47b07bdc44d5a2117, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17049,7 +17062,7 @@ GameObject:
   - component: {fileID: 990950450}
   - component: {fileID: 990950449}
   m_Layer: 0
-  m_Name: Behavioral Upgrade 8 Upgrade
+  m_Name: Divine Guidance Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -17067,17 +17080,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Behavioral Upgrade 8
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Divine Guidance
+  upgradeDescription: 'It speaks to me, offering eternal happiness. All I have to
+    do is give him a bite (+Fear +Notoriety -Prejudice) '
+  upgradeCost: 32
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1079254851}
   - {fileID: 2136004435}
   isPurchased: 0
-  fearBuff: 0
-  notorietyBuff: 0
-  prejudiceBuff: 0
+  fearBuff: 15
+  notorietyBuff: 20
+  prejudiceBuff: -30
   painBuff: 0
   source: 2
 --- !u!4 &990950450
@@ -17131,7 +17145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 340.76065, y: -50}
+  m_AnchoredPosition: {x: 330.09857, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &998106270
@@ -17242,7 +17256,7 @@ GameObject:
   - component: {fileID: 998885493}
   - component: {fileID: 998885492}
   m_Layer: 5
-  m_Name: Behavioral Upgrade 6 Button
+  m_Name: Midnight Howl Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17346,7 +17360,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6157783805959460368, guid: e2300e40c7f2a554b9d3c264735254e4, type: 3}
+  m_Sprite: {fileID: -5080947567271553996, guid: f81049cb5e3fcda4ea1fb6be156ef1da, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17878,7 +17892,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 160.53947, y: -50}
+  m_AnchoredPosition: {x: 128.3662, y: -50}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1045205937
@@ -17933,7 +17947,7 @@ GameObject:
   - component: {fileID: 1045810593}
   - component: {fileID: 1045810592}
   m_Layer: 5
-  m_Name: Psychological Upgrade 2 Button
+  m_Name: Think You're a Monster? Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18037,7 +18051,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3547705282908122506, guid: cd7ff15ca02b7d94ca9b1b6414e43858, type: 3}
+  m_Sprite: {fileID: -155469600325224607, guid: 9cb9c1fea2f8a6941bad03644dfbfe55, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18211,7 +18225,7 @@ GameObject:
   - component: {fileID: 1052508702}
   - component: {fileID: 1052508703}
   m_Layer: 0
-  m_Name: Blood Upgrade 7 Upgrade
+  m_Name: Nocturnal Blood Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -18244,15 +18258,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Blood Upgrade 7
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Nocturnal Blood
+  upgradeDescription: 'They dose off during the day, waiting for the sun to go down.
+    Then they will strike. (+Fear, '
+  upgradeCost: 18
   isFirstUpgrade: 1
   prerequisiteUpgrades: []
   isPurchased: 0
-  fearBuff: 0
-  notorietyBuff: 0
-  prejudiceBuff: 0
+  fearBuff: 15
+  notorietyBuff: 8
+  prejudiceBuff: 8
   painBuff: 0
   source: 0
 --- !u!1 &1058815713
@@ -18269,7 +18284,7 @@ GameObject:
   - component: {fileID: 1058815716}
   - component: {fileID: 1058815715}
   m_Layer: 5
-  m_Name: Physical Upgrades 8 Button
+  m_Name: Exposure Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18373,7 +18388,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6357203088263765274, guid: 845d574135c4fcc41889a8bf2a5001d7, type: 3}
+  m_Sprite: {fileID: -562435144599064794, guid: a94f75e6c7f15ec48a34abd05a28af02, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18426,7 +18441,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -811.42847}
+  m_AnchoredPosition: {x: 251, y: -562.42847}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1059173085
@@ -18875,7 +18890,7 @@ GameObject:
   - component: {fileID: 1079254853}
   - component: {fileID: 1079254852}
   m_Layer: 0
-  m_Name: Behavioral Upgrade 7 Upgrade
+  m_Name: Hiding in the Shadows Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -18893,17 +18908,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Behavioral Upgrade 7
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Hiding in the Shadows
+  upgradeDescription: 'They hide in the darkness, Whether it hurts them or they don''t
+    want to be seen is unknown. (+Fear, +Pain) '
+  upgradeCost: 10
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1841134373}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 15
   notorietyBuff: 0
   prejudiceBuff: 0
-  painBuff: 0
+  painBuff: 5
   source: 2
 --- !u!4 &1079254853
 Transform:
@@ -19134,7 +19150,7 @@ GameObject:
   - component: {fileID: 1089898398}
   - component: {fileID: 1089898397}
   m_Layer: 0
-  m_Name: Psychological Upgrade 1 Upgrade
+  m_Name: Sickening Disguise Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -19152,14 +19168,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Psychological Upgrade 1
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Sickening Disguise
+  upgradeDescription: " If we succumb to them, they won\u2019t hurt us.. (+Fear +Notoriety
+    +Prejudice -Pain) "
+  upgradeCost: 8
   isFirstUpgrade: 1
   prerequisiteUpgrades: []
   isPurchased: 0
-  fearBuff: 0
-  notorietyBuff: 0
+  fearBuff: 10
+  notorietyBuff: 8
   prejudiceBuff: 0
   painBuff: 0
   source: 3
@@ -19526,7 +19543,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 500.6792, y: -50}
+  m_AnchoredPosition: {x: 649.73, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1102108280
@@ -19634,7 +19651,7 @@ GameObject:
   - component: {fileID: 1108895922}
   - component: {fileID: 1108895921}
   m_Layer: 0
-  m_Name: Physical Upgrades 8 Upgrade
+  m_Name: Exposure Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -19652,17 +19669,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Physical Upgrades 8
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Exposure
+  upgradeDescription: 'Organs spilled out of the infected, their ribcages wide open
+    for the world to see. (+Fear +Prejudice +Pain) '
+  upgradeCost: 18
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 50777198}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 11
   notorietyBuff: 0
-  prejudiceBuff: 0
-  painBuff: 0
+  prejudiceBuff: 15
+  painBuff: 20
   source: 1
 --- !u!4 &1108895922
 Transform:
@@ -19956,7 +19974,7 @@ GameObject:
   - component: {fileID: 1115494966}
   - component: {fileID: 1115494965}
   m_Layer: 5
-  m_Name: Psychological Upgrade 9 Button
+  m_Name: Lumbering Trees Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20060,7 +20078,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -803638176230055291, guid: d35589d08f18c5d429921ecf8b392a73, type: 3}
+  m_Sprite: {fileID: -458210507099538305, guid: 3562d73473de4db4fbe1c102854e0dfb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20518,7 +20536,7 @@ GameObject:
   - component: {fileID: 1127251825}
   - component: {fileID: 1127251824}
   m_Layer: 5
-  m_Name: Psychological Upgrade 10 Button
+  m_Name: Ignorant Bliss Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20622,7 +20640,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5854702831784929661, guid: be255b3b6fe137949ab5aa3b10c15f2c, type: 3}
+  m_Sprite: {fileID: 6045783616134616227, guid: ee8fcb39def4d71488d7a0f5e600b213, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21047,7 +21065,7 @@ GameObject:
   - component: {fileID: 1161860096}
   - component: {fileID: 1161860095}
   m_Layer: 0
-  m_Name: Physical Upgrades 3 Upgrade
+  m_Name: Deadly Claws Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -21065,16 +21083,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Physical Upgrades 3
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Deadly Claws
+  upgradeDescription: 'They have lost their hands to the monsterism. In its place
+    are sharp claws. (+Fear +Notoriety +Prejudice) '
+  upgradeCost: 30
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1294261842}
   isPurchased: 0
-  fearBuff: 0
-  notorietyBuff: 0
-  prejudiceBuff: 0
+  fearBuff: 20
+  notorietyBuff: 13
+  prejudiceBuff: 13
   painBuff: 0
   source: 1
 --- !u!4 &1161860096
@@ -21350,7 +21369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 619.15894, y: -50}
+  m_AnchoredPosition: {x: 810.7957, y: -50}
   m_SizeDelta: {x: 108, y: 54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1186615821
@@ -21808,7 +21827,7 @@ GameObject:
   - component: {fileID: 1218506348}
   - component: {fileID: 1218506347}
   m_Layer: 5
-  m_Name: Blood Upgrade 10 Button
+  m_Name: Blood-Boiled Instinct Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21912,7 +21931,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6332621442507040971, guid: 7fae5204135afb54ab187a52c2075771, type: 3}
+  m_Sprite: {fileID: -9097735514114347287, guid: 2ee347cfec42bef4386747c753e4a1ca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21944,7 +21963,7 @@ GameObject:
   - component: {fileID: 1224986826}
   - component: {fileID: 1224986825}
   m_Layer: 5
-  m_Name: Psychological Upgrade 8 Button
+  m_Name: Unawareness Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22048,7 +22067,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8970280730342092162, guid: 42a5edcce2dd66641982f0a14fe22273, type: 3}
+  m_Sprite: {fileID: -1505333897662684590, guid: 142bd6789f39ae14bb8a6967ec0c0796, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22121,7 +22140,7 @@ GameObject:
   - component: {fileID: 1249251849}
   - component: {fileID: 1249251848}
   m_Layer: 5
-  m_Name: Behavioral Upgrade 5 Button
+  m_Name: Shade-bound  Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22225,7 +22244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3487145838538681345, guid: 052b52a842be5d445961839eb48d02ef, type: 3}
+  m_Sprite: {fileID: -8366180151090948015, guid: 49f4e030bc637264d87b747349ff68a7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22336,7 +22355,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -100}
+  m_AnchoredPosition: {x: 251, y: -100}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1265487414
@@ -22635,7 +22654,7 @@ GameObject:
   - component: {fileID: 1283096762}
   - component: {fileID: 1283096761}
   m_Layer: 5
-  m_Name: Blood Upgrade 4 Button
+  m_Name: BloodShot Eyes Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22739,7 +22758,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -120185796579764533, guid: 5ff8e574bd371eb4eb3378fdfe12be47, type: 3}
+  m_Sprite: {fileID: 6795740459624625724, guid: ecb8992543e801641b71d9521ee779a8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22995,7 +23014,7 @@ GameObject:
   - component: {fileID: 1294261844}
   - component: {fileID: 1294261843}
   m_Layer: 0
-  m_Name: Physical Upgrades 2 Upgrade
+  m_Name: Skin Development Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -23013,16 +23032,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Physical Upgrades 2
-  upgradeDescription: 
-  upgradeCost: 0
-  isFirstUpgrade: 0
+  upgradeName: Skin Development
+  upgradeDescription: The skin begins to change, whether it be fur or scales. (+Fear,
+    +Prejudice)
+  upgradeCost: 10
+  isFirstUpgrade: 1
   prerequisiteUpgrades:
   - {fileID: 48709422}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 12
   notorietyBuff: 0
-  prejudiceBuff: 0
+  prejudiceBuff: 5
   painBuff: 0
   source: 1
 --- !u!4 &1294261844
@@ -23054,7 +23074,7 @@ GameObject:
   - component: {fileID: 1308215339}
   - component: {fileID: 1308215338}
   m_Layer: 5
-  m_Name: Blood Upgrade 5 Button
+  m_Name: Eyes of a Hunter Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23158,7 +23178,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3126992157429432896, guid: 565f92980fa71eb4d8603c07d93f39dc, type: 3}
+  m_Sprite: {fileID: 2336517930017479977, guid: b564e691edabee84199edc4c06736b72, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -23621,7 +23641,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 737.6387, y: -50}
+  m_AnchoredPosition: {x: 971.86145, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1327719722
@@ -24036,7 +24056,7 @@ GameObject:
   - component: {fileID: 1355687011}
   - component: {fileID: 1355687010}
   m_Layer: 0
-  m_Name: Psychological Upgrade 3 Upgrade
+  m_Name: Loss of Memory Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -24054,17 +24074,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Psychological Upgrade 3
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Loss of Memory
+  upgradeDescription: 'There are no monsters in your town. (-Notoriety -Prejudice
+    -Pain) '
+  upgradeCost: 18
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1997024558}
   isPurchased: 0
   fearBuff: 0
-  notorietyBuff: 0
-  prejudiceBuff: 0
-  painBuff: 0
+  notorietyBuff: -12
+  prejudiceBuff: -12
+  painBuff: -8
   source: 3
 --- !u!4 &1355687011
 Transform:
@@ -24117,7 +24138,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 501.26776, y: -50}
+  m_AnchoredPosition: {x: 483.49762, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &1377734668
@@ -24419,7 +24440,7 @@ GameObject:
   - component: {fileID: 1388488544}
   - component: {fileID: 1388488545}
   m_Layer: 0
-  m_Name: Psychological Upgrade 7 Upgrade
+  m_Name: Personality Shift Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -24452,14 +24473,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Psychological Upgrade 7
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Personality Shift
+  upgradeDescription: 'They are sometimes different from their normal selves. Maybe
+    they are hungry. (+Fear) '
+  upgradeCost: 18
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1737651413}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 33
   notorietyBuff: 0
   prejudiceBuff: 0
   painBuff: 0
@@ -24475,7 +24497,7 @@ GameObject:
   - component: {fileID: 1398071541}
   - component: {fileID: 1398071540}
   m_Layer: 0
-  m_Name: Behavioral Upgrade 3 Upgrade
+  m_Name: Monster Gathering Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -24493,16 +24515,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Behavioral Upgrade 3
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Monster Gathering
+  upgradeDescription: '"I have them together at night near the farm, I worry what
+    they are planning"  (+Fear -Notoriety +Prejudice) '
+  upgradeCost: 24
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1843097501}
   isPurchased: 0
-  fearBuff: 0
-  notorietyBuff: 0
-  prejudiceBuff: 0
+  fearBuff: 18
+  notorietyBuff: -8
+  prejudiceBuff: 10
   painBuff: 0
   source: 2
 --- !u!4 &1398071541
@@ -24619,7 +24642,7 @@ GameObject:
   - component: {fileID: 1402869878}
   - component: {fileID: 1402869877}
   m_Layer: 0
-  m_Name: Physical Upgrades 5 Upgrade
+  m_Name: Colorful Eyes Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -24637,15 +24660,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Physical Upgrades 5
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Colorful Eyes
+  upgradeDescription: 'It was an easy way to spot them. All you had to do was look
+    directly into their eyes. (+Fear +Prejudice) '
+  upgradeCost: 8
   isFirstUpgrade: 1
   prerequisiteUpgrades: []
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 8
   notorietyBuff: 0
-  prejudiceBuff: 0
+  prejudiceBuff: 10
   painBuff: 0
   source: 1
 --- !u!4 &1402869878
@@ -24966,7 +24990,7 @@ GameObject:
   - component: {fileID: 1429940211}
   - component: {fileID: 1429940210}
   m_Layer: 0
-  m_Name: Psychological Upgrade 5 Upgrade
+  m_Name: Insomnia Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -24984,16 +25008,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Psychological Upgrade 5
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Insomnia
+  upgradeDescription: 'Those who are infected try to sleep like they are still human. 
+    (+Fear -Prejudice +Pain) '
+  upgradeCost: 8
   isFirstUpgrade: 1
   prerequisiteUpgrades: []
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 8
   notorietyBuff: 0
-  prejudiceBuff: 0
-  painBuff: 0
+  prejudiceBuff: -3
+  painBuff: 1
   source: 3
 --- !u!4 &1429940211
 Transform:
@@ -25183,7 +25208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 882.9431, y: -50}
+  m_AnchoredPosition: {x: 657.7301, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &1445743663
@@ -25294,7 +25319,7 @@ GameObject:
   - component: {fileID: 1452598105}
   - component: {fileID: 1452598104}
   m_Layer: 5
-  m_Name: Behavioral Upgrade 9 Button
+  m_Name: Extreme Torment Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25398,7 +25423,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -995495285857487691, guid: f142c8d27cde7a24fbad6cd4b4f5d3d1, type: 3}
+  m_Sprite: {fileID: 4485290841223191878, guid: b7d2bd69bf3afba488cb420d4e642916, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25593,7 +25618,7 @@ GameObject:
   - component: {fileID: 1479148193}
   - component: {fileID: 1479148192}
   m_Layer: 5
-  m_Name: Behavioral Upgrade 10 Button
+  m_Name: Hierarchy Reversal Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25697,7 +25722,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1346541841368028366, guid: 9a10f4a592967cc4e9d300603b4035f7, type: 3}
+  m_Sprite: {fileID: 5006207908491437152, guid: 63460aa9eea559b4aa01e8ca3b1a7524, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -26028,7 +26053,7 @@ GameObject:
   - component: {fileID: 1511349473}
   - component: {fileID: 1511349472}
   m_Layer: 5
-  m_Name: Physical Upgrades 9 Button
+  m_Name: Demented Face Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26132,7 +26157,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -25996483519818471, guid: 92e2c9d7b406ace4d86a4cfd5599aae8, type: 3}
+  m_Sprite: {fileID: 1646226401842309276, guid: e238a80aabfe7aa4fb82af05eee1bd25, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -26517,7 +26542,7 @@ GameObject:
   - component: {fileID: 1549600075}
   - component: {fileID: 1549600076}
   m_Layer: 0
-  m_Name: Blood Upgrade 3 Upgrade
+  m_Name: Monstrous Transmission Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -26550,17 +26575,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Blood Upgrade 3
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Monstrous Transmission
+  upgradeDescription: It spreads further. Those with it say they can feel something
+    growing inside of them. (+Fear, +Pain)
+  upgradeCost: 15
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1813636608}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 20
   notorietyBuff: 0
   prejudiceBuff: 0
-  painBuff: 0
+  painBuff: 10
   source: 0
 --- !u!1 &1552723718
 GameObject:
@@ -26799,7 +26825,7 @@ GameObject:
   - component: {fileID: 1559226564}
   - component: {fileID: 1559226563}
   m_Layer: 5
-  m_Name: Physical Upgrades 1 Button
+  m_Name: Sharp Fangs Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26903,7 +26929,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7942010581537801419, guid: 18bfe468e86aca6448dab7c95325b23c, type: 3}
+  m_Sprite: {fileID: -7985904334948356852, guid: 811d388cbb80ca64ba65e7edd444598d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -26976,7 +27002,7 @@ GameObject:
   - component: {fileID: 1561857062}
   - component: {fileID: 1561857061}
   m_Layer: 5
-  m_Name: Physical Upgrades 4 Button
+  m_Name: Ultra Senses Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27080,7 +27106,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4795264166537958524, guid: 63c64c5fa79e4234f83933f673dc80f4, type: 3}
+  m_Sprite: {fileID: 2625292982012053643, guid: 4194d10954532924a9fa654421a4f9f6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -27112,7 +27138,7 @@ GameObject:
   - component: {fileID: 1571472203}
   - component: {fileID: 1571472202}
   m_Layer: 5
-  m_Name: Psychological Upgrade 6 Button
+  m_Name: Blackouts Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27216,7 +27242,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6207347743642947913, guid: 0f837cce29dd76848b865a4cae4b7d86, type: 3}
+  m_Sprite: {fileID: -1512656742084452801, guid: ac661a119bdb48348bd8c0c4008a0cea, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -27531,7 +27557,7 @@ GameObject:
   - component: {fileID: 1610487967}
   - component: {fileID: 1610487968}
   m_Layer: 0
-  m_Name: Blood Upgrade 5 Upgrade
+  m_Name: Eyes of a Hunter Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -27564,17 +27590,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Blood Upgrade 5
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Eyes of a Hunter
+  upgradeDescription: Their eyes are human no more. They become restless throughout
+    the night. (+Fear, +Prejudice, +Pain)
+  upgradeCost: 15
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 413751656}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 20
   notorietyBuff: 0
-  prejudiceBuff: 0
-  painBuff: 0
+  prejudiceBuff: 10
+  painBuff: 10
   source: 0
 --- !u!1 &1610616361
 GameObject:
@@ -27892,7 +27919,7 @@ GameObject:
   - component: {fileID: 1616741484}
   - component: {fileID: 1616741483}
   m_Layer: 5
-  m_Name: Blood Upgrade 2 Button
+  m_Name: And So it Spreads Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27996,7 +28023,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7529689032767702000, guid: ea4b2dfe41ce54d40a40b2eb075d61f4, type: 3}
+  m_Sprite: {fileID: -356127887176196462, guid: 66b440b7be8827746bad8eadfcc33eab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -28025,7 +28052,7 @@ GameObject:
   - component: {fileID: 1618381954}
   - component: {fileID: 1618381955}
   m_Layer: 0
-  m_Name: Blood Upgrade 1 Upgrade
+  m_Name: Change in Blood Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -28058,9 +28085,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Blood Upgrade 1
-  upgradeDescription: Adds a special Ingredient to the meal, beginning the conversion.
-    (+Fear, +Prejudice)
+  upgradeName: Change in Blood
+  upgradeDescription: Monsterism begins to spread. It starts with a single drop of
+    blood. (+Fear +Prejudice)
   upgradeCost: 10
   isFirstUpgrade: 1
   prerequisiteUpgrades: []
@@ -29126,7 +29153,7 @@ GameObject:
   - component: {fileID: 1676060869}
   - component: {fileID: 1676060868}
   m_Layer: 5
-  m_Name: Blood Upgrade 1 Button
+  m_Name: Change in Blood Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29230,7 +29257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3086496313150049818, guid: 0c82264947459bc4d94086ed4bc9937a, type: 3}
+  m_Sprite: {fileID: -1812405078941355251, guid: b38588b010dfb6f479a7ff4711bf4a11, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -29929,7 +29956,7 @@ GameObject:
   - component: {fileID: 1737651415}
   - component: {fileID: 1737651414}
   m_Layer: 0
-  m_Name: Psychological Upgrade 6 Upgrade
+  m_Name: Blackouts Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -29947,15 +29974,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Psychological Upgrade 6
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Blackouts
+  upgradeDescription: " Once second, you\u2019re in your house, and the next second
+    you\u2019re at a farm. (+Fear+Notoriety) "
+  upgradeCost: 12
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1429940209}
   isPurchased: 0
-  fearBuff: 0
-  notorietyBuff: 0
+  fearBuff: 22
+  notorietyBuff: 10
   prejudiceBuff: 0
   painBuff: 0
   source: 3
@@ -30217,7 +30245,7 @@ GameObject:
   - component: {fileID: 1748718612}
   - component: {fileID: 1748718611}
   m_Layer: 0
-  m_Name: Physical Upgrades 6 Upgrade
+  m_Name: Rotting Flesh Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -30235,17 +30263,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Physical Upgrades 6
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Rotting Flesh
+  upgradeDescription: 'Their skin looks sicker, with some fragments appearing to
+    be already dead. (+Fear +Notoriety +Pain) '
+  upgradeCost: 10
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1402869876}
   isPurchased: 0
-  fearBuff: 0
-  notorietyBuff: 0
+  fearBuff: 10
+  notorietyBuff: 15
   prejudiceBuff: 0
-  painBuff: 0
+  painBuff: 8
   source: 1
 --- !u!4 &1748718612
 Transform:
@@ -30692,7 +30721,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 652.6974, y: -50}
+  m_AnchoredPosition: {x: 491.83096, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &1769232976
@@ -31301,7 +31330,7 @@ GameObject:
   - component: {fileID: 1809665014}
   - component: {fileID: 1809665013}
   m_Layer: 5
-  m_Name: Blood Upgrade 8 Button
+  m_Name: Iron Scent Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31405,7 +31434,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -7793916823857262821, guid: d21ec2767cfacae45ab6e6495195c76d, type: 3}
+  m_Sprite: {fileID: 2323868332466404556, guid: b078fb1d81354944bb58765fbce10084, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -31606,7 +31635,7 @@ GameObject:
   - component: {fileID: 1813636609}
   - component: {fileID: 1813636610}
   m_Layer: 0
-  m_Name: Blood Upgrade 2 Upgrade
+  m_Name: And So it Spreads Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -31639,15 +31668,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Blood Upgrade 2
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: And So it Spreads
+  upgradeDescription: The people have begun to notice, but its true effects remain
+    unknown (+Fear +Notoriety)
+  upgradeCost: 12
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1618381953}
   isPurchased: 0
-  fearBuff: 0
-  notorietyBuff: 0
+  fearBuff: 12
+  notorietyBuff: 10
   prejudiceBuff: 0
   painBuff: 0
   source: 0
@@ -31843,7 +31873,7 @@ GameObject:
   - component: {fileID: 1826247090}
   - component: {fileID: 1826247089}
   m_Layer: 0
-  m_Name: Behavioral Upgrade 9 Upgrade
+  m_Name: Extreme Torment Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -31861,17 +31891,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Behavioral Upgrade 9
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Extreme Torment
+  upgradeDescription: 'hey torture us, for fun. Is this what we deserve? Is this
+    our punishment?. (+Fear +Pain) '
+  upgradeCost: 20
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 990950448}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 12
   notorietyBuff: 0
   prejudiceBuff: 0
-  painBuff: 0
+  painBuff: 18
   source: 2
 --- !u!4 &1826247090
 Transform:
@@ -32303,7 +32334,7 @@ GameObject:
   - component: {fileID: 1841134375}
   - component: {fileID: 1841134374}
   m_Layer: 0
-  m_Name: Behavioral Upgrade 6 Upgrade
+  m_Name: Midnight Howl Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -32321,16 +32352,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Behavioral Upgrade 6
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Midnight Howl
+  upgradeDescription: The infected scream constantly throughout the night. Are they
+    communicating? (+Fear +Prejudice)
+  upgradeCost: 8
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 200797606}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 8
   notorietyBuff: 0
-  prejudiceBuff: 0
+  prejudiceBuff: 12
   painBuff: 0
   source: 2
 --- !u!4 &1841134375
@@ -32359,7 +32391,7 @@ GameObject:
   - component: {fileID: 1843097503}
   - component: {fileID: 1843097502}
   m_Layer: 0
-  m_Name: Behavioral Upgrade 2 Upgrade
+  m_Name: Missing Cattle Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -32377,16 +32409,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Behavioral Upgrade 2
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Missing Cattle
+  upgradeDescription: "They eat the animals during the dead of night, to nobody\u2019s
+    knowledge\u2026 (+Fear +Prejudice) "
+  upgradeCost: 12
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 227920738}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 12
   notorietyBuff: 0
-  prejudiceBuff: 0
+  prejudiceBuff: 8
   painBuff: 0
   source: 2
 --- !u!4 &1843097503
@@ -32851,7 +32884,7 @@ GameObject:
   - component: {fileID: 1932431497}
   - component: {fileID: 1932431496}
   m_Layer: 5
-  m_Name: Physical Upgrades 6 Button
+  m_Name: Rotting Flesh Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32955,7 +32988,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6310468730023626957, guid: 876ce5e16b58d7a45ab3ed7354f73d09, type: 3}
+  m_Sprite: {fileID: -5582871656294654842, guid: fcadd376352eb7146a76bf947cc7c72f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -33007,7 +33040,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 657.5308, y: -50}
+  m_AnchoredPosition: {x: 496.66434, y: -50}
   m_SizeDelta: {x: 108, y: 54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1934208783
@@ -33360,7 +33393,7 @@ GameObject:
   - component: {fileID: 1948870740}
   - component: {fileID: 1948870739}
   m_Layer: 5
-  m_Name: Behavioral Upgrade 1 Button
+  m_Name: Meat Addiction Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33464,7 +33497,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -996047699758638357, guid: 6bb73a04c9ee4ff45bd326ec7593714c, type: 3}
+  m_Sprite: {fileID: -1550011057625365021, guid: 5d54cc23a576b4e40be9641393f30140, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -34061,7 +34094,7 @@ GameObject:
   - component: {fileID: 1980136514}
   - component: {fileID: 1980136513}
   m_Layer: 5
-  m_Name: Blood Upgrade 6 Button
+  m_Name: Frenzied Prowl Button
   m_TagString: Web
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34165,7 +34198,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2677700672631658167, guid: 5ef1df4c0bf210845aabdf718a2b6687, type: 3}
+  m_Sprite: {fileID: 2522961971762121189, guid: 3e16d57cfadf5ca4789f43e147d1ccd6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -34269,7 +34302,7 @@ GameObject:
   - component: {fileID: 1992673435}
   - component: {fileID: 1992673436}
   m_Layer: 0
-  m_Name: Psychological Upgrade 8 Upgrade
+  m_Name: Unawareness Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -34302,17 +34335,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Psychological Upgrade 8
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Unawareness
+  upgradeDescription: 'Those you knew are completely gone. Only husks remain  (+Fear
+    +Pain) '
+  upgradeCost: 24
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1388488543}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 20
   notorietyBuff: 0
   prejudiceBuff: 0
-  painBuff: 0
+  painBuff: 40
   source: 3
 --- !u!1 &1993246787
 GameObject:
@@ -34395,7 +34429,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 3524942316391234232, guid: 13e2a1c4cd9ce5a41ae9e78bd91e19df, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -34440,7 +34474,7 @@ GameObject:
   - component: {fileID: 1997024560}
   - component: {fileID: 1997024559}
   m_Layer: 0
-  m_Name: Psychological Upgrade 2 Upgrade
+  m_Name: Think You're a Monster? Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -34458,16 +34492,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Psychological Upgrade 2
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Think You're a Monster?
+  upgradeDescription: "The pamphlet says you aren\u2019t a monster. Just unique!.
+    (+Fear -Notoriety -Prejudice) "
+  upgradeCost: 13
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1089898396}
   isPurchased: 0
-  fearBuff: 0
-  notorietyBuff: 0
-  prejudiceBuff: 0
+  fearBuff: 8
+  notorietyBuff: -10
+  prejudiceBuff: -10
   painBuff: 0
   source: 3
 --- !u!4 &1997024560
@@ -34594,7 +34629,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 107.23988, y: -50}
+  m_AnchoredPosition: {x: 128.53285, y: -50}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2002998703
@@ -34649,7 +34684,7 @@ GameObject:
   - component: {fileID: 2007823951}
   - component: {fileID: 2007823950}
   m_Layer: 5
-  m_Name: Psychological Upgrade 5 Button
+  m_Name: Insomnia Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34753,7 +34788,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8587763138038715539, guid: bda082154e26e474c974bec2ccc2d1e3, type: 3}
+  m_Sprite: {fileID: -5575400262139724125, guid: 63c6356cd852e9b4291bd77865640245, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -35728,7 +35763,7 @@ GameObject:
   - component: {fileID: 2072654059}
   - component: {fileID: 2072654058}
   m_Layer: 5
-  m_Name: Behavioral Upgrade 3 Button
+  m_Name: Monster Gathering Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35832,7 +35867,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3263570386267020386, guid: 4b6b5ced638191b4ab9d239b8b0d840f, type: 3}
+  m_Sprite: {fileID: 4507297017501785386, guid: 0a2312f7d99f9a348a08bd554c7b2af7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -35886,7 +35921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1104.3555, y: -50}
+  m_AnchoredPosition: {x: 814.7958, y: -50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2075900136
@@ -36017,7 +36052,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 997.789, y: -50}
+  m_AnchoredPosition: {x: 958.69476, y: -50}
   m_SizeDelta: {x: 130, y: 56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2094159993
@@ -36058,6 +36093,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094159991}
   m_CullTransparentMesh: 1
+--- !u!1001 &2097750310
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 992542318773790284, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
+      propertyPath: m_Name
+      value: SFXManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.1594
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.09258
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
 --- !u!1 &2100063189
 GameObject:
   m_ObjectHideFlags: 0
@@ -36093,7 +36185,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 380, y: -574.28564}
+  m_AnchoredPosition: {x: 251, y: -408.28564}
   m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2100063191
@@ -36236,7 +36328,7 @@ GameObject:
   - component: {fileID: 2125503031}
   - component: {fileID: 2125503030}
   m_Layer: 5
-  m_Name: Behavioral Upgrade 8 Button
+  m_Name: Divine Guidance Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36340,7 +36432,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8256048172488745477, guid: a295ad73b4780da4e8001640a185f094, type: 3}
+  m_Sprite: {fileID: -622331888808401330, guid: 06ef456ce0c2b924298e6659fba35f20, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -36628,7 +36720,7 @@ GameObject:
   - component: {fileID: 2136004437}
   - component: {fileID: 2136004436}
   m_Layer: 0
-  m_Name: Behavioral Upgrade 4 Upgrade
+  m_Name: Hunting Pack Upgrade
   m_TagString: Untagged
   m_Icon: {fileID: 3506167780502562645, guid: df9aec944f4474a04847b6d6375e4138, type: 3}
   m_NavMeshLayer: 0
@@ -36646,16 +36738,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09a104ae8ac7ce4ca0eaeb03f3a9d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeName: Behavioral Upgrade 4
-  upgradeDescription: 
-  upgradeCost: 0
+  upgradeName: Hunting Pack
+  upgradeDescription: ' Breaking News: Another farm, entirely slaughtered. This time
+    there were five of them. (+Fear -Prejudice) '
+  upgradeCost: 30
   isFirstUpgrade: 0
   prerequisiteUpgrades:
   - {fileID: 1398071539}
   isPurchased: 0
-  fearBuff: 0
+  fearBuff: 25
   notorietyBuff: 0
-  prejudiceBuff: 0
+  prejudiceBuff: 10
   painBuff: 0
   source: 2
 --- !u!4 &2136004437
@@ -36874,67 +36967,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5dd4ef8cc1d634469b2dec19ab9445c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1896654585637205105
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 992542318773790284, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
-      propertyPath: m_Name
-      value: SFXManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 3706620404091286512, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
-      propertyPath: MinDistance
-      value: 1.4346046
-      objectReference: {fileID: 0}
-    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 16.11385
-      objectReference: {fileID: 0}
-    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.37155
-      objectReference: {fileID: 0}
-    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7493320159009327241, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6f450c739822cd8498fa8e373ade9b01, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -36955,4 +36987,4 @@ SceneRoots:
   - {fileID: 1063038187}
   - {fileID: 503316578}
   - {fileID: 1132239719}
-  - {fileID: 1896654585637205105}
+  - {fileID: 2097750310}

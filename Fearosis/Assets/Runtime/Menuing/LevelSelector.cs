@@ -9,12 +9,9 @@ public class LevelSelector : MonoBehaviour
     public GameObject buttonsPanel;
 
     public Button normalMode;
+    public Button hardMode;
     public Button infiniteMode;
     public GameObject descriptionBox;
-
-    public Sprite InfiniteIcon;
-    public Sprite LockedInfiniteIcon;
-
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,9 +26,13 @@ public class LevelSelector : MonoBehaviour
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene(this.gameObject.name);
         });
+        /*hardMode.onClick.AddListener(() =>
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(this.gameObject.name + "Hard");
+        });*/
         infiniteMode.onClick.AddListener(() =>
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(this.gameObject.name + " Infinite");
+            UnityEngine.SceneManagement.SceneManager.LoadScene(this.gameObject.name + "Impossible");
         });
     }
 
