@@ -35,7 +35,14 @@ public class LevelSelectorInitializer : MonoBehaviour
         saveFilePath = Path.Combine(Application.persistentDataPath, "savefile.dat");
         shopDataPath = Path.Combine(Application.persistentDataPath, "shopdata.dat");
         serializeProtection =  gameObject.AddComponent<SerializeProtection>();
-        infiniteModePanels = FindObjectsByType<ShopItem>(FindObjectsSortMode.None);
+       foreach (ShopItem panel in FindObjectsByType<ShopItem>(FindObjectsSortMode.None))
+        {
+            if (panel.name == "Infinite Mode")
+            {
+                Array.Resize(ref infiniteModePanels, infiniteModePanels == null ? 1 : infiniteModePanels.Length + 1);
+                infiniteModePanels[infiniteModePanels.Length - 1] = panel;
+            }
+        }
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
