@@ -4,6 +4,8 @@ using System.Collections.Generic;
 [MemoryPackable]
 public partial class SaveData
 {
+    public string sceneName;
+    
     public int influencePoints;
 
     public int infected;

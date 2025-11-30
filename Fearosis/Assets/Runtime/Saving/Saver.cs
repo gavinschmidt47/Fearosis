@@ -4,6 +4,7 @@ using UnityEngine.Events;
 
 public class Saver : MonoBehaviour
 {
+    public string sceneName;
 
     private Influence influenceScript;
     private int influencePoints;
@@ -109,6 +110,8 @@ public class Saver : MonoBehaviour
 
         SaveData saveData = new SaveData();
 
+        saveData.sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        
         saveData.influencePoints = influencePoints;
         saveData.infected = infected;
         saveData.population = population;

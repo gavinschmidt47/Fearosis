@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
+using MemoryPack;
 
 public class ShopUIManager : MonoBehaviour
 {
-    //public CloudSave cloudSaver;
     //Buttons for sake of enable/disable
     public Button Upgrade1Button;
     public Button Upgrade2Button;
@@ -36,18 +37,55 @@ public class ShopUIManager : MonoBehaviour
     public bool hasTheme1;
     public bool hasTheme2;
 
+    private string shopDataPath;
+    private ShopData shopData;
+
+    private SerializeProtection serializeProtection;
+    private string encryptionKey = "01142003";
+
     void Start()
     {
-        //if (no save data){
+        serializeProtection =  gameObject.AddComponent<SerializeProtection>();
+        shopDataPath = Path.Combine(Application.persistentDataPath, "shopdata.dat");
+        if (!File.Exists(shopDataPath)){
             hasUpgrade1 = false;
             hasUpgrade2 = false;
             hasMonster1 = false;
             hasMonster2 = false;
             hasTheme1 = false;
             hasTheme2 = false;
-        //}
+
+            shopData = new ShopData();
+            
+            SaveShopData();
+        }
+        else
+        {
+            byte[] shopDataBytes = File.ReadAllBytes(shopDataPath);
+            shopData = MemoryPackSerializer.Deserialize<ShopData>(shopDataBytes);
+
+            hasUpgrade1 = shopData.purchasedModes.Contains(serializeProtection.Protect("FastStart" + encryptionKey));
+            hasUpgrade2 = shopData.purchasedModes.Contains(serializeProtection.Protect("InfiniteMode" + encryptionKey));
+            hasMonster1 = shopData.purchasedMonsters.Contains(serializeProtection.Protect("Skinwalker" + encryptionKey));
+            hasMonster2 = shopData.purchasedMonsters.Contains(serializeProtection.Protect("GoodAI" + encryptionKey));
+            hasTheme1 = shopData.purchasedThemes.Contains(serializeProtection.Protect("HalloweenTheme" + encryptionKey));
+            hasTheme2 = shopData.purchasedThemes.Contains(serializeProtection.Protect("ChristmasTheme" + encryptionKey));
+
+            Upgrade1Button.interactable = !hasUpgrade1;
+            Upgrade2Button.interactable = !hasUpgrade2;
+            Monster1Button.interactable = !hasMonster1;
+            Monster2Button.interactable = !hasMonster2;
+            Theme1Button.interactable = !hasTheme1;
+            Theme2Button.interactable = !hasTheme2;
+        }
+
     }
-    
+
+    private void SaveShopData()
+    {
+        byte[] bytes = MemoryPackSerializer.Serialize(shopData);
+        File.WriteAllBytes(shopDataPath, bytes);
+    }    
 
     public void ShowUpgrade1Panel()
     {
@@ -62,7 +100,6 @@ public class ShopUIManager : MonoBehaviour
     public void ShowMonster1Panel()
     {
         Monster1Panel.SetActive(true);
-        hasUpgrade1 = false;
     }
 
     public void ShowMonster2Panel()
@@ -106,7 +143,8 @@ public class ShopUIManager : MonoBehaviour
     {
         hasUpgrade1 = true;
         Upgrade1Button.interactable = false;
-        //cloudSaver.SaveData();
+        shopData.purchasedModes.Add(serializeProtection.Protect("FastStart" + encryptionKey));
+        SaveShopData();
     }
 
     public void OpenUpgrade2ConfirmPanel()
@@ -118,6 +156,8 @@ public class ShopUIManager : MonoBehaviour
     {
         hasUpgrade2 = true;
         Upgrade2Button.interactable = false;
+        shopData.purchasedModes.Add(serializeProtection.Protect("InfiniteMode" + encryptionKey));
+        SaveShopData();
     }
 
     public void OpenMonster1ConfirmPanel()
@@ -129,6 +169,8 @@ public class ShopUIManager : MonoBehaviour
     {
         hasMonster1 = true;
         Monster1Button.interactable = false;
+        shopData.purchasedMonsters.Add(serializeProtection.Protect("GoodAI" + encryptionKey));
+        SaveShopData();
     }
 
     public void OpenMonster2ConfirmPanel()
@@ -140,6 +182,8 @@ public class ShopUIManager : MonoBehaviour
     {
         hasMonster2 = true;
         Monster2Button.interactable = false;
+        shopData.purchasedMonsters.Add(serializeProtection.Protect("Skinwalker" + encryptionKey));
+        SaveShopData();
     }
 
     public void OpenTheme1ConfirmPanel()
@@ -151,6 +195,8 @@ public class ShopUIManager : MonoBehaviour
     {
         hasTheme1 = true;
         Theme1Button.interactable = false;
+        shopData.purchasedThemes.Add(serializeProtection.Protect("HalloweenTheme" + encryptionKey));
+        SaveShopData();
     }
 
     public void OpenTheme2ConfirmPanel()
@@ -162,8 +208,7 @@ public class ShopUIManager : MonoBehaviour
     {
         hasTheme2 = true;
         Theme2Button.interactable = false;
+        shopData.purchasedThemes.Add(serializeProtection.Protect("ChristmasTheme" + encryptionKey));
+        SaveShopData();
     }
-
-
-
 }
