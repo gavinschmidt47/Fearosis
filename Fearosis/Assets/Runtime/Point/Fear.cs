@@ -25,6 +25,12 @@ public class Fear : Point
         SendPrejudice(pointsToGain, source);
     }
 
+    public void GainPointsNoSend(int pointsToGain, string source)
+    {
+        //Gain points without sending to other stats
+        base.GainPoints(pointsToGain, source);
+    }
+
     //Send a portion of Fear points to Notoriety
     private void SendNotoriety(int pointsFromFear, string source)
     {

@@ -1,14 +1,20 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using System;
 
 public class Event : MonoBehaviour
-{
-    //Necessary event info
-    [SerializeField]
-    private string eventName;
+{   
+    [Header("Event Properties")]
+    public string eventName;
     [SerializeField]
     private string eventDescription;
     [SerializeField]
     private float modBuff;
+    //[SerializeField]
+    //private Sprite eventSprite;
+    [SerializeField]
+    private int minRound;
 
     //Does the event target a specific source or stat. Both will target a specific stat from a specific source
     [HideInInspector]
@@ -44,19 +50,25 @@ public class Event : MonoBehaviour
     private Notoriety notorietyScript;
     private Prejudice prejudiceScript;
     private Pain painScript;
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         //Get references to stat scripts
-        fearScript = Object.FindAnyObjectByType<Fear>();
-        notorietyScript = Object.FindAnyObjectByType<Notoriety>();
-        prejudiceScript = Object.FindAnyObjectByType<Prejudice>();
-        painScript = Object.FindAnyObjectByType<Pain>();
+        fearScript = GameObject.FindAnyObjectByType<Fear>();
+        notorietyScript = GameObject.FindAnyObjectByType<Notoriety>();
+        prejudiceScript = GameObject.FindAnyObjectByType<Prejudice>();
+        painScript = GameObject.FindAnyObjectByType<Pain>();
+    }
+    
+    public bool CanEventTrigger(int currentRound)
+    {
+        //Check if the event can trigger based on the current round
+        return currentRound >= minRound;
     }
 
     // Update is called once per frame
-    public void ApplyEvent()
+    public void ApplyEvent(Action<string, string/*, Sprite*/> callback)
     {
         //Apply stat modifier from specific source to specific stat
         if (targetsStats && targetsSource)
@@ -136,5 +148,7 @@ public class Event : MonoBehaviour
                     break;
             }
         }
+
+        callback(eventName, eventDescription/*, eventSprite*/);
     }
 }

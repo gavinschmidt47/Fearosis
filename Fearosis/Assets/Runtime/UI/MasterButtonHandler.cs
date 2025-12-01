@@ -38,6 +38,8 @@ public class MasterButtonHandler : MonoBehaviour
         psychologicalScreen.SetActive(false);
         statsScreen.SetActive(false);
         optionsScreen.SetActive(false);
+
+        expandedMonsterButton.SetActive(false);
     }
     public void OpenPhysicalScreen()
     {
@@ -47,6 +49,8 @@ public class MasterButtonHandler : MonoBehaviour
         psychologicalScreen.SetActive(false);
         statsScreen.SetActive(false);
         optionsScreen.SetActive(false);
+
+        expandedMonsterButton.SetActive(false);
     }
     public void OpenBehaviorScreen()
     {
@@ -56,6 +60,8 @@ public class MasterButtonHandler : MonoBehaviour
         psychologicalScreen.SetActive(false);
         statsScreen.SetActive(false);
         optionsScreen.SetActive(false);
+
+        expandedMonsterButton.SetActive(false);
     }
     public void OpenPsychologicalScreen()
     {
@@ -65,6 +71,8 @@ public class MasterButtonHandler : MonoBehaviour
         psychologicalScreen.SetActive(true);
         statsScreen.SetActive(false);
         optionsScreen.SetActive(false);
+
+        expandedMonsterButton.SetActive(false);
     }
 
     public void OpenStatsScreen()
@@ -75,6 +83,8 @@ public class MasterButtonHandler : MonoBehaviour
         psychologicalScreen.SetActive(false);
         statsScreen.SetActive(true);
         optionsScreen.SetActive(false);
+
+        ExpandMonsterButton();
     }
 
     public void OpenOptionsScreen()
@@ -84,7 +94,9 @@ public class MasterButtonHandler : MonoBehaviour
         behaviorScreen.SetActive(false);
         psychologicalScreen.SetActive(false);
         statsScreen.SetActive(false);
-        optionsScreen.SetActive(true);
+        optionsScreen.SetActive(true);  
+
+        ExpandMonsterButton();
     }
 
     public void CloseAllScreens()
@@ -95,5 +107,7 @@ public class MasterButtonHandler : MonoBehaviour
         psychologicalScreen.SetActive(false);
         statsScreen.SetActive(false);
         optionsScreen.SetActive(false);
+
+        ExpandMonsterButton();
     }
 }

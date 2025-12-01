@@ -4,22 +4,23 @@ using UnityEngine.Events;
 public class DayHandler : MonoBehaviour
 {
     //Infection rate modifier
-    [SerializeField]
-    private float infectionRate = 1.0f;
-    [SerializeField]
-    private float populationInfluenceModifier = 1.0f;
+    public float infectionRate;
+    public float populationInfluenceModifier;
+    public int hunterThreshold;
+    public int huntersPerThreshold;
+    public int painThreshold;
 
     //References to other scripts
-    private Infection infectionScript;
     private Fear fearScript;
     private Notoriety notorietyScript;
     private Prejudice prejudiceScript;
     private Pain painScript;
     private Influence influenceScript;
+    private FullGameStats fullGameStatsScript;
 
     //Day-specific variables
-    private int numInfectedToGain;
-    private int numInfluenceToGain;
+    public int numInfectedToGain;
+    public int numInfluenceToGain;
 
     //Unity event on day start
     public UnityEvent dayStartEvent = new UnityEvent();
@@ -27,12 +28,12 @@ public class DayHandler : MonoBehaviour
     public void Start()
     {
         //Initialize references and variables
-        infectionScript = FindAnyObjectByType<Infection>();
         fearScript = FindAnyObjectByType<Fear>();
         notorietyScript = FindAnyObjectByType<Notoriety>();
         prejudiceScript = FindAnyObjectByType<Prejudice>();
         painScript = FindAnyObjectByType<Pain>();
         influenceScript = FindAnyObjectByType<Influence>();
+        fullGameStatsScript = FindAnyObjectByType<FullGameStats>();
         numInfectedToGain = 0;
     }
 
@@ -42,24 +43,37 @@ public class DayHandler : MonoBehaviour
         int numFear = fearScript.GetTotalPoints();
         int numNotoriety = notorietyScript.GetTotalPoints();
         int numPrejudice = prejudiceScript.GetTotalPoints();
+        int numPain = painScript.GetTotalPoints();
         int instability = Mathf.Abs(numNotoriety - numPrejudice);
 
         //Calculate new infections
-        numInfectedToGain += Mathf.RoundToInt(numFear + Random.Range(numFear - instability, numFear + instability) * infectionRate);
+        numInfectedToGain += Mathf.RoundToInt(numFear + Random.Range(Mathf.Max(numFear - instability, 0), numFear + instability) * infectionRate);
 
-        //Update infection script
-        infectionScript.AddInfected(numInfectedToGain);
+        //Update full game stats script
+        Debug.Log($"Infected to gain: {numInfectedToGain}");
+        fullGameStatsScript.AddInfected(numInfectedToGain);
+
+        //Calculate hunter kills
+        fullGameStatsScript.KillInfected(fullGameStatsScript.hunters);
+
+        //Calculate pain kills
+        if (numPain >= painThreshold)
+        {
+            fullGameStatsScript.KillInfected(numPain - painThreshold);
+        }
 
         //Influence logic
-        int numPain = painScript.GetTotalPoints();
-        int populationModifiedInfectionInfluence = Mathf.RoundToInt(numInfectedToGain / populationInfluenceModifier);
-        // Ensure at least 1 influence is gained
-        if (populationModifiedInfectionInfluence < 1)
+        int populationModifiedInfectionInfluence = Mathf.Max(Mathf.RoundToInt(numInfectedToGain / populationInfluenceModifier), 1);
+        Debug.Log($"Population modified infection influence: {populationModifiedInfectionInfluence}");
+        numInfluenceToGain = Mathf.Max(Mathf.RoundToInt(numPain*.67f + populationModifiedInfectionInfluence + Mathf.Max(numNotoriety*.50f, 1)), 5);
+        influenceScript.influencePoints += numInfluenceToGain;
+
+        //Hunter logic
+        if (instability > hunterThreshold)
         {
-            populationModifiedInfectionInfluence = 1;
+            int numHuntersToAdd = instability * huntersPerThreshold;
+            fullGameStatsScript.hunters += numHuntersToAdd;
         }
-        numInfluenceToGain = Mathf.RoundToInt(numPain * (numInfectedToGain / populationInfluenceModifier) * numNotoriety);
-        influenceScript.AddInfluence(numInfluenceToGain);
 
         //Call day start event
         dayStartEvent.Invoke();

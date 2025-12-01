@@ -3,7 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - Event Panel
+  - Event Name
+  - Event Description
+  - Event Image
+  - Map
+  - Obstacle
+  - DayCharacter
+  - NightCharacter
+  - Master
+  - Music
+  - SFX
+  - TargetZone
+  - Web
+  - BobCharacter
   layers:
   - Default
   - TransparentFX
@@ -40,6 +54,12 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Map
+    uniqueID: 1166171435
+    locked: 0
+  - name: Character
+    uniqueID: 1283895107
     locked: 0
   m_RenderingLayers:
   - Default

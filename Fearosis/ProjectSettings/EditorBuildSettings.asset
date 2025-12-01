@@ -5,12 +5,63 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Main.unity
-    guid: 8a8fde3bc107a5d44ad643ced9e2d323
+    path: Assets/Scenes/SplashScene.unity
+    guid: a4d95c3fafbb94244a6e408855ae9203
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 350f237c93607f744853862735a11621
+  - enabled: 1
+    path: Assets/Scenes/LevelSelect.unity
+    guid: 4524eeecade282842ad7cfde37e580f0
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: 7c3293a73df511d4f89e392a91293e22
+  - enabled: 1
+    path: Assets/Scenes/Monster/Monster.unity
+    guid: 82cbe4d09a280be4e8b25ed945187e21
+  - enabled: 1
+    path: Assets/Scenes/Monster/MonsterHard.unity
+    guid: 19a843d33991a4b4a94a57ed623237dc
+  - enabled: 1
+    path: Assets/Scenes/Monster/MonsterImpossible.unity
+    guid: d24440ea8f7e57b49a1b31dfc35f534e
+  - enabled: 1
+    path: Assets/Scenes/Cult/Cult.unity
+    guid: 4ecc1794c2a984341b979d480e239418
+  - enabled: 1
+    path: Assets/Scenes/Cult/CultHard.unity
+    guid: 75fb2109faab65e40b6a3ae19fef710f
+  - enabled: 1
+    path: Assets/Scenes/Cult/CultImpossible.unity
+    guid: f5b1766668572b946a0a702f583fa50c
+  - enabled: 1
+    path: Assets/Scenes/AI/AI.unity
+    guid: 3916bfdc4f76c794eb1fd5e2d73582e5
+  - enabled: 1
+    path: Assets/Scenes/AI/AIHard.unity
+    guid: 3803b25697f74c64ca061161ec4d2c03
+  - enabled: 1
+    path: Assets/Scenes/AI/AIImpossible.unity
+    guid: f7e7deacc7c127042b641dd790d294b6
+  - enabled: 1
+    path: Assets/Scenes/Skinwalker/Skinwalker.unity
+    guid: 913e75e37815de54ca6a8fd15119cd67
+  - enabled: 1
+    path: Assets/Scenes/Skinwalker/SkinwalkerHard.unity
+    guid: eff66366ffcfdf149af08b3b6000754d
+  - enabled: 1
+    path: Assets/Scenes/Skinwalker/SkinwalkerImpossible.unity
+    guid: 50f96e8a3ecb71b409fea8e8ee46849a
+  - enabled: 1
+    path: Assets/Scenes/GoodAI/GoodAI.unity
+    guid: 886e7d04de85a98428b3b3ca7f1bd3ef
+  - enabled: 1
+    path: Assets/Scenes/GoodAI/GoodAIHard.unity
+    guid: 0bd73eb7fd9e9eb479d2a62bc5919d1d
+  - enabled: 1
+    path: Assets/Scenes/GoodAI/GoodAIImpossible.unity
+    guid: fd2ffd20ee2d5e14eaa3d9f72c9b7d32
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

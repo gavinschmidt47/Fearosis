@@ -1,0 +1,76 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+
+public class Character : MonoBehaviour
+{
+    public float speed = 2f;
+    public float minWaitTime = 2f;
+    public float maxWaitTime = 5f;
+    public float arrivalThreshold = 0.1f;
+
+    private Rigidbody2D rb;
+    [HideInInspector]
+    public SpriteRenderer spriteRenderer;
+    [HideInInspector]
+    public Animator animator;
+    private AStar aStar;
+    public event UnityAction reachDestinationEvent;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    protected virtual void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        aStar = GetComponent<AStar>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
+    }
+
+    public void OnDisable()
+    {
+        StopAllCoroutines();
+    }
+
+    //Pick a random destination from the list and start moving towards it
+    public IEnumerator ChooseRandomDestination(Node startNode, Node targetNode)
+    {
+        //Find path using A* algorithm
+        List<Node> path = aStar.FindPath(startNode, targetNode);
+        if (path != null && path.Count > 1)
+        {
+            StartCoroutine(FollowPath(path));
+        }
+        else
+        {
+            Debug.Log("No valid path found for character at: " + transform.position + " with " + (path != null ? " Nodes: " + path.Count : "null target"));
+            reachDestinationEvent?.Invoke();
+        }
+        yield return null;
+    }
+
+    //Moves the character towards the next point in the path
+    public void MoveTo(Vector2 nextPoint)
+    {
+        Vector2 direction = (nextPoint - rb.position).normalized;
+        animator.SetFloat("X", direction.x);
+        animator.SetFloat("Y", direction.y);
+        rb.MovePosition(rb.position + direction * speed * Time.fixedDeltaTime);
+    }
+
+    //Follows the calculated path to the destination
+    private IEnumerator FollowPath(List<Node> path)
+    {
+        //Goes point by point in the path
+        foreach (var node in path)
+        {
+            //Each fixed update, move towards the next node until close enough
+            while ((rb.position - node.worldPosition).magnitude > arrivalThreshold)
+            {
+                MoveTo(node.worldPosition);
+                yield return new WaitForFixedUpdate();
+            }
+        }
+        reachDestinationEvent?.Invoke();
+        yield return null;
+    }
+}

@@ -4,25 +4,28 @@ using TMPro;
 
 public class StatUIHandler : MonoBehaviour
 {
-    //Sliders to show stats (Will likely be replaced)
+    //UI Text elements for stats
     [SerializeField]
-    private Slider fearSlider;
+    private TextMeshProUGUI populationText;
     [SerializeField]
-    private Slider notorietySlider;
+    private TextMeshProUGUI infectedText;
     [SerializeField]
-    private Slider prejudiceSlider;
+    private TextMeshProUGUI deadText;
     [SerializeField]
-    private Slider painSlider;
+    private TextMeshProUGUI fearText;
     [SerializeField]
-    private TextMeshProUGUI infectionText;
-
-
+    private TextMeshProUGUI notorietyText;
+    [SerializeField]
+    private TextMeshProUGUI prejudiceText;
+    [SerializeField]
+    private TextMeshProUGUI painText;
+    
     //Stat objects
     private Fear fear;
     private Notoriety notoriety;
     private Prejudice prejudice;
     private Pain pain;
-    private Infection infection;
+    private FullGameStats fullGameStatsScript;
 
     private void Awake()
     {
@@ -31,19 +34,23 @@ public class StatUIHandler : MonoBehaviour
         notoriety = FindAnyObjectByType<Notoriety>();
         prejudice = FindAnyObjectByType<Prejudice>();
         pain = FindAnyObjectByType<Pain>();
-        infection = FindAnyObjectByType<Infection>();
+        fullGameStatsScript = FindAnyObjectByType<FullGameStats>();
     }
 
 
     private void OnEnable()
     {
-        //Set the sliders to current points
-        fearSlider.value = fear.GetTotalPoints();
-        notorietySlider.value = notoriety.GetTotalPoints();
-        prejudiceSlider.value = prejudice.GetTotalPoints();
-        painSlider.value = pain.GetTotalPoints();
+        //Set population text
+        populationText.text = fullGameStatsScript.population.ToString();
+        //Set infected text
+        infectedText.text = $"{fullGameStatsScript.infected} / {fullGameStatsScript.population}";
+        //Set dead text
+        deadText.text = fullGameStatsScript.dead.ToString();
+        //Set the text to current points
+        fearText.text = fear.GetTotalPoints().ToString();
+        notorietyText.text = notoriety.GetTotalPoints().ToString();
+        prejudiceText.text = prejudice.GetTotalPoints().ToString();
+        painText.text = pain.GetTotalPoints().ToString();
 
-        //Set infection text
-        infectionText.text = $"{infection.infected} / {infection.population}";
     }
 }

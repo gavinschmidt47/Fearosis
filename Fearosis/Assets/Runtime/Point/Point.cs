@@ -4,24 +4,26 @@ using UnityEngine.Events;
 public class Point : MonoBehaviour
 {
     //Total of all points
-    private int numPointsTotal = 0;
+    public int numPointsTotal;
     //Starting points from defining trait
-    private int numPointsStart = 0;
+    public int numPointsStart;
+
+    //Points gained today
+    public int numPointsGainedToday;
 
     //Points from modifiable sources
-    private int numPointsFromBlood = 0;
-    private int numPointsFromPhysical = 0;
-    private int numPointsFromBehavior = 0;
-    private int numPointsFromPsychological = 0;
+    public int numPointsFromBlood;
+    public int numPointsFromPhysical;
+    public int numPointsFromBehavior;
+    public int numPointsFromPsychological;
 
     //Event modifiers
-    private float eventStatModifier = 1.0f;
+    public float eventStatModifier;
+    public float eventBloodModifier;
+    public float eventPhysicalModifier;
+    public float eventBehaviorModifier;
+    public float eventPsychologicalModifier;
 
-    private float eventBloodModifier = 1.0f;
-    private float eventPhysicalModifier = 1.0f;
-    private float eventBehaviorModifier = 1.0f;
-    private float eventPsychologicalModifier = 1.0f;
-    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,31 +32,40 @@ public class Point : MonoBehaviour
         numPointsFromBehavior = 0;
         numPointsFromPsychological = 0;
 
+        eventStatModifier = 1.0f;
+        eventBloodModifier = 1.0f;
+        eventPhysicalModifier = 1.0f;
+        eventBehaviorModifier = 1.0f;
+        eventPsychologicalModifier = 1.0f;
+
         numPointsTotal = numPointsStart;
     }
 
-    
-
     public virtual void GainPoints(int pointsToGain, string source)
     {
-        //Add to source-specific points
-        switch (source)
+        numPointsGainedToday += pointsToGain;
+
+        if (pointsToGain >= 0)
         {
-            case "Blood":
-                numPointsFromBlood += pointsToGain;
-                break;
-            case "Physical":
-                numPointsFromPhysical += pointsToGain;
-                break;
-            case "Behavior":
-                numPointsFromBehavior += pointsToGain;
-                break;
-            case "Psychological":
-                numPointsFromPsychological += pointsToGain;
-                break;
-            default:
-                Debug.Log("Error: Invalid source for points.");
-                break;
+            //Add to source-specific points
+            switch (source)
+            {
+                case "Blood":
+                    numPointsFromBlood += pointsToGain;
+                    break;
+                case "Physical":
+                    numPointsFromPhysical += pointsToGain;
+                    break;
+                case "Behavior":
+                    numPointsFromBehavior += pointsToGain;
+                    break;
+                case "Psychological":
+                    numPointsFromPsychological += pointsToGain;
+                    break;
+                default:
+                    Debug.Log("Error: Invalid source for points.");
+                    break;
+            }
         }
     }
 
@@ -98,5 +109,15 @@ public class Point : MonoBehaviour
     public int GetModifiedPoints(int basePoints, float modifier)
     {
         return Mathf.RoundToInt(basePoints * modifier);
+    }
+
+    public int GetPointsGainedToday()
+    {
+        return numPointsGainedToday;
+    }
+    
+    public void ErasePointsGainedToday()
+    {
+        numPointsGainedToday = 0;
     }
 }

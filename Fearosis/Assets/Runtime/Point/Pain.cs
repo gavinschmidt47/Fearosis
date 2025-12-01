@@ -21,6 +21,6 @@ public class Pain : Point
     //Send a portion of Fear points to Notoriety
     private void SendFear(int pointsFromPain, string source)
     {
-        fear.GainPoints(GetModifiedPoints(pointsFromPain, fearModifier), source);
+        fear.GainPointsNoSend(GetModifiedPoints(pointsFromPain, fearModifier), source);
     }
 }
