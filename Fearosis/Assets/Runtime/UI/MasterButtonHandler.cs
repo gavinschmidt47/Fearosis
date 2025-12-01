@@ -25,6 +25,15 @@ public class MasterButtonHandler : MonoBehaviour
     [SerializeField]
     private GameObject optionsScreen;
 
+    private CameraPanningControls cameraPanningControls;
+    private CameraZoomControls cameraZoomControls;
+
+    private void Start()
+    {
+        cameraPanningControls = FindAnyObjectByType<CameraPanningControls>();
+        cameraZoomControls = FindAnyObjectByType<CameraZoomControls>();
+    }
+
     public void ExpandMonsterButton()
     {
         expandedMonsterButton.SetActive(!expandedMonsterButton.activeSelf);
@@ -95,6 +104,16 @@ public class MasterButtonHandler : MonoBehaviour
         psychologicalScreen.SetActive(false);
         statsScreen.SetActive(false);
         optionsScreen.SetActive(true);  
+
+        cameraPanningControls.enabled = false;
+        cameraZoomControls.enabled = false;
+        optionsScreen.GetComponent<AudioManager>().onScreenDisable = null;
+
+            optionsScreen.GetComponent<AudioManager>().onScreenDisable += () => 
+            {
+                cameraPanningControls.enabled = true;
+                cameraZoomControls.enabled = true;
+            };
 
         ExpandMonsterButton();
     }
