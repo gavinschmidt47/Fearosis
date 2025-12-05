@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 0578ebeb438a7f24fbf1d86c9f318ced
+guid: 713b415ea9a99c646ac09e4f239ccf34
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1710752060389482855
-    second: human 2 full sprite sheet v2_0
+      213: -7964894226907403838
+    second: human 1 full sprite sheet_0
   - first:
-      213: 5398864581474494039
-    second: human 2 full sprite sheet v2_1
+      213: -3367577323132526717
+    second: human 1 full sprite sheet_1
   - first:
-      213: 9143816780249293436
-    second: human 2 full sprite sheet v2_2
+      213: 1558564046170449760
+    second: human 1 full sprite sheet_2
   - first:
-      213: -4849094186918190385
-    second: human 2 full sprite sheet v2_3
+      213: -5418293777559691693
+    second: human 1 full sprite sheet_3
   - first:
-      213: -5402918264274856965
-    second: human 2 full sprite sheet v2_4
+      213: 5479842855375720046
+    second: human 1 full sprite sheet_4
   - first:
-      213: 3015573204926685035
-    second: human 2 full sprite sheet v2_5
+      213: 4811074611175210516
+    second: human 1 full sprite sheet_5
   - first:
-      213: -3645336799286262100
-    second: human 2 full sprite sheet v2_6
+      213: -3971977506232981431
+    second: human 1 full sprite sheet_6
   - first:
-      213: 8688041399116784047
-    second: human 2 full sprite sheet v2_7
+      213: -9035489558032849615
+    second: human 1 full sprite sheet_7
   - first:
-      213: 4342951247628277214
-    second: human 2 full sprite sheet v2_8
+      213: 2582380819640354720
+    second: human 1 full sprite sheet_8
   - first:
-      213: 2778371629808333145
-    second: human 2 full sprite sheet v2_9
+      213: -2393916709262689681
+    second: human 1 full sprite sheet_9
   - first:
-      213: -1857386598665301778
-    second: human 2 full sprite sheet v2_10
+      213: -8107174100920312615
+    second: human 1 full sprite sheet_10
   - first:
-      213: -220095955634700119
-    second: human 2 full sprite sheet v2_11
+      213: -7649629639923137941
+    second: human 1 full sprite sheet_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -142,11 +142,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: human 2 full sprite sheet v2_0
+      name: human 1 full sprite sheet_0
       rect:
         serializedVersion: 2
         x: 4
@@ -161,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 99e97b5a0103248e0800000000000000
-      internalID: -1710752060389482855
+      spriteID: 2c9ef9386e2077190800000000000000
+      internalID: -7964894226907403838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human 2 full sprite sheet v2_1
+      name: human 1 full sprite sheet_1
       rect:
         serializedVersion: 2
         x: 37
@@ -183,14 +196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 756a9318bbe9cea40800000000000000
-      internalID: 5398864581474494039
+      spriteID: 38f560d4446f341d0800000000000000
+      internalID: -3367577323132526717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human 2 full sprite sheet v2_2
+      name: human 1 full sprite sheet_2
       rect:
         serializedVersion: 2
         x: 68
@@ -205,14 +218,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c72e3066aec55ee70800000000000000
-      internalID: 9143816780249293436
+      spriteID: 0676fab0eb121a510800000000000000
+      internalID: 1558564046170449760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human 2 full sprite sheet v2_3
+      name: human 1 full sprite sheet_3
       rect:
         serializedVersion: 2
         x: 101
@@ -227,19 +240,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fc26452578e84bcb0800000000000000
-      internalID: -4849094186918190385
+      spriteID: 35e58d3448a5ec4b0800000000000000
+      internalID: -5418293777559691693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human 2 full sprite sheet v2_4
+      name: human 1 full sprite sheet_4
       rect:
         serializedVersion: 2
-        x: 8
+        x: 7
         y: 37
-        width: 19
+        width: 17
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -249,19 +262,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf35d6be67af405b0800000000000000
-      internalID: -5402918264274856965
+      spriteID: e6ec1a32b005c0c40800000000000000
+      internalID: 5479842855375720046
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human 2 full sprite sheet v2_5
+      name: human 1 full sprite sheet_5
       rect:
         serializedVersion: 2
-        x: 40
+        x: 39
         y: 37
-        width: 19
+        width: 17
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -271,19 +284,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b6f57d94ad779d920800000000000000
-      internalID: 3015573204926685035
+      spriteID: 41ebff26ede54c240800000000000000
+      internalID: 4811074611175210516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human 2 full sprite sheet v2_6
+      name: human 1 full sprite sheet_6
       rect:
         serializedVersion: 2
-        x: 72
+        x: 71
         y: 37
-        width: 19
+        width: 17
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -293,19 +306,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca602efae79296dc0800000000000000
-      internalID: -3645336799286262100
+      spriteID: 9482425a083b0e8c0800000000000000
+      internalID: -3971977506232981431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human 2 full sprite sheet v2_7
+      name: human 1 full sprite sheet_7
       rect:
         serializedVersion: 2
-        x: 104
+        x: 103
         y: 37
-        width: 19
+        width: 17
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -315,17 +328,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fa16e3c0f9f129870800000000000000
-      internalID: 8688041399116784047
+      spriteID: 13563b97e1e7b9280800000000000000
+      internalID: -9035489558032849615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human 2 full sprite sheet v2_8
+      name: human 1 full sprite sheet_8
       rect:
         serializedVersion: 2
-        x: 5
+        x: 7
+        y: 5
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a702756ca576d320800000000000000
+      internalID: 2582380819640354720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human 1 full sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 36
         y: 5
         width: 23
         height: 25
@@ -337,19 +372,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed519b75623454c30800000000000000
-      internalID: 4342951247628277214
+      spriteID: f6a768abf6917ced0800000000000000
+      internalID: -2393916709262689681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human 2 full sprite sheet v2_9
+      name: human 1 full sprite sheet_10
       rect:
         serializedVersion: 2
-        x: 40
+        x: 71
         y: 5
-        width: 19
+        width: 17
         height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -359,17 +394,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 951bfb0e642ce8620800000000000000
-      internalID: 2778371629808333145
+      spriteID: 9dcd56edb188d7f80800000000000000
+      internalID: -8107174100920312615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human 2 full sprite sheet v2_10
+      name: human 1 full sprite sheet_11
       rect:
         serializedVersion: 2
-        x: 69
+        x: 100
         y: 5
         width: 23
         height: 25
@@ -381,30 +416,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ee0dbf7babc3936e0800000000000000
-      internalID: -1857386598665301778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: human 2 full sprite sheet v2_11
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 5
-        width: 19
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a0c4ebf4ef02fcf0800000000000000
-      internalID: -220095955634700119
+      spriteID: b6205193f5e07d590800000000000000
+      internalID: -7649629639923137941
       vertices: []
       indices: 
       edges: []
@@ -423,18 +436,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      human 2 full sprite sheet v2_0: -1710752060389482855
-      human 2 full sprite sheet v2_1: 5398864581474494039
-      human 2 full sprite sheet v2_10: -1857386598665301778
-      human 2 full sprite sheet v2_11: -220095955634700119
-      human 2 full sprite sheet v2_2: 9143816780249293436
-      human 2 full sprite sheet v2_3: -4849094186918190385
-      human 2 full sprite sheet v2_4: -5402918264274856965
-      human 2 full sprite sheet v2_5: 3015573204926685035
-      human 2 full sprite sheet v2_6: -3645336799286262100
-      human 2 full sprite sheet v2_7: 8688041399116784047
-      human 2 full sprite sheet v2_8: 4342951247628277214
-      human 2 full sprite sheet v2_9: 2778371629808333145
+      human 1 full sprite sheet_0: -7964894226907403838
+      human 1 full sprite sheet_1: -3367577323132526717
+      human 1 full sprite sheet_10: -8107174100920312615
+      human 1 full sprite sheet_11: -7649629639923137941
+      human 1 full sprite sheet_2: 1558564046170449760
+      human 1 full sprite sheet_3: -5418293777559691693
+      human 1 full sprite sheet_4: 5479842855375720046
+      human 1 full sprite sheet_5: 4811074611175210516
+      human 1 full sprite sheet_6: -3971977506232981431
+      human 1 full sprite sheet_7: -9035489558032849615
+      human 1 full sprite sheet_8: 2582380819640354720
+      human 1 full sprite sheet_9: -2393916709262689681
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

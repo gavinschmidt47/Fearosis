@@ -18,29 +18,42 @@ public class ShopItem : MonoBehaviour
 
     public void Unlock(bool unlocked)
     {
+        if (button == null)
+            button = GetComponent<Button>();
+
+        if (itemImage == null)
+            itemImage = GetComponent<Image>();
         // Implementation to unlock the shop item
         if (levelSelector != null)
         {
-            if(unlocked)
+            Debug.Log("LevelSelector found for shop item: " + name);
+            if (unlocked)
             {
-                if (name == levelSelector.gameObject.name + "Hard Mode")
+                switch (name)
                 {
-                    levelSelector.onHardButtonSelected = null;
-                    levelSelector.onHardButtonSelected += () => levelSelector.LoadLockedScene(levelSelector.hardModeSceneName);
-                }
-                else if (name == "Infinite Mode")
-                {
-                    levelSelector.onInfiniteButtonSelected = null;
-                    levelSelector.onInfiniteButtonSelected += () => levelSelector.LoadLockedScene(levelSelector.infiniteModeSceneName);
-                    return;
+                    case "Hard Mode":
+                        itemImage.color = Color.white;
+                        button.onClick.RemoveAllListeners();
+                        button.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(button.gameObject.name + "Hard"));
+                        break;
+                    case "Infinite Mode":
+                        itemImage.color = Color.white;
+                        Debug.Log("Setting Infinite Mode button for shop item: " + gameObject.transform.parent.parent.name);
+                        button.onClick.RemoveAllListeners();
+                        button.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(button.gameObject.transform.parent.parent.name + "Impossible"));
+                        break;
+                    default:
+                        itemImage.color = Color.gray;
+                        button.onClick.RemoveAllListeners();
+                        button.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene("Shop"));
+                        break;
                 }
             }
             else
             {
-                levelSelector.onHardButtonSelected = null;
-                levelSelector.onInfiniteButtonSelected = null;
-                levelSelector.onHardButtonSelected += () => UnityEngine.SceneManagement.SceneManager.LoadScene("Shop");
-                levelSelector.onInfiniteButtonSelected += () => UnityEngine.SceneManagement.SceneManager.LoadScene("Shop");
+                itemImage.color = Color.gray;
+                button.onClick.RemoveAllListeners();
+                button.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene("Shop"));
             }
         }
         else if (GetComponent<LevelSelector>() != null)
@@ -55,44 +68,35 @@ public class ShopItem : MonoBehaviour
         }
         else
         {
-            if (unlocked)
-            {
-                switch (name)
-                {
-                    case "Hard Mode":
-                        button.onClick.RemoveAllListeners();
-                        button.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(button.gameObject.name + "Hard"));
-                        break;
-                    case "Infinite Mode":
-                        button.onClick.RemoveAllListeners();
-                        button.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(button.gameObject.name + "Impossible"));
-                        break;
-                    case "Christmas Theme":
-                        button.onClick.RemoveAllListeners();
-                        button.onClick.AddListener(() =>
-                        {
-                            playerStartChoice.christmas = true;
-                            playerStartChoice.halloween = false;
-                        });
-                        break;
-                    case "Halloween Theme":
-                        button.onClick.RemoveAllListeners();
-                        button.onClick.AddListener(() =>
-                        {
-                            playerStartChoice.halloween = true;
-                            playerStartChoice.christmas = false;
-                        });
-                        break;
-                    default:
-                        button.onClick.RemoveAllListeners();
-                        button.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene(button.gameObject.name + "Hard"));
-                        break;
-                }
-            }
-            else
+            if (!unlocked)
             {
                 button.onClick.RemoveAllListeners();
                 button.onClick.AddListener(() => UnityEngine.SceneManagement.SceneManager.LoadScene("Shop"));
+                itemImage.color = Color.gray;
+            }
+            else
+            {
+                switch (name)
+                {
+                    case "Christmas Theme":
+                        itemImage.color = Color.white;
+                        button.onClick.RemoveAllListeners();
+                        button.onClick.AddListener(() =>
+                        {
+                        playerStartChoice.christmas = !playerStartChoice.christmas;
+                        playerStartChoice.halloween = false;
+                        });
+                        break;
+                    case "Halloween Theme":
+                        itemImage.color = Color.white;    
+                        button.onClick.RemoveAllListeners();
+                        button.onClick.AddListener(() =>
+                        {
+                            playerStartChoice.halloween = !playerStartChoice.halloween;
+                            playerStartChoice.christmas = false;
+                        });
+                        break;
+                }
             }
         }
     }

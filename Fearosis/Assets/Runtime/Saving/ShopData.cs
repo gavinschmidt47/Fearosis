@@ -1,18 +1,19 @@
 using MemoryPack;
+using System;
 using System.Collections.Generic;
 
 [MemoryPackable]
 public partial class ShopData
 {
-    public List<byte[]> purchasedThemes;
-    public List<byte[]> purchasedMonsters;
-    public List<byte[]> purchasedModes;
+    public List<String> purchasedThemes;
+    public List<String> purchasedMonsters;
+    public List<String> purchasedModes;
 
     [MemoryPackConstructor]
     public ShopData()
     {
-        purchasedThemes = new List<byte[]>();
-        purchasedMonsters = new List<byte[]>();
-        purchasedModes = new List<byte[]>();
+        purchasedThemes = new List<String>();
+        purchasedMonsters = new List<String>();
+        purchasedModes = new List<String>();
     }
 }

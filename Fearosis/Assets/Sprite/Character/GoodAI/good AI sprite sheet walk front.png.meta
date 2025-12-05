@@ -1,0 +1,361 @@
+fileFormatVersion: 2
+guid: 07ea9af01c1fcf74f9823f4a5ac7fa63
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 942167822893641939
+    second: good AI sprite sheet walk front_0
+  - first:
+      213: 6996633543394219448
+    second: good AI sprite sheet walk front_1
+  - first:
+      213: 3983198305582231252
+    second: good AI sprite sheet walk front_2
+  - first:
+      213: 1082125364601284724
+    second: good AI sprite sheet walk front_3
+  - first:
+      213: -7010103221901465014
+    second: good AI sprite sheet walk front_4
+  - first:
+      213: -1989121412950812456
+    second: good AI sprite sheet walk front_5
+  - first:
+      213: -5833821113282706877
+    second: good AI sprite sheet walk front_6
+  - first:
+      213: -2649632254871674630
+    second: good AI sprite sheet walk front_7
+  - first:
+      213: 541130804447137022
+    second: good AI sprite sheet walk front_8
+  - first:
+      213: 134139922889029903
+    second: good AI sprite sheet walk front_9
+  - first:
+      213: -6329120756556828008
+    second: good AI sprite sheet walk front_10
+  - first:
+      213: -713369492331232496
+    second: good AI sprite sheet walk front_11
+  - first:
+      213: 8132362138291411563
+    second: good AI sprite sheet walk front_12
+  - first:
+      213: -100615784878825041
+    second: good AI sprite sheet walk front_13
+  - first:
+      213: -8715541951141637196
+    second: good AI sprite sheet walk front_14
+  - first:
+      213: -7991932652741187675
+    second: good AI sprite sheet walk front_15
+  - first:
+      213: 5560837738348524469
+    second: good AI sprite sheet walk front_16
+  - first:
+      213: -5961236596727073544
+    second: good AI sprite sheet walk front_17
+  - first:
+      213: 4410475582877469736
+    second: good AI sprite sheet walk front_18
+  - first:
+      213: 8351337651811281007
+    second: good AI sprite sheet walk front_19
+  - first:
+      213: -2885664883998536170
+    second: good AI sprite sheet walk front_20
+  - first:
+      213: -1713617122487090466
+    second: good AI sprite sheet walk front_21
+  - first:
+      213: -8010878926269493172
+    second: good AI sprite sheet walk front_22
+  - first:
+      213: -6093520601285703511
+    second: good AI sprite sheet walk front_23
+  - first:
+      213: -5932323427645420549
+    second: good AI sprite sheet walk front_24
+  - first:
+      213: -2809610231530029045
+    second: good AI sprite sheet walk front_25
+  - first:
+      213: 4294027848661355476
+    second: good AI sprite sheet walk front_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: good AI sprite sheet walk front_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 138
+        width: 114
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4aedb3c24c17be90800000000000000
+      internalID: -7010103221901465014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: good AI sprite sheet walk front_5
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 136
+        width: 114
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d891fd1d983564e0800000000000000
+      internalID: -1989121412950812456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: good AI sprite sheet walk front_6
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 132
+        width: 114
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3424c9b3b9a1a0fa0800000000000000
+      internalID: -5833821113282706877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: good AI sprite sheet walk front_19
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1
+        width: 114
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f686e87d859e5e370800000000000000
+      internalID: 8351337651811281007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: good AI sprite sheet walk front_20
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 7
+        width: 114
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ec270b31f04f7d0800000000000000
+      internalID: -2885664883998536170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e204f0c34a2d5b248894729c3a9c7c65
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      good AI sprite sheet walk front_0: 942167822893641939
+      good AI sprite sheet walk front_1: 6996633543394219448
+      good AI sprite sheet walk front_10: -6329120756556828008
+      good AI sprite sheet walk front_11: -713369492331232496
+      good AI sprite sheet walk front_12: 8132362138291411563
+      good AI sprite sheet walk front_13: -100615784878825041
+      good AI sprite sheet walk front_14: -8715541951141637196
+      good AI sprite sheet walk front_15: -7991932652741187675
+      good AI sprite sheet walk front_16: 5560837738348524469
+      good AI sprite sheet walk front_17: -5961236596727073544
+      good AI sprite sheet walk front_18: 4410475582877469736
+      good AI sprite sheet walk front_19: 8351337651811281007
+      good AI sprite sheet walk front_2: 3983198305582231252
+      good AI sprite sheet walk front_20: -2885664883998536170
+      good AI sprite sheet walk front_21: -1713617122487090466
+      good AI sprite sheet walk front_22: -8010878926269493172
+      good AI sprite sheet walk front_23: -6093520601285703511
+      good AI sprite sheet walk front_24: -5932323427645420549
+      good AI sprite sheet walk front_25: -2809610231530029045
+      good AI sprite sheet walk front_26: 4294027848661355476
+      good AI sprite sheet walk front_3: 1082125364601284724
+      good AI sprite sheet walk front_4: -7010103221901465014
+      good AI sprite sheet walk front_5: -1989121412950812456
+      good AI sprite sheet walk front_6: -5833821113282706877
+      good AI sprite sheet walk front_7: -2649632254871674630
+      good AI sprite sheet walk front_8: 541130804447137022
+      good AI sprite sheet walk front_9: 134139922889029903
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

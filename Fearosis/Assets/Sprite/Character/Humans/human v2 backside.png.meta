@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 1f9ce5a6282e4cc4193ab292d5205f11
+guid: de3e023c7ada1d849ba3abc2c59bc22c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7247485412168728979
-    second: human v1 backside_0
+      213: -4008456810328114501
+    second: human v2 backside_0
   - first:
-      213: 2383092038499284693
-    second: human v1 backside_1
+      213: -5449529603861096710
+    second: human v2 backside_1
   - first:
-      213: 3521715234938886125
-    second: human v1 backside_2
+      213: -8148758023327800893
+    second: human v2 backside_2
   - first:
-      213: 3430382325402141306
-    second: human v1 backside_3
+      213: 4622050488777064866
+    second: human v2 backside_3
   - first:
-      213: -4518744656280344719
-    second: human v1 backside_4
+      213: 3815968342650595624
+    second: human v2 backside_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,11 +121,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: human v1 backside_0
+      name: human v2 backside_0
       rect:
         serializedVersion: 2
         x: 4
@@ -140,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d6e7bdc9a62cb6b90800000000000000
-      internalID: -7247485412168728979
+      spriteID: bbab5eac4c91f58c0800000000000000
+      internalID: -4008456810328114501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human v1 backside_1
+      name: human v2 backside_1
       rect:
         serializedVersion: 2
         x: 37
@@ -162,14 +175,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d6bfc53591721120800000000000000
-      internalID: 2383092038499284693
+      spriteID: af652e8b2b16f54b0800000000000000
+      internalID: -5449529603861096710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human v1 backside_2
+      name: human v2 backside_2
       rect:
         serializedVersion: 2
         x: 68
@@ -184,14 +197,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de71d9ae855afd030800000000000000
-      internalID: 3521715234938886125
+      spriteID: 3c1aee270cbc9ee80800000000000000
+      internalID: -8148758023327800893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human v1 backside_3
+      name: human v2 backside_3
       rect:
         serializedVersion: 2
         x: 101
@@ -206,17 +219,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a728f5dcc8a2b9f20800000000000000
-      internalID: 3430382325402141306
+      spriteID: 2a14a7d4e62d42040800000000000000
+      internalID: 4622050488777064866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: human v1 backside_4
+      name: human v2 backside_4
       rect:
         serializedVersion: 2
-        x: 133
+        x: 132
         y: 5
         width: 23
         height: 25
@@ -228,8 +241,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17727bb2da13a41c0800000000000000
-      internalID: -4518744656280344719
+      spriteID: 82923d16dfa05f430800000000000000
+      internalID: 3815968342650595624
       vertices: []
       indices: 
       edges: []
@@ -248,11 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      human v1 backside_0: -7247485412168728979
-      human v1 backside_1: 2383092038499284693
-      human v1 backside_2: 3521715234938886125
-      human v1 backside_3: 3430382325402141306
-      human v1 backside_4: -4518744656280344719
+      human v2 backside_0: -4008456810328114501
+      human v2 backside_1: -5449529603861096710
+      human v2 backside_2: -8148758023327800893
+      human v2 backside_3: 4622050488777064866
+      human v2 backside_4: 3815968342650595624
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -4526,6 +4526,7 @@ GameObject:
   - component: {fileID: 662646178}
   - component: {fileID: 662646177}
   - component: {fileID: 662646176}
+  - component: {fileID: 662646179}
   m_Layer: 5
   m_Name: Halloween Theme
   m_TagString: Untagged
@@ -4542,15 +4543,15 @@ RectTransform:
   m_GameObject: {fileID: 662646174}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.45, y: 2.45, z: 2.45}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 149017800}
   m_Father: {fileID: 1395910977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -146, y: -46.089996}
+  m_AnchoredPosition: {x: -200, y: -100}
   m_SizeDelta: {x: 99.2911, y: 60.354492}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &662646176
@@ -4635,6 +4636,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662646174}
   m_CullTransparentMesh: 1
+--- !u!114 &662646179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662646174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb008b8943a16dd4caad9b8ba9bcc034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStartChoice: {fileID: 11400000, guid: 7fa9c897475190d47bde81ec6372450c, type: 2}
 --- !u!1 &665886525
 GameObject:
   m_ObjectHideFlags: 0
@@ -6431,6 +6445,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5b738a6f661b0740bb0bb30a01341b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MutedMainIcon: {fileID: 0}
+  UnmutedMainIcon: {fileID: 0}
+  MutedSFXIcon: {fileID: 0}
+  UnmutedSFXIcon: {fileID: 0}
+  MutedMusicIcon: {fileID: 0}
+  UnmutedMusicIcon: {fileID: 0}
+  mainSlider: {fileID: 0}
   soundEffectsSlider: {fileID: 1586779846}
   musicSlider: {fileID: 1688695401}
 --- !u!114 &975141690
@@ -10696,8 +10717,8 @@ MonoBehaviour:
   loadGamePanel: {fileID: 1394666021}
   skinwalkerPanel: {fileID: 2072871663}
   goodAIPanel: {fileID: 1844264589}
-  halloweenThemePanel: {fileID: 0}
-  christmasThemePanel: {fileID: 0}
+  halloweenThemePanel: {fileID: 662646179}
+  christmasThemePanel: {fileID: 1915454600}
   monsterHardModePanel: {fileID: 820921124}
   cultHardModePanel: {fileID: 458364215}
   AIHardModePanel: {fileID: 226677354}
@@ -12739,6 +12760,7 @@ GameObject:
   - component: {fileID: 1915454599}
   - component: {fileID: 1915454598}
   - component: {fileID: 1915454597}
+  - component: {fileID: 1915454600}
   m_Layer: 5
   m_Name: Christmas Theme
   m_TagString: Untagged
@@ -12755,15 +12777,15 @@ RectTransform:
   m_GameObject: {fileID: 1915454595}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.45, y: 2.45, z: 2.45}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 656607116}
   m_Father: {fileID: 1395910977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 169, y: -46.089996}
+  m_AnchoredPosition: {x: 200, y: -100}
   m_SizeDelta: {x: 99.2911, y: 60.354492}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1915454597
@@ -12848,6 +12870,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915454595}
   m_CullTransparentMesh: 1
+--- !u!114 &1915454600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915454595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb008b8943a16dd4caad9b8ba9bcc034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStartChoice: {fileID: 11400000, guid: 7fa9c897475190d47bde81ec6372450c, type: 2}
 --- !u!1 &1927690502
 GameObject:
   m_ObjectHideFlags: 0
