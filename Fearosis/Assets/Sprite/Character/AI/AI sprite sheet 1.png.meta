@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: ee04073f43dcbe24ab89f81e5e10ac63
+guid: b202c4ff23e3d1a4f8a65f78e0700c27
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4021088872811284510
-    second: AI backside_0
+      213: 1513490639797651995
+    second: AI sprite sheet 1_0
   - first:
-      213: -1687908190585500670
-    second: AI backside_1
+      213: -3098395164239246604
+    second: AI sprite sheet 1_1
   - first:
-      213: 2889280791036952781
-    second: AI backside_2
+      213: 1138266256172603407
+    second: AI sprite sheet 1_2
   - first:
-      213: 6280102359745752432
-    second: AI backside_3
+      213: -5912723825463379962
+    second: AI sprite sheet 1_3
   - first:
-      213: 5506381272357409185
-    second: AI backside_4
+      213: -5570215848964584769
+    second: AI sprite sheet 1_4
   - first:
-      213: 4418833678313783898
-    second: AI backside_5
+      213: 7807077886909661708
+    second: AI sprite sheet 1_5
   - first:
-      213: -42165094776694121
-    second: AI backside_6
+      213: -6711095569569728878
+    second: AI sprite sheet 1_6
   - first:
-      213: 644438061483875414
-    second: AI backside_7
+      213: 1874661271590324501
+    second: AI sprite sheet 1_7
   - first:
-      213: -4891125736991638568
-    second: AI backside_8
+      213: -247098530485540269
+    second: AI sprite sheet 1_8
   - first:
-      213: -2730108193331816197
-    second: AI backside_9
+      213: 9034905124629829998
+    second: AI sprite sheet 1_9
   - first:
-      213: -7886194009448483291
-    second: AI backside_10
+      213: 1273904824731643300
+    second: AI sprite sheet 1_10
   - first:
-      213: -7412069155527013093
-    second: AI backside_11
+      213: -6384143872729454636
+    second: AI sprite sheet 1_11
   - first:
-      213: 255048238672292117
-    second: AI backside_12
+      213: 843228973688647760
+    second: AI sprite sheet 1_12
   - first:
-      213: -8923657807196723544
-    second: AI backside_13
+      213: -7415671637704151467
+    second: AI sprite sheet 1_13
   - first:
-      213: 3106098040804285761
-    second: AI backside_14
+      213: 5116399611410551758
+    second: AI sprite sheet 1_14
   - first:
-      213: -3035063997701729666
-    second: AI backside_15
+      213: -4620263571172311260
+    second: AI sprite sheet 1_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -154,11 +154,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AI backside_1
+      name: AI sprite sheet 1_1
       rect:
         serializedVersion: 2
         x: 2
@@ -173,14 +186,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20ccdae81785398e0800000000000000
-      internalID: -1687908190585500670
+      spriteID: 4fa4bbd930a4005d0800000000000000
+      internalID: -3098395164239246604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AI backside_4
+      name: AI sprite sheet 1_4
       rect:
         serializedVersion: 2
         x: 66
@@ -195,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a11ab8d7989a6c40800000000000000
-      internalID: 5506381272357409185
+      spriteID: fba0738923e92b2b0800000000000000
+      internalID: -5570215848964584769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AI backside_7
+      name: AI sprite sheet 1_7
       rect:
         serializedVersion: 2
         x: 130
@@ -217,14 +230,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 65cdc76a00181f800800000000000000
-      internalID: 644438061483875414
+      spriteID: 519c25f7e72240a10800000000000000
+      internalID: 1874661271590324501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AI backside_9
+      name: AI sprite sheet 1_9
       rect:
         serializedVersion: 2
         x: 194
@@ -239,14 +252,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf8d21a1015bc1ad0800000000000000
-      internalID: -2730108193331816197
+      spriteID: e69dae4875e626d70800000000000000
+      internalID: 9034905124629829998
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AI backside_11
+      name: AI sprite sheet 1_11
       rect:
         serializedVersion: 2
         x: 2
@@ -261,14 +274,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b1dce26bf5a032990800000000000000
-      internalID: -7412069155527013093
+      spriteID: 4d769fee8f6f667a0800000000000000
+      internalID: -6384143872729454636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AI backside_14
+      name: AI sprite sheet 1_14
       rect:
         serializedVersion: 2
         x: 66
@@ -283,8 +296,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 14d1da716b31b1b20800000000000000
-      internalID: 3106098040804285761
+      spriteID: ec39217b65a110740800000000000000
+      internalID: 5116399611410551758
       vertices: []
       indices: 
       edges: []
@@ -293,7 +306,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f68ca6c3cc67efe4d97652eb450585a8
+    spriteID: a78574f65a3053149a38bd3e8ed749a8
     internalID: 0
     vertices: []
     indices: 
@@ -303,22 +316,22 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      AI backside_0: 4021088872811284510
-      AI backside_1: -1687908190585500670
-      AI backside_10: -7886194009448483291
-      AI backside_11: -7412069155527013093
-      AI backside_12: 255048238672292117
-      AI backside_13: -8923657807196723544
-      AI backside_14: 3106098040804285761
-      AI backside_15: -3035063997701729666
-      AI backside_2: 2889280791036952781
-      AI backside_3: 6280102359745752432
-      AI backside_4: 5506381272357409185
-      AI backside_5: 4418833678313783898
-      AI backside_6: -42165094776694121
-      AI backside_7: 644438061483875414
-      AI backside_8: -4891125736991638568
-      AI backside_9: -2730108193331816197
+      AI sprite sheet 1_0: 1513490639797651995
+      AI sprite sheet 1_1: -3098395164239246604
+      AI sprite sheet 1_10: 1273904824731643300
+      AI sprite sheet 1_11: -6384143872729454636
+      AI sprite sheet 1_12: 843228973688647760
+      AI sprite sheet 1_13: -7415671637704151467
+      AI sprite sheet 1_14: 5116399611410551758
+      AI sprite sheet 1_15: -4620263571172311260
+      AI sprite sheet 1_2: 1138266256172603407
+      AI sprite sheet 1_3: -5912723825463379962
+      AI sprite sheet 1_4: -5570215848964584769
+      AI sprite sheet 1_5: 7807077886909661708
+      AI sprite sheet 1_6: -6711095569569728878
+      AI sprite sheet 1_7: 1874661271590324501
+      AI sprite sheet 1_8: -247098530485540269
+      AI sprite sheet 1_9: 9034905124629829998
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

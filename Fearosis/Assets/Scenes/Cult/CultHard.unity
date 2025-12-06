@@ -28977,6 +28977,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5b738a6f661b0740bb0bb30a01341b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MutedMainIcon: {fileID: 0}
+  UnmutedMainIcon: {fileID: 0}
+  MutedSFXIcon: {fileID: 0}
+  UnmutedSFXIcon: {fileID: 0}
+  MutedMusicIcon: {fileID: 0}
+  UnmutedMusicIcon: {fileID: 0}
+  mainSlider: {fileID: 0}
   soundEffectsSlider: {fileID: 740373868}
   musicSlider: {fileID: 580617338}
 --- !u!114 &1649482672
@@ -34710,7 +34717,7 @@ Animator:
   m_GameObject: {fileID: 1993246787}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9cb13ba6d212d4b478b86cbbb7659d2c, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -3254,14 +3254,14 @@ RectTransform:
   m_GameObject: {fileID: 813090044}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.93, y: 1.81, z: 1.9719999}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 7.75, y: 2.8453345, z: 3.1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 488547583}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 531.25, y: -108}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -240}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &813090046
@@ -4134,6 +4134,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5b738a6f661b0740bb0bb30a01341b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MutedMainIcon: {fileID: 0}
+  UnmutedMainIcon: {fileID: 0}
+  MutedSFXIcon: {fileID: 0}
+  UnmutedSFXIcon: {fileID: 0}
+  MutedMusicIcon: {fileID: 0}
+  UnmutedMusicIcon: {fileID: 0}
+  mainSlider: {fileID: 0}
   soundEffectsSlider: {fileID: 1128372437}
   musicSlider: {fileID: 1275943816}
 --- !u!114 &929870177
@@ -5984,7 +5991,7 @@ GameObject:
   - component: {fileID: 1317877759}
   m_Layer: 0
   m_Name: MusicManager
-  m_TagString: Untagged
+  m_TagString: Music
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

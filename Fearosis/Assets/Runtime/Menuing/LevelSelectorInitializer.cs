@@ -2,6 +2,7 @@ using UnityEngine;
 using System.IO;
 using MemoryPack;
 using System;
+using System.Collections.Generic;
 
 public class LevelSelectorInitializer : MonoBehaviour
 {
@@ -23,24 +24,22 @@ public class LevelSelectorInitializer : MonoBehaviour
 
     public ShopItem goodAIHardModePanel;
 
-    private ShopItem[] infiniteModePanels;
+    private List<ShopItem> infiniteModePanels;
     private string saveFilePath;
     private string shopDataPath;
     private ShopData shopData;
-    private SerializeProtection serializeProtection;
     private string encryptionKey = "01142003";
 
     void Awake()
     {
         saveFilePath = Path.Combine(Application.persistentDataPath, "savefile.dat");
         shopDataPath = Path.Combine(Application.persistentDataPath, "shopdata.dat");
-        serializeProtection =  gameObject.AddComponent<SerializeProtection>();
-       foreach (ShopItem panel in FindObjectsByType<ShopItem>(FindObjectsSortMode.None))
+        infiniteModePanels = new List<ShopItem>();
+        foreach (ShopItem panel in FindObjectsByType<ShopItem>(FindObjectsSortMode.None))
         {
             if (panel.name == "Infinite Mode")
             {
-                Array.Resize(ref infiniteModePanels, infiniteModePanels == null ? 1 : infiniteModePanels.Length + 1);
-                infiniteModePanels[infiniteModePanels.Length - 1] = panel;
+                infiniteModePanels.Add(panel);
             }
         }
     }
@@ -56,27 +55,27 @@ public class LevelSelectorInitializer : MonoBehaviour
             byte[] shopDataBytes = File.ReadAllBytes(shopDataPath);
             shopData = MemoryPackSerializer.Deserialize<ShopData>(shopDataBytes);
 
-            if (shopData.purchasedMonsters.Contains(serializeProtection.Protect("Skinwalker" + encryptionKey)))
+            if (shopData.purchasedMonsters.Contains("Skinwalker"))
                 skinwalkerPanel.Unlock(true);
             else
                 skinwalkerPanel.Unlock(false);
 
-            if (shopData.purchasedMonsters.Contains(serializeProtection.Protect("GoodAI" + encryptionKey)))
+            if (shopData.purchasedMonsters.Contains("GoodAI"))
                 goodAIPanel.Unlock(true);
             else
                 goodAIPanel.Unlock(false);
 
-            /*if (shopData.purchasedThemes.Contains(serializeProtection.Protect("HalloweenTheme" + encryptionKey)))
+            if (shopData.purchasedThemes.Contains("HalloweenTheme"))
                 halloweenThemePanel.Unlock(true);
             else
                 halloweenThemePanel.Unlock(false);
 
-            if (shopData.purchasedThemes.Contains(serializeProtection.Protect("ChristmasTheme" + encryptionKey)))
+            if (shopData.purchasedThemes.Contains("ChristmasTheme"))
                 christmasThemePanel.Unlock(true);
             else
-                christmasThemePanel.Unlock(false);*/
+                christmasThemePanel.Unlock(false);
 
-            if (shopData.purchasedModes.Contains(serializeProtection.Protect("InfiniteMode" + encryptionKey)))
+            if (shopData.purchasedModes.Contains("InfiniteMode"))
             {
                 foreach (ShopItem panel in infiniteModePanels)
                 {
@@ -91,27 +90,27 @@ public class LevelSelectorInitializer : MonoBehaviour
                 }
             }
 
-            if (shopData.purchasedModes.Contains(serializeProtection.Protect("MonsterHardMode" + encryptionKey)))
+            if (shopData.purchasedModes.Contains("MonsterHardMode"))
                 monsterHardModePanel.Unlock(true);
             else
                 monsterHardModePanel.Unlock(false);
 
-            if (shopData.purchasedModes.Contains(serializeProtection.Protect("CultHardMode" + encryptionKey)))
+            if (shopData.purchasedModes.Contains("CultHardMode"))
                 cultHardModePanel.Unlock(true);
             else
                 cultHardModePanel.Unlock(false);
 
-            if (shopData.purchasedModes.Contains(serializeProtection.Protect("AIHardMode" + encryptionKey)))
+            if (shopData.purchasedModes.Contains("AIHardMode"))
                 AIHardModePanel.Unlock(true);
             else
                 AIHardModePanel.Unlock(false);
 
-            if (shopData.purchasedModes.Contains(serializeProtection.Protect("SkinwalkerHardMode" + encryptionKey)))
+            if (shopData.purchasedModes.Contains("SkinwalkerHardMode"))
                 skinwalkerHardModePanel.Unlock(true);
             else
                 skinwalkerHardModePanel.Unlock(false);
 
-            if (shopData.purchasedModes.Contains(serializeProtection.Protect("GoodAIHardMode" + encryptionKey)))
+            if (shopData.purchasedModes.Contains("GoodAIHardMode"))
                 goodAIHardModePanel.Unlock(true);
             else
                 goodAIHardModePanel.Unlock(false);
@@ -120,8 +119,8 @@ public class LevelSelectorInitializer : MonoBehaviour
         {
             skinwalkerPanel.Unlock(false);
             goodAIPanel.Unlock(false);
-            //halloweenThemePanel.Unlock(false);
-            //christmasThemePanel.Unlock(false);
+            halloweenThemePanel.Unlock(false);
+            christmasThemePanel.Unlock(false);
             foreach (ShopItem panel in infiniteModePanels)
             {
                 panel.Unlock(false);

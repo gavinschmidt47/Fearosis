@@ -44,7 +44,6 @@ public class Upgrade : MonoBehaviour
     private Influence influenceScript;
     private InfectedUIHandler infectedUIHandler;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         fearScript = FindAnyObjectByType<Fear>();
@@ -54,8 +53,6 @@ public class Upgrade : MonoBehaviour
         influenceScript = FindAnyObjectByType<Influence>();
         infectedUIHandler = FindAnyObjectByType<InfectedUIHandler>();
 
-        //note: this will work only if the postrequisite remains enabled, with only the button being disabled and such
-        //if the object has prerequisites it will be added as a listener
         if (prerequisiteUpgrades.Length > 0)
         {
             foreach (GameObject prereq in prerequisiteUpgrades)
@@ -105,7 +102,6 @@ public class Upgrade : MonoBehaviour
         }
     }
 
-    //primary function associated with button
     public void Purchase()
     {
         if (!isPurchased && influenceScript.influencePoints >= upgradeCost)
@@ -120,13 +116,11 @@ public class Upgrade : MonoBehaviour
         }
     }
 
-    //this is the function postrequisite Upgrades will use
     public void CheckPrerequisites() 
     {
-        bool unlockable = true; //tracker
+        bool unlockable = true;
         if (prerequisiteUpgrades != null)
         {
-            //iteration thru prerequisites
             Debug.Log ("Checking");
             foreach (GameObject prereq in prerequisiteUpgrades) 
             {
@@ -140,7 +134,6 @@ public class Upgrade : MonoBehaviour
             }
         }
 
-        //only fully works if all prereqs are enabled
         if (unlockable)
         {
             Debug.Log("Unlocking");

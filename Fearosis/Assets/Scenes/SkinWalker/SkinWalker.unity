@@ -10667,7 +10667,7 @@ MonoBehaviour:
   poolSize: 100
   infectedPoolWeight: 0.8
   dayCharacter: {fileID: 5292200318635337322, guid: b7f20321def43bb478f060234cb9086b, type: 3}
-  nightCharacter: {fileID: 0}
+  nightCharacter: {fileID: 5292200318635337322, guid: b3b586717f7205540a09ea14f285be2d, type: 3}
   bobCharacter: {fileID: 5292200318635337322, guid: ddc0353a5f3649d47ab17d771562fbc1, type: 3}
 --- !u!4 &610462753
 Transform:
@@ -29102,6 +29102,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5b738a6f661b0740bb0bb30a01341b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MutedMainIcon: {fileID: 0}
+  UnmutedMainIcon: {fileID: 0}
+  MutedSFXIcon: {fileID: 0}
+  UnmutedSFXIcon: {fileID: 0}
+  MutedMusicIcon: {fileID: 0}
+  UnmutedMusicIcon: {fileID: 0}
+  mainSlider: {fileID: 0}
   soundEffectsSlider: {fileID: 740373868}
   musicSlider: {fileID: 580617338}
 --- !u!114 &1649482672
@@ -30769,7 +30776,7 @@ Transform:
   m_GameObject: {fileID: 1755400244}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.4595, y: 6.142, z: -10}
+  m_LocalPosition: {x: 11.99, y: 6.142, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

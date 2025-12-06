@@ -48,7 +48,7 @@ public class ShopUIManager : MonoBehaviour
         serializeProtection =  gameObject.AddComponent<SerializeProtection>();
         shopDataPath = Path.Combine(Application.persistentDataPath, "shopdata.dat");
         if (!File.Exists(shopDataPath)){
-            hasUpgrade1 = false;
+            //hasUpgrade1 = false;
             hasUpgrade2 = false;
             hasMonster1 = false;
             hasMonster2 = false;
@@ -64,14 +64,18 @@ public class ShopUIManager : MonoBehaviour
             byte[] shopDataBytes = File.ReadAllBytes(shopDataPath);
             shopData = MemoryPackSerializer.Deserialize<ShopData>(shopDataBytes);
 
-            hasUpgrade1 = shopData.purchasedModes.Contains(serializeProtection.Protect("FastStart" + encryptionKey));
-            hasUpgrade2 = shopData.purchasedModes.Contains(serializeProtection.Protect("InfiniteMode" + encryptionKey));
-            hasMonster1 = shopData.purchasedMonsters.Contains(serializeProtection.Protect("Skinwalker" + encryptionKey));
-            hasMonster2 = shopData.purchasedMonsters.Contains(serializeProtection.Protect("GoodAI" + encryptionKey));
-            hasTheme1 = shopData.purchasedThemes.Contains(serializeProtection.Protect("HalloweenTheme" + encryptionKey));
-            hasTheme2 = shopData.purchasedThemes.Contains(serializeProtection.Protect("ChristmasTheme" + encryptionKey));
+            Debug.Log(shopData.purchasedModes.Count.ToString());
+            Debug.Log(shopData.purchasedMonsters.Count.ToString());
+            Debug.Log(shopData.purchasedThemes.Count.ToString());
 
-            Upgrade1Button.interactable = !hasUpgrade1;
+            hasUpgrade1 = shopData.purchasedModes.Contains("FastStart");
+            hasUpgrade2 = shopData.purchasedModes.Contains("InfiniteMode");
+            hasMonster1 = shopData.purchasedMonsters.Contains("GoodAI");
+            hasMonster2 = shopData.purchasedMonsters.Contains("Skinwalker");
+            hasTheme1 = shopData.purchasedThemes.Contains("HalloweenTheme");
+            hasTheme2 = shopData.purchasedThemes.Contains("ChristmasTheme");
+
+            //Upgrade1Button.interactable = !hasUpgrade1;
             Upgrade2Button.interactable = !hasUpgrade2;
             Monster1Button.interactable = !hasMonster1;
             Monster2Button.interactable = !hasMonster2;
@@ -143,7 +147,7 @@ public class ShopUIManager : MonoBehaviour
     {
         hasUpgrade1 = true;
         Upgrade1Button.interactable = false;
-        shopData.purchasedModes.Add(serializeProtection.Protect("FastStart" + encryptionKey));
+        shopData.purchasedModes.Add("FastStart");
         SaveShopData();
     }
 
@@ -156,7 +160,7 @@ public class ShopUIManager : MonoBehaviour
     {
         hasUpgrade2 = true;
         Upgrade2Button.interactable = false;
-        shopData.purchasedModes.Add(serializeProtection.Protect("InfiniteMode" + encryptionKey));
+        shopData.purchasedModes.Add("InfiniteMode");
         SaveShopData();
     }
 
@@ -169,7 +173,7 @@ public class ShopUIManager : MonoBehaviour
     {
         hasMonster1 = true;
         Monster1Button.interactable = false;
-        shopData.purchasedMonsters.Add(serializeProtection.Protect("GoodAI" + encryptionKey));
+        shopData.purchasedMonsters.Add("GoodAI");
         SaveShopData();
     }
 
@@ -182,7 +186,7 @@ public class ShopUIManager : MonoBehaviour
     {
         hasMonster2 = true;
         Monster2Button.interactable = false;
-        shopData.purchasedMonsters.Add(serializeProtection.Protect("Skinwalker" + encryptionKey));
+        shopData.purchasedMonsters.Add("Skinwalker");
         SaveShopData();
     }
 
@@ -195,7 +199,7 @@ public class ShopUIManager : MonoBehaviour
     {
         hasTheme1 = true;
         Theme1Button.interactable = false;
-        shopData.purchasedThemes.Add(serializeProtection.Protect("HalloweenTheme" + encryptionKey));
+        shopData.purchasedThemes.Add("HalloweenTheme");
         SaveShopData();
     }
 
@@ -208,7 +212,7 @@ public class ShopUIManager : MonoBehaviour
     {
         hasTheme2 = true;
         Theme2Button.interactable = false;
-        shopData.purchasedThemes.Add(serializeProtection.Protect("ChristmasTheme" + encryptionKey));
+        shopData.purchasedThemes.Add("ChristmasTheme");
         SaveShopData();
     }
 }

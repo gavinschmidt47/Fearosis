@@ -1,55 +1,22 @@
 fileFormatVersion: 2
-guid: b202c4ff23e3d1a4f8a65f78e0700c27
+guid: 1f9ce5a6282e4cc4193ab292d5205f11
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1513490639797651995
-    second: AI sprite sheet 1_0
+      213: -7247485412168728979
+    second: human v1 backside_0
   - first:
-      213: -3098395164239246604
-    second: AI sprite sheet 1_1
+      213: 2383092038499284693
+    second: human v1 backside_1
   - first:
-      213: 1138266256172603407
-    second: AI sprite sheet 1_2
+      213: 3521715234938886125
+    second: human v1 backside_2
   - first:
-      213: -5912723825463379962
-    second: AI sprite sheet 1_3
+      213: 3430382325402141306
+    second: human v1 backside_3
   - first:
-      213: -5570215848964584769
-    second: AI sprite sheet 1_4
-  - first:
-      213: 7807077886909661708
-    second: AI sprite sheet 1_5
-  - first:
-      213: -6711095569569728878
-    second: AI sprite sheet 1_6
-  - first:
-      213: 1874661271590324501
-    second: AI sprite sheet 1_7
-  - first:
-      213: -247098530485540269
-    second: AI sprite sheet 1_8
-  - first:
-      213: 9034905124629829998
-    second: AI sprite sheet 1_9
-  - first:
-      213: 1273904824731643300
-    second: AI sprite sheet 1_10
-  - first:
-      213: -6384143872729454636
-    second: AI sprite sheet 1_11
-  - first:
-      213: 843228973688647760
-    second: AI sprite sheet 1_12
-  - first:
-      213: -7415671637704151467
-    second: AI sprite sheet 1_13
-  - first:
-      213: 5116399611410551758
-    second: AI sprite sheet 1_14
-  - first:
-      213: -4620263571172311260
-    second: AI sprite sheet 1_15
+      213: -4518744656280344719
+    second: human v1 backside_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -154,137 +121,128 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AI sprite sheet 1_1
+      name: human v1 backside_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 67
-        width: 60
-        height: 57
+        x: 4
+        y: 5
+        width: 23
+        height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4fa4bbd930a4005d0800000000000000
-      internalID: -3098395164239246604
+      spriteID: d6e7bdc9a62cb6b90800000000000000
+      internalID: -7247485412168728979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AI sprite sheet 1_4
+      name: human v1 backside_1
       rect:
         serializedVersion: 2
-        x: 66
-        y: 65
-        width: 60
-        height: 61
+        x: 37
+        y: 5
+        width: 21
+        height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fba0738923e92b2b0800000000000000
-      internalID: -5570215848964584769
+      spriteID: 5d6bfc53591721120800000000000000
+      internalID: 2383092038499284693
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AI sprite sheet 1_7
+      name: human v1 backside_2
       rect:
         serializedVersion: 2
-        x: 130
-        y: 63
-        width: 60
-        height: 65
+        x: 68
+        y: 5
+        width: 23
+        height: 26
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 519c25f7e72240a10800000000000000
-      internalID: 1874661271590324501
+      spriteID: de71d9ae855afd030800000000000000
+      internalID: 3521715234938886125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AI sprite sheet 1_9
+      name: human v1 backside_3
       rect:
         serializedVersion: 2
-        x: 194
-        y: 70
-        width: 60
-        height: 50
+        x: 101
+        y: 5
+        width: 21
+        height: 24
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e69dae4875e626d70800000000000000
-      internalID: 9034905124629829998
+      spriteID: a728f5dcc8a2b9f20800000000000000
+      internalID: 3430382325402141306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AI sprite sheet 1_11
+      name: human v1 backside_4
       rect:
         serializedVersion: 2
-        x: 2
-        y: 8
-        width: 60
-        height: 51
+        x: 133
+        y: 5
+        width: 23
+        height: 25
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4d769fee8f6f667a0800000000000000
-      internalID: -6384143872729454636
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AI sprite sheet 1_14
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 3
-        width: 60
-        height: 57
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ec39217b65a110740800000000000000
-      internalID: 5116399611410551758
+      spriteID: 17727bb2da13a41c0800000000000000
+      internalID: -4518744656280344719
       vertices: []
       indices: 
       edges: []
@@ -293,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a78574f65a3053149a38bd3e8ed749a8
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -303,22 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      AI sprite sheet 1_0: 1513490639797651995
-      AI sprite sheet 1_1: -3098395164239246604
-      AI sprite sheet 1_10: 1273904824731643300
-      AI sprite sheet 1_11: -6384143872729454636
-      AI sprite sheet 1_12: 843228973688647760
-      AI sprite sheet 1_13: -7415671637704151467
-      AI sprite sheet 1_14: 5116399611410551758
-      AI sprite sheet 1_15: -4620263571172311260
-      AI sprite sheet 1_2: 1138266256172603407
-      AI sprite sheet 1_3: -5912723825463379962
-      AI sprite sheet 1_4: -5570215848964584769
-      AI sprite sheet 1_5: 7807077886909661708
-      AI sprite sheet 1_6: -6711095569569728878
-      AI sprite sheet 1_7: 1874661271590324501
-      AI sprite sheet 1_8: -247098530485540269
-      AI sprite sheet 1_9: 9034905124629829998
+      human v1 backside_0: -7247485412168728979
+      human v1 backside_1: 2383092038499284693
+      human v1 backside_2: 3521715234938886125
+      human v1 backside_3: 3430382325402141306
+      human v1 backside_4: -4518744656280344719
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

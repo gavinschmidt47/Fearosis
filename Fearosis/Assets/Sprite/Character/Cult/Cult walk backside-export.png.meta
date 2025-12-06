@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: a34f63f205eecfb44849384a917df64a
+guid: 92f51be339703d341b6440924d6e35c0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3294816008015307782
-    second: cult sideview walk_0
+      213: -1888198512551066910
+    second: Cult walk backside-export_0
   - first:
-      213: 949355346163398911
-    second: cult sideview walk_1
+      213: -7344815844573523882
+    second: Cult walk backside-export_1
   - first:
-      213: 8190640224634395147
-    second: cult sideview walk_2
+      213: -619380627025246722
+    second: Cult walk backside-export_2
   - first:
-      213: 1583188383482235671
-    second: cult sideview walk_3
-  - first:
-      213: 2137680972509829884
-    second: cult sideview walk_4
-  - first:
-      213: 7999633022748910170
-    second: cult sideview walk_5
-  - first:
-      213: 6352285091451576681
-    second: cult sideview walk_6
-  - first:
-      213: 6278730440399253374
-    second: cult sideview walk_7
+      213: 1716212868910421363
+    second: Cult walk backside-export_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -130,38 +118,29 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cult sideview walk_0
+      name: Cult walk backside-export_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 65
-        width: 45
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 604e50ed3b989bd20800000000000000
-      internalID: 3294816008015307782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cult sideview walk_1
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 65
-        width: 45
+        x: 7
+        y: 0
+        width: 50
         height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -171,107 +150,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff8ffad48a9cc2d00800000000000000
-      internalID: 949355346163398911
+      spriteID: 2e209f9f475cbc5e0800000000000000
+      internalID: -1888198512551066910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cult sideview walk_2
+      name: Cult walk backside-export_1
       rect:
         serializedVersion: 2
-        x: 132
-        y: 66
-        width: 45
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b0adb5073effaa170800000000000000
-      internalID: 8190640224634395147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cult sideview walk_3
-      rect:
-        serializedVersion: 2
-        x: 196
-        y: 65
-        width: 45
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 71bcbf9527d98f510800000000000000
-      internalID: 1583188383482235671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cult sideview walk_4
-      rect:
-        serializedVersion: 2
-        x: 15
+        x: 71
         y: 1
-        width: 45
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cfa5f81c4819aad10800000000000000
-      internalID: 2137680972509829884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cult sideview walk_5
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 2
-        width: 45
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a52ee6ea9d7640f60800000000000000
-      internalID: 7999633022748910170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cult sideview walk_6
-      rect:
-        serializedVersion: 2
-        x: 143
-        y: 1
-        width: 45
+        width: 50
         height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -281,20 +172,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9612bf382a9d72850800000000000000
-      internalID: 6352285091451576681
+      spriteID: 650d88367e8f11a90800000000000000
+      internalID: -7344815844573523882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cult sideview walk_7
+      name: Cult walk backside-export_2
       rect:
         serializedVersion: 2
-        x: 207
-        y: 1
-        width: 45
-        height: 62
+        x: 135
+        y: 0
+        width: 50
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,8 +194,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7fed64c118822750800000000000000
-      internalID: 6278730440399253374
+      spriteID: ef5c661f9948767f0800000000000000
+      internalID: -619380627025246722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cult walk backside-export_3
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1
+        width: 50
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3751c5ae28631d710800000000000000
+      internalID: 1716212868910421363
       vertices: []
       indices: 
       edges: []
@@ -323,14 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      cult sideview walk_0: 3294816008015307782
-      cult sideview walk_1: 949355346163398911
-      cult sideview walk_2: 8190640224634395147
-      cult sideview walk_3: 1583188383482235671
-      cult sideview walk_4: 2137680972509829884
-      cult sideview walk_5: 7999633022748910170
-      cult sideview walk_6: 6352285091451576681
-      cult sideview walk_7: 6278730440399253374
+      Cult walk backside-export_0: -1888198512551066910
+      Cult walk backside-export_1: -7344815844573523882
+      Cult walk backside-export_2: -619380627025246722
+      Cult walk backside-export_3: 1716212868910421363
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
